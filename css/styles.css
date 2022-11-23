@@ -469,6 +469,11 @@ footer .footer-col {
 
 .copyright { margin-top: 6px; }
 
+.developer {
+  text-decoration: none;
+  color: #C95F1C;
+}
+
 .copyright p { 
   color: var(--font-color-light); 
 }
