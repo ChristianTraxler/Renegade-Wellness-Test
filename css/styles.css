@@ -420,6 +420,10 @@ footer .footer-col {
   padding-right: var(--size-10);
 }
 
+.phone {
+  text-decoration: none;
+}
+
 .services-wrapper p { 
   color: #858497;
   line-height: var(--size-20);
