@@ -393,9 +393,14 @@ footer .footer-col {
   font-size: var(--size-16);
 }
 
+.inside {
+  position: relative;
+  left: 30px;
+}
+
 .contact-info li {
   color: var(--white);
-  margin-bottom: var(--size-10);
+  margin-bottom: var(--size-14);
 }
 
 .contact-info li i {
