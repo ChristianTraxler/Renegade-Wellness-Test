@@ -74,7 +74,7 @@
   padding: 3.5rem 0;
 }
 
-.bg-header { background-image: url("../assets/images/bg-header-1.jpg");
+.bg-header { background-image: url("../assets/images/FA98204A-ADB6-46EE-A58B-77C8A6C437F5.jpeg");
   padding: var(--size-100) 0;
 }
 .video-demo { background-image: url("../assets/images/bg-demo.jpg");}
@@ -108,6 +108,7 @@
 
 .hero-header {
   color: var(--white);
+  text-align: center;
 }
 
 /* End of Navbar */
