@@ -34,9 +34,10 @@ body {
   font-size: var(--size-14);
   line-height: 1.0;
   letter-spacing: 0;
-  color: var(--font-color-base);
+  color: var(--font-color-dark);
   margin: 0;
   padding: 0;
+  background-color: #8DC7C1;
 }
 
 *,
