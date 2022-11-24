@@ -58,6 +58,18 @@
 
   .price-card2 { display: none; }
 
+  /* Start of Contact Page */
+
+  .contact h3 { font-size: 1.1rem }
+
+  /* End of Contact Page */
+
+  /* Start of FAQ Page */
+
+  .accordion { width: 92% }
+
+  /* End of FAQ Page */
+
   footer .footer-col:nth-child(3) {
     grid-column: initial;
   }
