@@ -60,7 +60,7 @@
 
   /* Start of Contact Page */
 
-  .contact h3 {
+  .contact h3, .hours {
     font-size: 1.1rem;
     line-height: 1.3rem;
   }
