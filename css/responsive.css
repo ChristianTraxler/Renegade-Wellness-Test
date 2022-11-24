@@ -60,7 +60,10 @@
 
   /* Start of Contact Page */
 
-  .contact h3 { font-size: 1.1rem }
+  .contact h3 {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
 
   /* End of Contact Page */
 
