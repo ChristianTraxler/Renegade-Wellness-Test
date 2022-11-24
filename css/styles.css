@@ -463,7 +463,14 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   bottom: 6px;
 }
 
-.panel2 { padding-bottom: 10px }
+.panel2-1 {
+  max-height: 530px !important;
+}
+
+.panel2 {
+  padding-bottom: 10px;
+  line-height: 1rem;
+}
 
 .p-pad { padding-top: 10px; }
 
