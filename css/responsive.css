@@ -79,7 +79,7 @@
 
   /* Start of FAQ Page */
 
-  .accordion { width: 92% }
+  .accordion, .panel { width: 92% }
 
   /* End of FAQ Page */
 

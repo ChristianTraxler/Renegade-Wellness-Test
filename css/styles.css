@@ -23,8 +23,20 @@
   color: var(--font-color-dark);
 }
 
-.nb-logo.sticky {
-  color: black;
+.navbar.rwc-logo1.sticky {
+  display: none;
+}
+
+.rwc-logo1 {
+  display: inherit;
+}
+
+.navbar.rwc-logo2.sticky {
+  display: inherit;
+}
+
+.rwc-logo2 {
+  display: none;
 }
 
 .navbar-toggler {
@@ -47,7 +59,7 @@
   display: none;
 }
 
-.nb-logo {
+.nb-logo, .nb-logo2 {
   height: 70px;
 }
 
@@ -163,6 +175,7 @@
 
 .bg-price-section {
   padding: var(--size-150) 0;
+  padding-top: 0;
   margin: 0 auto;
 }
 
@@ -449,6 +462,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   left: 15px;
   bottom: 6px;
 }
+
+.panel2 { padding-bottom: 10px }
 
 .p-pad { padding-top: 10px; }
 
