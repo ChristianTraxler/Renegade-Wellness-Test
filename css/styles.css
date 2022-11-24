@@ -610,6 +610,7 @@ footer .footer-col {
 
 .phone {
   text-decoration: none;
+  color: var(--white);
 }
 
 .services-wrapper p { 

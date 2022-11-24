@@ -10,13 +10,11 @@
   }
 
   [aria-expanded="true"] ~ ul {
-    display: block;
     position: absolute;
     right: 0;
     top: var(--size-50);
     background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
     width: 100%;
-    text-align: right;
     box-shadow: 0px 0px 20px rgb(52 49 75 / 10%);
   }
 
@@ -36,6 +34,19 @@
 }
 
 @media screen and (max-width: 480px) {
+
+  [aria-expanded="true"] ~ ul {
+    position: absolute;
+    right: 0;
+    top: 86px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
   .hero-wrapper { text-align: center; }
 
   .why-me-wrapper {
