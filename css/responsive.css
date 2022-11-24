@@ -47,13 +47,16 @@
 
   .why-me-wrapper > div { flex: initial; }
 
-  .price-card1 {
-    display: inherit;
+  .price-sheet {
+    position: relative;
+    top: 60px;
   }
 
-  .price-card2 {
-    display: none;
-  }
+  .bg-price-section { padding-top: 0 }
+
+  .price-card1 { display: inherit; }
+
+  .price-card2 { display: none; }
 
   footer .footer-col:nth-child(3) {
     grid-column: initial;
