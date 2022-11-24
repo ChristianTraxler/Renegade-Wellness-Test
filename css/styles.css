@@ -118,18 +118,48 @@
 }
 
 .nav-link a {
+  display: flex;
   color: var(--white);
   font-size: 0.8125rem;
   font-weight: 600;
   font-family: "Hind", sans-serif;
   text-transform: uppercase;
-  margin-right: var(--size-40);
+  margin-right: var(--size-50);
   line-height: var(--size-20);
 }
 
 .hero-header {
   color: var(--white);
   text-align: center;
+}
+
+.icons1 {
+  position: relative;
+  right: 6px;
+  bottom: 2px;
+  color: white;
+  width: 18px;
+  height: 20px;
+}
+
+.icons2 {
+  position: relative;
+  right: 6px;
+  bottom: 2px;
+  width: 14px;
+}
+
+.icons3 {
+  position: relative;
+  right: 6px;
+  width: 17px;
+}
+
+.icons4 {
+  position: relative;
+  right: 6px;
+  bottom: 1px;
+  width: 17px;
 }
 
 /* End of Navbar */
