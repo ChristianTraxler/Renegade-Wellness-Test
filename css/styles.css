@@ -122,7 +122,7 @@
 
 /* End of Navbar */
 
-/* Start of Why Me */
+/* Start of Home page */
 
 .why-me {
   padding: var(--size-150) 0;
@@ -157,7 +157,16 @@
   margin-top: 0.5rem;
 }
 
-/* End of Why Me */
+.price-sheet {
+  border-radius: 10px;
+}
+
+.bg-price-section {
+  padding: var(--size-150) 0;
+  margin: 0 auto;
+}
+
+/* End of Home page */
 
 /* Start of Services */
 
@@ -263,8 +272,21 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   padding: var(--size-40) var(--size-16);
 }
 
+.price-card1 {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: var(--size-40) var(--size-16);
+  display: none;
+}
+
+.price-card2 {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: var(--size-40) var(--size-16);
+}
+
 .price-card .checked { color: var(--success); }
-.price-card .times { 
+.price-card .times {
   color: var(--danger); 
   width: var(--size-14);
 }
@@ -273,7 +295,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   border-radius: 10px;
 }
 
-.price-card.featured {
+.price-card1.featured, .price-card2.featured {
   box-shadow: 0 10px 20px rgba(82, 179, 255, 0.2);
   margin-top: -1rem;
 }
@@ -296,6 +318,9 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 .price-card h3, .price-card .price,
 .price-card .billed { text-align: center; }
+
+.price-card1 h3, .price-card2 h3, .price-card1 .price, .price-card2 .price,
+.price-card1 .billed, .price-card2 .billed { text-align: center; }
 
 .pricing-table ul { line-height: 20px; }
 
