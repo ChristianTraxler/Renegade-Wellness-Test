@@ -209,6 +209,12 @@
   margin: 0 auto;
 }
 
+.salt-therapy {
+  position: relative;
+  height: 210px;
+  bottom: 1px;
+}
+
 /* End of Home page */
 
 /* Start of Services */
@@ -364,6 +370,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 .price-card1 h3, .price-card2 h3, .price-card1 .price, .price-card2 .price,
 .price-card1 .billed, .price-card2 .billed { text-align: center; }
+
+.billed { line-height: 1.1rem; }
 
 .pricing-table ul { line-height: 20px; }
 
