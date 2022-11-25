@@ -334,6 +334,9 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   padding: var(--size-40) var(--size-16);
 }
 
+.side-by-side1 { float: left; }
+.side-by-side2 { float: right; }
+
 .price-card .checked { color: var(--success); }
 .price-card .times {
   color: var(--danger); 
@@ -350,7 +353,12 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 }
 
 .price-card h3 {
-  margin-top: var(--size-40);
+  font-size: var(--size-18);
+  color: var(--font-color-dark);
+  font-weight: 600;
+}
+
+.price-card1, .price-card2 h3 {
   font-size: var(--size-18);
   color: var(--font-color-dark);
   font-weight: 600;

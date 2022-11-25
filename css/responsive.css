@@ -64,9 +64,23 @@
 
   .bg-price-section { padding-top: 0 }
 
-  .price-card1 { display: inherit; }
+  .price-card1 {
+    display: inherit;
+    font-size: var(--size-18);
+  }
+
+  .side-by-side1 {
+    position: relative;
+    left: 60px;
+  }
+  .side-by-side2 {
+    position: relative;
+    right: 60px;
+  }
 
   .price-card2 { display: none; }
+
+  .salt-therapy { height: auto; }
 
   /* Start of Contact Page */
 
