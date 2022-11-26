@@ -44,6 +44,23 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+    background-color: transparent;
+  }
+
+  /*.rwc-logo1 {*/
+  /*  display: none;*/
+  /*}*/
+
+  .rwc-logo1.sticky {
+    display: none;
+  }
+
+  .rwc-logo2 {
+    display: inherit;
+  }
+
+  .navbar.rwc-logo2.sticky {
+    display: inherit;
   }
 
   .hero-wrapper { text-align: center; }
