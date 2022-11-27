@@ -709,11 +709,21 @@ footer .footer-col {
   height: 50px;
 }
 
+.cash {
+  position: relative;
+  right: 5px;
+}
+
 .checks {
   width: 45px;
   height: 45px;
   position: relative;
-  bottom: 2px;
+}
+
+.visa {
+  position: relative;
+  height: 51px;
+  bottom: 1px;
 }
 
 .ccard {
@@ -723,10 +733,9 @@ footer .footer-col {
 
 .discover {
   position: relative;
-  height: 34px;
-  width: 40px;
-  top: 9px;
-  left: 2px;
+  height: 41px;
+  width: 47px;
+  top: 7px;
 }
 
 .contactless {
@@ -744,12 +753,14 @@ footer .footer-col {
 
 .gpay {
   position: relative;
-  left: 3px;
+  left: 5px;
 }
 
 .cash-app {
+  position: relative;
   height: 48px;
   width: 47px;
+  left: 5px;
 }
 
 .services-wrapper p { 

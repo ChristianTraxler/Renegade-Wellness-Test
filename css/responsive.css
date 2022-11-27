@@ -132,6 +132,14 @@
     color: var(--white);
   }
 
+  .visa { height: 51px; }
+
+  .discover {
+    height: 36px;
+    width: 46px;
+    top: 9px;
+  }
+
 
 
   /* End of Footer */
