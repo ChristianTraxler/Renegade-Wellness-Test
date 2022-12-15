@@ -73,12 +73,9 @@ img {
 
 .container {
   width: 100%;
-  padding-top: 18px;
+  padding: 18px 20px 10px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 12px;
-  padding-left: var(--size-20);
-  padding-right: var(--size-20);
 }
 
 .btn {

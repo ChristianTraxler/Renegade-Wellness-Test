@@ -11,7 +11,7 @@
 
 .navbar.sticky {
   background: var(--white);
-  box-shadow: 0px 0px 20px rgb(48 63 100 / 20%);
+  box-shadow: 0 0 20px rgb(48 63 100 / 20%);
 }
 
 .navbar.sticky .navbar-toggler span, .navbar.sticky .navbar-brand, .rwc-logo2 {
@@ -23,25 +23,25 @@
   color: var(--font-color-dark);
 }
 
-.navbar.rwc-logo1.sticky {
-  display: none;
-}
+/*.navbar.rwc-logo1.sticky {*/
+/*  display: none;*/
+/*}*/
 
-.navbar.rwc-logo2.sticky {
-  display: inherit;
-}
+/*.navbar.rwc-logo2.sticky {*/
+/*  display: inherit;*/
+/*}*/
 
-.rwc-logo1 {
-  display: inherit;
-}
+/*.rwc-logo1 {*/
+/*  display: inherit;*/
+/*}*/
 
-.navbar.rwc-logo2.sticky {
-  display: inherit;
-}
+/*.navbar.rwc-logo2.sticky {*/
+/*  display: inherit;*/
+/*}*/
 
-.rwc-logo2 {
-  display: none;
-}
+/*.rwc-logo2 {*/
+/*  display: none;*/
+/*}*/
 
 .navbar-toggler {
   position: absolute;
@@ -81,7 +81,7 @@
 
 .navbar-brand {
   margin-right: auto;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   width: 100%;
   transition: ease-in-out 0.3s;
@@ -99,9 +99,10 @@
   padding: 3.5rem 0;
 }
 
-.bg-header { background-image: url("../assets/images/FA98204A-ADB6-46EE-A58B-77C8A6C437F5.jpeg");
-  padding: var(--size-100) 0;
+.bg-header {
+  background-image: url("../assets/images/FA98204A-ADB6-46EE-A58B-77C8A6C437F5.jpeg");
 }
+
 .video-demo { background-image: url("../assets/images/bg-demo.jpg");}
 
 .bg-header::before {
@@ -121,6 +122,11 @@
   content: "";
 }
 
+.nav-link {
+  position: relative;
+  left: 25px;
+}
+
 .nav-link a {
   display: flex;
   color: var(--white);
@@ -135,6 +141,14 @@
 .hero-header {
   color: var(--white);
   text-align: center;
+}
+
+.rwc-logo {
+  display: flex;
+  position: relative;
+  margin: auto;
+  bottom: 46px;
+  height: 200px;
 }
 
 .icons1 {
@@ -696,7 +710,7 @@ footer .footer-col {
 .pay, .pay2 {
   display: flex;
   justify-content: center;
-  margin-top: var(--size-25);
+  margin: auto;
 }
 
 .payment {
@@ -715,9 +729,9 @@ footer .footer-col {
 }
 
 .checks {
+  position: relative;
   width: 45px;
   height: 45px;
-  position: relative;
 }
 
 .visa {
