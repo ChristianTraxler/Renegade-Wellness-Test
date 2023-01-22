@@ -174,13 +174,12 @@
 
   .copyright {
     position: relative;
-    left: var(--size-30);
+    right: var(--size-20);
   }
 
   .footer-bottom-links {
     position: relative;
-    top: var(--size-30);
-    right: var(--size-100);
+    left: var(--size-10);
   }
 
 

@@ -182,6 +182,100 @@
 
 /* End of Navbar */
 
+/* Start of Essential Oils */
+
+.oils {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+  gap: 2em;
+  margin-bottom: 200px;
+}
+
+.image {
+  position: relative;
+  width: 350px;
+  right: 180px;
+}
+
+.oils > * {
+  position: relative;
+  width: 350px;
+  top: 70px;
+  /*right: 180px;*/
+  line-height: 1.5em;
+}
+
+/*.eucalyp, .frank, .mandarin, .lavend, .lem, .mint {*/
+/*  position: relative;*/
+/*  top: 30px;*/
+/*}*/
+
+.eucalyp > .price {
+  position: relative;
+  top: 30px
+}
+
+.image-oils {
+  display: block;
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.oils-overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.oils-overlay-blur { backdrop-filter: blur(5px); }
+
+.oils-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.oils-overlay:hover { opacity: 1; }
+
+.oils-overlay:hover > * { transform: translateY(0); }
+
+.oils-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.bld-orange { color: #FE4B03 }
+.brth-clear { color: #5398C2 }
+.eucalyp { color: #208354 }
+.frank { color: #788E9F }
+.mandarin { color: #75B063 }
+.lavend { color: #977BB5 }
+.lem { color: #E0B644 }
+.mountain { color: #7BB170 }
+.mint { color: #84ADC6 }
+
+.price { font-size: 1em; }
+
+.description {
+  font-size: 0.95em;
+  margin-top: 0.25em;
+  padding: 1em 2em;
+}
+
+
+/* End of Essential Oils */
+
 /* Start of Home page */
 
 .why-me {
