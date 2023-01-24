@@ -40,7 +40,29 @@
   }
 }
 
+@media screen and (max-width: 599px) {
+
+  /* Start of Hydrosols */
+
+  .mango { width: 48%; }
+
+  .image-carrier {
+    position: relative;
+    top: 16px;
+  }
+
+
+  /* Start of Footer */
+  .copyright p {
+    /*position: relative;*/
+    /*left: 36px;*/
+  }
+
+  /* End of Footer */
+}
+
 @media screen and (max-width: 480px) {
+  /* Start of Navbar */
 
   [aria-controls="navbarDropdown"] {
     display: block;
@@ -92,6 +114,40 @@
   .navbar.rwc-logo2.sticky {
     display: inherit;
   }
+
+  /* End of Navbar */
+
+  /* Start of Essential Oils */
+  .oils {
+    display: grid;
+    gap: 10em;
+    margin-bottom: 146px;
+  }
+
+  .oils3 {
+    margin-bottom: 250px;
+  }
+
+  .lemon, .blood-orange, .green-mandarin { width: 94%; }
+
+  .peppermint, .lavender, .greek-lavender, .frankincense,
+  .breathe-clear, .mountain_bandits, .eucalyptus {
+    width: 114%;
+    right: 30px;
+  }
+
+  .image-oils { width: none; }
+
+  .oils-overlay { left: 12px; }
+
+  .oils-overlay2 { left: initial; }
+
+  .oils-overlay3 { left: initial; }
+
+
+
+
+  /* End of Essential Oils */
 
   .hero-wrapper { text-align: center; }
 
@@ -174,7 +230,7 @@
 
   .copyright {
     position: relative;
-    right: var(--size-20);
+    right: 6px;
   }
 
   .footer-bottom-links {
@@ -182,6 +238,19 @@
     left: var(--size-10);
   }
 
+
+  /* End of Footer */
+}
+
+@media screen and (max-width: 390px) {
+
+
+
+
+  /* Start of Footer */
+  .copyright p {
+    left: 36px;
+  }
 
   /* End of Footer */
 }

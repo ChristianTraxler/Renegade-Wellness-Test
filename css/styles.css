@@ -182,14 +182,156 @@
 
 /* End of Navbar */
 
+/* Start of Frosted Cards */
+.companies {
+  display: block;
+  position: relative;
+  background-image: url(../img/salt-rock.jpeg);
+  margin-bottom: 250px;
+}
+
+.title, .description {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.salt--overlay {
+  background-size: cover;
+  width: 100%;
+  height: 332px;
+  /*background-image: url(../img/salt-rock.jpeg);*/
+  margin-bottom: 200px;
+}
+
+.salt--overlay:hover {
+  opacity: 1;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--size-20);
+  margin-top: var(--size-100);
+  position: relative;
+  top: 56px;
+}
+
+.container2 {
+  padding: 18px 20px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--size-25) !important;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.card .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--size-25);
+  font-size: var(--size-30);
+}
+
+.card .content .avatar {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card .content .avatar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content .details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-10);
+  color: #111;
+}
+
+.card .content .details div {
+  display:  flex;
+  align-items: center;
+  gap: var(--size-10);
+}
+
+.card .content .details h3 { font-weight: 600; }
+
+.card .content .details ion-icon { font-size: 1.5em; }
+
+.details > * { text-align: center; }
+.details > * {
+  width: 80%;
+  margin: auto;
+}
+
+#more-info {
+  text-decoration: none;
+  color: black;
+}
+
+/* End of Frosted Cards */
+
+
 /* Start of Essential Oils */
 
 .oils {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
-  gap: 2em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  /*grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));*/
+  gap: 4em;
   margin-bottom: 200px;
 }
+
+.oils3 { margin-bottom: 250px; }
+
+.lemon, .blood-orange, .green-mandarin, .peppermint, .lavender, .greek-lavender, .frankincense, .breathe-clear, .mountain_bandits, .eucalyptus { width: 24%; }
 
 .image {
   position: relative;
@@ -199,16 +341,11 @@
 
 .oils > * {
   position: relative;
-  width: 350px;
+  /*width: 350px;*/
   top: 70px;
   /*right: 180px;*/
   line-height: 1.5em;
 }
-
-/*.eucalyp, .frank, .mandarin, .lavend, .lem, .mint {*/
-/*  position: relative;*/
-/*  top: 30px;*/
-/*}*/
 
 .eucalyp > .price {
   position: relative;
@@ -217,7 +354,7 @@
 
 .image-oils {
   display: block;
-  width: 50%;
+  width: 20%;
   margin: auto;
   position: relative;
 }
@@ -225,10 +362,10 @@
 .oils-overlay {
   display: flex;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  bottom: -58px;
+  /*left: 0;*/
+  width: 351px;
+  height: 320px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   flex-direction: column;
@@ -251,8 +388,10 @@
 .oils-overlay:hover > * { transform: translateY(0); }
 
 .oils-title {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
+  position: relative;
+  top: 18px;
 }
 
 .bld-orange { color: #FE4B03 }
@@ -265,16 +404,90 @@
 .mountain { color: #7BB170 }
 .mint { color: #84ADC6 }
 
-.price { font-size: 1em; }
+.price {
+  /*color: var(--font-color-link);*/
+  font-size: var(--size-20);
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 0;
+  position: relative;
+  top: 18px;
+}
 
 .description {
-  font-size: 0.95em;
-  margin-top: 0.25em;
-  padding: 1em 2em;
+  font-size: 0.8em;
+  /*margin-top: 0.25em;*/
+  padding: 1em 1em;
 }
 
 
 /* End of Essential Oils */
+
+/* Start of Hydrosols */
+
+.carrier {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  /*grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));*/
+  /*gap: 4em;*/
+  margin: 200px 0 400px 0;
+  line-height: 1.5em;
+}
+
+.hydro {
+  position: relative;
+  right: 12px;
+}
+
+/* End of Hydrosols */
+
+/* Start of Carrier Oils */
+
+.mango {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+}
+
+.image-carrier {
+
+}
+
+.carrier-overlay {
+  display: flex;
+  position: absolute;
+  bottom: -58px;
+  width: 351px;
+  height: 320px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.carrier-overlay-blur { backdrop-filter: blur(5px); }
+
+.carriers-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.carrier-overlay:hover { opacity: 1; }
+
+.carrier-overlay:hover > * { transform: translateY(0); }
+
+.man {
+  color: #E5965A;
+}
+
+
+/* End of Carrier Oils */
 
 /* Start of Home page */
 
@@ -337,11 +550,11 @@
   margin: 0 auto;
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--size-20);
-}
+/*.service-grid {*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+/*  gap: var(--size-20);*/
+/*}*/
 
 .service-card {
   padding: var(--size-30);
@@ -476,12 +689,12 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 .price-card hr { margin: 2rem 0 1rem; }
 
-.price {
-  color: var(--font-color-link);
-  font-size: var(--size-30);
-  font-weight: 600;
-  line-height: 60px;
-}
+/*.price {*/
+/*  color: var(--font-color-link);*/
+/*  font-size: var(--size-30);*/
+/*  font-weight: 600;*/
+/*  line-height: 60px;*/
+/*}*/
 
 .price-card h3, .price-card .price,
 .price-card .billed {
