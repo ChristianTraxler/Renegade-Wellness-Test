@@ -44,12 +44,43 @@
 
   /* Start of Hydrosols */
 
+  .artisan-lavender { position: relative; }
+  .artisan-lavender, .peppermint-hydrosol, .ginger, .rose, .lemon-balm, .ginger {
+    width: 114%;
+  }
+
+  .hydrosol {
+    display: grid;
+    gap: 10em;
+    margin-bottom: 146px;
+  }
+
+  .image-hydrosol { right: 22px; }
+
+  .hydrosol-overlay { right: 22px; }
+
+  .hydrosol-overlay2 {
+    top: 270px;
+    left: 32px;
+  }
+
+  .hydrosol-overlay3 { left: 32px; }
+
+  .hydrosol-overlay4 {
+    top: -46px;
+    left: 32px;
+  }
+
   .mango { width: 48%; }
 
   .image-carrier {
     position: relative;
     top: 16px;
   }
+
+
+
+  /* End of Hydrosol */
 
 
   /* Start of Footer */
@@ -148,6 +179,13 @@
 
 
   /* End of Essential Oils */
+
+  /* Start of Hydrosol */
+
+  /*.hydrosol-overlay2-otto { left: 12px: }*/
+
+
+  /* End of Hydrosol */
 
   .hero-wrapper { text-align: center; }
 

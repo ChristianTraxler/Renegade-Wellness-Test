@@ -425,6 +425,16 @@
 
 /* Start of Hydrosols */
 
+.hydrosol {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  margin-bottom: 200px;
+}
+
+.hydrosol > * { line-height: 1.5em; }
+
 .carrier {
   display: flex;
   justify-content: center;
@@ -436,10 +446,41 @@
   line-height: 1.5em;
 }
 
+.hydrosol-overlay {
+  display: flex;
+  position: absolute;
+  bottom: -58px;
+  width: 351px;
+  height: 320px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.hydrosol-overlay-blur { backdrop-filter: blur(5px); }
+
+.hydrosol-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.hydrosol-overlay:hover { opacity: 1; }
+
+.hydrosol-overlay:hover > * { transform: translateY(0); }
+
 .hydro {
   position: relative;
   right: 12px;
 }
+
+
+.rose-otto { color: #E299AE; }
+.ging { color: #D7894A; }
 
 /* End of Hydrosols */
 
@@ -449,10 +490,6 @@
   display: flex;
   justify-content: center;
   width: 10%;
-}
-
-.image-carrier {
-
 }
 
 .carrier-overlay {
