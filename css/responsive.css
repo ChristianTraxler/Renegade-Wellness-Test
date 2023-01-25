@@ -168,7 +168,7 @@
 
   /* Start of Hydrosol */
 
-  .hydrosol-overlay2 { left: 20px; }
+  /*.hydrosol-overlay2 { left: 20px; }*/
 
 
   /* End of Hydrosol */
@@ -269,6 +269,8 @@
 @media screen and (max-width: 390px) {
 
   /* Start of Hydrosol */
+
+  .hydrosol-overlay6 { left: 20px; }
 
   .hydrosol-overlay5 { left: 20px; }
 
