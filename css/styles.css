@@ -331,7 +331,9 @@
 
 .oils3 { margin-bottom: 250px; }
 
-.lemon, .blood-orange, .green-mandarin, .peppermint, .lavender, .greek-lavender, .frankincense, .breathe-clear, .mountain_bandits, .eucalyptus { width: 24%; }
+.lemon, .blood-orange, .green-mandarin, .peppermint, .lavender, .greek-lavender,
+.frankincense, .breathe-clear, .mountain_bandits, .eucalyptus, .artisan-lavender,
+.rose, .lemon-balm, .ginger { width: 24%; }
 
 .image {
   position: relative;
