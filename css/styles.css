@@ -378,7 +378,10 @@
   border-radius: 10px;
 }
 
-.oils-overlay-blur { backdrop-filter: blur(5px); }
+.oils-overlay-blur {
+  /*-webkit-filter: blur(5px);*/
+  backdrop-filter: blur(5px);
+}
 
 .oils-overlay > * {
   transform: translateY(20px);
