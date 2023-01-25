@@ -46,7 +46,7 @@
 
   .artisan-lavender { position: relative; }
   .artisan-lavender, .peppermint-hydrosol, .ginger, .rose, .lemon-balm, .ginger {
-    width: 114%;
+    width: 110%;
   }
 
   .hydrosol {
@@ -57,7 +57,7 @@
 
   .image-hydrosol { right: 22px; }
 
-  .hydrosol-overlay { right: 22px; }
+  .hydrosol-overlay { right: 10px; }
 
   .hydrosol-overlay2 {
     top: 270px;
@@ -95,13 +95,9 @@
 @media screen and (max-width: 480px) {
   /* Start of Navbar */
 
-  [aria-controls="navbarDropdown"] {
-    display: block;
-  }
+  [aria-controls="navbarDropdown"] { display: block; }
 
-  [aria-expanded="false"] ~ ul {
-    display: none;
-  }
+  [aria-expanded="false"] ~ ul { display: none; }
 
   [aria-expanded="true"] ~ ul {
     position: absolute;
@@ -122,9 +118,7 @@
     background-color: transparent;
   }
 
-  .navbar-nav.sticky {
-    background-color: var(--white);
-  }
+  .navbar-nav.sticky { background-color: var(--white); }
 
   .container { padding-bottom: 24px; }
 
@@ -134,17 +128,11 @@
   /*  display: none;*/
   /*}*/
 
-  .rwc-logo1.sticky {
-    display: none;
-  }
+  .rwc-logo1.sticky { display: none; }
 
-  .rwc-logo2 {
-    display: inherit;
-  }
+  .rwc-logo2 { display: inherit; }
 
-  .navbar.rwc-logo2.sticky {
-    display: inherit;
-  }
+  .navbar.rwc-logo2.sticky { display: inherit; }
 
   /* End of Navbar */
 
@@ -155,19 +143,17 @@
     margin-bottom: 146px;
   }
 
-  .oils3 {
-    margin-bottom: 250px;
-  }
+  .oils3 { margin-bottom: 250px; }
 
   .lemon, .blood-orange, .green-mandarin { width: 94%; }
 
   .peppermint, .lavender, .greek-lavender, .frankincense,
   .breathe-clear, .mountain_bandits, .eucalyptus {
-    width: 114%;
+    width: 110%;
     right: 30px;
   }
 
-  .image-oils { width: none; }
+  /*.image-oils { width: none; }*/
 
   .oils-overlay { left: 12px; }
 
@@ -182,7 +168,7 @@
 
   /* Start of Hydrosol */
 
-  /*.hydrosol-overlay2-otto { left: 12px: }*/
+  .hydrosol-overlay2 { left: 20px; }
 
 
   /* End of Hydrosol */
@@ -282,7 +268,12 @@
 
 @media screen and (max-width: 390px) {
 
+  /* Start of Hydrosol */
 
+  .hydrosol-overlay5 { left: 20px; }
+
+
+  /* End of Hydrosol */
 
 
   /* Start of Footer */
