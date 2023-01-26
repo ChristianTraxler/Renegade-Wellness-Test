@@ -285,3 +285,23 @@
 
   /* End of Footer */
 }
+
+@media screen and (max-width: 375px) {
+
+  /* Start of Hydrosol */
+
+  .hydrosol-overlay6 { left: 20px; }
+
+  .hydrosol-overlay5 { left: 12px; }
+
+
+  /* End of Hydrosol */
+
+
+  /* Start of Footer */
+  .copyright p {
+    left: 36px;
+  }
+
+  /* End of Footer */
+}
