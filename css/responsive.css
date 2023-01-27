@@ -131,6 +131,20 @@
   /* Start of Contact page */
   .pricing-section { padding: 100px 0 200px 0; }
 
+  .contact > h3, .hours { font-size: 1rem; }
+
+  .email2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 4px;
+  }
+
+  .email2 > a {
+    position: relative;
+    left: 8px;
+  }
+
 
   /* End of Contact page */
 
