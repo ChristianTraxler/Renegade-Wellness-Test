@@ -45,7 +45,7 @@
   /* Start of Hydrosols */
 
   .artisan-lavender { position: relative; }
-  .artisan-lavender, .peppermint-hydrosol, .ginger, .rose, .lemon-balm, .ginger {
+  .artisan-lavender, .peppermint-hydrosol, .ginger, .rose, .lemon-balm, .ginger, .frankincense-hydrosol {
     width: 110%;
   }
 
@@ -67,6 +67,10 @@
   .hydrosol-overlay3 { left: 40px; }
 
   /*.hydrosol-overlay7 { left: 2.40625rem; }*/
+
+  .move {
+
+  }
 
   .hydrosol-overlay4 {
     top: -46px;
@@ -157,143 +161,143 @@
 
   /* End of Navbar */
 
-  /* Start of Essential Oils */
-  .oils {
-    display: grid;
-    gap: 10em;
-    margin-bottom: 146px;
-  }
-
-  .oils3 { margin-bottom: 250px; }
-
-  .lemon, .blood-orange, .green-mandarin { width: 94%; }
-
-  .peppermint, .lavender, .greek-lavender, .frankincense,
-  .breathe-clear, .mountain_bandits, .eucalyptus {
-    width: 110%;
-    right: 30px;
-  }
-
-  /*.image-oils { width: none; }*/
-
-  .oils-overlay { left: 12px; }
-
-  .oils-overlay2 { left: initial; }
-
-  .oils-overlay3 { left: initial; }
-
-
-
-
-  /* End of Essential Oils */
-
-  /* Start of Hydrosol */
-
-  .hydrosol-overlay2, .hydrosol-overlay3, .hydrosol-overlay4 { left: 21.5px; }
-
-
-  /* End of Hydrosol */
-
-  .hero-wrapper { text-align: center; }
-
-  .why-me-wrapper {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .why-me-wrapper .block-text { padding-right: 0; }
-
-  .why-me-wrapper > div { flex: initial; }
-
-  .price-sheet {
-    position: relative;
-    top: 60px;
-  }
-
-  .bg-price-section { padding-top: 0 }
-
-  .price-card .price-card1 h3 { font-weight: 600; }
-  .price-card h3 { font-size: var(--size-20)}
-
-  .price-card1 {
-    display: inherit;
-    font-size: var(--size-18);
-  }
-
-  .side-by-side1 {
-    position: relative;
-    left: 60px;
-  }
-  .side-by-side2 {
-    position: relative;
-    right: 60px;
-  }
-
-  .price-card2 { display: none; }
-
-  .salt-therapy { height: auto; }
-
-  /* Start of Contact Page */
-
-  .contact h3, .hours {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
-  }
-
-  /* End of Contact Page */
-
-  /* Start of FAQ Page */
-
-  .accordion, .panel { width: 92% }
-
-  /* End of FAQ Page */
-
-  /* Start of Footer */
-
-  footer .footer-col:nth-child(3) {
-    grid-column: initial;
-  }
-
-  footer .footer-col:nth-child(1) {
-    order: 3;
-  }
-
-  .email {
-    text-decoration: none;
-    color: var(--white);
-  }
-
-  .visa { height: 51px; }
-
-  /*.discover {*/
-  /*  height: 34px;*/
-  /*  width: 46px;*/
-  /*  top: 9px;*/
+  /*!* Start of Essential Oils *!*/
+  /*.oils {*/
+  /*  display: grid;*/
+  /*  gap: 10em;*/
+  /*  margin-bottom: 146px;*/
   /*}*/
 
-  .footer-bottom { padding: var(--size-30); }
+  /*.oils3 { margin-bottom: 250px; }*/
 
-  .copyright {
-    position: relative;
-    right: 6px;
-  }
+  /*.lemon, .blood-orange, .green-mandarin { width: 94%; }*/
 
-  .footer-bottom-links {
-    position: relative;
-    left: var(--size-10);
-  }
+  /*.peppermint, .lavender, .greek-lavender, .frankincense,*/
+  /*.breathe-clear, .mountain_bandits, .eucalyptus {*/
+  /*  width: 110%;*/
+  /*  right: 30px;*/
+  /*}*/
+
+  /*!*.image-oils { width: none; }*!*/
+
+  /*.oils-overlay { left: 12px; }*/
+
+  /*.oils-overlay2 { left: initial; }*/
+
+  /*.oils-overlay3 { left: initial; }*/
 
 
-  /* End of Footer */
+
+
+  /*!* End of Essential Oils *!*/
+
+  /*!* Start of Hydrosol *!*/
+
+  /*.hydrosol-overlay2, .hydrosol-overlay3, .hydrosol-overlay4 { left: 21.5px; }*/
+
+
+  /*!* End of Hydrosol *!*/
+
+  /*.hero-wrapper { text-align: center; }*/
+
+  /*.why-me-wrapper {*/
+  /*  flex-wrap: wrap;*/
+  /*  text-align: center;*/
+  /*}*/
+
+  /*.why-me-wrapper .block-text { padding-right: 0; }*/
+
+  /*.why-me-wrapper > div { flex: initial; }*/
+
+  /*.price-sheet {*/
+  /*  position: relative;*/
+  /*  top: 60px;*/
+  /*}*/
+
+  /*.bg-price-section { padding-top: 0 }*/
+
+  /*.price-card .price-card1 h3 { font-weight: 600; }*/
+  /*.price-card h3 { font-size: var(--size-20)}*/
+
+  /*.price-card1 {*/
+  /*  display: inherit;*/
+  /*  font-size: var(--size-18);*/
+  /*}*/
+
+  /*.side-by-side1 {*/
+  /*  position: relative;*/
+  /*  left: 60px;*/
+  /*}*/
+  /*.side-by-side2 {*/
+  /*  position: relative;*/
+  /*  right: 60px;*/
+  /*}*/
+
+  /*.price-card2 { display: none; }*/
+
+  /*.salt-therapy { height: auto; }*/
+
+  /*!* Start of Contact Page *!*/
+
+  /*.contact h3, .hours {*/
+  /*  font-size: 1.1rem;*/
+  /*  line-height: 1.3rem;*/
+  /*}*/
+
+  /*!* End of Contact Page *!*/
+
+  /*!* Start of FAQ Page *!*/
+
+  /*.accordion, .panel { width: 92% }*/
+
+  /*!* End of FAQ Page *!*/
+
+  /*!* Start of Footer *!*/
+
+  /*footer .footer-col:nth-child(3) {*/
+  /*  grid-column: initial;*/
+  /*}*/
+
+  /*footer .footer-col:nth-child(1) {*/
+  /*  order: 3;*/
+  /*}*/
+
+  /*.email {*/
+  /*  text-decoration: none;*/
+  /*  color: var(--white);*/
+  /*}*/
+
+  /*.visa { height: 51px; }*/
+
+  /*!*.discover {*!*/
+  /*!*  height: 34px;*!*/
+  /*!*  width: 46px;*!*/
+  /*!*  top: 9px;*!*/
+  /*!*}*!*/
+
+  /*.footer-bottom { padding: var(--size-30); }*/
+
+  /*.copyright {*/
+  /*  position: relative;*/
+  /*  right: 6px;*/
+  /*}*/
+
+  /*.footer-bottom-links {*/
+  /*  position: relative;*/
+  /*  left: var(--size-10);*/
+  /*}*/
+
+
+  /*!* End of Footer *!*/
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
 
   /* Start of Hydrosol */
 
   /*.hydrosol-overlay6 { left: 20px; }*/
 
-  /*.hydrosol-overlay5 { left: 20px; }*/
+  .hydrosol-overlay5 { left: 24px; }
 
 
   /* End of Hydrosol */
@@ -313,7 +317,7 @@
 
   .hydrosol-overlay6 { left: 20px; }
 
-  /*.hydrosol-overlay5 { left: 12px; }*/
+  .hydrosol-overlay5 { left: 12px; }
 
 
   /* End of Hydrosol */
