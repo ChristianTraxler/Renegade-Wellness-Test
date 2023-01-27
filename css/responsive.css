@@ -146,6 +146,20 @@
 
   /* End of Milk Mask */
 
+  /* Start of Facial Tools */
+
+  .facial-tools {
+    display: grid;
+    width: 70%;
+    margin: 50px auto 50px;
+    left: 9px;
+  }
+
+  .rose-quartz-price, .jade-roller-price { top: 56px; }
+
+
+  /* End of Facial Tools */
+
   /* Start of Contact page */
   .pricing-section { padding: 100px 0 200px 0; }
 
@@ -433,6 +447,13 @@
   /* End of Plant-Based Masks */
 
 
+  /* Start of Facial Tools */
+
+  .rose-quartz-price, .jade-roller-price { top: 50px; }
+
+  /* End of Facial Tools */
+
+
   /* Start of Footer */
   .copyright p {
     left: 36px;
@@ -481,7 +502,6 @@
     width: 70%;
     margin: auto auto 20px;
     left: 9px;
-    /*margin-bottom: 20px;*/
   }
 
   .masks1 {
@@ -506,7 +526,13 @@
   .milk-price { top: 40px; }
 
 
-  /* End of Milk Masks *?
+  /* End of Milk Masks */
+
+  /* Start of Facial Tools */
+
+  .jade-roller-price { top: 48px; }
+
+  /* End of Facial Tools */
 
 
   /* Start of Footer */
