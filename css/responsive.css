@@ -61,7 +61,7 @@
 
   .hydrosol-overlay2 {
     top: 270px;
-    left: 40px;
+    left: 2.40625rem;
   }
 
   .hydrosol-overlay3 { left: 40px; }
@@ -270,9 +270,9 @@
 
   /* Start of Hydrosol */
 
-  .hydrosol-overlay6 { left: 20px; }
+  /*.hydrosol-overlay6 { left: 20px; }*/
 
-  .hydrosol-overlay5 { left: 20px; }
+  /*.hydrosol-overlay5 { left: 20px; }*/
 
 
   /* End of Hydrosol */
@@ -296,6 +296,40 @@
 
 
   /* End of Hydrosol */
+
+
+  /* Start of Milk Masks */
+
+  .masks1, .masks2 {
+    display: grid;
+    width: 70%;
+    margin: auto auto 20px;
+    left: 9px;
+    /*margin-bottom: 20px;*/
+  }
+
+  .masks1 {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .masks2 { margin-bottom: 150px; }
+
+  .milk-masks {
+    width: 100%;
+    bottom: 2px;
+  }
+
+  .milk-overlay {
+    width: 312px;
+    height: 300px;
+    margin: auto;
+    right: 10px;
+  }
+
+
+
+  /* End of Milk Masks *?
 
 
   /* Start of Footer */

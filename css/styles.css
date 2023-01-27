@@ -420,6 +420,7 @@
 }
 
 .description {
+  text-align: center;
   font-size: 0.8em;
   /*margin-top: 0.25em;*/
   padding: 1em 1em;
@@ -486,6 +487,7 @@
 
 .rose-otto { color: #E299AE; }
 .ging { color: #D7894A; }
+.lemon-b { color: #D9A0AE; }
 
 /* End of Hydrosols */
 
@@ -530,6 +532,90 @@
 
 
 /* End of Carrier Oils */
+
+/* Start of Milk Masks */
+
+.masks1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.masks2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  gap: 20px;
+  margin-bottom: 200px;
+}
+
+.milk-masks {
+  display: block;
+  width: 96%;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+.milk-overlay {
+  display: flex;
+  position: absolute;
+  bottom: -4px;
+  width: 354px;
+  height: 348px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.milk-overlay-blur { backdrop-filter: blur(5px); }
+
+.milk-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.milk-overlay:hover { opacity: 1; }
+
+.milk-overlay:hover > * { transform: translateY(0); }
+
+.milk-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+}
+
+.milk-price {
+  font-size: var(--size-20);
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 0;
+  position: relative;
+  top: 50px;
+}
+
+.vanilla-milk { color: #B4C5D5; }
+.blueberry-milk { color: #8F9FB4; }
+.matcha-milk { color: #B7CB8D; }
+.avocado-milk { color: #859A62 }
+
+.masks1, .masks2 > * { line-height: 1.5em; }
+
+
+
+
+/* End of Milk Masks */
 
 /* Start of Home page */
 
