@@ -82,6 +82,13 @@
 
   /* End of Hydrosol */
 
+  /* Start of Carrier Oils */
+
+  .carrier-overlay { left: 30px; }
+
+
+  /* End of Carrier Oils */
+
   /* Start of Milk Mask */
   .masks1, .masks2 {
     display: grid;
@@ -166,21 +173,29 @@
 
   .oils3 { margin-bottom: 250px; }
 
-  .lemon, .blood-orange, .green-mandarin { width: 94%; }
+  .lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,
+  .lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }
 
-  .peppermint, .lavender, .greek-lavender, .frankincense,
-  .breathe-clear, .mountain_bandits, .eucalyptus {
-    width: 110%;
-    right: 30px;
+  .breathe-clear2 {
+    width: 124%;
+    right: 46px;
   }
+
+  .breathe-clear2 { width: 128%; }
 
   .image-oils { left: 12px; }
 
-  .oils-overlay { left: 12px; }
+  .image-oils2 { left: 10px; }
 
-  .oils-overlay2 { left: initial; }
+  .image-oils3 { left: 0; }
 
-  .oils-overlay3 { left: initial; }
+  .oils-overlay { left: 18px; }
+
+  .oils-overlay2 { left: 18px; }
+
+  /*.oils-overlay3 { left: 48px; }*/
+
+  /*.oils-overlay4 { left: -25px; }*/
 
 
 
@@ -193,6 +208,13 @@
 
 
   /*!* End of Hydrosol *!*/
+
+  /* Start of Carrier Oils */
+
+  .carrier-overlay { left: 38px; }
+
+
+  /* End of Carrier Oils */
 
   /*.hero-wrapper { text-align: center; }*/
 
@@ -289,6 +311,15 @@
 
 @media screen and (max-width: 400px) {
 
+  /* Start of Essential Oils */
+
+  /*.oils-overlay2{ left: 12px; }*/
+  .oils-overlay4 { left: 20px; }
+  /*.oils-overlay3 { left: 0; }*/
+
+
+  /* End of Essential Oils */
+
   /* Start of Hydrosol */
 
   .hydrosol-sprays {
@@ -301,6 +332,12 @@
 
   /* End of Hydrosol */
 
+  /* Start of Carrier Oils */
+
+  .carrier-overlay { left: 21px; }
+
+  /* End of Carrier Oils */
+
 
   /* Start of Footer */
   .copyright p {
@@ -312,14 +349,27 @@
 
 @media screen and (max-width: 375px) {
 
+  /* Start of Essential Oils */
+
+  .oils-overlay2, .oils-overlay3 { left: 12px; }
+  /*.oils-overlay5 { left: 0; }*/
+
+  /* End of Essential Oils */
+
   /* Start of Hydrosol */
 
-  .hydrosol-overlay2 { left: 12px; }
+  .hydrosol-overlay2, .hydrosol-overlay3 { left: 12px; }
 
   .hydrosol-overlay6 { left: 20px; }
 
 
   /* End of Hydrosol */
+
+  /* Start of Carrier Oils */
+
+  .carrier-overlay { left: 12px; }
+
+  /* End of Carrier Oils */
 
 
   /* Start of Milk Masks */
