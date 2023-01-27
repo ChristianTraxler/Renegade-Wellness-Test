@@ -42,6 +42,21 @@
 
 @media screen and (max-width: 599px) {
 
+  /* Start of Home page */
+
+  .side-by-side1 {
+    position: relative;
+    left: 40px;
+  }
+
+  .side-by-side2 {
+    position: relative;
+    right: 40px;
+  }
+
+
+  /* End of Home page */
+
   /* Start of Hydrosols */
 
   .artisan-lavender { position: relative; }
