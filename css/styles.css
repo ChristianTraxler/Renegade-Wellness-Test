@@ -479,9 +479,11 @@
 
 .hydrosol-overlay:hover > * { transform: translateY(0); }
 
-.hydro {
-  position: relative;
+.hydro { position: relative; }
+
+.others {
   right: 12px;
+  position: relative;
 }
 
 
