@@ -100,11 +100,14 @@
   .masks2 { margin-bottom: 150px; }
 
   .milk-overlay {
-    width: 332px;
-    height: 324px;
+    width: 330px;
+    height: 330px;
     margin: auto;
-    right: 21px;
+    right: 22px;
+    bottom: 0;
   }
+
+  .blueberry-milk, .matcha-milk { padding: 0 6px; }
 
 
 
@@ -338,6 +341,19 @@
 
   /* End of Carrier Oils */
 
+  /* Start of Plant-Based Masks */
+
+  .milk-overlay {
+    width: 304px;
+    height: 304px;
+  }
+
+  .vanilla-milk { padding: 0 2px; }
+  .avocado-milk { padding: 0 3px; }
+
+
+  /* End of Plant-Based Masks */
+
 
   /* Start of Footer */
   .copyright p {
@@ -395,10 +411,10 @@
   }
 
   .milk-overlay {
-    width: 312px;
-    height: 300px;
-    margin: auto;
-    right: 10px;
+    width: 289px;
+    height: 289px;
+    right: 22px;
+    bottom: 2px;
   }
 
 
