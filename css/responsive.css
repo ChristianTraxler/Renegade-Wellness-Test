@@ -141,6 +141,7 @@
 
   .blueberry-milk, .matcha-milk { padding: 0 6px; }
 
+  .vanilla-price, .matcha-price { top: 58px; }
 
 
   /* End of Milk Mask */
@@ -424,6 +425,10 @@
   .vanilla-milk { padding: 0 2px; }
   .avocado-milk { padding: 0 3px; }
 
+  .milk-price { top: 44px; }
+
+  .vanilla-price, .matcha-price { top: 50px; }
+
 
   /* End of Plant-Based Masks */
 
@@ -498,6 +503,7 @@
     bottom: 2px;
   }
 
+  .milk-price { top: 40px; }
 
 
   /* End of Milk Masks *?
