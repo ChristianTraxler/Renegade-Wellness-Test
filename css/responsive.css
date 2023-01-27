@@ -128,6 +128,13 @@
 
   /* End of Milk Mask */
 
+  /* Start of FAQ page */
+  .accordion, .panel { width: 92%; }
+
+
+
+  /* End of FAQ page */
+
 
   /* Start of Footer */
   .copyright p {
