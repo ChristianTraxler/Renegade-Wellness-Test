@@ -117,7 +117,7 @@
   .pineapple-juice, .pink-dream-juice, .anti-aging-juice { padding: 0 8px 0 8px; }
 
   .juice-price { top: 50px; }
-  .pineapple-price, .anti-aging-price, .strawberries-price { top: 58px; }
+  .pineapple-price, .anti-aging-price, .strawberries-price, .deep-detox-price { top: 58px; }
 
   /* End of Juice Masks */
 
@@ -408,7 +408,7 @@
     top: 22px;
   }
 
-  .pineapple-price, .strawberries-price { top: 50px; }
+  .pineapple-price, .strawberries-price, .deep-detox-price { top: 50px; }
 
 
 
