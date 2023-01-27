@@ -104,6 +104,23 @@
 
   /* End of Carrier Oils */
 
+  /* Start of Juice Masks */
+
+  .masks3 {
+    display: grid;
+    width: 70%;
+    margin: auto auto 20px;
+    left: 9px;
+    bottom: 50px;
+  }
+
+  .pineapple-juice, .pink-dream-juice, .anti-aging-juice { padding: 0 8px 0 8px; }
+
+  .juice-price { top: 50px; }
+  .pineapple-price, .anti-aging-price, .strawberries-price { top: 58px; }
+
+  /* End of Juice Masks */
+
   /* Start of Milk Mask */
   .masks1, .masks2 {
     display: grid;
@@ -383,6 +400,20 @@
 
   /* End of Carrier Oils */
 
+  /* Start of Juice Masks */
+  .pink-dream-juice { top: 26px; }
+
+  .juice-price {
+    position: relative;
+    top: 22px;
+  }
+
+  .pineapple-price, .strawberries-price { top: 50px; }
+
+
+
+  /* End of Juice Masks */
+
   /* Start of Plant-Based Masks */
 
   .milk-overlay {
@@ -428,6 +459,14 @@
   .carrier-overlay { left: 12px; }
 
   /* End of Carrier Oils */
+
+  /* Start of Juice Masks */
+  .pineapple-juice, .strawberries-juice, .deep-detox-juice { top: 30px; }
+  .pineapple-price, .strawberries-price, .deep-detox-price { top: 34px; }
+  .anti-aging-price { top: 47px; }
+
+
+  /* End of Juice Masks */
 
 
   /* Start of Milk Masks */
