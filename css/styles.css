@@ -1099,6 +1099,74 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 /* End of Facial Tools */
 
+/* Start of The Original Salt Company */
+
+/* Start of Salt Lamps */
+
+.salt-lamps {
+  display: block;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  left: 8px;
+}
+
+.salt-lamps-overlay {
+  display: flex;
+  position: absolute;
+  bottom: -6px;
+  /*left: 0;*/
+  width: 351px;
+  height: 320px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.salt-lamps-overlay-blur {
+  /*-webkit-filter: blur(5px);*/
+  backdrop-filter: blur(5px);
+}
+
+.salt-lamps-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.salt-lamps-overlay:hover { opacity: 1; }
+
+.salt-lamps-overlay:hover > * { transform: translateY(0); }
+
+.oils-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  top: 18px;
+}
+
+
+
+
+
+/* End of Salt Lamps */
+
+
+
+
+
+
+
+
+
+
+
+/* End of The Original Salt Company */
+
 /* Start of Testimonials */
 
 .testimonials { margin: var(--size-100) 0; }
