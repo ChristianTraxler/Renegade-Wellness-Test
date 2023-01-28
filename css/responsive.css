@@ -164,7 +164,9 @@
 
   /* Start of Hand Carved Salt Lamps */
 
-  .salt-lamps { width: 52%; }
+  .salt-lamps { width: 47%; }
+
+  .salt-lamps-overlay { left: 40px; }
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
@@ -468,6 +470,8 @@
   /* Start of Hand Carved Salt Lamps */
 
   .salt-lamps { width: 52%; }
+
+  .salt-lamps-overlay { left: 22px; }
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
@@ -552,6 +556,16 @@
   .jade-roller-price { top: 48px; }
 
   /* End of Facial Tools */
+
+  /* Start of The Original Salt Company Section */
+
+  /* Start of Hand Carved Salt Lamps */
+
+
+  .salt-lamps-overlay { left: 12px; }
+  /* End of Hand Carved Salt Lamps */
+
+  /* End of The Original Salt Company Section */
 
 
   /* Start of Footer */
