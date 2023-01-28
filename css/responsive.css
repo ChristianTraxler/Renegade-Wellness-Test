@@ -164,7 +164,15 @@
 
   /* Start of Hand Carved Salt Lamps */
 
+  .salt3 { margin-bottom: 200px; }
+
   .salt-lamps { width: 47%; }
+
+  .salt-lamps2 {
+    width: 32%;
+    top: -24px;
+    bottom: 34px;
+  }
 
   .salt-lamps-overlay { left: 40px; }
   /* End of Hand Carved Salt Lamps */
@@ -256,7 +264,7 @@
   .oils {
     display: grid;
     gap: 10em;
-    margin-bottom: 146px;
+    /*margin-bottom: 146px;*/
   }
 
   .oils3 { margin-bottom: 250px; }
@@ -469,7 +477,15 @@
 
   /* Start of Hand Carved Salt Lamps */
 
+  .salt3 { margin-bottom: 200px; }
+
   .salt-lamps { width: 52%; }
+
+  .salt-lamps2 {
+    width: 32%;
+    top: -42px;
+    bottom: 34px;
+  }
 
   .salt-lamps-overlay { left: 22px; }
   /* End of Hand Carved Salt Lamps */
