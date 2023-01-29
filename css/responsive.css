@@ -1,3 +1,7 @@
+@media screen and (max-width: 1920px) {
+
+}
+
 /* iPads and Tablets - portrait */
 
 @media screen and (max-width: 1024px) {
@@ -114,9 +118,9 @@
   .nav-link a { margin-right: 20px;
   }
 
-  .block-text {
-    left: 182px;
-  }
+  /*.block-text {*/
+  /*  left: 182px;*/
+  /*}*/
 
   footer .footer-col:nth-child(3) {
     grid-column: 1 / 3;

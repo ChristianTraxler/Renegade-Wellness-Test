@@ -320,6 +320,11 @@
 
 /* Start of Home page */
 
+/*.desktop {*/
+/*  max-width: 1200px;*/
+/*  margin: auto;*/
+/*}*/
+
 .why-me {
   padding: var(--size-100) 0;
   padding-bottom: 0;
@@ -334,10 +339,10 @@
   flex: 1;
 }
 
-.block-text {
-  position: relative;
-  left: 257px;
-}
+/*.block-text {*/
+/*  position: relative;*/
+/*  left: 257px;*/
+/*}*/
 
 .why-me-wrapper .block-text {
   /*padding-right: var(--size-100);*/
