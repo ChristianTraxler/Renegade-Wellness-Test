@@ -564,6 +564,15 @@
 
 @media screen and (max-width: 400px) {
 
+  /* Start of Home page */
+  .why-me { padding-top: 50px; }
+
+
+
+
+
+  /* End of Home page */
+
   /* Start of Essential Oils */
 
   /*.oils-overlay2{ left: 12px; }*/
