@@ -44,6 +44,8 @@
 
   /* Start of Home page */
 
+  .price-sheet { display: none; }
+
   .side-by-side1 {
     position: relative;
     left: 40px;
@@ -53,6 +55,8 @@
     position: relative;
     right: 40px;
   }
+
+  .btn-primary2 { font-size: 18px; }
 
 
   /* End of Home page */
@@ -331,6 +335,8 @@
 
   .hero-wrapper { text-align: center; }
 
+  .why-me { padding-bottom: 0; }
+
   .why-me-wrapper {
     flex-wrap: wrap;
     text-align: center;
@@ -340,10 +346,10 @@
 
   .why-me-wrapper > div { flex: initial; }
 
-  .price-sheet {
-    position: relative;
-    top: 60px;
-  }
+  /*.price-sheet {*/
+  /*  position: relative;*/
+  /*  top: 60px;*/
+  /*}*/
 
   .bg-price-section { padding-top: 0 }
 
