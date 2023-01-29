@@ -13,7 +13,12 @@
   .container4 { margin-left: auto; }
 
   .hydros { margin-left: 0; }
+  .hydros2 { margin-left: 12px; }
   .carriers { margin-right: 0; }
+  .carriers2 {
+    position: relative;
+    left: 200px;
+  }
 
 
 
@@ -21,6 +26,61 @@
     margin: auto;
     margin-right: 0;
   }
+
+  /* End of Home page */
+
+  /* Start of Aromatics Products */
+
+  /* Start of Essential Oils */
+
+
+
+
+  /* End of Essential Oils */
+
+
+
+
+  /* End of Aromatics Products */
+
+
+  /* Start of ESW Beauty Products */
+
+
+
+  /* Start of Juice Masks */
+  .artisan-lavender { width: 31%; }
+
+
+
+  /* End of Juice Masks */
+
+  /* Start of Milk Masks */
+  .milk-overlay {
+    width: 318px;
+    height: 318px;
+  }
+
+
+
+  /* End of Milk Masks */
+
+
+
+  /* End of ESW Beauty Products */
+
+
+  /* Start of The Original Salt Company */
+
+  .salt-lamps-overlay {
+    width: 110%;
+    height: 100%;
+  }
+
+
+
+
+  /* End of The Original Salt Company */
   
 }
 
@@ -69,9 +129,29 @@
 
   /* Start of Aromatics Products */
 
-  .carriers { margin-right: 0; }
+  .carriers {
+    position: initial;
+    margin-right: 0;
+  }
+  .carriers2 { margin-left: 78px; }
   .hydros { margin-left: 0px; }
+  .hydros2 { margin-left: 5px; }
 
+
+  /* Start of Essential Oils */
+
+
+
+  .artisan-lavender { width: 42%; }
+
+  .milk-overlay {
+    width: 324px;
+    height: 324px;
+  }
+
+
+
+  /* End of Essential Oils */
 
   /* End of Aromatics Products */
 }
@@ -623,6 +703,8 @@
   .pineapple-price, .strawberries-price, .deep-detox-price { top: 34px; }
   .anti-aging-price { top: 47px; }
 
+  .pink-dream-price { top: 22px; }
+
 
   /* End of Juice Masks */
 
@@ -654,8 +736,6 @@
     right: 22px;
     bottom: 2px;
   }
-
-  .milk-price { top: 40px; }
 
 
   /* End of Milk Masks */
