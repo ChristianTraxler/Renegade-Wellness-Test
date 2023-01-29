@@ -82,6 +82,13 @@
 
   /* Start of Home page */
 
+  .bg-header { padding: 0; }
+
+  .rwc-logo {
+    bottom: 30px;
+    height: 138px;
+  }
+
   .block-text { left: 0; }
 
   .container2 { margin-left: auto; }
