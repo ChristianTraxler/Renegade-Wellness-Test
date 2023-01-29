@@ -1,5 +1,26 @@
 /* iPads and Tablets - portrait */
 
+@media screen and (max-width: 1024px) {
+/* Start of Home page */
+  .service-grid {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 0;
+    right: 7px;
+  }
+
+  .container2 { margin-left: 0; }
+  .container3 { margin-right: 0; }
+  .container4 { margin-left: auto; }
+
+
+
+  .card2 {
+    margin: auto;
+    margin-right: 0;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   /*[aria-controls="navbarDropdown"] {*/
   /*  display: block;*/
@@ -30,6 +51,10 @@
   .nav-link a { margin-right: 20px;
   }
 
+  .block-text {
+    left: 182px;
+  }
+
   footer .footer-col:nth-child(3) {
     grid-column: 1 / 3;
   }
@@ -38,11 +63,26 @@
     position: relative;
     left: 48px;
   }
+
+  /* Start of Aromatics Products */
+
+  .carriers { margin-right: 0; }
+  .hydros { margin-left: 0px; }
+
+
+  /* End of Aromatics Products */
 }
+
+/* Mobile Screens */
 
 @media screen and (max-width: 599px) {
 
   /* Start of Home page */
+
+  .block-text { left: 0; }
+
+  .container2 { margin-left: auto; }
+  .container3 { margin-right: auto; }
 
   .price-sheet { display: none; }
 
@@ -60,6 +100,12 @@
 
 
   /* End of Home page */
+
+  /* Start of Aromatics Products */
+
+  .carriers { margin-right: auto; }
+
+  /* End of Aromatics Products */
 
   /* Start of Hydrosols */
 
@@ -84,8 +130,6 @@
   }
 
   .hydrosol-overlay3 { left: 40px; }
-
-  /*.hydrosol-overlay7 { left: 2.40625rem; }*/
 
   .hydrosol-overlay4 {
     top: -46px;

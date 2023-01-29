@@ -322,6 +322,7 @@
 
 .why-me {
   padding: var(--size-150) 0;
+  padding-bottom: 0;
 }
 
 .why-me-wrapper {
@@ -333,8 +334,13 @@
   flex: 1;
 }
 
+.block-text {
+  position: relative;
+  left: 257px;
+}
+
 .why-me-wrapper .block-text {
-  padding-right: var(--size-100);
+  /*padding-right: var(--size-100);*/
   max-width: 35rem;
 }
 
