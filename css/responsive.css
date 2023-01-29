@@ -3,7 +3,7 @@
 @media screen and (max-width: 1024px) {
 /* Start of Home page */
   .service-grid {
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
     gap: 0;
     right: 7px;
   }
@@ -11,6 +11,9 @@
   .container2 { margin-left: 0; }
   .container3 { margin-right: 0; }
   .container4 { margin-left: auto; }
+
+  .hydros { margin-left: 0; }
+  .carriers { margin-right: 0; }
 
 
 

@@ -1186,18 +1186,17 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 .salt-lamps-title { color: #F7CDC7; }
 
 /* End of Salt Lamps */
-
-
-
-
-
-
-
-
-
-
-
 /* End of The Original Salt Company */
+
+/* Start of Diffusers section */
+
+.diffuse {
+  position: relative;
+  left: 3px;
+}
+
+
+/* End of Diffusers section */
 
 /* Start of Testimonials */
 
