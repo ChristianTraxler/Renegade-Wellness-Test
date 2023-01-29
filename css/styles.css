@@ -1154,9 +1154,20 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   top: 18px;
 }
 
+.cross-lamp {
+  rotate: -2deg;
+  top: 28px;
+}
+
 .soccer-ball {
   top: 52px;
   left: 14px;
+}
+
+.pink-natural {
+  position: relative;
+  width: 45%;
+  top: 20px;
 }
 
 

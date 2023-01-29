@@ -176,7 +176,17 @@
 
   .salt-lamps-overlay { left: 40px; }
 
+  .cross-lamp {
+    top: -28px;
+    bottom: 28px;
+  }
+
   .soccer-ball { top: -38px; }
+
+  .pink-natural {
+    width: 35%;
+    top: -22px;
+  }
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
@@ -314,31 +324,31 @@
 
   /* End of Carrier Oils */
 
-  /*.hero-wrapper { text-align: center; }*/
+  .hero-wrapper { text-align: center; }
 
-  /*.why-me-wrapper {*/
-  /*  flex-wrap: wrap;*/
-  /*  text-align: center;*/
-  /*}*/
+  .why-me-wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+  }
 
-  /*.why-me-wrapper .block-text { padding-right: 0; }*/
+  .why-me-wrapper .block-text { padding-right: 0; }
 
-  /*.why-me-wrapper > div { flex: initial; }*/
+  .why-me-wrapper > div { flex: initial; }
 
-  /*.price-sheet {*/
-  /*  position: relative;*/
-  /*  top: 60px;*/
-  /*}*/
+  .price-sheet {
+    position: relative;
+    top: 60px;
+  }
 
-  /*.bg-price-section { padding-top: 0 }*/
+  .bg-price-section { padding-top: 0 }
 
-  /*.price-card .price-card1 h3 { font-weight: 600; }*/
-  /*.price-card h3 { font-size: var(--size-20)}*/
+  .price-card .price-card1 h3 { font-weight: 600; }
+  .price-card h3 { font-size: var(--size-20)}
 
-  /*.price-card1 {*/
-  /*  display: inherit;*/
-  /*  font-size: var(--size-18);*/
-  /*}*/
+  .price-card1 {
+    display: inherit;
+    font-size: var(--size-18);
+  }
 
   /*.side-by-side1 {*/
   /*  position: relative;*/
@@ -349,9 +359,9 @@
   /*  right: 60px;*/
   /*}*/
 
-  /*.price-card2 { display: none; }*/
+  .price-card2 { display: none; }
 
-  /*.salt-therapy { height: auto; }*/
+  .salt-therapy { height: auto; }
 
   /*!* Start of Contact Page *!*/
 
@@ -495,6 +505,11 @@
   .soccer-ball {
     top: -40px;
     bottom: 38px;
+  }
+
+  .pink-natural {
+    width: 35%;
+    top: -30px;
   }
   /* End of Hand Carved Salt Lamps */
 
