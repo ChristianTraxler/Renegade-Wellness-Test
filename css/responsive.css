@@ -1,5 +1,28 @@
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1200px) {
 
+
+
+
+
+
+
+
+
+
+
+  /* Start of Hydrosols page */
+
+  /*.image-hydrosol {*/
+  /*  right: 20px;*/
+  /*  top: 20px;*/
+  /*}*/
+
+  .hydrosol2 { width: 24%; }
+
+
+
+
+  /* End of Hydrosols page */
 }
 
 /* iPads and Tablets - portrait */
@@ -202,6 +225,7 @@
   /* End of Aromatics Products */
 
   /* Start of Hydrosols */
+  .sprays { top: 653px; }
 
   .artisan-lavender { position: relative; }
   .artisan-lavender, .peppermint-hydrosol, .ginger, .rose, .lemon-balm, .ginger, .frankincense-hydrosol {
@@ -214,12 +238,19 @@
     margin-bottom: 146px;
   }
 
-  .image-hydrosol { right: 22px; }
+  .image-hydrosol {
+    top: 42px;
+    right: 17px;
+    left: initial;
+  }
+
+
 
   .hydrosol-overlay { right: 10px; }
+  .frank-hydro { top: 653px; }
 
   .hydrosol-overlay2 {
-    top: 270px;
+    top: 308px;
     left: 2.40625rem;
   }
 
@@ -229,6 +260,9 @@
     top: -46px;
     left: 40px;
   }
+
+  .lav-hydro-overlay { left: initial; }
+  .lemon-hydro-overlay { top: 652px; }
 
   .mango { width: 48%; }
 
@@ -271,14 +305,15 @@
     left: 9px;
   }
 
-  .masks2 { margin-bottom: 150px; }
+  .masks2 { margin-bottom: 244px; }
 
   .milk-overlay {
     width: 330.7px;
     height: 330.8px;
     margin: auto;
-    right: 22px;
+    top: 83px;
     bottom: 0;
+    left: -18px;
   }
 
   .blueberry-milk, .matcha-milk { padding: 0 6px; }
@@ -316,14 +351,20 @@
     bottom: 34px;
   }
 
-  .salt-lamps-overlay { left: 40px; }
+  .salt-lamps-overlay {
+    width: 94%;
+    height: 126%;
+    left: 28px;
+  }
 
   .cross-lamp {
     top: -28px;
     bottom: 28px;
   }
 
-  .soccer-ball { top: -38px; }
+  .angel-lamp { bottom: 38px; }
+  .flower-lamp, .dolphin-lamp { bottom: 32px; }
+  .soccer-ball { top: -22px; }
 
   .pink-natural {
     width: 35%;
@@ -332,8 +373,10 @@
 
   .nightlight {
     width: 45%;
-    top: 50px;
+    top: 40px;
   }
+
+  .nightlight-overlay { height: 100%; }
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
@@ -596,6 +639,9 @@
 
   .hydrosol-overlay3 { left: 22px; }
 
+  .lav-hydro-overlay { left: initial; }
+
+
   /* End of Hydrosol */
 
   /* Start of Carrier Oils */
@@ -653,17 +699,20 @@
 
   .salt-lamps2 {
     width: 32%;
-    top: -42px;
+    /*top: -42px;*/
     bottom: 34px;
   }
 
-  .salt-lamps-overlay { left: 22px; }
-
-
-  .soccer-ball {
-    top: -40px;
-    bottom: 38px;
+  .salt-lamps-overlay {
+    width: 94%;
+    height: 126%;
+    left: 22px;
   }
+
+  .angel-lamp { bottom: 38px; }
+  .flower-lamp, .dolphin-lamp { bottom: 32px; }
+
+  .soccer-ball { top: -20px; }
 
   .pink-natural {
     width: 35%;
@@ -674,6 +723,8 @@
     width: 45%;
     top: 30px;
   }
+
+  .nightlight-overlay { height: 104%; }
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
