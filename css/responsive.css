@@ -4,7 +4,14 @@
 
 
 
+/* Start of Products page */
 
+  /*.container2 { margin-left: 0; }*/
+  .container3 { margin-right: 0; }
+
+
+
+  /* End of Products page */
 
 
 
@@ -23,6 +30,15 @@
 
 
   /* End of Hydrosols page */
+
+
+  /* Start of Juice Masks */
+
+  .pink-dream-juice { top: 26px; }
+
+
+
+  /* End of Juice Masks */
 }
 
 /* iPads and Tablets - portrait */
@@ -286,8 +302,9 @@
     display: grid;
     width: 70%;
     margin: auto auto 20px;
+    top: initial;
     left: 9px;
-    bottom: 50px;
+    bottom: 144px;
   }
 
   .pineapple-juice, .pink-dream-juice, .anti-aging-juice { padding: 0 8px 0 8px; }
@@ -380,6 +397,21 @@
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
+
+  /* Start of Diffusers section */
+
+  .diffusers2, .diffusers3 {
+    display: grid;
+    width: 70%;
+    margin: auto auto 20px;
+    left: 9px;
+  }
+
+  .diffusers3 { margin-bottom: 244px; }
+
+
+
+  /* End of Diffusers section */
 
   /* Start of Contact page */
   .pricing-section { padding: 100px 0 200px 0; }
@@ -652,6 +684,13 @@
 
   /* Start of Juice Masks */
   .pink-dream-juice { top: 26px; }
+  .pink-dream-price {
+    font-size: var(--size-20);
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 0;
+    position: relative;
+    top: 22px; }
 
   .juice-price {
     position: relative;
@@ -728,6 +767,21 @@
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
+
+  /* Start of Diffusers section */
+
+  .diffusers2, .diffusers3 {
+    display: grid;
+    width: 70%;
+    margin: auto auto 20px;
+    left: 9px;
+  }
+
+  .diffusers3 { margin-bottom: 244px; }
+
+
+
+  /* End of Diffusers section */
 
 
   /* Start of Footer */

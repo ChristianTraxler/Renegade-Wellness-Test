@@ -215,8 +215,8 @@
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--size-20);
+  grid-template-columns: repeat(auto-fit, minmax(398px, 1fr));
+  /*gap: var(--size-20);*/
   margin-top: var(--size-100);
   position: relative;
   top: 56px;
@@ -330,10 +330,10 @@
   padding-bottom: 0;
 }
 
-.why-me-wrapper {
-  display: flex;
-  align-items: center;
-}
+/*.why-me-wrapper {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
 
 .why-me-wrapper div {
   flex: 1;
@@ -347,6 +347,7 @@
 .why-me-wrapper .block-text {
   /*padding-right: var(--size-100);*/
   max-width: 35rem;
+  margin: auto;
 }
 
 .block-text span {
@@ -723,7 +724,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 /* End of FAQ Page */
 
-/* Start of items1 page */
+/* Start of Products page */
 
 .information {
   text-align: center;
@@ -734,7 +735,23 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   line-height: 1.5em;
 }
 
-/* End of items1 page */
+.container4 { margin-left: 0; }
+
+/* End of Products page */
+
+/* Start of Aromatics Page */
+
+.service-grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  gap: var(--size-20);
+  margin-top: var(--size-100);
+  position: relative;
+  top: 56px;
+}
+
+
+/* End of Aromatics Page */
 
 
 /* Start of Essential Oils */
@@ -1013,8 +1030,20 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   display: flex;
   justify-content: center;
   position: relative;
+  top: -114px;
   gap: 20px;
   margin-bottom: 200px;
+}
+
+.pink-dream-juice { top: 26px; }
+
+.pink-dream-price {
+  font-size: var(--size-20);
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 0;
+  position: relative;
+  top: 20px;
 }
 
 .deep-detox { padding: 0 10px 0 10px; }
@@ -1218,6 +1247,24 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 .diffuse {
   position: relative;
   left: 3px;
+}
+
+.diffusers2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.diffusers3 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  gap: 20px;
+  margin-bottom: 244px;
 }
 
 
