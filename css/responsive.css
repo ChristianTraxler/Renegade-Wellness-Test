@@ -251,6 +251,14 @@
 
   /* End of Aromatics Products */
 
+  /* Start of Essential Oils page */
+
+  .breathe { top: 16px; }
+
+
+
+  /* End of Essential Oils page */
+
   /* Start of Hydrosols */
   .sprays { top: 653px; }
 
@@ -681,9 +689,9 @@
 
   /* Start of Essential Oils */
 
-  /*.oils-overlay2{ left: 12px; }*/
+
   .oils-overlay4 { left: 20px; }
-  /*.oils-overlay3 { left: 0; }*/
+
 
 
   /* End of Essential Oils */
