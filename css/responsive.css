@@ -262,6 +262,11 @@
   /* Start of Hydrosols */
   .sprays { top: 653px; }
 
+  .tools {
+    top: 63px;
+    right: 7px;
+  }
+
   .artisan-lavender { position: relative; }
   .artisan-lavender, .peppermint-hydrosol, .ginger, .rose, .lemon-balm, .ginger, .frankincense-hydrosol {
     width: 110%;
@@ -335,6 +340,11 @@
 
   /* Start of Juice Masks */
 
+  .juices {
+    top: 42px;
+    right: 6px;
+  }
+
   .masks3 {
     display: grid;
     width: 70%;
@@ -356,6 +366,7 @@
 
   .milks {
     position: relative;
+    top: 41px;
     right: 7px;
   }
 
@@ -396,7 +407,13 @@
 
   /* Start of Facial Tools */
 
-  .sprays { top: 20px; }
+  /*.sprays { top: 20px; }*/
+
+  .tools {
+    position: relative;
+    top: 19px;
+    bottom: 1px;
+  }
 
   .facial-tools {
     display: grid;
@@ -774,6 +791,9 @@
   /* End of Carrier Oils */
 
   /* Start of Juice Masks */
+
+  .juices { top: 0; }
+
   .juice-overlay {
     width: 303px;
     height: 303px;
@@ -806,6 +826,7 @@
 
   .milks {
     position: relative;
+    top: initial;
     right: 6px;
   }
 
@@ -828,9 +849,13 @@
   /* Start of Facial Tools */
 
   .sprays {
-    top: initial;
+    /*top: initial;*/
     right: 6px;
     bottom: 23px;
+  }
+
+  .tools {
+    top: initial;
   }
 
   .facial-overlay {
@@ -944,6 +969,8 @@
 
   /* Start of Juice Masks */
 
+  .juices { bottom: 48px; }
+
   .juice-overlay {
     width: 289px;
     height: 289px;
@@ -964,6 +991,7 @@
   .milks {
     position: relative;
     right: 5px;
+    bottom: 47px;
   }
 
   .masks1, .masks2 {
@@ -1002,8 +1030,7 @@
 
   .sprays {
     top: initial;
-    right: 6px;
-    bottom: 23px;
+    right: 5px;
   }
 
   .facial-overlay {
