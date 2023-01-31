@@ -500,14 +500,32 @@
 
   /* Start of Diffusers section */
 
-  .diffusers2, .diffusers3 {
+  .diffuser { top: 200px; }
+
+  .diffusers1, .diffusers2, .diffusers3 {
     display: grid;
     width: 70%;
     margin: auto auto 20px;
     left: 9px;
   }
 
-  .diffusers3 { margin-bottom: 244px; }
+  .diffusers1, .diffusers2, .diffusers3 {
+    position: relative;
+    left: 2px;
+  }
+
+  .diffusers2 { top: 100px; }
+
+  .diffusers3 {
+    top: 150px;
+    margin-bottom: 550px;
+  }
+
+  .diffuser-card { top: 50px; }
+
+  .leah-card { bottom: 24px; }
+  .blizzard-card { top: 100px; }
+  .breezy-card { top: 120px; }
 
   .diffuser-title { top: 10px; }
 
@@ -949,7 +967,7 @@
     left: 9px;
   }
 
-  .diffusers3 { margin-bottom: 244px; }
+  .diffusers3 { margin-bottom: 600px; }
 
 
   .diffuser-title { top: 10px; }
@@ -1091,6 +1109,25 @@
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
+
+  /* Start of Diffusers page */
+
+  .diffuser { top: 200px; }
+
+  .diffusers1, .diffusers2 { left: 8px; }
+
+
+  .moon-glow { width: 80%; }
+  .marble { width: 42%; }
+  .leah { width: 56%; }
+  .kate { width: 42%; }
+  .meadow { width: 56%; }
+  .blizzard { width: 65%; }
+  .breezy { width: 65%; }
+
+
+
+  /* End of Diffuser page */
 
 
   /* Start of Footer */
