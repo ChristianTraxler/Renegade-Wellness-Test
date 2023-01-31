@@ -238,6 +238,15 @@
 
   /* End of Home page */
 
+  /* Start of FAQ page */
+
+  .footnote {
+    text-align: center;
+    top: 170px;
+  }
+
+  /* End of FAQ page */
+
   /* Start of Products page */
 
   .service-grid { right: 0; }
