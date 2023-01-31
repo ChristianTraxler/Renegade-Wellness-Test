@@ -394,11 +394,28 @@
 
   /* Start of Facial Tools */
 
+  .sprays { top: 20px; }
+
   .facial-tools {
     display: grid;
     width: 70%;
     margin: 50px auto 50px;
     left: 9px;
+  }
+
+  .facial-overlay {
+    width: 329px;
+    height: 329px;
+    top: initial;
+    bottom: 20px;
+    left: -17px;
+  }
+
+  .facial-overlay2 {
+    width: 329px;
+    height: 329px;
+    top: 0;
+    right: 17px;
   }
 
   .rose-quartz-price, .jade-roller-price { top: 56px; }
@@ -802,7 +819,25 @@
 
   /* Start of Facial Tools */
 
-  .rose-quartz-price, .jade-roller-price { top: 50px; }
+  .sprays {
+    top: initial;
+    right: 6px;
+    bottom: 23px;
+  }
+
+  .facial-overlay {
+    width: 303px;
+    height: 303px;
+    top: 22px;
+  }
+
+  .facial-overlay2 {
+    width: 303px;
+    height: 303px;
+    top: 42px;
+  }
+
+  .rose-quartz-price, .jade-roller-price { top: 39px; }
 
   /* End of Facial Tools */
 
@@ -957,7 +992,24 @@
 
   /* Start of Facial Tools */
 
-  .jade-roller-price { top: 48px; }
+  .sprays {
+    top: initial;
+    right: 6px;
+    bottom: 23px;
+  }
+
+  .facial-overlay {
+    width: 289px;
+    height: 289px;
+  }
+
+  .facial-overlay2 {
+    width: 289px;
+    height: 289px;
+  }
+
+  .rose-quartz-price { top: 31px; }
+  .jade-roller-price { top: 34px; }
 
   /* End of Facial Tools */
 
