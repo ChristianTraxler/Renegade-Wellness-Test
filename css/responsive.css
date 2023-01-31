@@ -347,7 +347,8 @@
   .pineapple-juice, .pink-dream-juice, .anti-aging-juice { padding: 0 8px 0 8px; }
 
   .juice-price { top: 50px; }
-  .pineapple-price, .anti-aging-price, .strawberries-price, .deep-detox-price { top: 58px; }
+  .pineapple-price, .anti-aging-price, .strawberries-price, .deep-detox-price { top: 46px; }
+  .pink-dream-price { top: 40px; }
 
   /* End of Juice Masks */
 
@@ -368,10 +369,10 @@
   .masks2 { margin-bottom: 244px; }
 
   .milk-overlay {
-    width: 332px;
-    height: 333px;
+    width: 331px;
+    height: 329px;
     margin: auto;
-    top: 83px;
+    top: 0;
     bottom: 0;
     left: -18px;
   }
@@ -388,6 +389,7 @@
   .milk-price { top: 44px; }
 
   .blueberry-milk, .matcha-milk { padding: 0 28px; }
+  .avocado-milk-price { top: 40px; }
 
 
   /* End of Milk Mask */
@@ -418,7 +420,7 @@
     right: 17px;
   }
 
-  .rose-quartz-price, .jade-roller-price { top: 56px; }
+  .rose-quartz-price, .jade-roller-price { top: 45px; }
 
 
   /* End of Facial Tools */
@@ -741,6 +743,11 @@
   /* End of Essential Oils */
 
   /* Start of Hydrosol */
+  .sprays1 {
+    top: initial;
+    right: 0;
+    bottom: 23px;
+  }
 
   .hydrosol-sprays { width: 20%; }
 
@@ -803,8 +810,9 @@
   }
 
   .milk-overlay {
-    width: 307px;
-    height: 307px;
+    width: 305px;
+    height: 305px;
+    top: 83px;
   }
 
   .milk-price { top: 32px; }
