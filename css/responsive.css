@@ -376,6 +376,15 @@
     left: -18px;
   }
 
+  .juice-overlay {
+    width: 329px;
+    height: 329px;
+    top: initial;
+    right: 17px;
+    bottom: 0;
+    left: initial;
+  }
+
   .milk-price { top: 44px; }
 
   .blueberry-milk, .matcha-milk { padding: 0 28px; }
@@ -741,6 +750,12 @@
   /* End of Carrier Oils */
 
   /* Start of Juice Masks */
+  .juice-overlay {
+    width: 303px;
+    height: 303px;
+    top: 42px;
+  }
+
   .pink-dream-juice { top: 26px; }
   .pink-dream-price {
     font-size: var(--size-20);
@@ -755,7 +770,9 @@
     top: 22px;
   }
 
-  .pineapple-price, .strawberries-price, .deep-detox-price { top: 50px; }
+  .anti-aging-price { top: 42px; }
+
+  .pineapple-price, .strawberries-price, .deep-detox-price { top: 38px; }
 
 
 
@@ -883,9 +900,15 @@
   /* End of Carrier Oils */
 
   /* Start of Juice Masks */
+
+  .juice-overlay {
+    width: 289px;
+    height: 289px;
+  }
+
   .pineapple-juice, .strawberries-juice, .deep-detox-juice { top: 30px; }
   .pineapple-price, .strawberries-price, .deep-detox-price { top: 34px; }
-  .anti-aging-price { top: 47px; }
+  .anti-aging-price { top: 34px; }
 
   .pink-dream-price { top: 22px; }
 
@@ -926,6 +949,8 @@
     right: 22px;
     bottom: 2px;
   }
+
+  .masks3 { bottom: 50px; }
 
 
   /* End of Milk Masks */

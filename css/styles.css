@@ -950,26 +950,6 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   left: initial;
 }
 
-/*.lav-hydro-overlay {*/
-/*  top: -60px;*/
-/*  left: 120px;*/
-/*}*/
-
-/*.rose-hydro-overlay {*/
-/*  top: -60px;*/
-/*  right: 452px;*/
-/*}*/
-
-/*.lemon-hydro-overlay {*/
-/*  top: -60px;*/
-/*  right: 164px;*/
-/*}*/
-
-/*.pepper-hydro { left: 120px; }*/
-/*.ginger-hydro { right: 452px; }*/
-/*.frank-hydro { right: 164px; }*/
-
-
 .rose-otto { color: #E299AE; }
 .ging { color: #D7894A; }
 .lemon-b { color: #D9A0AE; }
@@ -1030,6 +1010,43 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   margin-bottom: 200px;
 }
 
+.juice-overlay {
+  display: flex;
+  position: absolute;
+  top: 42px;
+  left: 323px;
+  width: 274px;
+  height: 274px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.juice-overlay-blur { backdrop-filter: blur(5px); }
+
+.juice-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.juice-overlay:hover { opacity: 1; }
+
+.juice-overlay:hover > * { transform: translateY(0); }
+
+.raw-price {
+  font-size: var(--size-20);
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 0;
+  position: relative;
+  top: 20px;
+}
+
 .pink-dream-juice { top: 26px; }
 
 .pink-dream-price {
@@ -1082,9 +1099,9 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   display: flex;
   position: absolute;
   top: 42px;
-  left: 314px;
+  left: 323px;
   width: 274px;
-  height: 273px;
+  height: 274px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   flex-direction: column;
@@ -1095,8 +1112,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   border-radius: 10px;
 }
 
-.milk-overlay2 { left: 608px; }
-.milk-overlay3 { left: 481px; }
+.milk-overlay2 { left: 617px; }
+.milk-overlay3 { left: 470px; }
 
 .milk-overlay-blur { backdrop-filter: blur(5px); }
 
@@ -1126,6 +1143,9 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   position: relative;
   top: 20px;
 }
+
+.anti-aging-price { top: 30px; }
+.strawberries-price, .deep-detox-price { top: 26px; }
 
 .vanilla-milk { color: #B4C5D5; }
 .blueberry-milk { color: #8F9FB4; }
