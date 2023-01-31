@@ -500,7 +500,7 @@
 
   /* Start of Diffusers section */
 
-  .diffuser { top: 200px; }
+  .diffuser { top: 70px; }
 
   .diffusers1, .diffusers2, .diffusers3 {
     display: grid;
@@ -520,7 +520,7 @@
 
   .diffusers3 {
     top: 150px;
-    margin-bottom: 550px;
+    margin-bottom: 420px;
   }
 
   .diffuser-card { top: 50px; }
@@ -962,6 +962,8 @@
 
   /* Start of Diffusers section */
 
+  .diffuser { top: 30px; }
+
   .diffusers2, .diffusers3 {
     display: grid;
     width: 70%;
@@ -969,7 +971,7 @@
     left: 9px;
   }
 
-  .diffusers3 { margin-bottom: 600px; }
+  .diffusers3 { margin-bottom: 420px; }
 
 
   .diffuser-title { top: 10px; }
@@ -1114,7 +1116,7 @@
 
   /* Start of Diffusers page */
 
-  .diffuser { top: 200px; }
+  .diffuser { top: 30px; }
 
   .diffusers1, .diffusers2 { left: 8px; }
 
