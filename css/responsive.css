@@ -837,6 +837,7 @@
   }
 
   .milk-price { top: 32px; }
+  .vanilla-price { top: 38px; }
 
   .vanilla-milk { padding: 0 2px; }
   .avocado-milk { padding: 0 3px; }
@@ -1022,6 +1023,8 @@
   }
 
   .masks3 { bottom: 50px; }
+
+  .blueberry-price, .vanilla-price, .matcha-price, .avocado-milk-price { top: 28px; }
 
 
   /* End of Milk Masks */
