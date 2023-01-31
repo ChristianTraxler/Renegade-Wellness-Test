@@ -273,13 +273,31 @@
     margin-bottom: 146px;
   }
 
+  .hydrosol-row2 {
+    position: relative;
+    top: initial;
+    bottom: 70px;
+    margin-bottom: 0;
+  }
+
   .image-hydrosol {
-    top: 42px;
+    top: initial;
     right: 17px;
     left: initial;
   }
 
+  .pepp {
+    width: 26%;
+    right: 15px;
+    bottom: 10px;
+  }
 
+  .ginger-hydro { bottom: 62px; }
+
+  .frankincense-hydro {
+    width: 25%;
+    bottom: 115px;
+  }
 
   .hydrosol-overlay { right: 10px; }
   .frank-hydro { top: 653px; }
@@ -698,8 +716,13 @@
 
   /* Start of Hydrosol */
 
-  .hydrosol-sprays {
-    width: 20%;
+  .hydrosol-sprays { width: 20%; }
+
+  .image-hydrosol { top: 42px; }
+
+  .hydrosol-row2 {
+    top: 80px;
+    margin-bottom: 200px;
   }
 
   .hydrosol-overlay2 { left: 22px; }

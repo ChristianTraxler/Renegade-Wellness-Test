@@ -875,7 +875,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   justify-content: center;
   position: relative;
   top: 80px;
-  margin-bottom: 200px;
+  margin-bottom: 290px;
 }
 
 .hydrosol-sprays {
@@ -887,7 +887,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 .image-hydrosol {
   top: 42px;
-  left: 28px;
+  left: 37px;
 }
 
 .image-hydrosol2 {
@@ -895,7 +895,11 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   left: initial;
 }
 
+.hydrosols { width: 22%; }
+.hydrosols2 { width: 25%; }
+
 .hydrosol > * { line-height: 1.5em; }
+.pepp { left: 54px; }
 
 .carrier {
   display: flex;
@@ -936,6 +940,14 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 .hydro {
   position: relative;
   right: 12px;
+}
+
+.rose-hydro { bottom: 48px; }
+.lemon-hydro { bottom: 100px; }
+.hydro-pepp-overlay { left: 156px; }
+.frankincense-hydro {
+  right: -21px;
+  left: initial;
 }
 
 /*.lav-hydro-overlay {*/
