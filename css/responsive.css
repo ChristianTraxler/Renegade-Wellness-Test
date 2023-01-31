@@ -212,6 +212,8 @@
     height: 138px;
   }
 
+  .why-me { padding-bottom: 80px; }
+
   .block-text { left: 0; }
 
   .container2 { margin-left: auto; }
@@ -573,7 +575,7 @@
 
   .hero-wrapper { text-align: center; }
 
-  .why-me { padding-bottom: 0; }
+  /*.why-me { padding-bottom: 0; }*/
 
   .why-me-wrapper {
     flex-wrap: wrap;

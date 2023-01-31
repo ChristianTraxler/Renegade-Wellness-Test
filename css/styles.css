@@ -23,26 +23,6 @@
   color: var(--font-color-dark);
 }
 
-/*.navbar.rwc-logo1.sticky {*/
-/*  display: none;*/
-/*}*/
-
-/*.navbar.rwc-logo2.sticky {*/
-/*  display: inherit;*/
-/*}*/
-
-/*.rwc-logo1 {*/
-/*  display: inherit;*/
-/*}*/
-
-/*.navbar.rwc-logo2.sticky {*/
-/*  display: inherit;*/
-/*}*/
-
-/*.rwc-logo2 {*/
-/*  display: none;*/
-/*}*/
-
 .navbar-toggler {
   position: absolute;
   right: var(--size-20);
@@ -182,7 +162,7 @@
 
 /* End of Navbar */
 
-/* Start of Frosted Cards */
+/* Start of Home page */
 .companies {
   display: block;
   position: relative;
@@ -314,12 +294,6 @@
   color: black;
 }
 
-/* End of Frosted Cards */
-
-
-
-/* Start of Home page */
-
 section {
   display: flex;
   justify-content: center;
@@ -334,7 +308,7 @@ section {
 
 .why-me {
   padding: var(--size-100) 0;
-  padding-bottom: 0;
+  padding-bottom: 80px;
 }
 
 /*.why-me-wrapper {*/
