@@ -51,7 +51,7 @@
     right: 7px;
   }
 
-  .container2 { margin-left: 0; }
+  /*.container2 { margin-left: 0; }*/
   .container3 { margin-right: 0; }
   .container4 { margin-left: auto; }
 
@@ -74,6 +74,9 @@
 
   /* Start of Aromatics Products */
 
+
+
+
   /* Start of Essential Oils */
 
 
@@ -81,13 +84,50 @@
 
   /* End of Essential Oils */
 
+  /* Start of Hydrosols page */
 
+  .sprays1 {
+    position: relative;
+    right: 55px;
+  }
+
+  .hydrosol2 { left: 26px; }
+
+  .lavender-hydro { width: 32%; }
+  .rose-hydro { width: 32%; }
+  .lemon-hydro { width: 32%; }
+  .pepp { width: 32%; }
+  .ginger-hydro { width: 32%; }
+  .frankincense-hydro { width: 32%; }
+
+  .pepp { left: 37px; }
+  .frankincense-hydro { left: 64px; }
+  .ginger-hydro, .frank-hydro { left: 70px; }
+
+  .lav-hydro-overlay { left: 112px; }
+  .rose-hydro-overlay { right: 237px; }
+  .lemon-hydro-overlay { right: 3px; }
+  .hydro-pepp-overlay { left: 112px; }
+  .ginger-hydro-overlay { right: 237px; }
+  .frank-hydro-overlay { left: 600px; }
+
+
+  /* End of Hydrpsols page */
+
+  /* Start of Carriers */
+
+  .mango { width: 16%; }
+
+
+  /* End of Carriers */
 
 
   /* End of Aromatics Products */
 
 
   /* Start of ESW Beauty Products */
+
+  .carriers2 { left: 0; }
 
 
 
@@ -104,10 +144,25 @@
     height: 318px;
   }
 
-
+  .milk-overlay2 { left: 518px; }
 
   /* End of Milk Masks */
 
+  /* Start of Facial Tools page */
+
+  .facial-overlay {
+    width: 300px;
+    height: 300px;
+    left: 210px;
+  }
+
+  .facial-overlay2 {
+    width: 300px;
+    height: 300px;
+    right: 135px;
+  }
+
+  /* End og Facial Tools page */
 
 
   /* End of ESW Beauty Products */
@@ -124,6 +179,17 @@
 
 
   /* End of The Original Salt Company */
+
+  /* Start of Diffusers page */
+
+  .diffuser { right: 37px; }
+
+  .diffusers3 { margin-bottom: 300px; }
+
+  .diffuser-overlay { left: 200px; }
+
+
+  /* End of Diffusers page */
   
 }
 
@@ -137,7 +203,6 @@
   /*}*/
 
   [aria-expanded="true"] ~ ul {
-    /*position: absolute;*/
     right: 0;
     top: var(--size-50);
     background-color: var(--white);
@@ -172,12 +237,17 @@
 
   /* Start of Aromatics Products */
 
+  .container2 {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .carriers {
     position: initial;
-    margin-right: 0;
+    margin-right: auto;
   }
+
   .carriers2 { margin-left: 78px; }
-  .hydros { margin-left: 0px; }
   .hydros2 { margin-left: 5px; }
 
 
@@ -194,9 +264,82 @@
 
 
 
+
+
   /* End of Essential Oils */
 
+  /* Start of Hydrosols page */
+
+  .sprays1 { right: 22px; }
+
+  .hydrosol, .hydrosol-row2 {
+    gap: 30px;
+    right: 35px;
+  }
+
+  .lavender-hydro { width: 33%; }
+  .frankincense-hydro { left: 70px; }
+
+  .lav-hydro-overlay {
+    right: 342px;
+    left: initial;
+  }
+  .rose-hydro-overlay { right: 115px; }
+  .lemon-hydro-overlay, .frank-hydro-overlay { left: 444px; }
+  .hydro-pepp-overlay {
+    right: 343px;
+    left: initial;
+  }
+  .ginger-hydro-overlay { right: 112px; }
+
+  .rose-hydro, .lemon-hydro, .ginger-hydro, .frankincense-hydro { width: 33%; }
+
+  .ginger-hydro { right: 143px; }
+
+
+
+  .pepp {
+    width: 33%;
+    left: 40px;
+  }
+
+
+  /* End of Hydrosols page */
+
+  /* Start of Carriers */
+
+  .mango { width: 20%; }
+
+
+  /* End of Carriers */
+
   /* End of Aromatics Products */
+
+  /* Start of ESW Beauty page */
+
+  .service-grid2 { grid-template-columns: repeat(auto-fit, minmax(344px, 1fr)); }
+
+  .milk-overlay2 { left: 388px; }
+
+  /* Start of Facial Tools page */
+
+  .facial-overlay { left: 83px; }
+  .facial-overlay2 { right: 8px; }
+
+  /* End of Facial Tools page *?
+
+  /* End of ESW Beauty page */
+
+  /* Start of Diffusers page */
+
+  .diffuser { right: 34px; }
+
+  .diffusers3 { margin-bottom: 300px; }
+
+  .diffuser-overlay { left: 64px; }
+
+
+  /* End of Diffusers page*/
 }
 
 /* Mobile Screens */
@@ -270,6 +413,7 @@
 
   /* Start of Hydrosols */
   .sprays { top: 653px; }
+  .sprays1 { left: 34px; }
 
   .tools {
     top: 63px;
@@ -509,7 +653,10 @@
 
   /* Start of Diffusers section */
 
-  .diffuser { top: 70px; }
+  .diffuser {
+    top: 70px;
+    right: initial;
+  }
 
   .diffusers1, .diffusers2, .diffusers3 {
     display: grid;
