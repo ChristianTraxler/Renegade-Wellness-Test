@@ -407,8 +407,6 @@
 
   /* Start of Facial Tools */
 
-  /*.sprays { top: 20px; }*/
-
   .tools {
     position: relative;
     top: 19px;
@@ -446,6 +444,11 @@
 
   /* Start of Hand Carved Salt Lamps */
 
+  .lamps {
+    position: relative;
+    right: 3px;
+  }
+
   .salt3 { margin-bottom: 200px; }
 
   .salt-lamps { width: 47%; }
@@ -462,6 +465,8 @@
     left: 28px;
   }
 
+  .soccer-overlay { height: 150%; }
+
   .cross-lamp {
     top: -28px;
     bottom: 28px;
@@ -469,16 +474,23 @@
 
   .angel-lamp { bottom: 38px; }
   .flower-lamp, .dolphin-lamp { bottom: 32px; }
-  .soccer-ball { top: -22px; }
+
+  .soccer-ball {
+    top: -44px;
+    left: 13px;
+  }
 
   .pink-natural {
     width: 35%;
     top: -22px;
   }
 
+  .white-natural { bottom: 40px; }
+
   .nightlight {
     width: 45%;
     top: 40px;
+    left: 11px;
   }
 
   .nightlight-overlay { height: 100%; }
@@ -880,6 +892,12 @@
 
   /* Start of Hand Carved Salt Lamps */
 
+  .lamps {
+    position: relative;
+    right: initial;
+    left: 1px;
+  }
+
   .salt3 { margin-bottom: 200px; }
 
   .salt-lamps { width: 52%; }
@@ -896,19 +914,25 @@
     left: 22px;
   }
 
+  .soccer-overlay { height: 150%; }
+
   .angel-lamp { bottom: 38px; }
   .flower-lamp, .dolphin-lamp { bottom: 32px; }
 
-  .soccer-ball { top: -20px; }
+  .soccer-ball {
+    top: -44px;
+    left: 5px;
+  }
 
   .pink-natural {
     width: 35%;
-    top: -30px;
+    top: -27px;
   }
 
   .nightlight {
     width: 45%;
     top: 30px;
+    left: 7px;
   }
 
   .nightlight-overlay { height: 104%; }
@@ -1055,8 +1079,15 @@
 
   /* Start of Hand Carved Salt Lamps */
 
+  .lamps { left: 10px; }
+
+  .nightlight {
+    right: 3px;
+    left: initial;
+  }
 
   .salt-lamps-overlay { left: 12px; }
+
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
