@@ -540,7 +540,7 @@
 
   /* Start of Hydrosols */
   .sprays { top: 653px; }
-  .sprays1 { left: 34px; }
+  .hydrosol { left: 20px; }
 
   .tools {
     top: 63px;
@@ -557,6 +557,8 @@
     gap: 10em;
     margin-bottom: 146px;
   }
+
+  .rose-hydro, .lemon-hydro, .ginger-hydro { width: 25%; }
 
   .hydrosol-row2 {
     position: relative;
@@ -1089,6 +1091,11 @@
     top: initial;
     right: 0;
     bottom: 23px;
+  }
+
+  .hydrosol {
+    right: initial;
+    left: initial;
   }
 
   .hydrosol-sprays { width: 20%; }
