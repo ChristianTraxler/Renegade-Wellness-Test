@@ -34,7 +34,25 @@
 
   /* Start of Juice Masks */
 
+  .milk-title { font-size: 1.1em; }
+
   .pink-dream-juice { top: 26px; }
+
+  .juice-overlay {
+    left: 281px;
+    width: 236px;
+    height: 237px;
+  }
+
+  .juice-overlay2 {
+    left: 537px;
+    width: 236px;
+    height: 237px;
+  }
+
+  .milk-overlay3 { left: 409px; }
+
+  .description { font-size: 0.5em; }
 
 
 
