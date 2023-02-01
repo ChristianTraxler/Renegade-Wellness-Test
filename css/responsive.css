@@ -79,7 +79,20 @@
 
   /* Start of Essential Oils */
 
+  .oils { left: 36px; }
 
+  .oils-row-1 { left: -30px; }
+  .oils-row-2 { left: -10px; }
+
+  .peppermint-image, .lavender-image { left: -18px; }
+
+  .breathe-clear-overlay {
+    right: -40px;
+    left: initial;
+  }
+
+  .lemon-overlay, .orange-overlay, .mandarin-overlay { left: -60px; }
+  .peppermint-overlay { left: -80px; }
 
 
   /* End of Essential Oils */
@@ -134,17 +147,34 @@
   /* Start of Juice Masks */
   .artisan-lavender { width: 31%; }
 
+  .juice-overlay {
+    left: 210px;
+    width: 299px;
+    height: 299px;
+  }
+
+  .juice-overlay2 {
+    left: 529px;
+    width: 300px;
+  }
+
+  .juice-overlay3 {
+    width: 300px;
+    left: 369px;
+  }
+
 
 
   /* End of Juice Masks */
 
   /* Start of Milk Masks */
   .milk-overlay {
-    width: 318px;
-    height: 318px;
+    width: 300px;
+    height: 300px;
+    left: 210px;
   }
 
-  .milk-overlay2 { left: 518px; }
+  .milk-overlay2 { left: 529px; }
 
   /* End of Milk Masks */
 
@@ -170,9 +200,19 @@
 
   /* Start of The Original Salt Company */
 
+  .salt-lamps2 { bottom: 22px; }
+
+  .white-natural {
+    width: 50%;
+    top: initial;
+    bottom: initial;
+  }
+
+  .nightlight { top: 2px; }
+
   .salt-lamps-overlay {
-    width: 110%;
-    height: 100%;
+    width: 130%;
+    height: 124%;
   }
 
 
@@ -253,16 +293,56 @@
 
   /* Start of Essential Oils */
 
+  .oils {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+    gap: 12em;
+    left: 200px;
+  }
 
+  .lemon, .blood-orange, .green-mandarin, .peppermint,
+  .lavender, .greek-lavender, .frankincense, .breathe-clear { width: 50%; }
+
+  .eucalyptus {
+    width: 50%;
+    right: 14px;
+  }
+
+  .mountain_bandits {
+    width: 50%;
+    right: 1px;
+  }
+
+  .breathe-clear {
+    width: 50%;
+    right: 16px;
+  }
+
+  .lemon-overlay, .orange-overlay, .mandarin-overlay { left: initial; }
+
+
+  .lemon-overlay, .orange-overlay, .mandarin-overlay { right: -5px; }
+
+  .lavender-overlay, .greek-lavender-overlay, .frankincense-overlay, .eucalyptus-overlay,
+  .mountain_bandits-overlay { right: 15px; }
+
+  .peppermint-overlay {
+    right: 15px;
+    left: initial;
+  }
+
+  .breathe-clear-overlay {
+    right: 15px;
+    left: initial;
+  }
 
   .artisan-lavender { width: 42%; }
 
   .milk-overlay {
-    width: 324px;
-    height: 324px;
+    width: 299px;
+    height: 299px;
+    left: 83px;
   }
-
-
 
 
 
@@ -319,7 +399,14 @@
 
   .service-grid2 { grid-template-columns: repeat(auto-fit, minmax(344px, 1fr)); }
 
-  .milk-overlay2 { left: 388px; }
+  .milk-overlay2 { left: 400px; }
+
+  /* Start of Juice Masks */
+
+  .juice-overlay { left: 83px; }
+  .juice-overlay2 { left: 400px; }
+  .juice-overlay3 { left: 242px; }
+  /* End of Juice Masks */
 
   /* Start of Facial Tools page */
 
@@ -329,6 +416,36 @@
   /* End of Facial Tools page *?
 
   /* End of ESW Beauty page */
+
+  /* Start of Salt Lamps */
+
+  .salt1, .salt2, .salt3 { left: initial }
+
+  .salt-cards { left: 170px; }
+
+  .cross-lamp { bottom: 24px; }
+  .angel-lamp, .dolphin-lamp { bottom: 36px; }
+  .flower-lamp { bottom: 32px; }
+
+  .soccer-ball {
+    top: initial;
+    bottom: 44px;
+  }
+
+  .pink-natural { bottom: 26px; }
+
+  .white-natural {
+    width: 48%;
+    bottom: 40px;
+  }
+
+  .salt-lamps-overlay { left: -42px; }
+  .soccer-ball-overlay { height: 144%; }
+  .white-natural-overlay { height: 134%; }
+
+
+
+  /* End of Salt Lamps */
 
   /* Start of Diffusers page */
 
@@ -405,7 +522,17 @@
 
   /* Start of Essential Oils page */
 
+  .oils { left: initial; }
+  .oils-row-1, .oils-row-2 { left: 20px; }
+
+  .peppermint-image, .lavender-image, .greek-lavender-image, .frankincense-image { left: initial; }
+
   .breathe { top: 16px; }
+  .breathe-clear2 { width: initial; }
+
+  .eucalyptus-image, .mountain_bandits-image { left: initial; }
+
+  .breathe-clear-overlay { top: -60px; }
 
 
 
@@ -612,6 +739,8 @@
     bottom: 34px;
   }
 
+  .salt-cards { left: initial; }
+
   .salt-lamps-overlay {
     width: 94%;
     height: 126%;
@@ -629,7 +758,7 @@
   .flower-lamp, .dolphin-lamp { bottom: 32px; }
 
   .soccer-ball {
-    top: -44px;
+    top: -20px;
     left: 13px;
   }
 
@@ -792,14 +921,14 @@
   .lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,
   .lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }
 
-  .breathe-clear2 {
-    width: 124%;
-    right: 46px;
-  }
+  /*.breathe-clear2 {*/
+  /*  width: 124%;*/
+  /*  right: 46px;*/
+  /*}*/
 
-  .breathe-clear2 { width: 128%; }
+  /*.breathe-clear2 { width: 128%; }*/
 
-  .image-oils { left: 12px; }
+  /*.image-oils { left: 12px; }*/
 
   .image-oils2 { left: 10px; }
 
@@ -939,10 +1068,18 @@
   /* End of Home page */
 
   /* Start of Essential Oils */
-
+  .oils { left: 2px; }
 
   .oils-overlay4 { left: 20px; }
 
+  .oils-row-1, .oils-row-2 { left: 1px; }
+
+  .oils3 { left: -6px; }
+
+  .breathe-clear {
+    top: 10px;
+    left: 7px;
+  }
 
 
   /* End of Essential Oils */
@@ -1096,7 +1233,7 @@
   .flower-lamp, .dolphin-lamp { bottom: 32px; }
 
   .soccer-ball {
-    top: -44px;
+    top: -24px;
     left: 5px;
   }
 
@@ -1152,6 +1289,19 @@
 
   .oils-overlay2, .oils-overlay3 { left: 12px; }
   /*.oils-overlay5 { left: 0; }*/
+
+  .oils { left: 3px; }
+
+  .oils-overlay4 { left: 20px; }
+
+  .oils-row-1, .oils-row-2 { left: -2px; }
+
+  .oils3 { left: -6px; }
+
+  .frankincense-image, .mountain_bandits-image, .breathe-clear-image { left: 12px; }
+
+  .breathe-clear { top: 10px; }
+  .breathe { left: 20px; }
 
   /* End of Essential Oils */
 
