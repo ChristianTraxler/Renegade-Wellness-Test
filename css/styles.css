@@ -355,6 +355,8 @@ section {
   padding: var(--size-150) 0;
   padding-top: 0;
   margin: 0 auto;
+  /*position: relative;*/
+  /*bottom: 80px;*/
 }
 
 .salt-therapy {

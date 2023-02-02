@@ -513,6 +513,11 @@
 
   .wrapper { padding: initial; }
 
+  .bg-price-section {
+    position: relative;
+    bottom: 80px;
+  }
+
 
   /* End of Home page */
 
