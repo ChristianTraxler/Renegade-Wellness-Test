@@ -839,9 +839,15 @@
   .blizzard-card { top: 100px; }
   .breezy-card { top: 120px; }
 
-  .diffuser-title { top: 10px; }
+  .diffuser-title {
+    font-size: 1.4em;
+    top: 10px;
+  }
 
-
+  .daisy-title {
+    position: relative;
+    bottom: 10px;
+  }
 
   /* End of Diffusers section */
 
