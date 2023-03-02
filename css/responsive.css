@@ -696,7 +696,7 @@
   .juice-overlay {
     width: 331px;
     height: 332px;
-    top: -1px;
+    top: initial;
     right: 17px;
     bottom: 0;
     left: initial;
