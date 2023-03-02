@@ -665,6 +665,8 @@
 
   /* Start of Juice Masks */
 
+  .raw-juice { width: 110%; }
+
   .juices {
     top: 42px;
     right: 6px;
@@ -691,10 +693,15 @@
   .juice-overlay {
     width: 331px;
     height: 331px;
-    top: initial;
-    right: 17px;
+    top: -1px;
+    right: -13px;
     bottom: 0;
     left: initial;
+  }
+
+  .juice-overlay2 {
+    top: initial;
+    /*right: 17px;*/
   }
 
   /*.description { font-size: 1em; }*/
@@ -1227,6 +1234,10 @@
     top: 42px;
   }
 
+  .juice-overlay2 {
+    top: 365px;
+  }
+
   .pink-dream-juice { top: 26px; }
   .pink-dream-price {
     font-size: var(--size-20);
@@ -1434,6 +1445,10 @@
   .juice-overlay {
     width: 289px;
     height: 289px;
+  }
+
+  .juice-overlay2 {
+    top: 350px;
   }
 
   .pineapple-juice, .strawberries-juice, .deep-detox-juice { top: 30px; }
