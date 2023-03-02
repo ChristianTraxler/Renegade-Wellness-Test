@@ -837,7 +837,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 .lemon, .blood-orange, .green-mandarin, .peppermint, .lavender, .greek-lavender,
 .frankincense, .breathe-clear, .mountain_bandits, .eucalyptus, .artisan-lavender,
-.rose, .lemon-balm, .ginger { width: 24%; }
+.rose, .lemon-balm, .ginger { width: 30%; }
 
 .image {
   position: relative;
@@ -866,7 +866,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   left: -4px;
 }
 
-.oils-row-1 { left: -11px; }
+/*.oils-row-1 { left: -11px; }*/
 
 .image-oils2 {
   display: block;
@@ -895,11 +895,11 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   border-radius: 10px;
 }
 
-.lemon-overlay, .orange-overlay, .mandarin-overlay { left: -27px; }
+/*.lemon-overlay, .orange-overlay, .mandarin-overlay { left: -27px; }*/
 
-.oils-overlay2 { right: -24px; }
+/*.oils-overlay2 { right: -24px; }*/
 
-.oils-overlay3 { right: -40px; }
+/*.oils-overlay3 { right: -40px; }*/
 
 .oils-overlay4 { left: -15px; }
 
