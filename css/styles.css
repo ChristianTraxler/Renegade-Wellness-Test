@@ -920,15 +920,30 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   top: 18px;
 }
 
-.bld-orange { color: #FE4B03 }
-.brth-clear { color: #5398C2 }
-.eucalyp { color: #208354 }
-.frank { color: #788E9F }
-.mandarin { color: #75B063 }
-.lavend { color: #977BB5 }
-.lem { color: #E0B644 }
-.mountain { color: #7BB170 }
-.mint { color: #84ADC6 }
+.basil { color: #76A882; }
+.bld-orange { color: #FE4B03; }
+.blue-tan { color: #B1C4CD; }
+.brth-clear { color: #5398C2; }
+.chamomile-german { color: #EE8842; }
+.chamomile-roman { color: #C975B6; }
+.clove-bud { color: #C56C30; }
+.eucalyp { color: #208354; }
+.eucalyptus-dives { color: #D08ABB; }
+.frank { color: #788E9F; }
+.grapefruit { color: #E887A1; }
+.gymnocephalum { color: #DA363C; }
+.italicum { color: #DA6916; }
+.lavend { color: #977BB5; }
+.lem { color: #E0B644; }
+.lemongrass { color: #54B448; }
+.mandarin { color: #75B063; }
+.marjoram { color: #81BB6F; }
+.mountain { color: #7BB170; }
+.mint { color: #84ADC6; }
+.myrrh { color: #C17349; }
+.orange { color: #f58235; }
+.ravintsara { color: #23AAD7; }
+.wintergreen { color: #799E82; }
 
 .price {
   /*color: var(--font-color-link);*/
@@ -947,12 +962,46 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   padding: 1em 1em;
 }
 
+.oil-description {
+  font-size: 0.8em;
+  /* margin-top: 0.25em; */
+  padding: 1em 1em;
+}
+
 hr {
   width: 85%;
   border: 1px solid black;
 }
 
-.section2 { display: block; }
+.section2 {
+  display: block;
+  margin-bottom: 100px;
+  height: 1150px;
+}
+
+.section3 {
+  display: block;
+  margin-bottom: 100px;
+  height: 1538px;
+}
+
+.section4, .section7 {
+  display: block;
+  margin-bottom: 100px;
+  height: 781px;
+}
+
+.section5 {
+  display: block;
+  margin-bottom: 100px;
+  height: 413px;
+}
+
+.section6 {
+  display: block;
+  margin-bottom: 100px;
+  height: 784px;
+}
 
 .new-items {
   position: relative;

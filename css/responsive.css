@@ -551,6 +551,8 @@
 
   /* Start of Essential Oils page */
 
+  .section2, .section3 { height: initial; }
+
   .group2 { top: 14px; }
 
   .group3 {
