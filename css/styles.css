@@ -301,6 +301,7 @@ section {
 }
 
 .wrapper {
+  margin: auto;
   width: 100%;
   max-width: 1200px;
   padding: 0 30px;
@@ -418,11 +419,6 @@ section {
 .book_now:hover {
   transform: scale(1.1);
   text-decoration: none;
-}
-
-.valentines {
-  width: 50%;
-  border-radius: 10px;
 }
 
 /* End of Home page */
@@ -949,6 +945,21 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   font-size: 0.8em;
   /*margin-top: 0.25em;*/
   padding: 1em 1em;
+}
+
+hr {
+  width: 85%;
+  border: 1px solid black;
+}
+
+.section2 { display: block; }
+
+.new-items {
+  position: relative;
+  top: 40px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 
