@@ -1169,6 +1169,10 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   right: 37px;
 }
 
+.plant-based {
+  width: 24%;
+}
+
 .masks1 {
   display: flex;
   justify-content: center;
@@ -1199,9 +1203,9 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   display: flex;
   position: absolute;
   top: 42px;
-  left: 323px;
-  width: 274px;
-  height: 274px;
+  left: 318px;
+  width: 270px;
+  height: 269px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   flex-direction: column;
@@ -1212,7 +1216,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   border-radius: 10px;
 }
 
-.milk-overlay2 { left: 617px; }
+.milk-overlay2 { left: 607px; }
 .milk-overlay3 { left: 470px; }
 
 .milk-overlay-blur { backdrop-filter: blur(5px); }
