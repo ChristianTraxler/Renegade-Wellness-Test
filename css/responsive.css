@@ -551,7 +551,19 @@
 
   /* Start of Essential Oils page */
 
-  .section2, .section3 { height: initial; }
+  .section2 { height: 2711px; }
+
+  .section3 { height: 3738px; }
+
+  .section4 { height: 2049px; }
+
+  .section5 { height: 712px; }
+
+  .section6 { height: 1377px; }
+
+  .section7 { height: 1712px; }
+
+  .section8 { height: 1477px; }
 
   .group2 { top: 14px; }
 
@@ -564,6 +576,9 @@
     top: initial;
     bottom: 140px;
   }
+
+  .resin-group { top: 80px; }
+  .blends-group { top: -12px; }
 
   .oils { left: initial; }
   .oils-row-1, .oils-row-2 { left: 20px; }
@@ -1170,7 +1185,7 @@
   .group2 { top: 14px; }
 
   .group3 {
-    top: initial;
+    /*top: initial;*/
     bottom: 26px;
   }
 
@@ -1178,6 +1193,15 @@
     top: initial;
     bottom: 40px;
   }
+
+  .mountain_bandits { top: 16px; }
+
+  .breathe-group { top: 123px; }
+
+  .blends-group { top: 64px; }
+
+  .breathe-clear-overlay { left: 14px; }
+  .mountain_bandits-overlay { left: 20px; }
 
   .oils-overlay4 { left: 20px; }
 
