@@ -1107,10 +1107,10 @@ hr {
 .rose-hydro { bottom: 48px; }
 .lemon-hydro { bottom: 100px; }
 .hydro-pepp-overlay { left: 60px; }
-.frankincense-hydro {
-  right: -21px;
-  left: initial;
-}
+/*.frankincense-hydro {*/
+/*  right: -21px;*/
+/*  left: initial;*/
+/*}*/
 
 .lav-bo-spear {
   color: #A5CAA1;
