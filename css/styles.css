@@ -818,7 +818,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 .essential {
   display: flex;
   justify-content: center;
-  font-size: var(--size-40);
+  font-size: var(--size-50);
 }
 
 .flavors {
@@ -875,9 +875,10 @@ h3 > a {
 
 .image-oils {
   display: block;
-  width: 20%;
+  width: 30%;
   margin: auto;
   position: relative;
+  top: 26px;
   left: -4px;
 }
 
@@ -885,7 +886,7 @@ h3 > a {
 
 .image-oils2 {
   display: block;
-  width: 20%;
+  width: 30%;
   margin: auto;
   position: relative;
   /*left: 15px;*/
@@ -995,31 +996,37 @@ hr {
 .section2 {
   display: block;
   margin-bottom: 100px;
-  height: 1150px;
+  height: 1350px;
 }
 
 .section3 {
   display: block;
   margin-bottom: 100px;
-  height: 1538px;
+  height: 1804px;
 }
 
 .section4, .section7 {
   display: block;
   margin-bottom: 100px;
-  height: 781px;
+  height: 897px;
 }
 
 .section5 {
   display: block;
   margin-bottom: 100px;
-  height: 413px;
+  height: 443px;
 }
 
-.section6, .section8 {
+.section6 {
   display: block;
   margin-bottom: 100px;
-  height: 784px;
+  height: 900px;
+}
+
+.section8 {
+  display: block;
+  margin-bottom: 100px;
+  height: 980px;
 }
 
 .new-items {

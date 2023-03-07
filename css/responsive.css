@@ -551,7 +551,7 @@
 
   /* Start of Essential Oils page */
 
-  .section2 { height: 2711px; }
+  .section2 { height: 3410px; }
 
   .section3 { height: 3738px; }
 
@@ -1189,6 +1189,8 @@
   /* End of Home page */
 
   /* Start of Essential Oils */
+
+  .essential { font-size: var(--size-40); }
   .group2 { top: 14px; }
 
   .group3 {
@@ -1222,6 +1224,8 @@
     top: 10px;
     left: 7px;
   }
+
+  .section2 { height: 3402px; }
 
 
   /* End of Essential Oils */
