@@ -1057,8 +1057,8 @@ hr {
 }
 
 .image-hydrosol {
-  top: 42px;
-  left: 37px;
+  top: -16px;
+  left: 8px;
 }
 
 .image-hydrosol2 {
@@ -1070,16 +1070,7 @@ hr {
 .hydrosols2 { width: 25%; }
 
 .hydrosol > * { line-height: 1.5em; }
-.pepp { left: 54px; }
-
-.carrier {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 80px;
-  margin: 200px 0 400px 0;
-  line-height: 1.5em;
-}
+.pepp { left: 8px; }
 
 .hydrosol-overlay {
   display: flex;
@@ -1115,7 +1106,7 @@ hr {
 
 .rose-hydro { bottom: 48px; }
 .lemon-hydro { bottom: 100px; }
-.hydro-pepp-overlay { left: 156px; }
+.hydro-pepp-overlay { left: 60px; }
 .frankincense-hydro {
   right: -21px;
   left: initial;
@@ -1147,6 +1138,15 @@ hr {
 .carrier-products {
   display: flex;
   justify-content: center;
+}
+
+.carrier {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  margin: 100px 0 400px 0;
+  line-height: 1.5em;
 }
 
 .carriers-oils {
