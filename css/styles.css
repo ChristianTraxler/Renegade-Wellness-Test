@@ -1060,7 +1060,7 @@ hr {
   left: initial;
 }
 
-.hydrosols { width: 22%; }
+.hydrosols { width: 28%; }
 .hydrosols2 { width: 25%; }
 
 .hydrosol > * { line-height: 1.5em; }
@@ -1115,24 +1115,62 @@ hr {
   left: initial;
 }
 
+.lav-bo-spear {
+  color: #A5CAA1;
+  text-align: center;
+}
+
+.blood-orange-hydro { color: #DE7028; }
 .rose-otto { color: #E299AE; }
 .ging { color: #D7894A; }
 .lemon-b { color: #D9A0AE; }
+.lemon-verbena { color: #4EA15A; }
+.victorian { color: #B5524E; }
 
 /* End of Hydrosols */
 
 /* Start of Carrier Oils */
 
+.carrier-title {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.carrier-products {
+  display: flex;
+  justify-content: center;
+}
+
+.carriers-oils {
+  display: flex;
+  justify-content: center;
+  width: 24%;
+}
+
 .mango {
   display: flex;
   justify-content: center;
-  width: 10%;
+  width: 25%;
+  height: 70%;
+}
+
+.image-carrier2 {
+  position: relative;
+  top: 86px;
+}
+
+.image-carrier {
+  position: relative;
+  top: 20px;
 }
 
 .carrier-overlay {
   display: flex;
   position: absolute;
-  bottom: -58px;
+  bottom: -30px;
   width: 351px;
   height: 320px;
   background: rgba(0, 0, 0, 0.6);
