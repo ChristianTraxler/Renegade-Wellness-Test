@@ -551,19 +551,19 @@
 
   /* Start of Essential Oils page */
 
-  .section2 { height: 3410px; }
+  .section2 { height: 3549px; }
 
-  .section3 { height: 3738px; }
+  .section3 { height: 4823px; }
 
-  .section4 { height: 2049px; }
+  .section4 { height: 2693px; }
 
-  .section5 { height: 712px; }
+  .section5 { height: 962px; }
 
-  .section6 { height: 1377px; }
+  .section6 { height: 1831px; }
 
-  .section7 { height: 1712px; }
+  .section7 { height: 2263px; }
 
-  .section8 { height: 1477px; }
+  .section8 { height: 1841px; }
 
   .group2 { top: 14px; }
 
@@ -574,26 +574,46 @@
 
   .group4 {
     top: initial;
-    bottom: 140px;
+    bottom: 91px;
   }
 
+  .image-oils { top: 45px; }
+
   .resin-group { top: 80px; }
-  .blends-group { top: -12px; }
+  .blends-group { top: 20px; }
 
   .oils { left: initial; }
-  .oils-row-1, .oils-row-2 { left: 20px; }
+  .oils-row-1 { left: 20px; }
+  .oils-row-2 { left: 10px; }
 
-  .oils3 { margin-bottom: 120px; }
+  .oils3 {
+    margin-bottom: 120px;
+    top: -23px;
+  }
+
+  bo-oil { left: -11px; }
+
+  .lavender-oil { left: 0; }
 
   .peppermint-image, .lavender-image, .greek-lavender-image, .frankincense-image { left: initial; }
 
-  .breathe { top: 16px; }
+  .breathe { top: -53px; }
   .breathe-clear2 { width: initial; }
+  .mountain_bandits { top: -28px; }
 
-  .eucalyptus-image, .mountain_bandits-image { left: initial; }
+  .eucalyptus-image { left: initial; }
+  .mountain_bandits-image {
+    top: 52px;
+    left: initial;
+  }
 
   .breathe-clear-overlay { top: -60px; }
 
+  .oils-overlay { left: 28px; }
+
+  .tranquil-overlay { top: -60px; }
+
+  .spike-lavender-overlay { top: -60px; }
 
 
   /* End of Essential Oils page */
@@ -1049,7 +1069,7 @@
 
   .image-oils3 { left: 0; }
 
-  .oils-overlay { left: 18px; }
+  /*.oils-overlay { left: 18px; }*/
 
   .oils-overlay2 { left: 18px; }
 
@@ -1195,28 +1215,44 @@
 
   .group3 {
     /*top: initial;*/
-    bottom: 26px;
+    bottom: 46px;
   }
 
   .group4 {
     top: initial;
-    bottom: 40px;
+    bottom: -52px;
   }
 
-  .mountain_bandits { top: 16px; }
+  .mountain_bandits { top: -88px; }
 
-  .breathe-group { top: 123px; }
+  .breathe-group { top: 239px; }
 
-  .blends-group { top: 64px; }
+  .blends-group {
+    top: 179px;
+    right: 5px;
+  }
 
+  .breathe { top: -33px; }
+
+  .lavender-overlay { left: 20px; }
   .breathe-clear-overlay { left: 14px; }
   .mountain_bandits-overlay { left: 20px; }
+  .tranquil-overlay { left: 20px; }
+
+  .spike-lavender-overlay {
+    top: -60px;
+    left: 20px;
+  }
+
+  /*.oils-overlay { left: 20px; }*/
 
   .oils-overlay4 { left: 20px; }
 
   .oils-row-1, .oils-row-2 { left: 1px; }
 
   .oils3 { left: -6px; }
+
+  .lavender-oil-image { left: 0; }
 
   .lemon-oil { left: 10px; }
 
@@ -1225,7 +1261,19 @@
     left: 7px;
   }
 
-  .section2 { height: 3402px; }
+  .section2 { height: 3400px; }
+
+  .section3 { height: 4614px; }
+
+  .section4 { height: 2555px; }
+
+  .section5 { height: 916px; }
+
+  .section6 { height: 1735px; }
+
+  .section7 { height: 2144px; }
+
+  .section8 { height: 1841px; }
 
 
   /* End of Essential Oils */
@@ -1444,20 +1492,29 @@
   /* Start of Essential Oils */
 
   .oils-overlay2, .oils-overlay3 { left: 12px; }
-  /*.oils-overlay5 { left: 0; }*/
-
-  /*.oils { left: 3px; }*/
-
-  /*.oils-overlay4 { left: 20px; }*/
-
-  /*.oils-row-1, .oils-row-2 { left: -2px; }*/
 
   .oils3 { left: -6px; }
 
-  .frankincense-image, .mountain_bandits-image, .breathe-clear-image { left: 12px; }
+  .lavender-oil-image { left: initial; }
 
   .breathe-clear { top: 10px; }
-  /*.breathe { left: 20px; }*/
+
+  .section2 { height: 3276px; }
+
+  .section3 { height: 4488px; }
+
+  .section4 { height: 2477px; }
+
+  .section5 { height: 890px; }
+
+  .section6 { height: 1683px; }
+
+  .section7 { height: 2079px; }
+
+  .section8 { height: 1705px; }
+
+  .breathe-clear-overlay { left: 5px; }
+  .tranquil-overlay { top: -60px; }
 
   /* End of Essential Oils */
 
