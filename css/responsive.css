@@ -701,7 +701,7 @@
   .lemon-hydro-overlay { top: 348px; }
   .blood-orange-overlay { top: 750px; }
   .rose-hydro-overlay { top: 356px; }
-  .victorian-overlay { top: 760px; }
+  .victorian-overlay { top: 784px; }
 
   .mango { width: 48%; }
 
@@ -727,6 +727,8 @@
   /* End of Carrier Oils */
 
   /* Start of Juice Masks */
+
+  .raw-juice-title { padding: 0 15px; }
 
   .raw-juice {
     position: relative;
