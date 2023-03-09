@@ -642,16 +642,27 @@
 
   .hydrosol-row2 {
     position: relative;
-    top: initial;
+    top: 73px;
+    left: 0;
     bottom: 70px;
     margin-bottom: 0;
   }
 
+  .hydrosol-row3 {
+    top: 212px;
+    left: 0px;
+    margin-bottom: 336px;
+  }
+
   .image-hydrosol {
-    top: initial;
+    /*top: initial;*/
     right: 17px;
     left: initial;
   }
+
+  .lav-hydro { top: -28px; }
+  .lavender-blood-mint { top: -26px; }
+  .lemon-verbena-hydro { top: -44px; }
 
   .pepp {
     width: 26%;
@@ -667,11 +678,11 @@
   }
 
   .hydrosol-overlay { right: 10px; }
-  .frank-hydro { top: 653px; }
+  .frank-hydro { top: 812px; }
 
   .hydrosol-overlay2 {
-    top: 308px;
-    left: 2.40625rem;
+    right: 36px;
+    left: initial;
   }
 
   .hydrosol-overlay3 { left: 40px; }
@@ -681,8 +692,16 @@
     left: 40px;
   }
 
-  .lav-hydro-overlay { left: initial; }
-  .lemon-hydro-overlay { top: 652px; }
+  .lav-hydro-overlay {
+    right: 15px;
+    left: initial;
+  }
+
+
+  .lemon-hydro-overlay { top: 348px; }
+  .blood-orange-overlay { top: 750px; }
+  .rose-hydro-overlay { top: 356px; }
+  .victorian-overlay { top: 760px; }
 
   .mango { width: 48%; }
 
@@ -1296,14 +1315,20 @@
 
   .hydrosol-row2 {
     top: 80px;
-    margin-bottom: 200px;
+    margin-bottom: 6px;
   }
 
+  .frank-hydro { top: 663px; }
+  .lemon-verbena-hydro { top: 80px; }
+  .rose-hydro { top: 42px; }
+  .victorian-hydro { top: 42px; }
+
   .hydrosol-overlay2 { left: 22px; }
-
   .hydrosol-overlay3 { left: 22px; }
-
+  .blood-orange-overlay { top: 684px; }
   .lav-hydro-overlay { left: initial; }
+  .rose-hydro-overlay { top: 312px; }
+  .victorian-overlay { top: 660px; }
 
 
   /* End of Hydrosol */
@@ -1520,9 +1545,21 @@
 
   /* Start of Hydrosol */
 
+  .artisan-lavender, .peppermint-hydrosol,
+  .ginger, .rose, .lemon-balm, .ginger,
+  .frankincense-hydrosol {
+    width: 108%;
+  }
+
   .hydrosol-overlay2, .hydrosol-overlay3 { left: 12px; }
 
   .hydrosol-overlay6 { left: 20px; }
+
+  .lav-hydro-overlay { left: -15px; }
+
+  .pepp { top: 88px; }
+
+  .pepper-hydro { top: 32px; }
 
 
   /* End of Hydrosol */

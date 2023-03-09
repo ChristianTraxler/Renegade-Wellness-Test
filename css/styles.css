@@ -1045,7 +1045,7 @@ hr {
 .hydrosol-title {
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: var(--size-50);
 }
 
 .hydrosol {
