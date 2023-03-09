@@ -759,7 +759,6 @@
   .juice-overlay {
     width: 331px;
     height: 332px;
-    top: initial;
     right: 17px;
     bottom: 0;
     left: initial;
@@ -1583,6 +1582,7 @@
   .pineapple-price, .strawberries-price, .deep-detox-price { top: 34px; }
   .anti-aging-price { top: 34px; }
 
+  .pink-dream-juice { font-size: 1.2em; }
   .pink-dream-price { top: 22px; }
 
 

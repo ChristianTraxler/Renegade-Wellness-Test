@@ -1215,6 +1215,14 @@ hr {
 
 /* Start of Juice Masks */
 
+.raw-juice-title {
+  display: flex;
+  justify-content: center;
+  font-size: var(--size-50);
+  padding: 10px;
+  text-align: center;
+}
+
 .juices {
   position: relative;
   right: 37px;
@@ -1233,8 +1241,8 @@ hr {
 .juice-overlay {
   display: flex;
   position: absolute;
-  top: 42px;
-  left: 323px;
+  top: -16px;
+  left: 294px;
   width: 274px;
   height: 274px;
   background: rgba(0, 0, 0, 0.6);
@@ -1247,7 +1255,8 @@ hr {
   border-radius: 10px;
 }
 
-.juice-overlay2 { left: 617px; }
+.juice-overlay2 { left: 588px; }
+.juice-overlay3 { left: 441px; }
 
 .juice-overlay-blur { backdrop-filter: blur(5px); }
 
