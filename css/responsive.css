@@ -927,7 +927,7 @@
     right: initial;
   }
 
-  .diffusers1, .diffusers2, .diffusers3 {
+  .diffusers1, .diffusers2, .diffusers3, .diffusers4 {
     display: grid;
     width: 70%;
     margin: auto auto 20px;
@@ -941,12 +941,21 @@
 
   .diffusers1 { margin-bottom: 100px; }
 
-  .diffusers2 { top: 100px; }
+  .diffusers2 { top: 164px; }
 
   .diffusers3 {
-    top: 150px;
-    margin-bottom: 420px;
+    top: 234px;
+    margin-bottom: 600px;
   }
+
+  .diffusers4 {
+    position: relative;
+    top: -280px;
+    margin-bottom: 200px;
+  }
+
+  .diffuser-overlay { top: 148px; }
+  .diffuser-overlay2 { top: 152px; }
 
   .diffuser-card { top: 50px; }
 
@@ -963,6 +972,8 @@
     position: relative;
     bottom: 14px;
   }
+
+  .daisy { top: 80px; }
 
   /* End of Diffusers section */
 
@@ -1499,6 +1510,8 @@
 
   .diffusers3 { margin-bottom: 420px; }
 
+  .diffusers4 { top: -120px; }
+
 
   .diffuser-title { top: 10px; }
 
@@ -1681,6 +1694,10 @@
   .diffuser { top: 30px; }
 
   .diffusers1, .diffusers2 { left: 8px; }
+
+  .diffusers2 { top: 108px; }
+  .diffusers3 { top: 118px; }
+  .diffusers4 { top: -232px; }
 
 
   .moon-glow { width: 80%; }
