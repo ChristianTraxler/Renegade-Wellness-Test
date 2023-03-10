@@ -1485,10 +1485,10 @@ hr {
 
 .salt-lamps {
   display: block;
-  width: 60%;
+  width: 50%;
   margin: auto;
   position: relative;
-  left: 8px;
+  left: 36px;
 }
 
 .salt-lamps-overlay {
@@ -1531,12 +1531,12 @@ hr {
 }
 
 .cross-lamp { rotate: -2deg; }
-.angel-lamp, .dolphin-lamp { bottom: 22px; }
+.angel-lamp, .dolphin-lamp { bottom: 6px; }
 .flower-lamp { bottom: 18px; }
 
 .soccer-ball {
-  top: 22px;
-  left: 5px;
+  top: 40px;
+  left: 33px;
 }
 
 .pink-natural {
@@ -1547,13 +1547,13 @@ hr {
 
 .white-natural {
   width: 40%;
-  top: 48px;
+  top: 38px;
 }
 
 .nightlight {
-  width: 60%;
-  top: 30px;
-  right: 1px;
+  width: 50%;
+  top: 38px;
+  right: -30px;
   left: initial;
 }
 
