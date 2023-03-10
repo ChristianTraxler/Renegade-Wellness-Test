@@ -840,7 +840,7 @@
   .facial-overlay {
     width: 331px;
     height: 331px;
-    top: initial;
+    /*top: initial;*/
     bottom: 20px;
     left: -17px;
   }
@@ -848,7 +848,7 @@
   .facial-overlay2 {
     width: 331px;
     height: 331px;
-    top: 0;
+    /*top: 0;*/
     left: -17px;
   }
 
