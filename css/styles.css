@@ -1340,10 +1340,10 @@ hr {
 .milk-overlay {
   display: flex;
   position: absolute;
-  top: 42px;
-  left: 318px;
-  width: 270px;
-  height: 269px;
+  top: -16px;
+  left: 294px;
+  width: 274px;
+  height: 274px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   flex-direction: column;
@@ -1354,7 +1354,7 @@ hr {
   border-radius: 10px;
 }
 
-.milk-overlay2 { left: 607px; }
+.milk-overlay2 { left: 588px; }
 .milk-overlay3 { left: 470px; }
 
 .milk-overlay-blur { backdrop-filter: blur(5px); }

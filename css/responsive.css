@@ -798,7 +798,7 @@
     width: 331px;
     height: 331px;
     margin: auto;
-    top: 0;
+    top: -32px;
     bottom: 0;
     left: -17px;
   }
