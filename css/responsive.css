@@ -97,62 +97,75 @@
 
   /* Start of Essential Oils */
 
-  .oils { left: 30px; }
+  /*.oils { left: 30px; }*/
 
-  .oils-row-1 { left: -30px; }
-  .oils-row-2 { left: -10px; }
+  /*.oils-row-1 { left: -30px; }*/
+  /*.oils-row-2 { left: -10px; }*/
 
-  .peppermint-image, .lavender-image { left: -18px; }
+  /*.peppermint-image, .lavender-image { left: -18px; }*/
 
-
+  .eo-tablet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .bergamot-tablet { left: 29px; }
   .lemon-tablet { left: -61px; }
-  .makrut-tablet { left: 17px; }
+  /*.makrut-tablet { left: 17px; }*/
   .mandarin-red-tablet { left: -64px; }
   .blue-tansy-tablet { left: 31px; }
   .chamomile-german-tablet { left: -38px; }
-  .chamomile-roman-tablet, .italicum-tablet { left: 11px; }
-  .geranium-tablet { left: -24px; }
-  .gymnocephalum-tablet, .lavender-oil-tablet { left: -58px; }
+  .chamomile-roman-tablet, .italicum-tablet { left: 32px; }
+  /*.geranium-tablet { left: -24px; }*/
+  .gymnocephalum-tablet, .lavender-oil-tablet { left: -38px; }
   .lemongrass-tablet { left: 8px; }
   .spike-lavender-tablet { left: -30px; }
   .bergamot-mint-tablet { left: 36px; }
   .eucalyptus-dives-tablet { left: -33px; }
-  .peppermint-tablet { left: 16px; }
-  .ravintsara-tablet { left: -19px; }
-  .wintergreen-tablet { left: -54px; }
+  .peppermint-tablet { left: 36px; }
+  .ravintsara-tablet { left: -5px; }
+  .wintergreen-tablet { left: -33px; }
+  .frankincense-tablet{ left: -3px; }
+  .myrrh-tablet { left: 3px; }
   .sandalwood-tablet { left: -44px; }
   .tea-tree-tablet { left: 6px; }
   .white-spruce-tablet { left: -34px; }
+
+  /*.eo-tablet-overlay { right: -29px; }*/
+
+  /*.oils-overlay { width: 343px; }*/
+  .grapefruit-overlay { right: -29px; }
 
   .makrut-overlay { left: -18px; }
   .mandarin-green-overlay, .orange-sweet-overlay { right: -12px; }
   .mandarin-red-overlay { right: 30px; }
   .orange-blood-overlay { right: -30px; }
-  .blue-tansy-overlay { left: 0; }
-  .carrot-seed-overlay { left: -36px; }
-  .chamomile-german-overlay { left: -72px; }
-  .chamomile-roman-overlay, .italicum-overlay, .peppermint-overlay { left: -20px; }
-  .geranium-overlay, .lavender-oil-overlay { left: -54px; }
-  .gymnocephalum-overlay, .lavender-greece-overlay { left: -92px; }
+  .blue-tansy-overlay { width: 346px; }
+  .carrot-seed-overlay, .geranium-overlay, .lavender-oil-overlay { left: -36px; }
+  .chamomile-german-overlay, .gymnocephalum-overlay, .lavender-greece-overlay, .lemon-overlay,
+  .orange-overlay, .mandarin-overlay, .wintergreen-overlay { left: -67px; }
+  .chamomile-roman-overlay, .carrot-seed-overlay { width: 348px; }
+  /*.chamomile-roman-overlay, .italicum-overlay, .peppermint-overlay { left: -20px; }*/
+  /*.lavender-oil-overlay { left: -54px; }*/
+  /*.lavender-greece-overlay { left: -92px; }*/
   .spike-lavender-overlay { left: -60px; }
-  .eucalyptus-overlay, .ravintsara-overlay { left: -50px; }
-  .wintergreen-overlay { left: -80px; }
-  .frankincense-overlay { left: -46px; }
+  .eucalyptus-overlay, .ravintsara-overlay { left: -37px; }
+  /*.wintergreen-overlay { left: -80px; }*/
+  .frankincense-overlay { left: -34px; }
+  .myrrh-overlay { left: -29px; }
   .basil-overlay { left: -28px; }
-  .cinnamon-leaf-overlay { left: -34px; }
-  .marjoram-sweet-overlay { left: -53px; }
+  .cinnamon-leaf-overlay, .marjoram-sweet-overlay { left: -34px; }
   .cypress-overlay { left: -38px; }
   .sandalwood-overlay { left: -77px; }
   .tea-tree-overlay { left: -22px; }
   .white-spruce-overlay { left: -63px; }
-  .breathe-clear-overlay { right: -19px; }
+  .breathe-clear-overlay { right: -39px; }
   .tum-ease-overlay { left: -52px; }
 
+  .lemon-eo-overlay { right: 27px; }
 
-
-  .lemon-overlay, .orange-overlay, .mandarin-overlay { left: -60px; }
+  /*.lemon-overlay, .orange-overlay, .mandarin-overlay { left: -60px; }*/
 
 
   /* End of Essential Oils */
@@ -169,7 +182,7 @@
 
   /*.lemon-oil { left: 31px; }*/
 
-  .grapefruit-oil { left: -6px; }
+  /*.grapefruit-oil { left: -6px; }*/
 
   .lavender-hydro { width: 32%; }
   .rose-hydro { width: 32%; }
@@ -182,8 +195,8 @@
   .frankincense-hydro { left: 64px; }
   .ginger-hydro, .frank-hydro { left: 70px; }
 
-  .lemon-eo-overlay { right: 30px; }
-  .grapefruit-overlay { right: -30px; }
+  /*.lemon-eo-overlay { right: 30px; }*/
+  /*.grapefruit-overlay { right: -30px; }*/
   .lav-hydro-overlay { left: 112px; }
   .rose-hydro-overlay { right: 237px; }
   .lemon-hydro-overlay { right: 3px; }
@@ -408,7 +421,7 @@
   /*}*/
 
   .eo-tablet-overlay, .grapefruit-overlay, .lemon-eo-overlay {
-    width: 420px;
+    width: 418px;
     height: 420px;
     left: 38px;
   }
