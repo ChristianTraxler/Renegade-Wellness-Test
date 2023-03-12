@@ -1336,6 +1336,15 @@
   /* Start of Essential Oils */
 
   .essential { font-size: var(--size-40); }
+
+  .section2 { height: 3400px; }
+  .section3 { height: 4614px; }
+  .section4 { height: 2555px; }
+  .section5 { height: 916px; }
+  .section6 { height: 1735px; }
+  .section7 { height: 2144px; }
+  .section8 { height: 1841px; }
+
   .group2 { top: 14px; }
 
   .group3 {
@@ -1352,53 +1361,38 @@
 
   .breathe-group { top: 239px; }
 
-  .blends-group {
-    top: 179px;
-    right: 5px;
-  }
+  .blends-group { top: 179px; }
 
   .breathe { top: -33px; }
 
-  .lavender-overlay { left: 20px; }
-  .breathe-clear-overlay { left: 14px; }
-  .mountain_bandits-overlay { left: 20px; }
-  .tranquil-overlay { left: 20px; }
-
-  .spike-lavender-overlay {
-    top: -60px;
-    left: 20px;
+  .eo-tablet-overlay {
+    width: 350px;
+    height: 320px;
+    left: 10px;
   }
+
+  /*.lavender-overlay { left: 20px; }*/
+  /*.breathe-clear-overlay { left: 14px; }*/
+  /*.mountain_bandits-overlay { left: 20px; }*/
+  /*.tranquil-overlay { left: 20px; }*/
+
+  .spike-lavender-overlay { top: -60px; }
 
   /*.oils-overlay { left: 20px; }*/
 
   .oils-overlay4 { left: 20px; }
 
-  .oils-row-1, .oils-row-2 { left: 1px; }
+  /*.oils-row-1, .oils-row-2 { left: 1px; }*/
 
-  .oils3 { left: -6px; }
+  /*.oils3 { left: -6px; }*/
 
   .lavender-oil-image { left: 0; }
 
-  .lemon-oil { left: 10px; }
+  /*.lemon-oil { left: 10px; }*/
 
-  .breathe-clear {
-    top: 10px;
-    left: 7px;
-  }
+  .breathe-clear { top: 10px; }
 
-  .section2 { height: 3400px; }
 
-  .section3 { height: 4614px; }
-
-  .section4 { height: 2555px; }
-
-  .section5 { height: 916px; }
-
-  .section6 { height: 1735px; }
-
-  .section7 { height: 2144px; }
-
-  .section8 { height: 1841px; }
 
 
   /* End of Essential Oils */
@@ -1638,18 +1632,17 @@
   .breathe-clear { top: 10px; }
 
   .section2 { height: 3276px; }
-
   .section3 { height: 4488px; }
-
   .section4 { height: 2477px; }
-
   .section5 { height: 890px; }
-
   .section6 { height: 1683px; }
-
   .section7 { height: 2079px; }
-
   .section8 { height: 1705px; }
+
+  .eo-tablet-overlay {
+    width: 350px;
+    left: 1px;
+  }
 
   .breathe-clear-overlay { left: 5px; }
   .tranquil-overlay { top: -60px; }
