@@ -183,6 +183,9 @@
     row-gap: 72px;
   }
 
+  .hydrosol-image2 { width: 82.5%; }
+  .hydrosol-image3 { width: 80%; }
+
   .hydrosols { width: 50%; }
 
   .hydrosol-tablet-view {
@@ -191,11 +194,10 @@
     margin-right: auto;
   }
 
-  .hydrosol-image { width: 80%; }
-
   .hydrosol-overlay {
     left: 65px;
     width: 352px;
+    height: 382px;
   }
 
   .elderberry-hydro-overlay {
@@ -227,6 +229,7 @@
 
   /* End of Aromatics Products */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of ESW Beauty Products */
 
@@ -257,6 +260,8 @@
 
   /* End of Juice Masks */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Milk Masks */
   .milk-overlay {
     width: 300px;
@@ -267,6 +272,8 @@
   .milk-overlay2 { left: 529px; }
 
   /* End of Milk Masks */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Facial Tools page */
 
@@ -284,9 +291,9 @@
 
   /* End og Facial Tools page */
 
-
   /* End of ESW Beauty Products */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of The Original Salt Company */
 
@@ -309,6 +316,8 @@
 
 
   /* End of The Original Salt Company */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Diffusers page */
 
@@ -364,6 +373,8 @@
     position: relative;
     left: 48px;
   }
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Aromatics Products */
 
@@ -472,15 +483,18 @@
 
   /* End of Essential Oils */
 
-  /* Start of Hydrosols page */
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  .hydrosol-image { width: 100%; }
+  /* Start of Hydrosols page */
 
   .sprays1 { right: 22px; }
 
   .hydrosol {
     gap: 130px;
-    margin-bottom: 130px; }
+    margin-bottom: 130px;
+  }
+
+  .hydrosol-image, .hydrosol-image2 { width: initial; }
 
   .hydrosol-row2 { gap: 130px; }
 
@@ -519,8 +533,7 @@
     height: 463px;
   }
 
-  .frank-hydro-overlay, .lemon-hydro-overlay, .hydro-pepp-overlay { height: 464px; }
-  .lav-hydro-overlay { height: 475px; }
+  .frank-hydro-overlay, .lemon-hydro-overlay, .hydro-pepp-overlay, .lav-hydro-overlay { height: 464px; }
   .lav-bo-spear-overlay { top: 595px; }
   .lemon-verbena-overlay {
     top: 592px;
@@ -554,6 +567,8 @@
 
   /* END OF HYDROSOLS PAGE */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* START OF CARRIERS */
 
   .mango { width: 20%; }
@@ -562,6 +577,8 @@
   /* End of Carriers */
 
   /* End of Aromatics Products */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of ESW Beauty page */
 
@@ -576,14 +593,18 @@
   .juice-overlay3 { left: 242px; }
   /* End of Juice Masks */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Facial Tools page */
 
   .facial-overlay { left: 83px; }
   .facial-overlay2 { right: 8px; }
 
-  /* End of Facial Tools page *?
+  /* End of Facial Tools page */
 
   /* End of ESW Beauty page */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Salt Lamps */
 
@@ -614,6 +635,8 @@
 
 
   /* End of Salt Lamps */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Diffusers page */
 
@@ -677,6 +700,8 @@
 
   /* End of Home page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of FAQ page */
 
   .footnote {
@@ -686,6 +711,8 @@
 
   /* End of FAQ page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Products page */
 
   .service-grid { right: 0; }
@@ -693,11 +720,15 @@
 
   /* End of Products page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Aromatics Products */
 
   .column1 { margin-right: auto; }
 
   /* End of Aromatics Products */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Essential Oils page */
 
@@ -776,9 +807,13 @@
 
   /* End of Essential Oils page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Hydrosols */
+
   .sprays { top: 653px; }
-  .hydrosol { left: 20px; }
+
+  .hydrosol-image { width: 70%; }
 
   .tools {
     top: 63px;
@@ -796,8 +831,6 @@
     margin-bottom: 146px;
   }
 
-  .rose-hydro, .lemon-hydro, .ginger-hydro { width: 27%; }
-
   .hydrosol-row2 {
     position: relative;
     top: 73px;
@@ -812,56 +845,37 @@
     margin-bottom: 336px;
   }
 
-  .image-hydrosol {
-    /*top: initial;*/
-    right: 17px;
-    left: initial;
+  .hydrosol-overlay {
+    width: 407px;
+    height: 333px;
+    right: 10px;
   }
 
-  .lav-hydro { top: -28px; }
-  .lavender-blood-mint { top: -26px; }
-  .lemon-verbena-hydro { top: -44px; }
-
-  .pepp {
-    width: 26%;
-    right: 15px;
-    bottom: 10px;
+  .elderberry-hydro-overlay { top: 475px; }
+  .frank-hydro-overlay, .lav-hydro-overlay { height: 324px; }
+  .ginger-hydro-overlay {
+    top: 464px;
+    height: 324px;
   }
 
-  .ginger-hydro { bottom: 62px; }
-
-  .frankincense-hydro {
-    width: 27%;
-    bottom: 115px;
+  .lav-bo-spear-overlay { top: 464px; }
+  .lemon-hydro-overlay { height: 324px; }
+  .lemon-verbena-overlay {
+    height: 334px;
+    top: 464px;
   }
 
-
-
-  .hydrosol-overlay { right: 10px; }
-  .frank-hydro { top: 826px; }
-
-  .hydrosol-overlay2 {
-    right: 36px;
-    left: initial;
+  .hydro-pepp-overlay { height: 324px; }
+  .rose-otto-overlay {
+    top: 464px;
+    height: 323px;
   }
 
-  .hydrosol-overlay3 { left: 40px; }
-
-  .hydrosol-overlay4 {
-    top: -46px;
-    left: 40px;
-  }
-
-  .lav-hydro-overlay {
-    right: 15px;
-    left: initial;
-  }
-
-  .hydro-pepp-overlay { top: 800px; }
-  .lemon-hydro-overlay { top: 348px; }
   .blood-orange-overlay { top: 750px; }
   .rose-hydro-overlay { top: -57px; }
-  .victorian-overlay { top: 368px; }
+  .victorian-overlay { height: 334px; }
+
+  .description { font-size: 1em; }
 
   .mango { width: 48%; }
 
@@ -871,6 +885,8 @@
   }
 
   /* End of Hydrosol */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Carrier Oils */
 
@@ -885,6 +901,8 @@
 
 
   /* End of Carrier Oils */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Juice Masks */
 
@@ -932,6 +950,8 @@
 
   /* End of Juice Masks */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Milk Mask */
 
   .milks {
@@ -977,6 +997,8 @@
 
   /* End of Milk Mask */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Facial Tools */
 
   .tools {
@@ -1016,6 +1038,8 @@
 
 
   /* End of Facial Tools */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of The Original Salt Company Section */
 
@@ -1080,6 +1104,8 @@
 
   /* End of The Original Salt Company Section */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Diffusers section */
 
   .diffuser {
@@ -1137,6 +1163,8 @@
 
   /* End of Diffusers section */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Portland Bee Balm */
 
   .bee-balm {
@@ -1148,6 +1176,8 @@
 
 
   /* End of Portland Bee Balm */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Contact page */
   .pricing-section { padding: 100px 0 200px 0; }
@@ -1169,6 +1199,8 @@
 
   /* End of Contact page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of FAQ page */
   .accordion, .panel { width: 92%; }
 
@@ -1176,6 +1208,7 @@
 
   /* End of FAQ page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Footer */
 
@@ -1238,6 +1271,8 @@
 
   /* End of Navbar */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Essential Oils */
   .oils {
     display: grid;
@@ -1276,12 +1311,16 @@
 
   /* End of Essential Oils */
 
-  /*!* Start of Hydrosol *!*/
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  /* Start of Hydrosol */
 
   /*.hydrosol-overlay2, .hydrosol-overlay3, .hydrosol-overlay4 { left: 21.5px; }*/
 
 
-  /*!* End of Hydrosol *!*/
+  /* End of Hydrosol */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Carrier Oils */
 
@@ -1289,6 +1328,10 @@
 
 
   /* End of Carrier Oils */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  /* START OF HOME PAGE */
 
   .hero-wrapper { text-align: center; }
 
@@ -1330,6 +1373,8 @@
   .price-card2 { display: none; }
 
   .salt-therapy { height: auto; }
+
+  /* END OF HOME PAGE */
 
   /*!* Start of Contact Page *!*/
 
@@ -1402,6 +1447,8 @@
 
   /* End of Home page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Essential Oils */
 
   .essential { font-size: var(--size-40); }
@@ -1469,6 +1516,8 @@
 
   /* End of Essential Oils */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Hydrosol */
   .sprays1 {
     top: initial;
@@ -1481,40 +1530,74 @@
     left: initial;
   }
 
-  .hydrosol-sprays { width: 27%; }
+  .hydrosols { width: 50%; }
 
-  .image-hydrosol { top: 42px; }
+  /*.hydrosol-sprays { width: 27%; }*/
+
+  /*.image-hydrosol { top: 42px; }*/
 
   .hydrosol-row2 {
     top: 80px;
     margin-bottom: 6px;
   }
 
-  .hydrosol-overlay { top: 16px; }
+  .hydrosol-overlay {
+    top: 0;
+    width: 362px;
+  }
 
-  .frank-hydro { top: 866px; }
-  .hydro-pepp-overlay { top: 868px; }
-  .lemon-hydro-overlay { top: 20px; }
-  .lemon-verbena-overlay { top: 480px; }
-  .lemon-verbena-hydro { top: 80px; }
-  .rose-hydro { top: 42px; }
-  .victorian-hydro { top: 42px; }
+  .hydrosol-overlay2, .lemon-hydro-overlay { left: 15px; }
+  .elderberry-hydro-overlay { top: 475px; }
+  .frank-hydro-overlay, .lav-hydro-overlay, .hydro-pepp-overlay {
+    width: 363px;
+    left: 15px;
+  }
 
-  .hydrosol-overlay2 { left: 22px; }
-  .hydrosol-overlay3 { left: 22px; }
+  .ginger-hydro-overlay { top: 464px; }
+  .lav-bo-spear-overlay, .rose-otto-overlay {
+    width: 363px;
+    top: 464px;
+    left: 15px;
+  }
+
+  .lemon-verbena-overlay {
+    top: 464px;
+    left: 15px;
+  }
+
+  .victorian-overlay {
+    width: 363px;
+  }
+
+  /*.frank-hydro { top: 866px; }*/
+  /*.hydro-pepp-overlay { top: 868px; }*/
+  /*.lemon-hydro-overlay { top: 20px; }*/
+  /*.lemon-verbena-overlay { top: 480px; }*/
+  /*.lemon-verbena-hydro { top: 80px; }*/
+  /*.rose-hydro { top: 42px; }*/
+  /*.victorian-hydro { top: 42px; }*/
+
+  /*.hydrosol-overlay2 { left: 22px; }*/
+  /*.hydrosol-overlay3 { left: 22px; }*/
   .blood-orange-overlay { top: 684px; }
-  .lav-hydro-overlay { left: initial; }
+  /*.lav-hydro-overlay { left: initial; }*/
   .rose-hydro-overlay { top: 20px; }
-  .victorian-overlay { top: 444px; }
+  /*.victorian-overlay { top: 444px; }*/
+
+  .description { font-size: 0.9em; }
 
 
   /* End of Hydrosol */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Carrier Oils */
 
   .carrier-overlay { left: 21px; }
 
   /* End of Carrier Oils */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Juice Masks */
 
@@ -1548,6 +1631,8 @@
 
   /* End of Juice Masks */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Plant-Based Masks */
 
   .milks {
@@ -1577,6 +1662,7 @@
 
   /* End of Plant-Based Masks */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Facial Tools */
 
@@ -1606,6 +1692,7 @@
 
   /* End of Facial Tools */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of The Original Salt Company Section */
 
@@ -1659,6 +1746,8 @@
 
   /* End of The Original Salt Company Section */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Diffusers section */
 
   .diffuser { top: 30px; }
@@ -1681,6 +1770,7 @@
 
   /* End of Diffusers section */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Footer */
   .copyright {
@@ -1721,6 +1811,8 @@
 
   /* End of Essential Oils */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Hydrosol */
 
   .artisan-lavender, .peppermint-hydrosol,
@@ -1729,26 +1821,41 @@
     width: 108%;
   }
 
-  .hydrosol-row3 { top: 260px; }
+  .hydrosol-row2 { top: 73px; }
+  .hydrosol-row3 { top: 207px; }
 
-  .hydrosol-overlay2, .hydrosol-overlay3 { left: 12px; }
+  .hydrosol-overlay {
+    width: 363px;
+    left: 6px;
+  }
+
+  /*.hydrosol-overlay2, .hydrosol-overlay3 { left: 12px; }*/
 
   .hydrosol-overlay6 { left: 20px; }
 
-  .lav-hydro-overlay { left: -15px; }
+  /*.lav-hydro-overlay { left: -15px; }*/
 
-  .pepp { top: 88px; }
+  .lav-bo-spear-overlay {
+    width: 363px;
+    top: 464px;
+  }
 
-  .hydro-pepp-overlay { top: 902px; }
+  /*.pepp { top: 88px; }*/
+
+  /*.hydro-pepp-overlay { top: 902px; }*/
 
 
   /* End of Hydrosol */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Carrier Oils */
 
   .carrier-overlay { left: 12px; }
 
   /* End of Carrier Oils */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Juice Masks */
 
@@ -1769,6 +1876,7 @@
 
   /* End of Juice Masks */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Milk Masks */
 
@@ -1814,6 +1922,8 @@
 
   /* End of Milk Masks */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Facial Tools */
 
   .sprays {
@@ -1835,6 +1945,8 @@
 
   /* End of Facial Tools */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of The Original Salt Company Section */
 
   /* Start of Hand Carved Salt Lamps */
@@ -1851,6 +1963,8 @@
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Diffusers page */
 
@@ -1875,6 +1989,8 @@
 
   /* End of Diffuser page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Portland Bee Balm */
 
   .bee-balm { top: 0; }
@@ -1882,6 +1998,7 @@
 
   /* End of Portland Bee Balm */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Footer */
   .copyright {

@@ -1064,9 +1064,11 @@ hr {
   width: 80%;
 }
 
+.hydrosol-image3 { width: 40%; }
+
 .more-width { width: 28.2%; }
 
-.hydrosol-image2 { width: 40%; }
+/*.hydrosol-image2 { width: 40%; }*/
 
 .hydrosol-sprays {
   display: block;
@@ -1089,7 +1091,6 @@ hr {
 .hydrosols2 { width: 25%; }
 
 .hydrosol > * { line-height: 1.5em; }
-.pepp { left: 8px; }
 
 .hydrosol-overlay {
   display: flex;
@@ -1097,7 +1098,7 @@ hr {
   top: 0;
   left: 114px;
   width: 351px;
-  height: 382px;
+  height: 378px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   flex-direction: column;
@@ -1113,7 +1114,13 @@ hr {
   left: initial;
 }
 
-.victorian-overlay { left: 394px; }
+.frank-hydro-overlay, .ginger-hydro-overlay, .lav-hydro-overlay, .lemon-hydro-overlay,
+.hydro-pepp-overlay, .rose-otto-overlay { height: 382px; }
+.lemon-verbena-overlay { height: 380px; }
+.victorian-overlay {
+  height: 380px;
+  left: 394px;
+}
 
 .hydrosol-overlay-blur { backdrop-filter: blur(5px); }
 
