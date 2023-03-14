@@ -1049,12 +1049,24 @@ hr {
 }
 
 .hydrosol {
-  display: flex;
+  display: grid;
   justify-content: center;
   position: relative;
   top: 80px;
-  margin-bottom: 290px;
+  margin-bottom: 80px;
+  grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
 }
+
+.hydrosol-row3 { margin-bottom: 150px; }
+
+.hydrosol-image {
+  margin: auto;
+  width: 80%;
+}
+
+.more-width { width: 28.2%; }
+
+.hydrosol-image2 { width: 40%; }
 
 .hydrosol-sprays {
   display: block;
@@ -1063,10 +1075,10 @@ hr {
   position: relative;
 }
 
-.image-hydrosol {
-  top: -16px;
-  left: 8px;
-}
+/*.image-hydrosol {*/
+/*  top: -16px;*/
+/*  left: 8px;*/
+/*}*/
 
 .image-hydrosol2 {
   top: initial;
@@ -1082,9 +1094,10 @@ hr {
 .hydrosol-overlay {
   display: flex;
   position: absolute;
-  top: -38px;
+  top: 0;
+  left: 114px;
   width: 351px;
-  height: 320px;
+  height: 382px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   flex-direction: column;
@@ -1094,6 +1107,13 @@ hr {
   transition: opacity 0.25s;
   border-radius: 10px;
 }
+
+.elderberry-hydro-overlay {
+  right: 109px;
+  left: initial;
+}
+
+.victorian-overlay { left: 394px; }
 
 .hydrosol-overlay-blur { backdrop-filter: blur(5px); }
 
@@ -1111,8 +1131,8 @@ hr {
   right: 12px;
 }
 
-.rose-hydro { bottom: 48px; }
-.lemon-hydro { bottom: 100px; }
+/*.rose-hydro { bottom: 48px; }*/
+/*.lemon-hydro { bottom: 100px; }*/
 /*.hydro-pepp-overlay { left: 60px; }*/
 /*.frankincense-hydro {*/
 /*  right: -21px;*/
@@ -1131,7 +1151,7 @@ hr {
 .lemon-verbena { color: #4EA15A; }
 .victorian { color: #B5524E; }
 
-/* End of Hydrosols */
+/* END OF HYDROSOLS PAGE */
 
 /* Start of Carrier Oils */
 

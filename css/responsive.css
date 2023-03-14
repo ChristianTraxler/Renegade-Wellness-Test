@@ -90,10 +90,9 @@
 
   /* End of Home page */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   /* Start of Aromatics Products */
-
-
-
 
   /* Start of Essential Oils */
 
@@ -173,42 +172,49 @@
 
   /* End of Essential Oils */
 
-  /* Start of Hydrosols page */
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  .sprays1 {
-    position: relative;
-    right: 55px;
+  /* START OF HYDROSOL PAGE */
+
+  .hydrosol {
+    display: grid;
+    margin-bottom: 290px;
+    grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
+    row-gap: 72px;
+  }
+
+  .hydrosols { width: 50%; }
+
+  .hydrosol-tablet-view {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hydrosol-image { width: 80%; }
+
+  .hydrosol-overlay {
+    left: 65px;
+    width: 352px;
+  }
+
+  .elderberry-hydro-overlay {
+    right: 65px;
+    left: initial;
   }
 
   .hydrosol2 { left: 26px; }
 
-
-  /*.lemon-oil { left: 31px; }*/
-
-  /*.grapefruit-oil { left: -6px; }*/
-
-  .lavender-hydro { width: 32%; }
-  .rose-hydro { width: 32%; }
-  .lemon-hydro { width: 32%; }
-  .pepp { width: 32%; }
-  .ginger-hydro { width: 32%; }
-  .frankincense-hydro { width: 32%; }
-
-  .pepp { left: 37px; }
-  .frankincense-hydro { left: 64px; }
-  .ginger-hydro, .frank-hydro { left: 70px; }
-
-  /*.lemon-eo-overlay { right: 30px; }*/
-  /*.grapefruit-overlay { right: -30px; }*/
-  .lav-hydro-overlay { left: 112px; }
-  .rose-hydro-overlay { right: 237px; }
   .lemon-hydro-overlay { right: 3px; }
-  .hydro-pepp-overlay { left: 112px; }
-  .ginger-hydro-overlay { right: 237px; }
-  .frank-hydro-overlay { left: 600px; }
+  .frank-hydro-overlay, .ginger-hydro-overlay, .hydro-pepp-overlay, .rose-hydro-overlay { height: 371px; }
+
+  .rose-otto-overlay { height: 370px; }
+  .victorian-overlay { left: 306px; }
 
 
-  /* End of Hydrpsols page */
+  /* END OF HYDROSOL PAGE */
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* Start of Carriers */
 
@@ -217,6 +223,7 @@
 
   /* End of Carriers */
 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   /* End of Aromatics Products */
 
@@ -467,43 +474,87 @@
 
   /* Start of Hydrosols page */
 
+  .hydrosol-image { width: 100%; }
+
   .sprays1 { right: 22px; }
 
-  .hydrosol, .hydrosol-row2 {
-    gap: 30px;
-    right: 35px;
-  }
+  .hydrosol {
+    gap: 130px;
+    margin-bottom: 130px; }
+
+  .hydrosol-row2 { gap: 130px; }
 
   .lavender-hydro { width: 33%; }
-  .frankincense-hydro { left: 70px; }
+  /*.frankincense-hydro { left: 70px; }*/
 
-  .lav-hydro-overlay {
-    right: 342px;
+  .hydrosol-overlay {
+    right: 140px;
     left: initial;
+    width: 436px;
+    height: 476px;
   }
+
+  /*.lav-hydro-overlay {*/
+  /*  right: 342px;*/
+  /*  left: initial;*/
+  /*}*/
   .rose-hydro-overlay { right: 115px; }
-  .lemon-hydro-overlay, .frank-hydro-overlay { left: 444px; }
-  .hydro-pepp-overlay {
-    right: 343px;
-    left: initial;
-  }
-  .ginger-hydro-overlay { right: 112px; }
+  /*.lemon-hydro-overlay, .frank-hydro-overlay { left: 444px; }*/
+  /*.hydro-pepp-overlay {*/
+  /*  right: 343px;*/
+  /*  left: initial;*/
+  /*}*/
 
-  .rose-hydro, .lemon-hydro, .ginger-hydro, .frankincense-hydro { width: 33%; }
-
-  .ginger-hydro { right: 143px; }
-
-
-
-  .pepp {
-    width: 33%;
-    left: 40px;
+  .elderberry-hydro-overlay {
+    top: 608px;
+    right: 135px;
+    width: 436px;
+    height: 476px;
   }
 
+  .ginger-hydro-overlay {
+    top: 595px;
+    right: 135px;
+    width: 436px;
+    height: 463px;
+  }
 
-  /* End of Hydrosols page */
+  .frank-hydro-overlay, .lemon-hydro-overlay, .hydro-pepp-overlay { height: 464px; }
+  .lav-hydro-overlay { height: 475px; }
+  .lav-bo-spear-overlay { top: 595px; }
+  .lemon-verbena-overlay {
+    top: 592px;
+    height: 478px;
+  }
 
-  /* Start of Carriers */
+  .rose-otto-overlay {
+    top: 593px;
+    height: 463px;
+  }
+
+  .lav-bo-spear { line-height: 1em; }
+
+  .description {
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+  /*.rose-hydro, .lemon-hydro, .ginger-hydro, .frankincense-hydro { width: 33%; }*/
+
+  /*
+  */
+
+
+
+  /*.pepp {*/
+  /*  width: 33%;*/
+  /*  left: 40px;*/
+  /*}*/
+
+
+  /* END OF HYDROSOLS PAGE */
+
+  /* START OF CARRIERS */
 
   .mango { width: 20%; }
 
