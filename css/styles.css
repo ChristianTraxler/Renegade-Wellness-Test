@@ -863,7 +863,7 @@ h3 > a {
 .oils > * {
   position: relative;
   /*width: 350px;*/
-  top: 70px;
+  /*top: 70px;*/
   /*right: 180px;*/
   line-height: 1.5em;
 }
@@ -879,7 +879,7 @@ h3 > a {
   margin: auto;
   position: relative;
   top: 26px;
-  left: -4px;
+  left: 3px;
 }
 
 /*.oils-row-1 { left: -11px; }*/
