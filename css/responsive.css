@@ -281,13 +281,18 @@
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   /* Start of Milk Masks */
+
+  .plant-based { width: 30%; }
+
+  .milk-title { padding: 0 9px; }
+
   .milk-overlay {
-    width: 300px;
-    height: 300px;
-    left: 210px;
+    width: 289px;
+    height: 289px;
+    left: 183px;
   }
 
-  .milk-overlay2 { left: 529px; }
+  .milk-overlay2 { left: 492px; }
 
   /* End of Milk Masks */
 
@@ -493,14 +498,6 @@
 
   .artisan-lavender { width: 42%; }
 
-  .milk-overlay {
-    width: 299px;
-    height: 299px;
-    left: 83px;
-  }
-
-
-
   /* End of Essential Oils */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -613,8 +610,6 @@
 
   .service-grid2 { grid-template-columns: repeat(auto-fit, minmax(344px, 1fr)); }
 
-  .milk-overlay2 { left: 400px; }
-
   /* Start of Juice Masks */
 
   .juices { right: initial; }
@@ -626,7 +621,7 @@
     height: 344px;
   }
 
-  .juice-overlay2 { left: 363px; }
+  .juice-overlay2 { left: 364px; }
 
   .juice-overlay3 {
     width: 354px;
@@ -644,6 +639,29 @@
 
 
   /* End of Juice Masks */
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /* Start of Milk Masks */
+
+  .plant-based { width: 48%; }
+
+  .milk-overlay {
+    width: 340px;
+    height: 340px;
+    left: 4px;
+  }
+
+  .milk-overlay2 { left: 364px; }
+
+  .milk-title { font-size: 1.7em; }
+
+  .milk-description {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+
+  /* End of Milk Masks */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -1024,28 +1042,23 @@
 
   /* Start of Milk Mask */
 
-  .milks {
-    position: relative;
-    top: 41px;
-    right: 7px;
-  }
+  /*.milks {*/
+  /*  position: relative;*/
+  /*  top: 41px;*/
+  /*}*/
 
   .plant-based {
     position: relative;
-    width: 110%;
+    width: 100%;
   }
-
-
 
   .masks2 { margin-bottom: 244px; }
 
   .milk-overlay {
-    width: 331px;
-    height: 331px;
-    margin: auto;
-    top: -32px;
-    bottom: 0;
-    left: -17px;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
   }
 
   .milk-price { top: 44px; }
@@ -1055,7 +1068,10 @@
   .avocado-milk { padding: 0 20px 0 20px; }
 
   .blueberry-milk, .matcha-milk { padding: 0 28px; }
-  .blueberry-price, .vanilla-price, .matcha-price, .avocado-milk-price { top: 42px; }
+  .blueberry-price, .vanilla-price, .avocado-milk-price { top: 20px; }
+  .matcha-price { top: 22px; }
+
+  .milk-description { font-size: 1.1em; }
 
   .description2 { font-size: 1em; }
 
@@ -1711,21 +1727,21 @@
 
   /* Start of Plant-Based Masks */
 
-  .milks {
-    position: relative;
-    top: initial;
-    right: 6px;
-  }
+  /*.milks {*/
+  /*  position: relative;*/
+  /*  top: initial;*/
+  /*  right: 6px;*/
+  /*}*/
 
   .milk-overlay {
-    width: 305px;
-    height: 305px;
-    top: 83px;
+    width: 276px;
+    height: 276px;
   }
 
   .milk-price { top: 32px; }
-  .vanilla-price { top: 30px; }
-  .blueberry-price, .matcha-price, .avocado-milk-price { top: 22px; }
+  .blueberry-price, .vanilla-price, .matcha-price, .avocado-milk-price { top: 20px; }
+
+  .milk-description { font-size: 1em; }
 
   .blueberry-milk, .vanilla-milk, .matcha-milk, .avocado-milk {
     font-size: 1.3em;
@@ -1968,11 +1984,11 @@
 
   /* Start of Milk Masks */
 
-  .milks {
-    position: relative;
-    right: 5px;
-    bottom: 47px;
-  }
+  /*.milks {*/
+  /*  position: relative;*/
+  /*  right: 5px;*/
+  /*  bottom: 47px;*/
+  /*}*/
 
   .masks1 {
     gap: 20px;
@@ -1987,14 +2003,17 @@
   /*}*/
 
   .milk-overlay {
-    width: 292px;
-    height: 292px;
-    top: 85px;
-    right: 22px;
-    bottom: 2px;
+    width: 263px;
+    height: 263px;
   }
 
+  .blueberry-milk, .matcha-milk { padding: 0 25px; }
+
   .masks3 { bottom: 50px; }
+
+  .milk-description { font-size: 0.9em; }
+
+  .milk-description { line-height: 1.3em; }
 
   .blueberry-price, .vanilla-price, .matcha-price, .avocado-milk-price { top: 20px; }
 
