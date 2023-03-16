@@ -1469,13 +1469,13 @@
 
   .essential { font-size: var(--size-40); }
 
-  .section2 { height: 3551px; }
-  .section3 { height: 4841px; }
-  .section4 { height: 2698px; }
-  .section5 { height: 973px; }
-  .section6 { height: 1822px; }
-  .section7 { height: 2259px; }
-  .section8 { height: 1841px; }
+  .section2 { height: 3436px; }
+  .section3 { height: 4741px; }
+  .section4 { height: 2583px; }
+  .section5 { height: 859px; }
+  .section6 { height: 1707px; }
+  .section7 { height: 2144px; }
+  .section8 { height: 1786px; }
 
   .group2 { top: 14px; }
 
@@ -1492,9 +1492,9 @@
   /*.mountain_bandits { top: -88px; }*/
   /*.mountain_bandits-image { top: 40px; }*/
 
-  .breathe-group { top: 239px; }
+  .breathe-group { top: 79px; }
 
-  .blends-group { top: 179px; }
+  .blends-group { top: 47px; }
 
   /*.breathe { top: -33px; }*/
 
@@ -1803,6 +1803,10 @@
 
   /* Start of Essential Oils */
 
+  .group2 { top: 48px; }
+  .group3 { bottom: -16px; }
+  .group4 { top: -25px; }
+
   .oils-overlay2, .oils-overlay3 { left: 12px; }
 
   .oils3 { left: -6px; }
@@ -1811,13 +1815,13 @@
 
   .breathe-clear { top: 10px; }
 
-  .section2 { height: 3447px; }
-  .section3 { height: 4698px; }
-  .section4 { height: 2620px; }
-  .section5 { height: 948px; }
-  .section6 { height: 1770px; }
-  .section7 { height: 2193px; }
-  .section8 { height: 1818px; }
+  .section2 { height: 3399px; }
+  .section3 { height: 4682px; }
+  .section4 { height: 2542px; }
+  .section5 { height: 832px; }
+  .section6 { height: 1690px; }
+  .section7 { height: 2115px; }
+  .section8 { height: 1722px; }
 
   .eo-tablet-overlay {
     width: 350px;
@@ -1825,7 +1829,9 @@
   }
 
   .breathe-clear-overlay { left: 5px; }
-  .tranquil-overlay { top: -77px; }
+  .tranquil-overlay { top: -7px; }
+
+  .blends-group { top: 28px; }
 
   /* End of Essential Oils */
 
