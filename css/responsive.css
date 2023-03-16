@@ -740,8 +740,8 @@
   .oils > * { }
 
   .section2 { height: 3690px; }
-  .section3 { height: 5080px; }
-  .section4 { height: 2761px; }
+  .section3 { height: 5081px; }
+  .section4 { height: 2762px; }
   .section5 { height: 906px; }
   .section6 { height: 1838px; }
   .section7 { height: 2299px; }
@@ -796,7 +796,7 @@
 
   .eo-tablet-overlay, .grapefruit-overlay, .lemon-eo-overlay {
     width: 351px;
-    height: 297px;
+    height: 298px;
     top: 0;
     left: 25px;
     line-height: 1.2em;
