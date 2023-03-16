@@ -432,7 +432,7 @@
     line-height: 1em;
   }
 
-  .breathe { top: 38px; }
+  /*.breathe { top: 38px; }*/
 
   /*.mountain_bandits {*/
   /*  width: 50%;*/
@@ -468,10 +468,9 @@
   /*  left: initial;*/
   /*}*/
 
-  /*.breathe-clear-overlay {*/
-  /*  right: 15px;*/
-  /*  left: initial;*/
-  /*}*/
+  .breathe-clear-overlay, .mountain_bandits-overlay, .tranquil-overlay {
+    height: 382px;
+  }
 
   .artisan-lavender { width: 42%; }
 
