@@ -162,6 +162,8 @@
 
 /* End of Navbar */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Home page */
 .companies {
   display: block;
@@ -423,6 +425,8 @@ section {
 
 /* End of Home page */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Services */
 
 .bg-contrast {
@@ -463,6 +467,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 /* End of Services */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Video Demo */
 
 /*.video-demo { text-align: center; }*/
@@ -499,6 +505,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 /*}*/
 
 /* End of Video Demo */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Book Page */
 
@@ -614,6 +622,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 .plan-btn-wrapper a { width: 100%; }
 /* End of Book Page */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Products page */
 
 .column1 { margin-right: initial; }
@@ -628,6 +638,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 
 /* End of Products page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Contact Page */
 
@@ -655,6 +667,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 
 /* End of Contact Page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of FAQ Page */
 
@@ -778,6 +792,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 /* End of FAQ Page */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Products page */
 
 .aromatics { font-size: 28px; }
@@ -798,6 +814,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 /* End of Products page */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Aromatics Page */
 
 .service-grid2 {
@@ -812,6 +830,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 /* End of Aromatics Page */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Essential Oils */
 
@@ -1040,6 +1059,8 @@ hr {
 
 /* End of Essential Oils */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Hydrosols */
 
 .hydrosol-title {
@@ -1160,6 +1181,8 @@ hr {
 
 /* END OF HYDROSOLS PAGE */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Carrier Oils */
 
 .carrier-title {
@@ -1170,8 +1193,8 @@ hr {
 }
 
 .carrier-products {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(339px, 1fr));
 }
 
 .carrier {
@@ -1179,20 +1202,20 @@ hr {
   justify-content: center;
   position: relative;
   top: 80px;
-  margin: 100px 0 400px 0;
+  margin: 0 0 300px 0;
   line-height: 1.5em;
 }
 
 .carriers-oils {
   display: flex;
   justify-content: center;
-  width: 24%;
+  width: 20%;
 }
 
 .mango {
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 34%;
   height: 70%;
 }
 
@@ -1239,6 +1262,8 @@ hr {
 
 
 /* End of Carrier Oils */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Juice Masks */
 
@@ -1326,6 +1351,8 @@ hr {
 .strawberries-juice { color: #e6b0b6; }
 .deep-detox { color: #97968E; }
 /* End of Juice Masks */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Milk Masks */
 
@@ -1425,6 +1452,8 @@ hr {
 
 /* End of Milk Masks */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Facial Tools */
 .facial { margin-bottom: 38px; }
 
@@ -1505,6 +1534,8 @@ hr {
 .jade-roller-price { top: 50px; }
 
 /* End of Facial Tools */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of The Original Salt Company */
 
@@ -1590,6 +1621,8 @@ hr {
 
 /* End of Salt Lamps */
 /* End of The Original Salt Company */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Diffusers section */
 
@@ -1700,6 +1733,8 @@ hr {
 
 /* End of Diffusers section */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Portland Bee Balm section */
 
 .bee-balm {
@@ -1714,6 +1749,8 @@ hr {
 
 
 /* End of Portland Bee Balm section */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Testimonials */
 
@@ -1787,6 +1824,8 @@ hr {
 }
 
 /* End of Testimonials */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Footer */
 
@@ -2011,6 +2050,10 @@ footer .footer-col {
 
 /* End of Footer */
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Scroll-top section */
+
 .arrow {
   width: 70%;
 }
@@ -2032,3 +2075,5 @@ footer .footer-col {
   cursor: pointer;
   z-index: 100;
 }
+
+/* End of Scroll-Top section */
