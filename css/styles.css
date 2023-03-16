@@ -1487,6 +1487,8 @@ hr {
   top: 0;
 }
 
+.facial-tools-image { width: 30%; }
+
 .facial-tools > * { line-height: 1.5em; }
 
 .facial-overlay {

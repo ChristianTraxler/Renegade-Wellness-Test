@@ -300,6 +300,8 @@
 
   /* Start of Facial Tools page */
 
+  .facial-tools-image { width: 31%; }
+
   .facial-overlay {
     width: 300px;
     height: 300px;
@@ -667,8 +669,23 @@
 
   /* Start of Facial Tools page */
 
-  .facial-overlay { left: 83px; }
-  .facial-overlay2 { right: 8px; }
+  .facial-tools-image { width: 48%; }
+
+  .facial-overlay {
+    width: 340px;
+    height: 340px;
+    left: 4px;
+  }
+  .facial-overlay2 {
+    width: 340px;
+    height: 340px;
+    right: 4px;
+  }
+
+  .facial-description {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
 
   /* End of Facial Tools page */
 
@@ -1086,14 +1103,16 @@
     position: relative;
     top: 19px;
     bottom: 1px;
+    right: initial;
   }
 
   .facial-tools {
     display: grid;
     width: 70%;
     margin: 50px auto 50px;
-    left: 9px;
   }
+
+  .facial-tools-image { width: 100%; }
 
   .rose-quartz, .jade-roller {
     font-size: 1.2em;
@@ -1101,21 +1120,23 @@
   }
 
   .facial-overlay {
-    width: 331px;
-    height: 331px;
+    width: 301px;
+    height: 301px;
     /*top: initial;*/
     bottom: 20px;
-    left: -17px;
+    left: 0;
   }
 
   .facial-overlay2 {
-    width: 331px;
-    height: 331px;
-    /*top: 0;*/
-    left: -17px;
+    width: 301px;
+    height: 301px;
+    top: 318px;
+    left: 0;
   }
 
-  .rose-quartz-price, .jade-roller-price { top: 40px; }
+  .facial-description { font-size: 1em; }
+
+  .rose-quartz-price, .jade-roller-price { top: 20px; }
 
 
   /* End of Facial Tools */
