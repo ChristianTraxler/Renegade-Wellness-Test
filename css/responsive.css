@@ -303,13 +303,13 @@
   .facial-overlay {
     width: 300px;
     height: 300px;
-    left: 210px;
+    left: 173px;
   }
 
   .facial-overlay2 {
     width: 300px;
     height: 300px;
-    right: 135px;
+    right: 172px;
   }
 
   /* End og Facial Tools page */
@@ -1027,8 +1027,8 @@
   .pineapple-price, .anti-aging-price, .strawberries-price, .pink-dream-price, .deep-detox-price { top: 20px; }
 
   .juice-overlay {
-    width: 299px;
-    height: 299px;
+    width: 301px;
+    height: 301px;
     left: 0;
   }
 
@@ -1055,8 +1055,8 @@
   .masks2 { margin-bottom: 244px; }
 
   .milk-overlay {
-    width: 300px;
-    height: 300px;
+    width: 301px;
+    height: 301px;
     top: 0;
     left: 0;
   }
