@@ -246,25 +246,35 @@
 
 
   /* Start of Juice Masks */
+
+  .raw-juice { width: 30%; }
+
   .artisan-lavender { width: 31%; }
 
   .juice-overlay {
-    left: 210px;
-    width: 299px;
-    height: 299px;
+    width: 290px;
+    height: 289px;
+    left: 182px;
   }
 
   .juice-overlay2 {
-    left: 529px;
-    width: 300px;
+    width: 289px;
+    left: 492px;
   }
 
   .juice-overlay3 {
-    width: 300px;
-    left: 369px;
+    width: 290px;
+    left: 337px;
   }
 
+  .milk-title { font-size: 1.3em; }
+  .strawberries-juice { padding: 10px; }
 
+  .anti-aging-price, .strawberries-price, .deep-detox-price { top: 20px; }
+
+  .juice-description {
+    font-size: 1.1em;
+    line-height: 1.2em; }
 
   /* End of Juice Masks */
 
@@ -607,9 +617,32 @@
 
   /* Start of Juice Masks */
 
-  .juice-overlay { left: 83px; }
-  .juice-overlay2 { left: 400px; }
-  .juice-overlay3 { left: 242px; }
+  .juices { right: initial; }
+  .raw-juice { width: 50%; }
+
+  .juice-overlay {
+    left: 0;
+    width: 344px;
+    height: 344px;
+  }
+
+  .juice-overlay2 { left: 363px; }
+
+  .juice-overlay3 {
+    width: 354px;
+    height: 354px;
+    left: 177px;
+  }
+
+  .juice-title { font-size: 1.6em; }
+  .pineapple-juice { padding: 10px; }
+
+  .juice-description {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+
   /* End of Juice Masks */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -940,24 +973,30 @@
 
   /* Start of Juice Masks */
 
+  .raw-juice-title { font-size: var(--size-40); }
+
+  .masks1, .masks2 {
+    display: grid;
+    width: 70%;
+    margin: auto auto 20px;
+    /*left: 9px;*/
+  }
+
   .raw-juice-title { padding: 0 15px; }
 
   .raw-juice {
     position: relative;
-    width: 110%;
+    width: 100%;
   }
 
-  .juices {
-    top: 42px;
-    right: 6px;
-  }
+  .juices { top: initial; }
 
   .masks3 {
     display: grid;
     width: 70%;
     margin: auto auto 20px;
     top: initial;
-    left: 9px;
+    /*left: 9px;*/
     bottom: 144px;
   }
 
@@ -967,15 +1006,12 @@
   }
 
   .juice-price { top: 50px; }
-  .pineapple-price, .anti-aging-price, .strawberries-price, .deep-detox-price { top: 40px; }
-  .pink-dream-price { top: 30px; }
+  .pineapple-price, .anti-aging-price, .strawberries-price, .pink-dream-price, .deep-detox-price { top: 20px; }
 
   .juice-overlay {
-    width: 331px;
-    height: 332px;
-    right: 17px;
-    bottom: 0;
-    left: initial;
+    width: 299px;
+    height: 299px;
+    left: 0;
   }
 
   .juice-overlay2 { right: 17px; }
@@ -999,12 +1035,7 @@
     width: 110%;
   }
 
-  .masks1, .masks2 {
-    display: grid;
-    width: 70%;
-    margin: auto auto 20px;
-    left: 9px;
-  }
+
 
   .masks2 { margin-bottom: 244px; }
 
@@ -1640,12 +1671,16 @@
   .juices { top: 0; }
 
   .juice-overlay {
-    width: 303px;
-    height: 303px;
-    top: 42px;
+    width: 275px;
+    height: 275px;
+    top: 0;
   }
 
-  .pink-dream-juice { top: 26px; }
+  .pink-dream-juice {
+    padding: 0 6px 0 6px;
+    top: 26px;
+  }
+
   .pink-dream-price {
     font-size: var(--size-20);
     font-weight: 600;
@@ -1661,7 +1696,12 @@
 
   .anti-aging-price { top: 32px; }
 
-  .pineapple-price, .strawberries-price, .deep-detox-price { top: 26px; }
+  .pineapple-price, .strawberries-price, .anti-aging-price, .deep-detox-price { top: 19px; }
+
+  .juice-description {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
 
 
 
@@ -1902,16 +1942,21 @@
 
   /* Start of Juice Masks */
 
+  .masks1, .masks2 {
+    display: grid;
+    width: 70%;
+    margin: auto auto 20px;
+  }
+
   .juices { bottom: 48px; }
 
   .juice-overlay {
-    width: 289px;
-    height: 289px;
+    width: 263px;
+    height: 263px;
   }
 
   .pineapple-juice, .strawberries-juice, .deep-detox-juice { top: 30px; }
-  .pineapple-price, .strawberries-price, .deep-detox-price { top: 34px; }
-  .anti-aging-price { top: 34px; }
+  .pineapple-price, .strawberries-price, .anti-aging-price, .deep-detox-price { top: 22px; }
 
   .pink-dream-juice { font-size: 1.2em; }
   .pink-dream-price { top: 22px; }
@@ -1929,15 +1974,6 @@
     bottom: 47px;
   }
 
-
-
-  .masks1, .masks2 {
-    display: grid;
-    width: 70%;
-    margin: auto auto 20px;
-    left: 9px;
-  }
-
   .masks1 {
     gap: 20px;
     margin-bottom: 20px;
@@ -1945,10 +1981,10 @@
 
   .masks2 { margin-bottom: 150px; }
 
-  .milk-masks {
-    width: 100%;
-    bottom: 2px;
-  }
+  /*.milk-masks {*/
+  /*  width: 100%;*/
+  /*  bottom: 2px;*/
+  /*}*/
 
   .milk-overlay {
     width: 292px;
