@@ -741,6 +741,48 @@
 
 @media screen and (max-width: 599px) {
 
+  /* Start of Navbar */
+
+  [aria-controls="navbarDropdown"] { display: block; }
+
+  [aria-expanded="false"] ~ ul { display: none; }
+
+  [aria-expanded="true"] ~ ul {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: transparent;
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    color: var(--white);
+    margin-right: var(--size-20);
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+  }
+
+  .navbar-nav.sticky { background-color: var(--white); }
+
+  .container { padding-bottom: 24px; }
+
+  .nav-link { position: initial; }
+
+  .rwc-logo1.sticky { display: none; }
+
+  .rwc-logo2 { display: inherit; }
+
+  .navbar.rwc-logo2.sticky { display: inherit; }
+
+
+
+
+  /* End of Navbar */
+
   /* Start of Home page */
 
   .bg-header { padding: 0; }
@@ -1130,7 +1172,7 @@
   .facial-overlay2 {
     width: 301px;
     height: 301px;
-    top: 319px;
+    top: 321px;
     left: 0;
   }
 
@@ -1329,208 +1371,204 @@
   /* End of Footer */
 }
 
-@media screen and (max-width: 480px) {
-  /* Start of Navbar */
+/*@media screen and (max-width: 480px) {*/
+/*  !* Start of Navbar *!*/
 
-  [aria-controls="navbarDropdown"] { display: block; }
+/*  [aria-controls="navbarDropdown"] { display: block; }*/
 
-  [aria-expanded="false"] ~ ul { display: none; }
+/*  [aria-expanded="false"] ~ ul { display: none; }*/
 
-  [aria-expanded="true"] ~ ul {
-    position: absolute;
-    right: 0;
-    top: 40px;
-    background-color: transparent;
-  }
+/*  [aria-expanded="true"] ~ ul {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 40px;*/
+/*    background-color: transparent;*/
+/*  }*/
 
-  [aria-expanded="true"] ~ ul li a {
-    color: var(--white);
-    margin-right: var(--size-20);
-  }
+/*  [aria-expanded="true"] ~ ul li a {*/
+/*    color: var(--white);*/
+/*    margin-right: var(--size-20);*/
+/*  }*/
 
-  .navbar-nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: transparent;
-  }
+/*  .navbar-nav {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    padding: 10px;*/
+/*    background-color: transparent;*/
+/*  }*/
 
-  .navbar-nav.sticky { background-color: var(--white); }
+/*  .navbar-nav.sticky { background-color: var(--white); }*/
 
-  .container { padding-bottom: 24px; }
+/*  .container { padding-bottom: 24px; }*/
 
-  .nav-link { position: initial; }
+/*  .nav-link { position: initial; }*/
 
-  /*.rwc-logo1 {*/
-  /*  display: none;*/
-  /*}*/
+/*  .rwc-logo1.sticky { display: none; }*/
 
-  .rwc-logo1.sticky { display: none; }
+/*  .rwc-logo2 { display: inherit; }*/
 
-  .rwc-logo2 { display: inherit; }
+/*  .navbar.rwc-logo2.sticky { display: inherit; }*/
 
-  .navbar.rwc-logo2.sticky { display: inherit; }
+/*  !* End of Navbar *!*/
 
-  /* End of Navbar */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  !* Start of Essential Oils *!*/
+/*  .oils {*/
+/*    display: grid;*/
+/*    gap: 10em;*/
+/*    !*margin-bottom: 146px;*!*/
+/*  }*/
 
-  /* Start of Essential Oils */
-  .oils {
-    display: grid;
-    gap: 10em;
-    /*margin-bottom: 146px;*/
-  }
+/*  !*.oils3 { margin-bottom: 250px; }*!*/
 
-  /*.oils3 { margin-bottom: 250px; }*/
+/*  .lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,*/
+/*  .lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }*/
 
-  .lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,
-  .lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }
+/*  !*.breathe-clear2 {*!*/
+/*  !*  width: 124%;*!*/
+/*  !*  right: 46px;*!*/
+/*  !*}*!*/
 
-  /*.breathe-clear2 {*/
-  /*  width: 124%;*/
-  /*  right: 46px;*/
-  /*}*/
+/*  !*.breathe-clear2 { width: 128%; }*!*/
 
-  /*.breathe-clear2 { width: 128%; }*/
+/*  !*.image-oils { left: 12px; }*!*/
 
-  /*.image-oils { left: 12px; }*/
+/*  !*.image-oils2 { left: 10px; }*!*/
 
-  /*.image-oils2 { left: 10px; }*/
+/*  .image-oils3 { left: 0; }*/
 
-  .image-oils3 { left: 0; }
+/*  !*.oils-overlay { left: 18px; }*!*/
 
-  /*.oils-overlay { left: 18px; }*/
+/*  !*.oils-overlay2 { left: 18px; }*!*/
 
-  /*.oils-overlay2 { left: 18px; }*/
+/*  !*.oils-overlay3 { left: 48px; }*!*/
 
-  /*.oils-overlay3 { left: 48px; }*/
+/*  !*.oils-overlay4 { left: -25px; }*!*/
 
-  /*.oils-overlay4 { left: -25px; }*/
 
 
 
+/*  !* End of Essential Oils *!*/
 
-  /* End of Essential Oils */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  !* Start of Hydrosol *!*/
 
-  /* Start of Hydrosol */
+/*  !*.hydrosol-overlay2, .hydrosol-overlay3, .hydrosol-overlay4 { left: 21.5px; }*!*/
 
-  /*.hydrosol-overlay2, .hydrosol-overlay3, .hydrosol-overlay4 { left: 21.5px; }*/
 
+/*  !* End of Hydrosol *!*/
 
-  /* End of Hydrosol */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  !* Start of Carrier Oils *!*/
 
-  /* Start of Carrier Oils */
+/*  .carrier-overlay { left: 38px; }*/
 
-  .carrier-overlay { left: 38px; }
 
+/*  !* End of Carrier Oils *!*/
 
-  /* End of Carrier Oils */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  !* START OF HOME PAGE *!*/
 
-  /* START OF HOME PAGE */
+/*  .hero-wrapper { text-align: center; }*/
 
-  .hero-wrapper { text-align: center; }
+/*  !*.why-me { padding-bottom: 0; }*!*/
 
-  /*.why-me { padding-bottom: 0; }*/
+/*  .why-me-wrapper {*/
+/*    flex-wrap: wrap;*/
+/*    text-align: center;*/
+/*  }*/
 
-  .why-me-wrapper {
-    flex-wrap: wrap;
-    text-align: center;
-  }
+/*  .why-me-wrapper .block-text { padding-right: 0; }*/
 
-  .why-me-wrapper .block-text { padding-right: 0; }
+/*  .why-me-wrapper > div { flex: initial; }*/
 
-  .why-me-wrapper > div { flex: initial; }
+/*  !*.price-sheet {*!*/
+/*  !*  position: relative;*!*/
+/*  !*  top: 60px;*!*/
+/*  !*}*!*/
 
-  /*.price-sheet {*/
-  /*  position: relative;*/
-  /*  top: 60px;*/
-  /*}*/
+/*  .bg-price-section { padding-top: 0 }*/
 
-  .bg-price-section { padding-top: 0 }
+/*  .price-card .price-card1 h3 { font-weight: 600; }*/
+/*  .price-card h3 { font-size: var(--size-20)}*/
 
-  .price-card .price-card1 h3 { font-weight: 600; }
-  .price-card h3 { font-size: var(--size-20)}
+/*  .price-card1 {*/
+/*    display: inherit;*/
+/*    font-size: var(--size-18);*/
+/*  }*/
 
-  .price-card1 {
-    display: inherit;
-    font-size: var(--size-18);
-  }
+/*  !*.side-by-side1 {*!*/
+/*  !*  position: relative;*!*/
+/*  !*  left: 60px;*!*/
+/*  !*}*!*/
+/*  !*.side-by-side2 {*!*/
+/*  !*  position: relative;*!*/
+/*  !*  right: 60px;*!*/
+/*  !*}*!*/
 
-  /*.side-by-side1 {*/
-  /*  position: relative;*/
-  /*  left: 60px;*/
-  /*}*/
-  /*.side-by-side2 {*/
-  /*  position: relative;*/
-  /*  right: 60px;*/
-  /*}*/
+/*  .price-card2 { display: none; }*/
 
-  .price-card2 { display: none; }
+/*  .salt-therapy { height: auto; }*/
 
-  .salt-therapy { height: auto; }
+/*  !* END OF HOME PAGE *!*/
 
-  /* END OF HOME PAGE */
+/*  !*!* Start of Contact Page *!*!*/
 
-  /*!* Start of Contact Page *!*/
+/*  !*.contact h3, .hours {*!*/
+/*  !*  font-size: 1.1rem;*!*/
+/*  !*  line-height: 1.3rem;*!*/
+/*  !*}*!*/
 
-  /*.contact h3, .hours {*/
-  /*  font-size: 1.1rem;*/
-  /*  line-height: 1.3rem;*/
-  /*}*/
+/*  !*!* End of Contact Page *!*!*/
 
-  /*!* End of Contact Page *!*/
+/*  !*!* Start of FAQ Page *!*!*/
 
-  /*!* Start of FAQ Page *!*/
+/*  !*.accordion, .panel { width: 92% }*!*/
 
-  /*.accordion, .panel { width: 92% }*/
+/*  !*!* End of FAQ Page *!*!*/
 
-  /*!* End of FAQ Page *!*/
+/*  !*!* Start of Footer *!*!*/
 
-  /*!* Start of Footer *!*/
+/*  !*footer .footer-col:nth-child(3) {*!*/
+/*  !*  grid-column: initial;*!*/
+/*  !*}*!*/
 
-  /*footer .footer-col:nth-child(3) {*/
-  /*  grid-column: initial;*/
-  /*}*/
+/*  !*footer .footer-col:nth-child(1) {*!*/
+/*  !*  order: 3;*!*/
+/*  !*}*!*/
 
-  /*footer .footer-col:nth-child(1) {*/
-  /*  order: 3;*/
-  /*}*/
+/*  !*.email {*!*/
+/*  !*  text-decoration: none;*!*/
+/*  !*  color: var(--white);*!*/
+/*  !*}*!*/
 
-  /*.email {*/
-  /*  text-decoration: none;*/
-  /*  color: var(--white);*/
-  /*}*/
+/*  !*.visa { height: 51px; }*!*/
 
-  /*.visa { height: 51px; }*/
+/*  !*!*.discover {*!*!*/
+/*  !*!*  height: 34px;*!*!*/
+/*  !*!*  width: 46px;*!*!*/
+/*  !*!*  top: 9px;*!*!*/
+/*  !*!*}*!*!*/
 
-  /*!*.discover {*!*/
-  /*!*  height: 34px;*!*/
-  /*!*  width: 46px;*!*/
-  /*!*  top: 9px;*!*/
-  /*!*}*!*/
+/*  !*.footer-bottom { padding: var(--size-30); }*!*/
 
-  /*.footer-bottom { padding: var(--size-30); }*/
+/*  !*.copyright {*!*/
+/*  !*  position: relative;*!*/
+/*  !*  right: 6px;*!*/
+/*  !*}*!*/
 
-  /*.copyright {*/
-  /*  position: relative;*/
-  /*  right: 6px;*/
-  /*}*/
+/*  !*.footer-bottom-links {*!*/
+/*  !*  position: relative;*!*/
+/*  !*  left: var(--size-10);*!*/
+/*  !*}*!*/
 
-  /*.footer-bottom-links {*/
-  /*  position: relative;*/
-  /*  left: var(--size-10);*/
-  /*}*/
 
-
-  /*!* End of Footer *!*/
-}
+/*  !*!* End of Footer *!*!*/
+/*}*/
 
 @media screen and (max-width: 400px) {
 
