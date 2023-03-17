@@ -300,18 +300,20 @@
 
   /* Start of Facial Tools page */
 
-  .facial-tools-image { width: 31%; }
+  .facial-tools-image { width: 32%; }
+
+  .title-and-description { text-align: center; }
 
   .facial-overlay {
-    width: 300px;
-    height: 300px;
-    left: 173px;
+    width: 309px;
+    height: 308px;
+    left: 163px;
   }
 
   .facial-overlay2 {
-    width: 300px;
-    height: 300px;
-    right: 172px;
+    width: 309px;
+    height: 308px;
+    right: 163px;
   }
 
   /* End og Facial Tools page */
@@ -670,6 +672,8 @@
   /* Start of Facial Tools page */
 
   .facial-tools-image { width: 48%; }
+
+  .title-and-description { text-align: center; }
 
   .facial-overlay {
     width: 340px;
@@ -1153,6 +1157,8 @@
     width: 70%;
     margin: 50px auto 50px;
   }
+
+  .title-and-description { text-align: center; }
 
   .facial-tools-image { width: 100%; }
 
@@ -1817,29 +1823,39 @@
 
   /* Start of Facial Tools */
 
-  .sprays {
-    /*top: initial;*/
-    right: 6px;
-    bottom: 23px;
-  }
+  /*.sprays {*/
+  /*  !*top: initial;*!*/
+  /*  right: 6px;*/
+  /*  bottom: 23px;*/
+  /*}*/
 
   .tools {
     top: initial;
+    right: initial;
   }
 
   .facial-overlay {
-    width: 303px;
-    height: 303px;
-    top: 22px;
+    width: 275px;
+    height: 275px;
+    top: -20px;
   }
 
   .facial-overlay2 {
-    width: 303px;
-    height: 303px;
-    top: 42px;
+    width: 275px;
+    height: 275px;
+    top: 295px;
   }
 
-  .rose-quartz-price, .jade-roller-price { top: 24px; }
+  .title-and-description {
+    display: block;
+    position: relative;
+    top: -24px;
+  }
+
+  .rose-quartz-price, .jade-roller-price {
+    text-align: center;
+    top: 22px;
+  }
 
   /* End of Facial Tools */
 
@@ -2089,16 +2105,19 @@
   }
 
   .facial-overlay {
-    width: 289px;
-    height: 289px;
+    width: 264px;
+    height: 264px;
   }
 
   .facial-overlay2 {
-    width: 289px;
-    height: 289px;
+    width: 264px;
+    height: 264px;
+    top: 282px;
   }
 
-  .rose-quartz-price, .jade-roller-price { top: 24px; }
+  .rose-quartz-price, .jade-roller-price { top: 20px; }
+
+  .facial-description { font-size: 0.9em; }
 
   /* End of Facial Tools */
 

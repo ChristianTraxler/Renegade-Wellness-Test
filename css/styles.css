@@ -1487,6 +1487,8 @@ hr {
   top: 0;
 }
 
+.title-and-description { text-align: center; }
+
 .facial-tools-image { width: 30%; }
 
 .facial-tools > * { line-height: 1.5em; }
