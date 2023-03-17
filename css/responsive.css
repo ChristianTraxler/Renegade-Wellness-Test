@@ -324,20 +324,25 @@
 
   /* Start of The Original Salt Company */
 
-  .salt-lamps2 { bottom: 22px; }
+  /*.salt-lamps2 { bottom: 22px; }*/
 
   .white-natural {
-    width: 50%;
+    width: 26%;
     top: initial;
     bottom: initial;
   }
 
-  .nightlight { top: 2px; }
+  .nightlight {
+    width: 26%;
+    top: 20px;
+  }
 
   .salt-lamps-overlay {
-    width: 130%;
-    height: 124%;
+    width: 244px;
+    height: 206px;
   }
+
+  .cross-lamp { top: 22px; }
 
 
 
@@ -699,30 +704,81 @@
 
   /* Start of Salt Lamps */
 
+  .salt-wrapper { display: grid; }
+
   .salt1, .salt2, .salt3 { left: initial }
 
   .salt-cards { left: 170px; }
 
   .cross-lamp { bottom: 24px; }
-  .angel-lamp, .dolphin-lamp { bottom: 36px; }
-  .flower-lamp { bottom: 32px; }
+  .angel-lamp{ bottom: 36px; }
+
+  .flower-lamp {
+    width: 48%;
+    top: 3px; }
+
+  .dolphin-lamp {
+    width: 46%;
+    top: initial;
+    left: 400px;
+    bottom: 335px;
+  }
 
   .soccer-ball {
-    top: initial;
-    bottom: 44px;
+    top: 38px;
+    right: 400px;
   }
 
-  .pink-natural { bottom: 26px; }
+  .pink-natural {
+    width: 40%;
+    left: 400px;
+    bottom: 305px;
+  }
 
   .white-natural {
-    width: 48%;
-    bottom: 40px;
+    width: 40%;
+    bottom: 340px;
   }
 
-  .salt-lamps-overlay { left: -42px; }
-  .soccer-ball-overlay { height: 144%; }
-  .white-natural-overlay { height: 134%; }
+  .nightlight {
+    width: 40%;
+    top: initial;
+    bottom: 320px;
+  }
 
+  .salt-lamps-overlay {
+    width: 311px;
+    height: 269px;
+  }
+
+  .flower-overlay { top: 319px; }
+
+  .dolphin-overlay {
+    top: -349px;
+    left: 397px;
+  }
+
+  .soccer-ball-overlay {
+    height: 250px;
+    right: 396px;
+  }
+
+  .pink-natural-overlay {
+    top: -5px;
+    left: 397px;
+  }
+
+  .white-natural-overlay {
+    height: 253px;
+    top: -353px;
+    left: initial;
+  }
+
+  .nightlight-overlay {
+    height: 252px;
+    top: -352px;
+    right: initial;
+  }
 
 
   /* End of Salt Lamps */
@@ -827,6 +883,15 @@
     bottom: 120px;
   }
 
+  .price-card1 {
+    display: inherit;
+    font-size: var(--size-18);
+  }
+
+  .price-card2 { display: none; }
+
+  .salt-therapy { height: auto; }
+
   .people {
     font-size: 18px;
     font-weight: 600;
@@ -911,6 +976,9 @@
   .bergamot-tablet { left: initial; }
 
   .peppermint-image, .lavender-image, .greek-lavender-image, .frankincense-image { left: initial; }
+
+  .lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,
+  .lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }
 
   /*.breathe { top: -60px; }*/
   /*.breathe-clear2 { top: 60px; }*/
@@ -1195,6 +1263,10 @@
 
   /* Start of Hand Carved Salt Lamps */
 
+  /*section { height: 3200px; }*/
+
+  .salt-wrapper { height: 2200px; }
+
   .lamps {
     position: relative;
     right: 3px;
@@ -1202,54 +1274,113 @@
 
   .salt3 { margin-bottom: 200px; }
 
-  .salt-lamps {
-    width: 47%;
-    left: 13px;
-  }
+  .salt-row-3 { margin-bottom: 450px; }
+
+  /*.salt-lamps {*/
+  /*  width: 47%;*/
+  /*  left: 13px;*/
+  /*}*/
 
   .salt-lamps2 {
     width: 32%;
-    top: -24px;
+    top: 8px;
     bottom: 34px;
   }
 
   .salt-cards { left: initial; }
 
   .salt-lamps-overlay {
-    width: 94%;
-    height: 126%;
-    left: 28px;
+    width: 366px;
+    height: 126px;
+    left: 30px;
   }
 
   .soccer-overlay { height: 150%; }
 
   .cross-lamp {
-    top: -28px;
+    top: 8px;
     bottom: 28px;
   }
 
-  .angel-lamp { bottom: 38px; }
+  .angel-lamp {
+    /*top: -65px;*/
+    bottom: 38px;
+  }
+
   .flower-lamp, .dolphin-lamp { bottom: 32px; }
 
+  .dolphin-lamp { left: initial; }
+
   .soccer-ball {
-    top: -20px;
-    left: 13px;
+    top: 10px;
+    left: 0;
   }
 
   .pink-natural {
-    width: 35%;
-    top: -22px;
+    width: 27%;
+    top: 9px;
+    left: initial;
   }
 
-  .white-natural { bottom: 40px; }
+  .white-natural {
+    width: 27%;
+    /*top: -142px;*/
+  }
 
   .nightlight {
-    width: 45%;
-    top: 40px;
-    left: 11px;
+    width: 27%;
+    top: 20px;
   }
 
-  .nightlight-overlay { height: 100%; }
+  .cross-lamp-overlay {
+    width: 366px;
+    height: 171px;
+    top: 0;
+    left: 31px;
+  }
+
+  .angel-lamp-overlay {
+    width: 366px;
+    height: 202px;
+    top: 233px;
+    left: 30px;
+  }
+
+  .flower-overlay {
+    height: 196px;
+    top: 498px;
+  }
+
+  .dolphin-overlay {
+    height: 205px;
+    top: 0;
+    left: 0;
+  }
+
+  .soccer-ball-overlay {
+    height: 147px;
+    top: 264px;
+    right: initial;
+    left: 0;
+  }
+
+  .pink-natural-overlay {
+    height: 202px;
+    top: 472px;
+    left: 0;
+  }
+
+  .white-natural-overlay {
+    height: 202px;
+    top: 0;
+    left: 0;
+  }
+
+  .nightlight-overlay {
+    height: 191px;
+    top: 273px;
+    left: initial;
+  }
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
@@ -1259,7 +1390,9 @@
   /* Start of Diffusers section */
 
   .diffuser {
-    top: 70px;
+    height: 2500px;
+    position: relative;
+    top: 80px;
     right: initial;
   }
 
@@ -1277,20 +1410,25 @@
 
   .diffusers1 { margin-bottom: 100px; }
 
-  .diffusers2 { top: 164px; }
+  .diffusers2 { top: 0; }
 
   .diffusers3 {
-    top: 234px;
+    top: 0;
     margin-bottom: 600px;
   }
 
   .diffusers4 {
-    position: relative;
-    top: -280px;
     margin-bottom: 200px;
+    position: relative;
+    top: -580px;
+    left: initial;
   }
 
-  .diffuser-overlay { top: 148px; }
+  .diffuser-overlay {
+    width: 299px;
+    height: 269px;
+    top: 0;
+  }
   .diffuser-overlay2 { top: 152px; }
 
   .diffuser-card { top: 50px; }
@@ -1309,7 +1447,88 @@
     bottom: 14px;
   }
 
-  .daisy { top: 80px; }
+  .moon-glow {
+     top: 0;
+    left: -15px;
+  }
+
+  .marble {
+    top: -48px;
+    left: -12px;
+  }
+
+  .leah {
+    width: 50%;
+    top: 30px;
+    left: -15px;
+  }
+
+  .daisy {
+    width: 83%;
+    top: 10px;
+    left: -15px;
+  }
+
+  .kate {
+    width: 36%;
+    top: 0;
+    left: -15px;
+  }
+
+  .meadow {
+    width: 50%;
+    top: -49px;
+    left: -15px;
+  }
+
+  .blizzard {
+    width: 58%;
+    top: -48px;
+    left: -15px;
+  }
+
+  .breezy {
+    width: 72%;
+    top: -119px;
+    left: -15px;
+  }
+
+  .marble-overlay {
+    width: 299px;
+    height: 266px;
+    top: -49px;
+    left: 0;
+  }
+
+  .leah-overlay {
+    height: 264px;
+    top: 25px;
+  }
+
+  .daisy-overlay {
+    width: 299px;
+    height: 273px;
+    top: 0;
+  }
+
+  .kate-overlay { height: 262px; }
+
+  .meadow-overlay {
+    width: 299px;
+    height: 250px;
+    top: -50px;
+  }
+
+  .blizzard-overlay {
+    height: 228px;
+    top: -50px;
+  }
+
+  .breezy-overlay {
+    width: 299px;
+    height: 246px;
+    top: -120px;
+  }
 
   /* End of Diffusers section */
 
@@ -1417,19 +1636,19 @@
 
 /*  !* End of Navbar *!*/
 
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  !*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*!*/
 
 /*  !* Start of Essential Oils *!*/
-/*  .oils {*/
-/*    display: grid;*/
-/*    gap: 10em;*/
-/*    !*margin-bottom: 146px;*!*/
-/*  }*/
+/*  !*.oils {*!*/
+/*  !*  display: grid;*!*/
+/*  !*  gap: 10em;*!*/
+/*  !*  !*margin-bottom: 146px;*!*!*/
+/*  !*}*!*/
 
 /*  !*.oils3 { margin-bottom: 250px; }*!*/
 
-/*  .lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,*/
-/*  .lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }*/
+/*  !*.lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,*!*/
+/*  !*.lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }*!*/
 
 /*  !*.breathe-clear2 {*!*/
 /*  !*  width: 124%;*!*/
@@ -1442,7 +1661,7 @@
 
 /*  !*.image-oils2 { left: 10px; }*!*/
 
-/*  .image-oils3 { left: 0; }*/
+/*  !*.image-oils3 { left: 0; }*!*/
 
 /*  !*.oils-overlay { left: 18px; }*!*/
 
@@ -1457,7 +1676,7 @@
 
 /*  !* End of Essential Oils *!*/
 
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  !*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*!*/
 
 /*  !* Start of Hydrosol *!*/
 
@@ -1466,46 +1685,46 @@
 
 /*  !* End of Hydrosol *!*/
 
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  !*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*!*/
 
 /*  !* Start of Carrier Oils *!*/
 
-/*  .carrier-overlay { left: 38px; }*/
+/*  !*.carrier-overlay { left: 38px; }*!*/
 
 
 /*  !* End of Carrier Oils *!*/
 
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  !*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*!*/
 
 /*  !* START OF HOME PAGE *!*/
 
-/*  .hero-wrapper { text-align: center; }*/
+/*  !*.hero-wrapper { text-align: center; }*!*/
 
 /*  !*.why-me { padding-bottom: 0; }*!*/
 
-/*  .why-me-wrapper {*/
-/*    flex-wrap: wrap;*/
-/*    text-align: center;*/
-/*  }*/
+/*  !*.why-me-wrapper {*!*/
+/*  !*  flex-wrap: wrap;*!*/
+/*  !*  text-align: center;*!*/
+/*  !*}*!*/
 
-/*  .why-me-wrapper .block-text { padding-right: 0; }*/
+/*  !*.why-me-wrapper .block-text { padding-right: 0; }*!*/
 
-/*  .why-me-wrapper > div { flex: initial; }*/
+/*  !*.why-me-wrapper > div { flex: initial; }*!*/
 
 /*  !*.price-sheet {*!*/
 /*  !*  position: relative;*!*/
 /*  !*  top: 60px;*!*/
 /*  !*}*!*/
 
-/*  .bg-price-section { padding-top: 0 }*/
+/*  !*.bg-price-section { padding-top: 0 }*!*/
 
-/*  .price-card .price-card1 h3 { font-weight: 600; }*/
-/*  .price-card h3 { font-size: var(--size-20)}*/
+/*  !*.price-card .price-card1 h3 { font-weight: 600; }*!*/
+/*  !*.price-card h3 { font-size: var(--size-20)}*!*/
 
-/*  .price-card1 {*/
-/*    display: inherit;*/
-/*    font-size: var(--size-18);*/
-/*  }*/
+/*  !*.price-card1 {*!*/
+/*  !*  display: inherit;*!*/
+/*  !*  font-size: var(--size-18);*!*/
+/*  !*}*!*/
 
 /*  !*.side-by-side1 {*!*/
 /*  !*  position: relative;*!*/
@@ -1516,9 +1735,9 @@
 /*  !*  right: 60px;*!*/
 /*  !*}*!*/
 
-/*  .price-card2 { display: none; }*/
+/*  !*.price-card2 { display: none; }*!*/
 
-/*  .salt-therapy { height: auto; }*/
+/*  !*.salt-therapy { height: auto; }*!*/
 
 /*  !* END OF HOME PAGE *!*/
 
@@ -1873,7 +2092,14 @@
 
   .salt3 { margin-bottom: 200px; }
 
-  .salt-lamps { width: 52%; }
+  .salt-row-2 { top: 118px; }
+
+  .salt-row-3 {
+    top: 252px;
+    margin-bottom: 480px;
+  }
+
+  .salt-lamps { width: 100%; }
 
   .salt-lamps2 {
     width: 32%;
@@ -1882,9 +2108,9 @@
   }
 
   .salt-lamps-overlay {
-    width: 94%;
-    height: 126%;
-    left: 22px;
+    width: 333px;
+    height: 165px;
+    left: 30px;
   }
 
   .soccer-overlay { height: 150%; }
@@ -1892,23 +2118,54 @@
   .angel-lamp { bottom: 38px; }
   .flower-lamp, .dolphin-lamp { bottom: 32px; }
 
-  .soccer-ball {
-    top: -24px;
-    left: 5px;
-  }
+  .soccer-ball { width: 40%; }
 
-  .pink-natural {
-    width: 35%;
-    top: -27px;
-  }
+  .pink-natural { width: 35%; }
 
   .nightlight {
     width: 45%;
     top: 30px;
-    left: 7px;
   }
 
-  .nightlight-overlay { height: 104%; }
+  .angel-lamp-overlay {
+    height: 194px;
+    top: 209px;
+    left: 30px;
+  }
+
+  .flower-overlay {
+    height: 177px;
+    top: 448px;
+  }
+
+  .dolphin-overlay {
+    height: 184px;
+    left: initial;
+  }
+
+  .soccer-ball-overlay {
+    height: 165px;
+    top: 246px;
+    left: initial;
+  }
+
+  .pink-natural-overlay {
+    height: 234px;
+    top: 471px;
+    left: initial;
+  }
+
+  .white-natural-overlay {
+    height: 214px;
+    left: initial;
+  }
+
+  .nightlight-overlay {
+    height: 282px;
+    top: 276px;
+    left: initial;
+  }
+
   /* End of Hand Carved Salt Lamps */
 
   /* End of The Original Salt Company Section */
@@ -2129,12 +2386,38 @@
 
   .lamps { left: 10px; }
 
+  .salt-row-3 { margin-bottom: 450px; }
+
   .nightlight {
     right: 3px;
     left: initial;
   }
 
-  .salt-lamps-overlay { left: 12px; }
+  .salt-lamps-overlay { width: 314px; }
+
+  .cross-lamp-overlay { height: 150px; }
+
+  .angel-lamp-overlay {
+    height: 175px;
+    top: 201px;
+  }
+
+  .flower-overlay {
+    height: 169px;
+    top: 431px;
+  }
+
+  .soccer-ball-overlay { top: 237px; }
+
+  .pink-natural-overlay {
+    height: 232px;
+    top: 454px;
+  }
+
+  .nightlight-overlay {
+    height: 272px;
+    top: 278px;
+  }
 
   /* End of Hand Carved Salt Lamps */
 
