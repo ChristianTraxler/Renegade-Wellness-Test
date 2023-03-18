@@ -353,11 +353,35 @@
 
   /* Start of Diffusers page */
 
-  .diffuser { right: 37px; }
+  .diffuser {
+    position: relative;
+    top: 100px;
+  }
 
-  .diffusers3 { margin-bottom: 300px; }
+  /*.diffusers2 { margin-bottom: 60px; }*/
 
-  .diffuser-overlay { left: 200px; }
+  /*.diffusers4 { bottom: 80px; }*/
+
+  /*.diffusers3 { margin-bottom: 300px; }*/
+
+  .moon-glow {
+    width: 80%;
+    top: 0;
+  }
+
+  .blizzard { width: 69%; }
+
+  .diffuser-overlay {
+    width: 298px;
+    height: 245px;
+    /* top: 74px; */
+    left: 173px;
+  }
+
+  .marble-overlay , .daisy-overlay, .meadow-overlay, .breezy-overlay {
+    height: 245px;
+    left: 492px;
+  }
 
 
   /* End of Diffusers page */
@@ -787,11 +811,20 @@
 
   /* Start of Diffusers page */
 
-  .diffuser { right: 34px; }
+  /*.diffuser { right: 34px; }*/
+  .diffusers2 { top: 81px; }
+  .diffusers3 { top: 81px; }
+  .diffusers4 { bottom: -2px; }
 
-  .diffusers3 { margin-bottom: 300px; }
+  .diffuser-overlay {
+    width: 296px;
+    height: 243px;
+    left: 47px;
+  }
 
-  .diffuser-overlay { left: 64px; }
+  .marble-overlay, .daisy-overlay, .meadow-overlay, .breezy-overlay { left: 364px; }
+
+  /*.diffuser-overlay { left: 64px; }*/
 
 
   /* End of Diffusers page*/
@@ -1391,6 +1424,7 @@
 
   .diffuser {
     height: 2500px;
+    margin-bottom: 46px;
     position: relative;
     top: 80px;
     right: initial;
@@ -1400,27 +1434,22 @@
     display: grid;
     width: 70%;
     margin: auto auto 20px;
-    left: 9px;
-  }
-
-  .diffusers1, .diffusers2, .diffusers3 {
-    position: relative;
-    left: 2px;
+    left: initial;
   }
 
   .diffusers1 { margin-bottom: 100px; }
 
-  .diffusers2 { top: 0; }
+  .diffusers2 { top: 43px; }
 
   .diffusers3 {
-    top: 0;
+    top: 95px;
     margin-bottom: 600px;
   }
 
   .diffusers4 {
     margin-bottom: 200px;
     position: relative;
-    top: -580px;
+    top: -461px;
     left: initial;
   }
 
@@ -1428,24 +1457,29 @@
     width: 299px;
     height: 269px;
     top: 0;
+    left: 0;
   }
   .diffuser-overlay2 { top: 152px; }
 
-  .diffuser-card { top: 50px; }
+  .diffuser-card { top: 70px; }
 
   .leah-card { bottom: 24px; }
+  .daisy-card { top: 31px; }
+  .meadow-card { top: 71px; }
   .blizzard-card { top: 100px; }
-  .breezy-card { top: 120px; }
+  .breezy-card { top: 162px; }
 
   .diffuser-title {
     font-size: 1.4em;
-    top: 10px;
+    top: 0;
   }
 
-  .daisy-title {
-    position: relative;
-    bottom: 14px;
-  }
+  .diffuser-price { top: 0; }
+
+  /*.daisy-title {*/
+  /*  position: relative;*/
+  /*  bottom: 14px;*/
+  /*}*/
 
   .moon-glow {
      top: 0;
@@ -1465,7 +1499,7 @@
 
   .daisy {
     width: 83%;
-    top: 10px;
+    top: 0;
     left: -15px;
   }
 
@@ -2174,21 +2208,33 @@
 
   /* Start of Diffusers section */
 
-  .diffuser { top: 30px; }
+  .diffuser {
+    margin-bottom: 66px;
+    top: 100px;
+  }
+
+  .diffusers1, .diffusers2, .diffusers3, .diffusers4 {
+    width: 76%;
+    margin: 0 auto;
+  }
 
   .diffusers2, .diffusers3 {
     display: grid;
-    width: 70%;
+    width: 76%;
     margin: auto auto 20px;
-    left: 9px;
   }
 
-  .diffusers3 { margin-bottom: 420px; }
+  .diffusers2 { top: 143px; }
+  .diffusers3 { top: 195px; }
+  .diffusers4 { top: 219px; }
 
-  .diffusers4 { top: -120px; }
 
+  /*.diffuser-title { top: 10px; }*/
 
-  .diffuser-title { top: 10px; }
+  .daisy {
+    top: 18px;
+    left: -15px;
+  }
 
 
 
@@ -2427,22 +2473,55 @@
 
   /* Start of Diffusers page */
 
-  .diffuser { top: 30px; }
+  .diffuser { top: 100px; }
 
-  .diffusers1, .diffusers2 { left: 8px; }
+  .diffusers1, .diffusers2, .diffusers3, .diffusers4 { width: 77%; }
 
-  .diffusers2 { top: 108px; }
-  .diffusers3 { top: 118px; }
-  .diffusers4 { top: -232px; }
+  .diffusers2 { top: 157px; }
+  .diffusers3 { top: 199px; }
+  .diffusers4 { top: 215px; }
+
+  .diffuser-card { top: 84px; }
+  .daisy-card {
+    width: 104%;
+    top: 30px;
+  }
+  .kate-card { width: 104% }
+  .meadow-card { top: 74px; }
+  .breezy-card { top: 180px; }
 
 
   .moon-glow { width: 80%; }
-  .marble { width: 42%; }
-  .leah { width: 56%; }
-  .kate { width: 42%; }
-  .meadow { width: 56%; }
-  .blizzard { width: 65%; }
-  .breezy { width: 65%; }
+  .marble { width: 39%; }
+  .leah { width: 53%; }
+  .daisy {
+    margin: 0 auto;
+    width: 94%;
+    top: 2px;
+    left: 0;
+  }
+
+  .kate {
+    margin: 0 auto;
+    width: 39%;
+    left: -1px;
+  }
+
+  .meadow {
+    width: 52%;
+    left: -6px;
+  }
+
+  .blizzard {
+    width: 60%;
+    left: -6px;
+  }
+
+  .breezy {
+    width: 65%;
+    top: -102px;
+    left: -6px;
+  }
 
 
 
