@@ -1154,10 +1154,12 @@
 
   /*.carrier-products { display: initial; }*/
 
-  .carrier { margin: 100px 0 200px 0; }
+  .carrier { margin: 100px 0 100px 0; }
+  .carrier2 { margin: -52px 0 100px 0;}
+  .carrier3 { margin: 34px 0 200px 0; }
 
   .carriers-oils { width: 34%; }
-  .image-carrier { top: -42px; }
+  .image-carrier { top: -43px; }
   .image-carrier2 { top: 16px; }
 
   .carrier-overlay { height: 400px; }
@@ -2011,6 +2013,9 @@
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   /* Start of Carrier Oils */
+
+  .carrier2 { margin: -26px 0 100px 0;}
+  .carrier3 { margin: 55px 0 200px 0; }
 
   .description { line-height: 1.8em; }
 
