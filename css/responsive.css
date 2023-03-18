@@ -1051,7 +1051,7 @@
   .oils-title { font-size: 1.5em; }
   .price { font-size: initial; }
 
-  .oil-description { font-size: 0.8em; }
+  .oil-description { font-size: 0.7em; }
 
   .lemongrass-overlay { top: 0; }
 
@@ -1926,7 +1926,7 @@
 
   .lavender-oil-image { left: 0; }
 
-  /*.oil-description { font-size: 0.9em; }*/
+  .oil-description { font-size: 0.8em; }
 
   /*.lemon-oil { left: 10px; }*/
 
