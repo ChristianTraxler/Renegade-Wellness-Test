@@ -1862,6 +1862,8 @@ hr {
 
 /* Start of Portland Bee Balm section */
 
+.balm { width: 30%; }
+
 .bee-balm {
   width: 30%;
   position: relative;
