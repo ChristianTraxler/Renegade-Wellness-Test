@@ -1003,7 +1003,7 @@ h3 > a {
 
 .oil-description {
   font-size: 0.8em;
-  /* margin-top: 0.25em; */
+  text-align: center;
   padding: 1em 1em;
 }
 
