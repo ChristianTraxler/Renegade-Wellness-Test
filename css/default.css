@@ -122,7 +122,7 @@ img {
     border: 1px solid white;
   }
 
-  h5, .price {
+  h5, .cabin, .price, .original-salt, .diffusers {
     color: black;
   }
 
