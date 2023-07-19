@@ -1633,6 +1633,11 @@ img[src*="nightlight"] {
   top: 40px;
 }
 
+img[src*="moon-nightlight"] {
+  position: relative;
+  top: initial;
+}
+
 /* End of Salt Lamps */
 /* End of The Original Salt Company */
 
