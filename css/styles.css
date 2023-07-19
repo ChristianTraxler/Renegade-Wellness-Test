@@ -1454,6 +1454,8 @@ hr {
 
 /* Start of Salt Lamps */
 
+.himalayan-salt-container { height: 2600px; }
+
 .toscompany { padding: 0 10px; }
 
 .salt-wrapper {
@@ -1468,8 +1470,10 @@ hr {
 
 .salt-lamps {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
-  gap: 12%;
+  grid-template-rows: repeat(1, 1fr);
+  /*width: min(95%, 70rem);*/
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6%;
 }
 
 .salt-row-2 {
@@ -1534,52 +1538,100 @@ hr {
   right: 85px;
 }
 
-.oils-title {
-  font-size: 1.5em;
-  font-weight: bold;
+.container {
   position: relative;
-  top: 18px;
+  /*top: 100px;*/
+  margin: 0 auto;
+  text-align: center;
+  height: 66%;
 }
 
-.cross-lamp {
-  top: 26px;
-  rotate: -2deg;
+.salt-lamp-card {
+  /*width: 26%;*/
+  margin: 0 auto;
+  padding: 25px 0 0 0;
+  height: 373px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 10px;
 }
 
-.angel-lamp, .dolphin-lamp {
+.lamp {
   width: 50%;
-  top: 6px;
+  margin: auto;
 }
 
-.flower-lamp {
-  width: 50%;
-  top: 10px;
+.content {
+  display: grid;
+  border-radius: 10px;
 }
 
-.soccer-ball {
-  width: 50%;
+.content > h1 {
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.price-days {
+  margin: 10px auto 40px;
+  text-align: center;
+}
+
+.price > h1 {
+  font-size: var(--size-25);
+}
+
+.price > p {
+  margin: 6px 0 0 4px;
+  font-size: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+.price, .time {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.price > h1 > sup { font-size: 14px; }
+
+.angel { margin: 0 auto; }
+
+img[src*="soccer"] {
+  position: relative;
   top: 40px;
 }
 
-.pink-natural {
+.soccer-ball {
   position: relative;
-  width: 45%;
+  top: 40px;
 }
 
-.white-natural {
-  width: 30%;
-  top: 24px;
+.tear-drop {
+  margin: 0 auto 0;
+  position: relative;
+  bottom: 22px;
 }
 
-.nightlight {
-  width: 35%;
-  top: 38px;
-  left: initial;
+.leaf {
+  position: relative;
+  top: 15px;
 }
 
+img[src*="foot-dome"] {
+  position: relative;
+  top: 60px;
+}
 
+.foot-dome {
+  position: relative;
+  top: 100px;
+}
 
-.salt-lamps-title { color: #F7CDC7; }
+img[src*="nightlight"] {
+  position: relative;
+  top: 40px;
+}
 
 /* End of Salt Lamps */
 /* End of The Original Salt Company */
@@ -1860,6 +1912,7 @@ footer .footer-col {
 }
 
 .icons {
+  display: inline-block;
   width: 30px;
   height: 30px;
   padding-right: var(--size-10);
@@ -2024,7 +2077,10 @@ footer .footer-col {
 
 /* Start of Scroll-top section */
 
-.arrow { width: 70%; }
+.arrow {
+  display: inline-block;
+  width: 70%;
+}
 
 #scrollUp {
   background-color: transparent;
