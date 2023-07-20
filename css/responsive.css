@@ -1182,11 +1182,11 @@
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  /* Start of The Original Salt Company Section */
+  /* Start of Himalayan Salt Products Section */
 
   /* Start of Hand Carved Salt Lamps */
 
-  .himalayan-salt-container { height: 6000px; }
+  .himalayan-salt-container { height: 6400px; }
 
   /*.salt-wrapper { height: 3600px; }*/
 
@@ -1195,14 +1195,9 @@
     right: 3px;
   }
 
-  .salt3 { margin-bottom: 200px; }
-
-  .salt-row-3 { margin-bottom: 450px; }
-
-  .salt-lamps2 {
-    width: 32%;
-    top: 8px;
-    bottom: 34px;
+  .salt-lamp-name-white-mobile {
+    position: relative;
+    top: 15px;
   }
 
   .salt-lamps {
@@ -1212,99 +1207,17 @@
 
   .salt-cards { left: initial; }
 
-  /*.salt-lamps-overlay {*/
-  /*  width: 366px;*/
-  /*  height: 126px;*/
-  /*  left: 30px;*/
-  /*}*/
+  img[src*="white"] { top: 4px; }
 
-  /*.soccer-overlay { height: 150%; }*/
+  .salt-lamp-card-mobile { height: 440px; }
 
-  /*.cross-lamp {*/
-  /*  top: 8px;*/
-  /*  bottom: 28px;*/
-  /*}*/
-
-  /*.angel-lamp {*/
-  /*  bottom: 38px;*/
-  /*}*/
-
-  /*.flower-lamp, .dolphin-lamp { bottom: 32px; }*/
-
-  /*.dolphin-lamp { left: initial; }*/
-
-  /*.soccer-ball {*/
-  /*  top: 10px;*/
-  /*  left: 0;*/
-  /*}*/
-
-  /*.pink-natural {*/
-  /*  width: 27%;*/
-  /*  top: 9px;*/
-  /*  left: initial;*/
-  /*}*/
-
-  /*.white-natural {*/
-  /*  width: 27%;*/
-  /*}*/
-
-  /*.nightlight {*/
-  /*  width: 27%;*/
-  /*  top: 20px;*/
-  /*}*/
-
-  /*.cross-lamp-overlay {*/
-  /*  width: 366px;*/
-  /*  height: 171px;*/
-  /*  top: 0;*/
-  /*  left: 31px;*/
-  /*}*/
-
-  /*.angel-lamp-overlay {*/
-  /*  width: 366px;*/
-  /*  height: 202px;*/
-  /*  top: 233px;*/
-  /*  left: 30px;*/
-  /*}*/
-
-  /*.flower-overlay {*/
-  /*  height: 196px;*/
-  /*  top: 498px;*/
-  /*}*/
-
-  /*.dolphin-overlay {*/
-  /*  height: 205px;*/
-  /*  top: 0;*/
-  /*  left: 0;*/
-  /*}*/
-
-  /*.soccer-ball-overlay {*/
-  /*  height: 147px;*/
-  /*  top: 264px;*/
-  /*  right: initial;*/
-  /*  left: 0;*/
-  /*}*/
-
-  /*.pink-natural-overlay {*/
-  /*  height: 202px;*/
-  /*  top: 472px;*/
-  /*  left: 0;*/
-  /*}*/
-
-  /*.white-natural-overlay {*/
-  /*  height: 202px;*/
-  /*  top: 0;*/
-  /*  left: 0;*/
-  /*}*/
-
-  /*.nightlight-overlay {*/
-  /*  height: 191px;*/
-  /*  top: 273px;*/
-  /*  left: initial;*/
-  /*}*/
+  .soccer-ball {
+    position: relative;
+    top: 65px;
+  }
   /* End of Hand Carved Salt Lamps */
 
-  /* End of The Original Salt Company Section */
+  /* End of Himalayan Salt Products Section */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -1740,13 +1653,23 @@
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  /* Start of The Original Salt Company Section */
+  /* Start of Himalayan Salt Products Section */
 
   /* Start of Hand Carved Salt Lamps */
+
+  .himalayan-salt-container { height: 6200px; }
 
   .salt-lamps {
     grid-template-columns: 1fr;
     gap: initial;
+  }
+
+  .salt-lamp-card-mobile { height: 410px; }
+  .salt-lamp-card-mobile-sm { height: 364px; }
+
+  .salt-lamp-name-mobile-sm {
+    position: relative;
+    top: 15px;
   }
 
   .lamps {
@@ -1755,82 +1678,18 @@
     left: 1px;
   }
 
-  .salt3 { margin-bottom: 200px; }
+  .foot-dome-mobile-medium { top: 104px; }
 
-  .salt-row-2 { top: 118px; }
-
-  .salt-row-3 {
-    top: 252px;
-    margin-bottom: 480px;
+  .price-tag-mobile-medium {
+    margin: 0 auto 0;
+    position: relative;
+    bottom: 22px;
+    top: 0;
   }
-
-  .salt-lamps2 {
-    width: 32%;
-    bottom: 34px;
-  }
-
-  /*.salt-lamps-overlay {*/
-  /*  width: 333px;*/
-  /*  height: 165px;*/
-  /*  left: 30px;*/
-  /*}*/
-
-  /*.soccer-overlay { height: 150%; }*/
-
-  /*.angel-lamp { bottom: 38px; }*/
-  /*.flower-lamp, .dolphin-lamp { bottom: 32px; }*/
-
-  /*.soccer-ball { width: 40%; }*/
-
-  /*.pink-natural { width: 35%; }*/
-
-  /*.nightlight {*/
-  /*  width: 45%;*/
-  /*  top: 30px;*/
-  /*}*/
-
-  /*.angel-lamp-overlay {*/
-  /*  height: 194px;*/
-  /*  top: 209px;*/
-  /*  left: 30px;*/
-  /*}*/
-
-  /*.flower-overlay {*/
-  /*  height: 177px;*/
-  /*  top: 448px;*/
-  /*}*/
-
-  /*.dolphin-overlay {*/
-  /*  height: 184px;*/
-  /*  left: initial;*/
-  /*}*/
-
-  /*.soccer-ball-overlay {*/
-  /*  height: 165px;*/
-  /*  top: 246px;*/
-  /*  left: initial;*/
-  /*}*/
-
-  /*.pink-natural-overlay {*/
-  /*  height: 234px;*/
-  /*  top: 471px;*/
-  /*  left: initial;*/
-  /*}*/
-
-  /*.white-natural-overlay {*/
-  /*  height: 214px;*/
-  /*  left: initial;*/
-  /*}*/
-
-  /*.nightlight-overlay {*/
-  /*  height: 282px;*/
-  /*  top: 276px;*/
-  /*  left: initial;*/
-  /*}*/
 
   /* End of Hand Carved Salt Lamps */
 
-  /* End of The Original Salt Company Section */
+  /* End of Himalayan Salt Products Section */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -2026,7 +1885,7 @@
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  /* Start of The Original Salt Company Section */
+  /* Start of Himalayan Salt Products Section */
 
   /* Start of Hand Carved Salt Lamps */
 
@@ -2034,40 +1893,10 @@
 
   .salt-row-3 { margin-bottom: 450px; }
 
-  /*.nightlight {*/
-  /*  right: 3px;*/
-  /*  left: initial;*/
-  /*}*/
-
-  /*.salt-lamps-overlay { width: 314px; }*/
-
-  /*.cross-lamp-overlay { height: 150px; }*/
-
-  /*.angel-lamp-overlay {*/
-  /*  height: 175px;*/
-  /*  top: 201px;*/
-  /*}*/
-
-  /*.flower-overlay {*/
-  /*  height: 169px;*/
-  /*  top: 431px;*/
-  /*}*/
-
-  /*.soccer-ball-overlay { top: 237px; }*/
-
-  /*.pink-natural-overlay {*/
-  /*  height: 232px;*/
-  /*  top: 454px;*/
-  /*}*/
-
-  /*.nightlight-overlay {*/
-  /*  height: 272px;*/
-  /*  top: 278px;*/
-  /*}*/
 
   /* End of Hand Carved Salt Lamps */
 
-  /* End of The Original Salt Company Section */
+  /* End of Himalayan Salt Products Section */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 

@@ -1550,7 +1550,7 @@ hr {
   /*width: 26%;*/
   margin: 0 auto;
   padding: 25px 0 0 0;
-  height: 373px;
+  height: 400px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   border-radius: 10px;
@@ -1597,6 +1597,23 @@ hr {
 
 .angel { margin: 0 auto; }
 
+.price-tag {
+  margin: 0 auto 0;
+  position: relative;
+  bottom: 22px;
+  top: 0;
+}
+
+.salt-lamp-name {
+  position: relative;
+  top: 15px;
+}
+
+.salt-lamp-name-2 {
+  position: relative;
+  top: 42px;
+}
+
 img[src*="soccer"] {
   position: relative;
   top: 40px;
@@ -1604,28 +1621,22 @@ img[src*="soccer"] {
 
 .soccer-ball {
   position: relative;
-  top: 40px;
+  top: 83px;
 }
 
-.tear-drop {
-  margin: 0 auto 0;
+img[src*="white"] {
   position: relative;
-  bottom: 22px;
-}
-
-.leaf {
-  position: relative;
-  top: 15px;
+  top: 20px;
 }
 
 img[src*="foot-dome"] {
   position: relative;
-  top: 60px;
+  top: 70px;
 }
 
 .foot-dome {
   position: relative;
-  top: 100px;
+  top: 118px;
 }
 
 img[src*="nightlight"] {
