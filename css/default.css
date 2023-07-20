@@ -26,6 +26,8 @@
   --size-150: 9.325rem;
 }
 
+html { border: 2px solid yellow; }
+
 /* 1. Use a more-intuitive box-sizing model. */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -50,6 +52,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #8DC7C1;
+  border: 2px solid red;
 }
 
 /* 5. Improve media defaults */

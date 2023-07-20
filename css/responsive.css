@@ -865,6 +865,8 @@
 
   /* Start of Essential Oils page */
 
+  .citrus-section { height: 5000px; }
+
   .oils > * { }
 
   .section2 { height: 4152px; }
@@ -1190,7 +1192,7 @@
 
   /* Start of Hand Carved Salt Lamps */
 
-  .himalayan-salt-container { height: 6400px; }
+  .essential-oils-container { height: 5600px; }
 
   /*.salt-wrapper { height: 3600px; }*/
 

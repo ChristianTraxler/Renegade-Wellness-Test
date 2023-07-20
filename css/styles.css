@@ -287,7 +287,7 @@
 }
 
 section {
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
 }
@@ -436,6 +436,7 @@ section {
   display: block;
   padding: var(--size-150) 0;
   margin: 0 auto;
+  height: 2830px;
 }
 
 .block-text.pricing-header {
@@ -755,6 +756,8 @@ section {
 
 /* Start of Essential Oils */
 
+.essential-oils-container { height: 6700px; }
+
 .essential {
   display: flex;
   justify-content: center;
@@ -768,6 +771,27 @@ section {
 }
 
 h3 > a { color: black; }
+
+.citrus-section {
+  display: block;
+  padding: var(--size-50) 0;
+  margin: 0 auto;
+  height: 2353px;
+}
+
+.floral-section {
+  display: block;
+  padding: var(--size-150) 0;
+  margin: 0 auto;
+  height: 3153px;
+}
+
+
+#resin-oils {
+  margin: auto;
+  justify-content: center;
+  grid-template-columns: repeat(2, 35%);
+}
 
 .e-o { margin: 10px; }
 
@@ -925,45 +949,48 @@ h3 > a { color: black; }
 }
 
 hr {
+  margin: auto;
   width: 85%;
   border: 1px solid black;
+  position: relative;
+  top: 80px;
 }
 
-.section2 {
-  display: block;
-  margin-bottom: 100px;
-  height: 1350px;
-}
+/*.section2 {*/
+/*  display: block;*/
+/*  margin-bottom: 100px;*/
+/*  height: 1350px;*/
+/*}*/
 
-.section3 {
-  display: block;
-  margin-bottom: 100px;
-  height: 1804px;
-}
+/*.section3 {*/
+/*  display: block;*/
+/*  margin-bottom: 100px;*/
+/*  height: 1804px;*/
+/*}*/
 
-.section4, .section7 {
-  display: block;
-  margin-bottom: 100px;
-  height: 897px;
-}
+/*.section4, .section7 {*/
+/*  display: block;*/
+/*  margin-bottom: 100px;*/
+/*  height: 897px;*/
+/*}*/
 
-.section5 {
-  display: block;
-  margin-bottom: 100px;
-  height: 443px;
-}
+/*.section5 {*/
+/*  display: block;*/
+/*  margin-bottom: 100px;*/
+/*  height: 443px;*/
+/*}*/
 
-.section6 {
-  display: block;
-  margin-bottom: 100px;
-  height: 1338px;
-}
+/*.section6 {*/
+/*  display: block;*/
+/*  margin-bottom: 100px;*/
+/*  height: 1338px;*/
+/*}*/
 
-.section8 {
-  display: block;
-  margin-bottom: 100px;
-  height: 980px;
-}
+/*.section8 {*/
+/*  display: block;*/
+/*  margin-bottom: 100px;*/
+/*  height: 980px;*/
+/*}*/
 
 .new-items {
   position: relative;
@@ -2084,6 +2111,7 @@ footer .footer-col {
 
 .footer-bottom {
   padding: var(--size-16) 0;
+  text-align: center;
 }
 
 .footer-bottom-wrapper {
