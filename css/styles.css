@@ -60,6 +60,7 @@
   width: 100%;
   transition: ease-in-out 0.3s;
   color: var(--white);
+  text-align: left;
 }
 
 .bg-header, .video-demo {
@@ -312,11 +313,6 @@ section {
   line-height: 1.5;
 }
 
-.block-text > a {
-  position: relative;
-  bottom: 38px;
-}
-
 .why-me-wrapper .block-text {
   max-width: 35rem;
   margin: auto;
@@ -423,12 +419,12 @@ section {
   background-color: var(--font-color-light);
 }
 
-span.bg-color-1 { background-image: linear-gradient(90deg, #55EDC0 0%, #4BDBDB 100%); }
-span.bg-color-2 { background-image: linear-gradient(90deg, #FDA498 0%, #F58B9E 100%); }
-span.bg-color-3 { background-image: linear-gradient(90deg, #9CCDF3 0%, #94AAFD 100%); }
-span.bg-color-4 { background-image: linear-gradient(90deg, #F2A7CA 0%, #C289F4 100%); }
-span.bg-color-5 { background-image: linear-gradient(90deg, #A1ECFF 0%, #7DBCFF 100%); }
-span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 100%); }
+/*span.bg-color-1 { background-image: linear-gradient(90deg, #55EDC0 0%, #4BDBDB 100%); }*/
+/*span.bg-color-2 { background-image: linear-gradient(90deg, #FDA498 0%, #F58B9E 100%); }*/
+/*span.bg-color-3 { background-image: linear-gradient(90deg, #9CCDF3 0%, #94AAFD 100%); }*/
+/*span.bg-color-4 { background-image: linear-gradient(90deg, #F2A7CA 0%, #C289F4 100%); }*/
+/*span.bg-color-5 { background-image: linear-gradient(90deg, #A1ECFF 0%, #7DBCFF 100%); }*/
+/*span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 100%); }*/
 
 /* End of Services */
 
@@ -438,7 +434,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 .pricing-section {
   display: block;
-  padding: var(--size-100) 0;
+  padding: var(--size-150) 0;
   margin: 0 auto;
 }
 
@@ -519,6 +515,11 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 
 .price-card1 h3, .price-card2 h3, .price-card1 .price, .price-card2 .price,
 .price-card1 .billed, .price-card2 .billed { text-align: center; }
+
+.featured > h3 {
+  position: relative;
+  top: 15px;
+}
 
 .billed { line-height: 1.1rem; }
 
@@ -664,6 +665,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
 .active:after, .active2:after { content: "\2212"; }
 
 .panel {
+  margin: auto;
   padding: 0 18px;
   background-color: white;
   max-height: 0;
@@ -688,6 +690,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #FFC187 0%, #FE93A7 1
   padding-left: 15px;
   text-decoration: underline;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .infrared {
@@ -768,14 +771,32 @@ h3 > a { color: black; }
 
 .e-o { margin: 10px; }
 
+.essential-oils-card {
+  margin: 0 auto;
+  padding: 15px 10px 0 10px;
+  height: 550px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 10px;
+}
+
 .oils {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 80px;
-  gap: 4em;
-  margin-bottom: 200px;
+  margin: auto;
+  width: 25%;
 }
+
+.price-container { margin: 10px auto 0; }
+
+/*.oils {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  position: relative;*/
+/*  top: 80px;*/
+/*  gap: 4em;*/
+/*  margin-bottom: 200px;*/
+/*}*/
 
 .oils2 { left: 24px; }
 
@@ -1458,6 +1479,8 @@ hr {
 
 .toscompany { padding: 0 10px; }
 
+.block-text > .salt-products-header { font-family: 'Lumanosimo', cursive; }
+
 .salt-wrapper {
   margin: auto;
   width: 100%;
@@ -1570,7 +1593,10 @@ hr {
   margin-top: 15px;
   font-size: 20px;
   text-align: center;
+  font-family: 'Lumanosimo', cursive;
 }
+
+/*.content > .price-days { font-family: 'Lumanosimo', cursive; }*/
 
 .price-days {
   margin: 10px auto 40px;

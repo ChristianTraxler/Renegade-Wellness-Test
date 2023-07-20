@@ -1381,7 +1381,7 @@
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   /* Start of Contact page */
-  .pricing-section { padding: 100px 0 50px 0; }
+  .pricing-section { padding: 100px 0 150px 0; }
 
   .contact > h3, .hours { font-size: 1rem; }
 
@@ -1402,6 +1402,8 @@
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   /* Start of FAQ page */
+
+  .info-section { margin: 0 30px 0 0; }
 
   .accordion, .panel { width: 92%; }
 

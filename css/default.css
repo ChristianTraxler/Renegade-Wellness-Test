@@ -42,12 +42,23 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: var(--size-14);
+  letter-spacing: 0;
+  color: var(--font-color-dark);
+  margin: 0;
+  padding: 0;
+  background-color: #8DC7C1;
 }
 
 /* 5. Improve media defaults */
 img, picture, video, canvas, svg {
   display: block;
+  width: 100%;
   max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
 }
 
 /* 6. Remove built-in form typography styles */
@@ -67,24 +78,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 html { scroll-behavior: smooth; }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: var(--size-14);
-  line-height: 1.0;
-  letter-spacing: 0;
-  color: var(--font-color-dark);
-  margin: 0;
-  padding: 0;
-  background-color: #8DC7C1;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -103,12 +96,12 @@ h2 {
   line-height: 1.2;
 }
 
-img {
-  width: 100%;
-  max-width: 100%;
-  vertical-align: middle;
-  border-style: none;
-}
+/*img {*/
+/*  width: 100%;*/
+/*  max-width: 100%;*/
+/*  vertical-align: middle;*/
+/*  border-style: none;*/
+/*}*/
 
 .container {
   width: 100%;
