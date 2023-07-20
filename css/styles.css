@@ -1614,6 +1614,11 @@ hr {
   top: 42px;
 }
 
+img[src*="cross"] {
+  position: relative;
+  top: 20px;
+}
+
 img[src*="soccer"] {
   position: relative;
   top: 40px;
