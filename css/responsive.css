@@ -789,6 +789,8 @@
 
   .block-text { left: 0; }
 
+  .block-text h2 { font-size: var(--size-30); }
+
   .container2 {
     margin-right: auto;
     margin-left: auto;
