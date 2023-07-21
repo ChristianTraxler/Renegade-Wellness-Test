@@ -1537,6 +1537,11 @@ hr {
   gap: 6%;
 }
 
+.salt-lamp-container {
+  position: relative;
+  top: 80px;
+}
+
 .salt-row-2 {
   position: relative;
   top: 100px;
