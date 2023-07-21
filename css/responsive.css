@@ -865,7 +865,9 @@
 
   /* Start of Essential Oils page */
 
-  .citrus-section { height: 5000px; }
+  .citrus-section, .floral-section, .mint-section, .spices-section { height: initial; }
+
+  #resin-oils { grid-template-columns: initial; }
 
   .oils > * { }
 
@@ -1192,7 +1194,7 @@
 
   /* Start of Hand Carved Salt Lamps */
 
-  .essential-oils-container { height: 5600px; }
+  /*.essential-oils-container { height: 5600px; }*/
 
   /*.salt-wrapper { height: 3600px; }*/
 
@@ -1215,7 +1217,7 @@
 
   img[src*="white"] { top: 4px; }
 
-  .salt-lamp-card-mobile { height: 440px; }
+  .salt-lamp-card-mobile { height: 609px; }
 
   .soccer-ball {
     position: relative;
@@ -1672,8 +1674,8 @@
     gap: initial;
   }
 
-  .salt-lamp-card-mobile { height: 410px; }
-  .salt-lamp-card-mobile-sm { height: 364px; }
+  /*.salt-lamp-card-mobile { height: 410px; }*/
+  .salt-lamp-card-mobile-sm { height: 624px; }
 
   .salt-lamp-name-mobile-sm {
     position: relative;
