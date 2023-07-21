@@ -565,7 +565,7 @@ section {
 
 /* Start of Contact Page */
 
-.block-text, .contact-header, .contact { text-align: center; }
+.block-text, .contact-header, .contact { text-align: center; border: 4px solid blue; }
 
 .contact h3, .hours {
   font-size: 1.25rem;
@@ -756,7 +756,7 @@ section {
 
 /* Start of Essential Oils */
 
-.essential-oils-container { height: 6700px; }
+.essential-oils-container { height: 6700px; border: 4px solid aqua; }
 
 .essential {
   display: flex;
@@ -777,6 +777,7 @@ h3 > a { color: black; }
   padding: var(--size-50) 0;
   margin: 0 auto;
   height: 2353px;
+  border: 4px solid orangered;
 }
 
 .floral-section {

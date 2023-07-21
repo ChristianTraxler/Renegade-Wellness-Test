@@ -26,7 +26,7 @@
   --size-150: 9.325rem;
 }
 
-html { border: 2px solid yellow; }
+/*html { border: 2px solid yellow; }*/
 
 /* 1. Use a more-intuitive box-sizing model. */
 *, *::before, *::after {
