@@ -865,7 +865,8 @@
 
   /* Start of Essential Oils page */
 
-  .citrus-section, .floral-section, .mint-section, .spices-section { height: initial; }
+  .citrus-section, .floral-section, .mint-section, .spices-section,
+  .resin-section, .forest-section, .blends-section { height: initial; }
 
   #resin-oils { grid-template-columns: initial; }
 
