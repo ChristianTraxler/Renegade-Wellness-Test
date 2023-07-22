@@ -757,6 +757,24 @@ section {
 
 /*.essential-oils-container { border: 4px solid aqua; }*/
 
+.essential-oils-wrapper {
+  margin: auto;
+  width: 100%;
+  /*height: 1500px;*/
+  max-width: 1200px;
+  padding: 0 30px;
+  position: relative;
+  /*top: 200px;*/
+}
+
+.essential-oils {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 35%);
+  justify-content: center;
+  padding-top: 60px;
+}
+
 .essential {
   display: flex;
   justify-content: center;
@@ -775,7 +793,7 @@ h3 > a { color: black; }
   display: block;
   padding: var(--size-50) 0;
   margin: 0 auto;
-  height: 2130px;
+  /*height: 2130px;*/
   /*border: 4px solid orangered;*/
 }
 
@@ -783,17 +801,17 @@ h3 > a { color: black; }
   display: block;
   padding: var(--size-50) 0;
   margin: 0 auto;
-  height: 2908px;
+  /*height: 2908px;*/
 }
 
 .mint-section, .spices-section, .forest-section {
   padding: var(--size-50) 0;
-  height: 1400px;
+  /*height: 1400px;*/
 }
 
 .resin-section {
   padding: var(--size-50) 0;
-  height: 753px;
+  /*height: 753px;*/
 }
 
 .blends-section {
@@ -812,17 +830,18 @@ h3 > a { color: black; }
 .essential-oils-card {
   margin: 0 auto;
   padding: 15px 10px 0 10px;
-  height: 550px;
+  /*height: 550px;*/
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   border-radius: 10px;
+  width: 87%;
 }
 
 .oils {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 25%;
+  width: 20%;
 }
 
 .price-container { margin: 10px auto 0; }
@@ -1537,9 +1556,9 @@ hr {
 
 /* Start of Salt Lamps */
 
-.himalayan-salt-container { height: 2600px; }
+/*.himalayan-salt-container { height: 2600px; }*/
 
-.toscompany { padding: 0 10px; }
+/*.toscompany { padding: 0 10px; }*/
 
 .block-text > .salt-products-header { font-family: 'Lumanosimo', cursive; }
 
@@ -1558,7 +1577,7 @@ hr {
   grid-template-rows: repeat(1, 1fr);
   /*width: min(95%, 70rem);*/
   grid-template-columns: repeat(3, 1fr);
-  gap: 6%;
+  /*gap: 6%;*/
 }
 
 .salt-lamp-container {
@@ -1637,10 +1656,10 @@ hr {
 }
 
 .salt-lamp-card {
-  /*width: 26%;*/
+  /*width: 56%;*/
   margin: 0 auto;
   padding: 25px 0 0 0;
-  height: 400px;
+  height: 430px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   border-radius: 10px;
@@ -1707,6 +1726,16 @@ hr {
   top: 42px;
 }
 
+.salt-lamp-name-3 {
+  position: relative;
+  bottom: 7px;
+}
+
+.salt-lamp-name-4 {
+  position: relative;
+  top: 12px;
+}
+
 img[src*="cross"] {
   position: relative;
   top: 20px;
@@ -1734,7 +1763,7 @@ img[src*="foot-dome"] {
 
 .foot-dome {
   position: relative;
-  top: 118px;
+  top: 133px;
 }
 
 img[src*="nightlight"] {

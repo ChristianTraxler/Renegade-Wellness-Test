@@ -868,76 +868,79 @@
   .citrus-section, .floral-section, .mint-section, .spices-section,
   .resin-section, .forest-section, .blends-section { height: initial; }
 
-  #resin-oils { grid-template-columns: initial; }
+  .essential-oils, #resin-oils { grid-template-columns: initial; }
 
   .oils > * { }
 
-  .section2 { height: 4152px; }
-  .section3 { height: 5542px; }
-  .section4 { height: 2762px; }
-  .section5 { height: 906px; }
-  .section6 { height: 2331px; }
-  .section7 { height: 2299px; }
-  .section8 { height: 1854px; }
+  /*.section2 { height: 4152px; }*/
+  /*.section3 { height: 5542px; }*/
+  /*.section4 { height: 2762px; }*/
+  /*.section5 { height: 906px; }*/
+  /*.section6 { height: 2331px; }*/
+  /*.section7 { height: 2299px; }*/
+  /*.section8 { height: 1854px; }*/
 
-  .group2 { top: 49px; }
+  /*.group2 { top: 49px; }*/
 
-  .group3 {
-    top: initial;
-    bottom: -17px;
-  }
+  /*.group3 {*/
+  /*  top: initial;*/
+  /*  bottom: -17px;*/
+  /*}*/
 
-  .group4 {
-    top: initial;
-    bottom: 91px;
-  }
+  /*.group4 {*/
+  /*  top: initial;*/
+  /*  bottom: 91px;*/
+  /*}*/
 
-  .image-oils { top: 0; }
+  /*.image-oils { top: 0; }*/
 
-  .resin-group { top: 80px; }
-  .blends-group { top: 20px; }
+  /*.resin-group { top: 80px; }*/
+  /*.blends-group { top: 20px; }*/
 
-  .oils { left: initial; }
+  /*.oils { left: initial; }*/
 
-  .oils3 {
-    margin-bottom: 120px;
-    top: -15px;
-  }
+  /*.oils3 {*/
+  /*  margin-bottom: 120px;*/
+  /*  top: -15px;*/
+  /*}*/
 
-  .lavender-oil { left: 0; }
+  /*.lavender-oil { left: 0; }*/
 
-  .bergamot-tablet { left: initial; }
+  /*.bergamot-tablet { left: initial; }*/
 
-  .peppermint-image, .lavender-image, .greek-lavender-image, .frankincense-image { left: initial; }
+  /*.peppermint-image, .lavender-image, .greek-lavender-image, .frankincense-image { left: initial; }*/
 
-  .lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,
-  .lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }
+  /*.lemon, .blood-orange, .green-mandarin, .peppermint, .breathe-clear,*/
+  /*.lavender, .greek-lavender, .frankincense, .eucalyptus, .mountain_bandits, .breathe-clear { width: 94%; }*/
 
-  .eucalyptus-image { left: initial; }
+  /*.eucalyptus-image { left: initial; }*/
 
-  .eo-tablet-overlay, .grapefruit-overlay, .lemon-eo-overlay {
-    width: 351px;
-    height: 299px;
-    top: 0;
-    left: 25px;
-    line-height: 1.2em;
-  }
+  /*.eo-tablet-overlay, .grapefruit-overlay, .lemon-eo-overlay {*/
+  /*  width: 351px;*/
+  /*  height: 299px;*/
+  /*  top: 0;*/
+  /*  left: 25px;*/
+  /*  line-height: 1.2em;*/
+  /*}*/
 
   .oils-title { font-size: 1.5em; }
   /*.price { font-size: initial; }*/
 
-  .oil-description { font-size: 0.8em; }
-
-  .lemongrass-overlay { top: 0; }
-
-
-  .breathe-clear-overlay {
-    height: 307px;
-    right: initial;
+  .oil-description {
+    padding: 15px 6px;
+    font-size: 0.8em;
   }
 
-  .mountain_bandits-overlay { height: 309px; }
-  .tranquil-overlay { height: 307px; }
+  /*.lemongrass-overlay { top: 0; }*/
+
+
+  /*.breathe-clear-overlay {*/
+  /*  height: 307px;*/
+  /*  right: initial;*/
+  /*}*/
+
+  /*.mountain_bandits-overlay { height: 309px; }*/
+  /*.tranquil-overlay { height: 307px; }*/
 
   /* End of Essential Oils page */
 
@@ -1218,8 +1221,6 @@
 
   img[src*="white"] { top: 4px; }
 
-  .salt-lamp-card-mobile { height: 609px; }
-
   .soccer-ball {
     position: relative;
     top: 65px;
@@ -1423,8 +1424,7 @@
   .footer-bottom-wrapper { text-align: center }
 
   .footer-bottom-links {
-    position: relative;
-    left: 6px;
+    padding-left: 10px;
   }
 
   /* End of Footer */
