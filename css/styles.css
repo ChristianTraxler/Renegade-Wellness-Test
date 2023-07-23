@@ -1829,9 +1829,17 @@ img[src*="moon-nightlight"] {
 
 /* Start of Diffusers section */
 
+/*.diffuser {*/
+/*  position: relative;*/
+/*  top: 100px;*/
+/*}*/
+
 .diffuser {
-  position: relative;
-  top: 100px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  /* width: min(95%, 70rem); */
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 6%; */
 }
 
 .diffuser-lamps {
@@ -1882,51 +1890,51 @@ img[src*="moon-nightlight"] {
   margin-bottom: 244px;
 }
 
-.diffuser-overlay {
-  display: flex;
-  position: absolute;
-  width: 342px;
-  height: 280px;
-  top: 0;
-  left: 218px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  border-radius: 10px;
-}
+/*.diffuser-overlay {*/
+/*  display: flex;*/
+/*  position: absolute;*/
+/*  width: 342px;*/
+/*  height: 280px;*/
+/*  top: 0;*/
+/*  left: 218px;*/
+/*  background: rgba(0, 0, 0, 0.6);*/
+/*  color: #ffffff;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  opacity: 0;*/
+/*  transition: opacity 0.25s;*/
+/*  border-radius: 10px;*/
+/*}*/
 
-.diffuser-overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
+/*.diffuser-overlay > * {*/
+/*  transform: translateY(20px);*/
+/*  transition: transform 0.25s;*/
+/*}*/
 
-.diffuser-overlay:hover { opacity: 1; }
+/*.diffuser-overlay:hover { opacity: 1; }*/
 
-.diffuser-overlay:hover > * { transform: translateY(0); }
+/*.diffuser-overlay:hover > * { transform: translateY(0); }*/
 
-.diffuser-overlay-blur { backdrop-filter: blur(5px); }
+/*.diffuser-overlay-blur { backdrop-filter: blur(5px); }*/
 
-.diffuser-overlay2 {
-  width: 342px;
-  height: 280px;
-  top: 0;
-  left: 580px;
-}
+/*.diffuser-overlay2 {*/
+/*  width: 342px;*/
+/*  height: 280px;*/
+/*  top: 0;*/
+/*  left: 580px;*/
+/*}*/
 
-.blizzard-overlay, .breezy-overlay { height: 265px; }
+/*.blizzard-overlay, .breezy-overlay { height: 265px; }*/
 
-.diffuser-title {
-  position: relative;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 0 2px;
-  top: 0;
-}
+/*.diffuser-title {*/
+/*  position: relative;*/
+/*  text-align: center;*/
+/*  font-size: 1.5em;*/
+/*  font-weight: bold;*/
+/*  padding: 0 2px;*/
+/*  top: 0;*/
+/*}*/
 
 .diffuser-price {
   font-size: var(--size-20);
@@ -1939,7 +1947,7 @@ img[src*="moon-nightlight"] {
 }
 
 .moon-glow { width: 80%; }
-.marble { width: 37%; }
+.marble { width: 38%; }
 .leah { width: 52%; }
 
 .daisy {
