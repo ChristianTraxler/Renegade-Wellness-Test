@@ -1068,13 +1068,23 @@ hr {
 }
 
 .hydrosol {
-  display: grid;
-  justify-content: center;
-  position: relative;
-  top: 80px;
-  margin-bottom: 80px;
-  grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
+  width: 25%;
+  margin: auto;
 }
+
+.hydro-name {
+  position: relative;
+  top: 15px;
+}
+
+/*.hydrosol {*/
+/*  display: grid;*/
+/*  justify-content: center;*/
+/*  position: relative;*/
+/*  top: 80px;*/
+/*  margin-bottom: 80px;*/
+/*  grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));*/
+/*}*/
 
 .hydrosol-row3 { margin-bottom: 150px; }
 
@@ -1083,7 +1093,14 @@ hr {
   width: 80%;
 }
 
-
+.hydrosol-card {
+  margin: 0 auto;
+  padding: 25px 0 0 0;
+  /*height: 630px;*/
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 10px;
+}
 
 .more-width { width: 28.2%; }
 
@@ -1104,57 +1121,57 @@ hr {
 
 .hydrosol > * { line-height: 1.5em; }
 
-.victorian-hydro { width: 14%; }
+/*.victorian-hydro { width: 14%; }*/
 
-.hydrosol-overlay {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 114px;
-  width: 351px;
-  height: 378px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  border-radius: 10px;
-}
+/*.hydrosol-overlay {*/
+/*  display: flex;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 114px;*/
+/*  width: 351px;*/
+/*  height: 378px;*/
+/*  background: rgba(0, 0, 0, 0.6);*/
+/*  color: #ffffff;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  opacity: 0;*/
+/*  transition: opacity 0.25s;*/
+/*  border-radius: 10px;*/
+/*}*/
 
-.hydrosol-overlay2 {
-  right: 109px;
-  left: initial;
-}
+/*.hydrosol-overlay2 {*/
+/*  right: 109px;*/
+/*  left: initial;*/
+/*}*/
 
-.elderberry-hydro-overlay {
-  right: 109px;
-  left: initial;
-}
+/*.elderberry-hydro-overlay {*/
+/*  right: 109px;*/
+/*  left: initial;*/
+/*}*/
 
-.frank-hydro-overlay { right: 109px; }
+/*.frank-hydro-overlay { right: 109px; }*/
 
-.frank-hydro-overlay, .ginger-hydro-overlay, .lav-hydro-overlay, .lemon-hydro-overlay,
-.hydro-pepp-overlay, .rose-otto-overlay { height: 382px; }
-.lemon-verbena-overlay { height: 380px; }
-.victorian-overlay {
-  height: 380px;
-  left: 394px;
-}
+/*.frank-hydro-overlay, .ginger-hydro-overlay, .lav-hydro-overlay, .lemon-hydro-overlay,*/
+/*.hydro-pepp-overlay, .rose-otto-overlay { height: 382px; }*/
+/*.lemon-verbena-overlay { height: 380px; }*/
+/*.victorian-overlay {*/
+/*  height: 380px;*/
+/*  left: 394px;*/
+/*}*/
 
-.hydro-pepp-overlay { left: 684px; }
+/*.hydro-pepp-overlay { left: 684px; }*/
 
-.hydrosol-overlay-blur { backdrop-filter: blur(5px); }
+/*.hydrosol-overlay-blur { backdrop-filter: blur(5px); }*/
 
-.hydrosol-overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
+/*.hydrosol-overlay > * {*/
+/*  transform: translateY(20px);*/
+/*  transition: transform 0.25s;*/
+/*}*/
 
-.hydrosol-overlay:hover { opacity: 1; }
+/*.hydrosol-overlay:hover { opacity: 1; }*/
 
-.hydrosol-overlay:hover > * { transform: translateY(0); }
+/*.hydrosol-overlay:hover > * { transform: translateY(0); }*/
 
 .hydro {
   position: relative;
@@ -1178,6 +1195,8 @@ hr {
 .victorian { color: #B5524E; }
 
 .hydro-description {
+  position: relative;
+  bottom: 40px;
   text-align: center;
   font-size: 0.9em;
   padding: 1em 1em;
@@ -1560,7 +1579,7 @@ hr {
 
 /*.toscompany { padding: 0 10px; }*/
 
-.block-text > .salt-products-header { font-family: 'Lumanosimo', cursive; }
+.block-text > .salt-products-header { font-family: 'Lumanosimo', sans-serif; }
 
 .salt-wrapper {
   margin: auto;
@@ -1585,67 +1604,67 @@ hr {
   top: 80px;
 }
 
-.salt-row-2 {
-  position: relative;
-  top: 100px;
-}
+/*.salt-row-2 {*/
+/*  position: relative;*/
+/*  top: 100px;*/
+/*}*/
 
-.salt-row-3 {
-  position: relative;
-  top: 200px;
-}
+/*.salt-row-3 {*/
+/*  position: relative;*/
+/*  top: 200px;*/
+/*}*/
 
-.salt-cards {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
+/*.salt-cards {*/
+/*  display: block;*/
+/*  margin: 0 auto;*/
+/*  width: 100%;*/
+/*}*/
 
-.salt-lamps2 {
-  display: block;
-  width: 50%;
-  margin: auto;
-  position: relative;
-}
+/*.salt-lamps2 {*/
+/*  display: block;*/
+/*  width: 50%;*/
+/*  margin: auto;*/
+/*  position: relative;*/
+/*}*/
 
-.salt-lamps-overlay {
-  display: flex;
-  position: absolute;
-  top: 0;
-  width: 289px;
-  height: 243px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  border-radius: 10px;
-}
+/*.salt-lamps-overlay {*/
+/*  display: flex;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  width: 289px;*/
+/*  height: 243px;*/
+/*  background: rgba(0, 0, 0, 0.6);*/
+/*  color: #ffffff;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  opacity: 0;*/
+/*  transition: opacity 0.25s;*/
+/*  border-radius: 10px;*/
+/*}*/
 
-.salt-lamps-overlay-blur { backdrop-filter: blur(5px); }
+/*.salt-lamps-overlay-blur { backdrop-filter: blur(5px); }*/
 
-.salt-lamps-overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
+/*.salt-lamps-overlay > * {*/
+/*  transform: translateY(20px);*/
+/*  transition: transform 0.25s;*/
+/*}*/
 
-.salt-lamps-overlay:hover { opacity: 1; }
+/*.salt-lamps-overlay:hover { opacity: 1; }*/
 
-.salt-lamps-overlay:hover > * { transform: translateY(0); }
+/*.salt-lamps-overlay:hover > * { transform: translateY(0); }*/
 
-.white-natural-overlay {
-  width: 330px;
-  height: 330px;
-  left: 87px;
-}
+/*.white-natural-overlay {*/
+/*  width: 330px;*/
+/*  height: 330px;*/
+/*  left: 87px;*/
+/*}*/
 
-.nightlight-overlay {
-  width: 331px;
-  height: 330px;
-  right: 85px;
-}
+/*.nightlight-overlay {*/
+/*  width: 331px;*/
+/*  height: 330px;*/
+/*  right: 85px;*/
+/*}*/
 
 .container {
   position: relative;
