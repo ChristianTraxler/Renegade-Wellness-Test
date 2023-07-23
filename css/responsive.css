@@ -1051,6 +1051,8 @@
 
   /* Start of Carrier Oils */
 
+  .carriers { grid-template-columns: initial; }
+
   .carrier { margin: 100px 0 100px 0; }
   /*.carrier2 { margin: -52px 0 100px 0;}*/
   .carrier3 { margin: 34px 0 200px 0; }
