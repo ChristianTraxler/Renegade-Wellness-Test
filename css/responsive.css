@@ -615,9 +615,9 @@
 
 @media screen and (max-width: 740px) {
 
-  .essential-oils { grid-template-columns: repeat(2, 50%); }
+  .essential-oils { grid-template-columns: repeat(2, 60%); }
 
-  #resin-oils { grid-template-columns: repeat(2, 50%); }
+  #resin-oils { grid-template-columns: repeat(2, 60%); }
 }
 
 /* Mobile Screens */
