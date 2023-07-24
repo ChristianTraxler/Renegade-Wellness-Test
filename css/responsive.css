@@ -774,6 +774,8 @@
 
   .navbar.rwc-logo2.sticky { display: inherit; }
 
+  ul.breadcrumb li a { font-size: 12px; }
+
   /* End of Navbar */
 
   /* Start of Home page */
@@ -1435,6 +1437,12 @@
 }
 
 @media screen and (max-width: 400px) {
+
+  /*Start of Navbar*/
+
+  ul.breadcrumb li a { font-size: 10px; }
+
+  /*End of Navbar*/
 
   /* Start of Home page */
   .why-me { padding-top: 50px; }
