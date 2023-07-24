@@ -583,9 +583,11 @@ section {
 .original-salt, .diffusers { font-size: 1em; }
 
 .original-salt {
+  font-family: 'Lumanosimo', sans-serif;
   position: relative;
   right: 170px;
   width: 324px;
+  font-size: 1.46rem;
 }
 
 .diffusers {
