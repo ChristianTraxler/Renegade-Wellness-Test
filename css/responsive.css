@@ -774,6 +774,8 @@
 
   .navbar.rwc-logo2.sticky { display: inherit; }
 
+  ul.breadcrumb li { font-size: 16px; }
+
   ul.breadcrumb li a { font-size: 12px; }
 
   /* End of Navbar */
