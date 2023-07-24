@@ -188,17 +188,15 @@
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(398px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 30%);
+  justify-content: center;
   margin-top: var(--size-100);
   position: relative;
   top: 56px;
 }
 
-.container2 {
-  padding: 18px 20px 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .card {
   position: relative;
@@ -547,16 +545,53 @@ section {
 
 /* Start of Products page */
 
-.column1 { margin-right: initial; }
-.column2 { margin-left: initial; }
+.product-container {
+  display: block;
+  padding: var(--size-150) 0;
+  margin: 0 auto;
+}
+
+/*.column1 { margin-right: initial; }*/
+/*.column2 { margin-left: initial; }*/
 
 .original-salt, .diffusers { font-size: 1em; }
+
+.original-salt {
+  position: relative;
+  right: 170px;
+  width: 324px;
+}
 
 .diffusers {
   position: relative;
   right: 15px;
 }
 
+.aromatics { font-size: 28px; }
+.beauty { font-size: 30px; }
+
+.information {
+  text-align: center;
+  font-size: 1.2rem;
+  position: relative;
+  top: 40px;
+  padding: 0 50px 0 50px;
+  line-height: 1.5em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container4 { margin-left: 0; }
+
+img[src*="FA98204A"] {
+  width: 329px;
+  max-width: initial;
+  height: 310px;
+  border-radius: 10px;
+  position: relative;
+  left: 80px;
+  opacity: 40%;
+}
 
 /* End of Products page */
 
@@ -715,37 +750,22 @@ section {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* Start of Products page */
-
-.aromatics { font-size: 28px; }
-.beauty { font-size: 30px; }
-
-.information {
-  text-align: center;
-  font-size: 1.2rem;
-  position: relative;
-  top: 40px;
-  padding: 0 50px 0 50px;
-  line-height: 1.5em;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.container4 { margin-left: 0; }
-
-/* End of Products page */
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 /* Start of Aromatics Page */
 
 .service-grid2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
-  gap: var(--size-20);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+  /*gap: var(--size-20);*/
   margin-top: var(--size-100);
   position: relative;
   top: 56px;
+}
+
+.container2 {
+  padding: 10px 20px 10px;
+  margin: auto;
 }
 
 
