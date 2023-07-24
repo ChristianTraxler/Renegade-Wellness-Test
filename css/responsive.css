@@ -870,9 +870,13 @@
   .citrus-section, .floral-section, .mint-section, .spices-section,
   .resin-section, .forest-section, .blends-section { height: initial; }
 
+  .essential-oils-wrapper { padding: 0 0; }
+
   .essential-oils, #resin-oils { grid-template-columns: initial; }
 
   .oils > * { }
+
+  .essential-oils-card { width: 100%; }
 
   /*.section2 { height: 4152px; }*/
   /*.section3 { height: 5542px; }*/
