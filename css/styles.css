@@ -591,6 +591,7 @@ section {
 }
 
 .diffusers {
+  font-family: 'Lumanosimo','Macondo Swash Caps', sans-serif;
   position: relative;
   right: 15px;
 }
@@ -1218,6 +1219,11 @@ hr {
   text-align: center;
 }
 
+.pineapple-bliss {
+  position: relative;
+  top: 24px;
+}
+
 .masks3 {
   display: flex;
   justify-content: center;
@@ -1236,69 +1242,12 @@ hr {
   top: 24px;
 }
 
-.juice-overlay {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 286px;
-  width: 274px;
-  height: 274px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  border-radius: 10px;
-}
-
-.juice-overlay2 { left: 580px; }
-.juice-overlay3 { left: 433px; }
-
-.juice-overlay-blur { backdrop-filter: blur(5px); }
-
-.juice-overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
-
-.juice-overlay:hover { opacity: 1; }
-
-.juice-overlay:hover > * { transform: translateY(0); }
-
-.raw-juice { width: 24%; }
-
-.raw-price {
-  font-size: var(--size-20);
-  font-weight: 600;
-  line-height: 60px;
-  margin-bottom: 0;
-  position: relative;
-  top: 20px;
-}
-
-.pink-dream-juice { top: 26px; }
-
-.pink-dream-price {
-  font-size: var(--size-20);
-  font-weight: 600;
-  line-height: 60px;
-  margin-bottom: 0;
-  position: relative;
-  top: 20px;
-}
-
-.strawberries-price, .anti-aging-price, .deep-detox-price { top: 17px; }
-
 .juice-description {
   text-align: center;
   font-size: 0.9em;
   line-height: 1.5em;
   padding: 1em 1em;
 }
-
-.deep-detox { padding: 0 10px 0 10px; }
 
 .pineapple-juice { color: #A0A451; }
 .pink-dream-juice { color: #CE8E99; }
@@ -1314,61 +1263,9 @@ hr {
 
 .plant-based { width: 24%; }
 
-.masks1 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 80px;
-  gap: 20px;
-  margin-bottom: 50px;
-}
+.mask-container { margin: 0 auto 0; }
 
-.masks2 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 80px;
-  gap: 20px;
-  margin-bottom: 244px;
-}
-
-.milk-masks {
-  display: block;
-  width: 100%;
-  margin: auto;
-  position: relative;
-  border-radius: 10px;
-}
-
-.milk-overlay {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 286px;
-  width: 274px;
-  height: 274px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  border-radius: 10px;
-}
-
-.milk-overlay2 { left: 580px; }
-
-.milk-overlay-blur { backdrop-filter: blur(5px); }
-
-.milk-overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
-
-.milk-overlay:hover { opacity: 1; }
-
-.milk-overlay:hover > * { transform: translateY(0); }
+.mask-container > .price-tag { top: 18px; }
 
 .milk-title {
   position: relative;
@@ -1399,75 +1296,18 @@ hr {
 .matcha-milk { color: #B7CB8D; }
 .avocado-milk { color: #859A62 }
 
-.masks1, .masks2, .masks3 > * { line-height: 1.5em; }
-
 /* End of Milk Masks */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Facial Tools */
-.facial { margin-bottom: 38px; }
 
-.tools { bottom: 23px; }
-
-.facial-tools {
-  display: flex;
-  justify-content: center;
+.tools-price {
   position: relative;
-  gap: 20px;margin: 100px 0 200px 0;
-  top: 0;
+  top: 12px;
 }
 
 .title-and-description { text-align: center; }
-
-.facial-tools-image { width: 30%; }
-
-.facial-tools > * { line-height: 1.5em; }
-
-.facial-overlay {
-  display: flex;
-  position: absolute;
-  top: -20px;
-  left: 218px;
-  width: 342px;
-  height: 342px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  border-radius: 10px;
-}
-
-.facial-overlay2 {
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 218px;
-  width: 342px;
-  height: 342px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  border-radius: 10px;
-}
-
-.facial-overlay-blur, .facial-overlay-blur2 { backdrop-filter: blur(5px); }
-
-.facial-overlay, .facial-overlay-blur2  > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
-
-.facial-overlay:hover, .facial-overlay-blur2:hover { opacity: 1; }
-
-.facial-overlay:hover > * { transform: translateY(0); }
 
 .rose-quartz {
   padding: 0 6px;
@@ -1475,8 +1315,6 @@ hr {
 }
 
 .jade-roller { color: #8caa8c; }
-
-.rose-quartz-price, .jade-roller-price { top: 21px; }
 
 .facial-description {
   text-align: center;
