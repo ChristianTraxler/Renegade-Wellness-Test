@@ -613,6 +613,13 @@
   /* End of Portland Bee Balm */
 }
 
+@media screen and (max-width: 740px) {
+
+  .essential-oils { grid-template-columns: repeat(2, 50%); }
+
+  #resin-oils { grid-template-columns: repeat(2, 50%); }
+}
+
 /* Mobile Screens */
 
 @media screen and (max-width: 599px) {
