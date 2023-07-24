@@ -1858,7 +1858,10 @@ img[src*="check-book"], img[src*="contactless_payment"] {
 
 .copyright p { color: var(--white); }
 
-.footer-bottom-links { margin-top: var(--size-10); }
+.footer-bottom-links {
+  margin-top: var(--size-10);
+  padding-left: 10px;
+}
 
 .footer-bottom-links ul li {
   display: inline-block;
