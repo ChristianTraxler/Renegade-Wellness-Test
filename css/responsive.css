@@ -1184,7 +1184,10 @@
 
   .block-text > p { top: 12px; }
 
-  .block-text > a { top: 14px; }
+  .block-text > a {
+    position: relative;
+    top: 25px;
+  }
 
   /* End of Home page */
 
