@@ -1222,6 +1222,8 @@ hr {
 .pineapple-bliss {
   position: relative;
   top: 24px;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .masks3 {
@@ -1240,11 +1242,6 @@ hr {
   font-weight: bold;
   padding: 0 2px;
   top: 24px;
-}
-
-.blue-title {
-  position: relative;
-  bottom: 15px;
 }
 
 .juice-description {
