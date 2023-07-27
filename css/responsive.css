@@ -541,7 +541,7 @@
 
   .milk-overlay2 { left: 364px; }
 
-  .milk-title { font-size: 1.7em; }
+  /*.milk-title { font-size: 1.7em; }*/
 
   .milk-description {
     font-size: 1.3em;
@@ -973,7 +973,7 @@
 
   .milk-price { top: 44px; }
 
-  .blueberry-milk, .vanilla-milk, .matcha-milk, .avocado-milk { font-size: 1.2em; }
+  .milk-title, .blueberry-milk, .vanilla-milk, .matcha-milk, .avocado-milk { font-size: 1.3em; }
 
   .avocado-milk { padding: 0 20px 0 20px; }
 
