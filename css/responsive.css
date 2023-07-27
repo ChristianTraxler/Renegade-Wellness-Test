@@ -949,12 +949,7 @@
     left: 26px;
   }
 
-  .apple-pear {
-    width: 20%;
-    top: 4220px;
-    right: 0;
-    left: 26px;
-  }
+  .apple-pear { left: 26px; }
 
   /* End of Juice Masks */
 
@@ -990,19 +985,9 @@
 
   .description2 { font-size: 1em; }
 
-  .pumpkin {
-    width: 20%;
-    top: 2775px;
-    right: 0;
-    left: 26px;
-  }
+  .pumpkin { left: 26px; }
 
-  .cacao {
-    width: 20%;
-    top: 3450px;
-    right: 0;
-    left: 26px;
-  }
+  .cacao { left: 26px; }
 
   /* End of Milk Mask */
 
@@ -1380,10 +1365,6 @@
     line-height: 1.5em;
   }
 
-  .apple-pear { top: 3952px; }
-  .pumpkin { top: 2670px;}
-  .cacao { top: 3309px;}
-
   /* End of Juice Masks */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -1607,8 +1588,6 @@
   .pink-dream-juice { font-size: 1.2em; }
   .pink-dream-price { top: 22px; }
 
-  .apple-pear { top: 3882px; }
-
   /* End of Juice Masks */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -1636,9 +1615,6 @@
   .milk-description { line-height: 1.3em; }
 
   .blueberry-price, .vanilla-price, .matcha-price, .avocado-milk-price { top: 20px; }
-
-  .pumpkin { top: 2570px; }
-  .cacao { top: 3176px; }
 
 
   /* End of Milk Masks */

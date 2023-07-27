@@ -1259,9 +1259,9 @@ hr {
 
 .apple-pear {
   position: absolute;
-  width: 5%;
-  top: 1947px;
-  left: 252px;
+  width: 16%;
+  top: 30px;
+  left: 50px;
   z-index: 1;
 }
 
@@ -1311,17 +1311,17 @@ hr {
 
 .pumpkin {
   position: absolute;
-  width: 5%;
-  top: 1412px;
-  right: 888px;
+  width: 18%;
+  top: 27px;
+  left: 50px;
   z-index: 1;
 }
 
 .cacao {
   position: absolute;
-  width: 5%;
-  top: 1412px;
-  right: 490px;
+  width: 18%;
+  top: 27px;
+  left: 50px;
   z-index: 1;
 }
 
