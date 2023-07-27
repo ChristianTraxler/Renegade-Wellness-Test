@@ -1242,6 +1242,11 @@ hr {
   top: 24px;
 }
 
+.blue-title {
+  position: relative;
+  bottom: 15px;
+}
+
 .juice-description {
   text-align: center;
   font-size: 0.9em;
