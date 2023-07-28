@@ -1196,8 +1196,8 @@
   }
 
   img[src*="DOC"] {
-    width: 8%;
-    bottom: 6px;
+    width: 5%;
+    bottom: 0;
   }
 
   /* End of Footer */
