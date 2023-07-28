@@ -1197,7 +1197,7 @@
 
   img[src*="DOC"] {
     width: 5%;
-    bottom: 0;
+    bottom: 1px;
   }
 
   /* End of Footer */
