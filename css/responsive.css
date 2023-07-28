@@ -1195,6 +1195,11 @@
     bottom: 10px;
   }
 
+  img[src*="DOC"] {
+    width: 8%;
+    bottom: 6px;
+  }
+
   /* End of Footer */
 }
 
