@@ -1196,9 +1196,11 @@
   }
 
   img[src*="DOC"] {
-    width: 5%;
-    bottom: 1px;
+    width: 6%;
+    right: 1px;
   }
+
+  .developer { right: 8px; }
 
   /* End of Footer */
 }

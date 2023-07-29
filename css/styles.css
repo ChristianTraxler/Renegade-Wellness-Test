@@ -1931,8 +1931,10 @@ img[src*="venmo"] {
   margin-top: 6px; }
 
 .developer {
+  position: relative;
+  right: 12px;
   text-decoration: none;
-  color: #C95F1C;
+  color: #FF4500;
 }
 
 .copyright p { color: var(--white); }
@@ -1958,9 +1960,11 @@ img[src*="venmo"] {
 .tel { color: white; }
 
 img[src*="DOC"] {
+  display: initial;
   position: relative;
   width: 4%;
-  bottom: 4px;
+  right: 4px;
+  bottom: 1px;
 }
 
 /* End of Footer */
