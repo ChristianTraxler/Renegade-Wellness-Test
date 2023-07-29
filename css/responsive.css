@@ -1178,7 +1178,7 @@
   .footer-bottom-wrapper { text-align: center }
 
   .footer-bottom-links {
-    padding: 10px 0 0 6px;
+    padding: 10px 0 0 0;
   }
 
   .payments {
@@ -1200,7 +1200,7 @@
     right: 1px;
   }
 
-  .developer { right: 8px; }
+  .developer { right: 10px; }
 
   /* End of Footer */
 }
