@@ -1195,12 +1195,9 @@
     bottom: 10px;
   }
 
-  img[src*="DOC"] {
-    width: 6%;
-    right: 1px;
-  }
+  img[src*="DOC"] { width: 6%; }
 
-  .developer { right: 10px; }
+  /*.developer { right: 10px; }*/
 
   /* End of Footer */
 }
