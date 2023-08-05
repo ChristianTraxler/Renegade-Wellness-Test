@@ -223,8 +223,10 @@
 												for muscle cramps!) Most lime oil is cold pressed, resulting in a phototoxic oil that causes skin
 												reactions in sunlight. Our lime essential oil is steam distilled and is NOT phototoxic. Use our
 												steam-distilled lime oil without concern in topical blends. Our distiller crafts this oil from
-												organically grown fruits in orchards dotting the sunny southern Italian countryside.
+												organically grown <span id="dots">...</span><span id="more">fruits in orchards dotting the sunny southern
+												Italian countryside.</span>
 											</p>
+											<button onclick="myFunction()" id="myBtn">Read more</button>
 										</div>
 									</div>
 								</div>
@@ -278,9 +280,11 @@
 												crisp (and more tart than our red mandarin oil). This bright-spirited oil inspires optimism and can
 												encourage feelings of safety when connecting to others. Clean your home with green mandarin blends,
 												especially to reduce germs that could compromise health. Our certified organic green mandarin oil has
-												a deep green color and is cold pressed from the fresh rinds of unripe mandarin fruits in Italy (as
-												opposed to the fully ripened fruits, which create red mandarin oil).
+												a deep green color and is cold pressed from the fresh rinds of unripe mandarin <span
+												id="dots2">...</span><span id="more2"> fruits in
+												Italy (as opposed to the fully ripened fruits, which create red mandarin oil).</span>
 											</p>
+											<button onclick="myFunction()" id="myBtn2">Read more</button>
 										</div>
 									</div>
 								</div>
@@ -1479,6 +1483,34 @@
 <!--		</script>-->
 
 		<script>
+			function myFunction() {
+				var dots = document.getElementById("dots");
+				var moreText = document.getElementById("more");
+				var btnText = document.getElementById("myBtn");
+				var dots2 = document.getElementById("dots2");
+				var moreText2 = document.getElementById("more2");
+				var btnText2 = document.getElementById("myBtn2");
+
+				if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "Read more";
+					moreText.style.display = "none";
+				} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less";
+					moreText.style.display = "inline";
+				}
+
+				if (dots2.style.display === "none") {
+					dots2.style.display = "inline";
+					btnText2.innerHTML = "Read more";
+					moreText2.style.display = "none";
+				} else {
+					dots2.style.display = "none";
+					btnText2.innerHTML = "Read less";
+					moreText2.style.display = "inline";
+				}
+			}
 
 			const nav = document.getElementById("topNav");
 			window.onscroll = function () {

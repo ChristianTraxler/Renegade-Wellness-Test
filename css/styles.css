@@ -1012,6 +1012,8 @@ hr {
   text-decoration: underline;
 }
 
+#more, #more2 {display: none;}
+
 /* End of Essential Oils */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
