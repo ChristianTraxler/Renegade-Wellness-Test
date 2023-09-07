@@ -1293,6 +1293,8 @@ hr {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+/* Start of ESW Beauty page */
+
 /* Start of Juice Masks */
 
 .raw-juice-title {
@@ -1422,6 +1424,15 @@ hr {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+/* Start of Lip Treatment section */
+
+.guava-mango { color: #EBAFBB; }
+.vanilla-almond { color: #CC864D; }
+.white-pitaya { color: #DC1857; }
+
+
+/* End of Lip Treatment section */
+
 /* Start of Facial Tools */
 
 .tools-price {
@@ -1446,9 +1457,22 @@ hr {
 
 /* End of Facial Tools */
 
+/* Start of Candles section */
+
+img[src*="pumpkin-spice"], img[src*="pink-dream-candle"] { border-radius: 10px; }
+
+.pink-dream-candle { color: #E97798; }
+
+
+/* End of Candles section */
+
+
+
+/* End of ESW Beauty page */
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* Start of The Original Salt Company */
+/* Start of Himalayan Salt Products */
 
 /* Start of Salt Lamps */
 
@@ -1494,7 +1518,7 @@ hr {
   margin: auto;
 }
 
-img[src*="pumpkin"] {
+img[src*="pumpkin-lamp"] {
   position: relative;
   top: 70px;
 }
@@ -1618,7 +1642,7 @@ img[src*="moon-nightlight"] {
 }
 
 /* End of Salt Lamps */
-/* End of The Original Salt Company */
+/* End of Himalayan Salt Products */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
