@@ -1046,6 +1046,8 @@
 
   .himalayan-salt-container { height: initial; }
 
+  img[src*="limited-edition"] {  width: 20%; }
+
   .lamps {
     position: relative;
     right: 3px;
