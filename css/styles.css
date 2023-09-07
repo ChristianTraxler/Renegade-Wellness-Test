@@ -794,6 +794,16 @@ img[src*="FA98204A"] {
   margin: auto;
 }
 
+.aromatics-products {
+  display: flex;
+  justify-content: center;
+}
+
+.aromatics-products > h2 > a {
+  text-decoration: none;
+  color: black;
+}
+
 
 /* End of Aromatics Page */
 
@@ -1401,7 +1411,7 @@ hr {
 .salt-lamp-card {
   margin: 0 auto;
   padding: 25px 0 0 0;
-  height: 430px;
+  height: 484px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   border-radius: 10px;
@@ -1410,6 +1420,20 @@ hr {
 .lamp {
   width: 50%;
   margin: auto;
+}
+
+img[src*="pumpkin"] {
+  position: relative;
+  top: 70px;
+}
+
+img[src*="limited-edition"] {
+  position: absolute;
+  width: 6%;
+  top: 40px;
+  right: 0;
+  left: 42px;
+  z-index: 1;
 }
 
 .content {
@@ -1494,6 +1518,11 @@ img[src*="soccer"] {
 img[src*="white-natural"] {
   position: relative;
   top: 20px;
+}
+
+img[src*="moon"] {
+  position: relative;
+  top: 25px;
 }
 
 img[src*="foot-dome"] {
