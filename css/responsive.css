@@ -758,6 +758,11 @@
 
   /* Start of Essential Oils page */
 
+  .essential-oils-container {
+    position: relative;
+    top: 100px;
+  }
+
   .citrus-section, .floral-section, .mint-section, .spices-section,
   .resin-section, .forest-section, .blends-section { height: initial; }
 
