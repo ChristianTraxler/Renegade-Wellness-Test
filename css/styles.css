@@ -1771,6 +1771,16 @@ img[src*="Breezy-White-Hero(2)"] {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+/* Start of Conscious Coconut page */
+
+img[src*="MainTube"] { border-radius: 10px; }
+
+
+
+/* End of Conscious Coconut page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* Start of Testimonials */
 
 .testimonials { margin: var(--size-100) 0; }
