@@ -1775,6 +1775,22 @@ img[src*="Breezy-White-Hero(2)"] {
 
 img[src*="MainTube"] { border-radius: 10px; }
 
+.spirulina2 {
+  position: absolute;
+  width: 15%;
+  top: 30px;
+  left: 52px;
+  z-index: 1;
+}
+
+.spirulina3 {
+  position: absolute;
+  width: 5%;
+  top: 85px;
+  left: 652px;
+  z-index: 1;
+}
+
 
 
 /* End of Conscious Coconut page */
