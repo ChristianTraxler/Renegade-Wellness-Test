@@ -1645,9 +1645,9 @@ img[src*="moon-nightlight"] {
 
 .out-of-stock {
   position: absolute;
-  width: 8%;
-  top: 540px;
-  left: 792px;
+  width: 20%;
+  top: 30px;
+  left: 36px;
   z-index: 1;
 }
 
