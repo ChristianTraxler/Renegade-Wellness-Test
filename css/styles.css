@@ -1643,6 +1643,14 @@ img[src*="moon-nightlight"] {
   top: initial;
 }
 
+.out-of-stock {
+  position: absolute;
+  width: 8%;
+  top: 540px;
+  left: 792px;
+  z-index: 1;
+}
+
 /* End of Salt Lamps */
 /* End of Himalayan Salt Products */
 
@@ -1779,7 +1787,7 @@ img[src*="MainTube"] { border-radius: 10px; }
   position: absolute;
   width: 15%;
   top: 30px;
-  left: 52px;
+  left: 48px;
   z-index: 1;
 }
 
