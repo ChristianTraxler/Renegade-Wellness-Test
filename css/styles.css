@@ -1200,6 +1200,22 @@ hr {
   padding: 1em 1em;
 }
 
+.plant-description {
+  text-align: center;
+  padding: 1em 1em;
+  /*position: relative;*/
+  /*bottom: 40px;*/
+  font-size: 0.9em;
+}
+
+.plant-description2 {
+  text-align: center;
+  padding: 1em 1em;
+  position: relative;
+  bottom: 40px;
+  font-size: 0.9em;
+}
+
 /* END OF HYDROSOLS PAGE */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
