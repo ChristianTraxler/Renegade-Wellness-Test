@@ -421,6 +421,12 @@ section {
   text-decoration: none;
 }
 
+img[src*="Holiday"] {
+  width: 30%;
+  margin: auto;
+  padding-top: 10%;
+}
+
 /* End of Home page */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -1697,6 +1703,13 @@ img[src*="moon-nightlight"] {
   top: 30px;
   left: 36px;
   z-index: 1;
+}
+
+img[src*="IMG_2209"], img[src*="diffuser-sale"], img[src*="IMG_5544"], img[src*="IMG_4639"] {
+  width: 35%;
+  margin: auto;
+  position: relative;
+  bottom: 20px;
 }
 
 /* End of Salt Lamps */
