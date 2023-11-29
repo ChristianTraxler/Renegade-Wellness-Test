@@ -1193,6 +1193,14 @@
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+  /* Start of Mindfully Made page */
+
+  .mindfully-made-syrup { grid-template-columns: initial; }
+
+  /* End of Mindfully Made page */
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
   /* Start of Contact page */
   .pricing-section { padding: 100px 0 100px 0; }
   .pricing-section2 { padding: 100px 0 100px 0; }
