@@ -1879,12 +1879,22 @@ img[src*="MainTube"] { border-radius: 10px; }
 
 /* Start of Mindfully Made page */
 
+/*.mindfully-title { padding-top: 150px; }*/
+
+.mindfully-made-section {
+  display: block;
+  /*padding: var(--size-150) 0;*/
+  margin: 0 auto;
+}
+
+.mindfully-product-section { padding: var(--size-50) 0; }
+
 .mindfully-made-syrup {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(1, 35%);
   justify-content: center;
-  padding-top: 60px;
+  /*padding-top: 60px;*/
 }
 
 /* End of Mindfully Made page */

@@ -1195,6 +1195,8 @@
 
   /* Start of Mindfully Made page */
 
+  .mindfully-product-section { padding: initial; }
+
   .mindfully-made-syrup { grid-template-columns: initial; }
 
   /* End of Mindfully Made page */
