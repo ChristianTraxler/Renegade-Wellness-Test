@@ -1601,6 +1601,14 @@ img[src*="pumpkin-spice"], img[src*="pink-dream-candle"] { border-radius: 10px; 
   font-weight: 700;
 }
 
+.sale2 {
+  position: relative;
+  top: 1px;
+  right: 10px;
+  color: #A06CD5;
+  font-weight: 700;
+}
+
 
 /* End og Plant Therapy page */
 
