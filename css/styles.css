@@ -1584,13 +1584,11 @@ img[src*="pumpkin-spice"], img[src*="pink-dream-candle"] { border-radius: 10px; 
   /*position: absolute;*/
   /*z-index: 1;*/
   /*background-color: transparent;*/
-  background-image: gradient(linear, 19.1% -7.9%, 81% 107.9%, color-stop(0, transparent), color-stop(.48, transparent), color-stop(.5, #000), color-stop(.52, transparent), color-stop(1, transparent));
+  /*background-image: gradient(linear, 19.1% -7.9%, 81% 107.9%, color-stop(0, transparent), color-stop(.48, transparent), color-stop(.5, #000), color-stop(.52, transparent), color-stop(1, transparent));*/
   background-image: repeating-linear-gradient(163deg, transparent 0%, transparent 48%, #A06CD5 50%, transparent 52%, transparent 100%);
-}
-
-.test {
-  text-decoration: line-through;
-  text-decoration-thickness: 3px;
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .price-tag2 > p {
