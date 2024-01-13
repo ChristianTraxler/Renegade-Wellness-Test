@@ -1588,7 +1588,10 @@ img[src*="pumpkin-spice"], img[src*="pink-dream-candle"] { border-radius: 10px; 
   background-image: repeating-linear-gradient(163deg, transparent 0%, transparent 48%, #A06CD5 50%, transparent 52%, transparent 100%);
 }
 
-.test { text-decoration: line-through}
+.test {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+}
 
 .price-tag2 > p {
   position: relative;
