@@ -1908,6 +1908,14 @@ img[src*="Breezy-White-Hero(2)"] {
 .blizzard { width: 65%; }
 .breezy { width: 75%; }
 
+img[src*="Airburst-waterless"] { width: 60%; }
+.airburst {
+  position: relative;
+  top: 33px;
+}
+
+img[src*="Cool-Mist-plug-in"] { width: 30%; }
+
 
 /* End of Diffusers section */
 
