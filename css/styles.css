@@ -1617,6 +1617,15 @@ img[src*="pumpkin-spice"], img[src*="pink-dream-candle"] { border-radius: 10px; 
 
 /* Start of Salt Lamps */
 
+.himalayan-salt-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  top: 90px;
+  z-index: 1;
+}
+
 .block-text > .salt-products-header { font-family: 'Lumanosimo', sans-serif; }
 
 .salt-wrapper {
@@ -1625,6 +1634,7 @@ img[src*="pumpkin-spice"], img[src*="pink-dream-candle"] { border-radius: 10px; 
   max-width: 1200px;
   padding: 0 30px;
   position: relative;
+  top: 80px;
 }
 
 .salt-lamps {
@@ -1762,6 +1772,22 @@ img[src*="moon"] {
   top: 25px;
 }
 
+img[src*="swan"], img[src*="turtle"], img[src*="tropical-fish"] {
+  position: relative;
+  top: 90px;
+  width: 60%;
+}
+
+.swan-lamp-name {
+  position: relative;
+  top: 82px;
+}
+
+.fish-lamp-name {
+  position: relative;
+  top: 98px;
+}
+
 img[src*="foot-dome"] {
   position: relative;
   top: 70px;
@@ -1796,6 +1822,8 @@ img[src*="IMG_2209"], img[src*="diffuser-sale"], img[src*="IMG_5544"], img[src*=
   position: relative;
   bottom: 20px;
 }
+
+img[src*="tear-drop(night-light)"] { width: 40%; }
 
 /* End of Salt Lamps */
 /* End of Himalayan Salt Products */
