@@ -1838,6 +1838,8 @@ img[src*="petal"] {
   margin: auto;
 }
 
+img[src*="unscented-soap"] { width: 59.5%; }
+
 .unscented-soap {
   position: relative;
   top: 80px;
