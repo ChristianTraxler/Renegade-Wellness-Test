@@ -1788,14 +1788,14 @@ img[src*="swan"], img[src*="turtle"], img[src*="tropical-fish"] {
   top: 98px;
 }
 
-img[src*="foot-dome"] {
+img[src*="foot-dome"], img[src*="flat"], img[src*="heart-massage"], img[src*="sphere"], img[src*="facial"], img[src*="salt-pillow"] {
   position: relative;
   top: 70px;
 }
 
 .foot-dome {
   position: relative;
-  top: 133px;
+  top: 126px;
 }
 
 img[src*="nightlight"] {
@@ -1823,7 +1823,30 @@ img[src*="IMG_2209"], img[src*="diffuser-sale"], img[src*="IMG_5544"], img[src*=
   bottom: 20px;
 }
 
-img[src*="tear-drop(night-light)"] { width: 40%; }
+img[src*="tear-drop(night-light)"], img[src*="facial"] { width: 40%; }
+
+img[src*="petal"] {
+  position: relative;
+  top: 36px;
+  width: 40%;
+}
+
+img[src*="salt-pillow"] { width: 60%; }
+
+.heart-massage-stone {
+  position: relative;
+  top: 100px;
+}
+
+.flat-round-massage-stone {
+  position: relative;
+  top: 136px;
+}
+
+.petal-massage-stone {
+  position: relative;
+  top: 65px;
+}
 
 /* End of Salt Lamps */
 /* End of Himalayan Salt Products */
