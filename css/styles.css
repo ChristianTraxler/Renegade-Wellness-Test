@@ -600,7 +600,7 @@ img[src*="Holiday"] {
   font-family: 'Lumanosimo', sans-serif;
   position: relative;
   right: 170px;
-  width: 324px;
+  width: 397px;
   font-size: 1.46rem;
 }
 
@@ -632,7 +632,7 @@ img[src*="FA98204A"] {
   height: 310px;
   border-radius: 10px;
   position: relative;
-  left: 80px;
+  left: 100px;
   opacity: 40%;
 }
 
@@ -1831,7 +1831,28 @@ img[src*="petal"] {
   width: 40%;
 }
 
-img[src*="salt-pillow"] { width: 60%; }
+.solé-soap {
+  position: relative;
+  width: 60%;
+  top: 30px;
+  margin: auto;
+}
+
+.unscented-soap {
+  position: relative;
+  top: 80px;
+}
+
+img[src*="salt-pillow"] {
+  position: relative;
+  top: 100px;
+  width: 60%;
+}
+
+.salt-pillow {
+  position: relative;
+  top: 200px;
+}
 
 .heart-massage-stone {
   position: relative;
