@@ -1771,7 +1771,17 @@ img[src*="limited-edition"] {
   font-size: var(--size-25);
 }
 
+.price2 > h1 {
+  font-size: var(--size-25);
+}
+
 .price > p {
+  margin: 6px 0 0 4px;
+  font-size: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+.price2 > p {
   margin: 6px 0 0 4px;
   font-size: 15px;
   color: hsl(215, 51%, 70%);
@@ -1784,6 +1794,7 @@ img[src*="limited-edition"] {
 }
 
 .price > h1 > sup { font-size: 14px; }
+.price2 > h1 > sup { font-size: 14px; }
 
 .angel { margin: 0 auto; }
 
@@ -1792,6 +1803,12 @@ img[src*="limited-edition"] {
   position: relative;
   bottom: 22px;
   top: 0;
+}
+
+.price2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .salt-lamp-name {
