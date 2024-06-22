@@ -1639,6 +1639,14 @@ img[src*="pumpkin-spice"], img[src*="pink-dream-candle"] { border-radius: 10px; 
   font-weight: 700;
 }
 
+.herbal {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  border-radius: 2%;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
