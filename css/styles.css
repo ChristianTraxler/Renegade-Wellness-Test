@@ -672,6 +672,8 @@ img[src*="FA98204A"] {
   margin: auto;
 }
 
+.g-recaptcha { display: none; }
+
 /* End of Contact Page */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
