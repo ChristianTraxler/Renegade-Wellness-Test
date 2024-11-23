@@ -947,6 +947,15 @@ img[src*="FA98204A"] {
   max-width: 1200px;
 }
 
+.sale-30-off {
+  position: absolute;
+  width: 12%;
+  top: 18px;
+  right: 310px;
+  z-index: 1;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
 
 /* End of Aromatics Page */
 

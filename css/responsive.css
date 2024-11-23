@@ -763,6 +763,11 @@
     justify-items: center;
   }
 
+  .sale-30-off {
+    width: 12%;
+    right: 360px;
+  }
+
   /* End of Aromatics Products */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -1491,6 +1496,8 @@
 
   /* End of Carrier Oils */
 
+  .sale-30-off { right: 310px; }
+
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   /* Start of ESW Beauty page */
@@ -1713,6 +1720,8 @@
 
 @media screen and (max-width: 375px) {
 
+  /* Start of Aromatics International page */
+
   /* Start of Essential Oils */
 
   .group2 { top: 48px; }
@@ -1776,6 +1785,10 @@
   .carrier-overlay { width: 365px; }
 
   /* End of Carrier Oils */
+
+  .sale-30-off { right: 290px; }
+
+  /* End of Aromatics International page */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
