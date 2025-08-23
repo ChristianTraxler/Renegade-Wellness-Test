@@ -984,6 +984,7 @@ img[src*="FA98204A"] {
 .flavors {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 h3 > a { color: black; }
@@ -1027,6 +1028,8 @@ h3 > a { color: black; }
   margin: auto;
   width: 20%;
 }
+
+.content > .product-title { margin-top: 0; }
 
 .price-container { margin: 10px auto 0; }
 
@@ -1258,12 +1261,27 @@ hr {
   padding: 1em 1em;
 }
 
+.product-description {
+  text-align: center;
+  padding: 1em 1em;
+  /*position: relative;*/
+  /*bottom: 40px;*/
+  font-size: 1em;
+}
+
+.product-description2 {
+  text-align: center;
+  padding: 1em 1em;
+  /*position: relative;*/
+  font-size: 1em;
+}
+
 .plant-description {
   text-align: center;
   padding: 1em 1em;
   /*position: relative;*/
   /*bottom: 40px;*/
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .plant-description2 {
@@ -2268,7 +2286,7 @@ img[src*="MainTube"] { border-radius: 10px; }
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(1, 35%);
   justify-content: center;
-  /*padding-top: 60px;*/
+  padding-top: 60px;
 }
 
 /* End of Mindfully Made page */
