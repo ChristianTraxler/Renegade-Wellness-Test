@@ -245,7 +245,26 @@ ul.breadcrumb > .not-active > a { color: gray; }
   border-radius: var(--size-25) !important;
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  /*border-top: 1px solid rgba(255, 255, 255, 0.25);*/
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.card2 {
+  position: relative;
+  width: 274px;
+  height: 220px;
+  background-color: white;
+  /*background: rgba(255, 255, 255, 0.1);*/
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--size-25) !important;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /*border-top: 1px solid rgba(255, 255, 255, 0.25);*/
   transition: 1s;
   display: flex;
   justify-content: center;
@@ -614,6 +633,7 @@ img[src*="Holiday"] {
 .beauty { font-size: 30px; }
 
 .eo-a-card { font-size: smaller }
+.eo-a-card2 { font-size: 30px; }
 
 .information {
   text-align: center;
