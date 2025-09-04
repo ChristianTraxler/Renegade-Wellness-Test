@@ -658,8 +658,11 @@ img[src*="FA98204A"] {
   opacity: 40%;
 }
 
-.magnum-card {
-  background: white !important;
+.magnum-card { background: white !important; }
+
+.coming-soon {
+  margin: auto;
+  width: 76%;
 }
 
 /* End of Products page */
