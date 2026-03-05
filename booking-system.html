@@ -882,6 +882,627 @@
 			}
 
 			.sidebar-overlay.show { display: block; }
+
+			/* ── CLIENTS VIEW ── */
+			.clients-header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 24px;
+				gap: 16px;
+				flex-wrap: wrap;
+			}
+
+			.clients-header-left {
+				display: flex;
+				align-items: baseline;
+				gap: 12px;
+			}
+
+			.clients-header-left h2 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.4rem;
+				font-weight: 500;
+				color: var(--navy);
+			}
+
+			.clients-count {
+				font-size: 0.78rem;
+				color: var(--text-muted);
+			}
+
+			.clients-search {
+				position: relative;
+			}
+
+			.clients-search input {
+				padding: 9px 14px 9px 36px;
+				border: 1px solid var(--border);
+				border-radius: 9px;
+				font-family: 'Jost', sans-serif;
+				font-size: 0.84rem;
+				color: var(--text-dark);
+				background: var(--white);
+				outline: none;
+				width: 280px;
+				transition: all 0.2s;
+			}
+
+			.clients-search input:focus {
+				border-color: var(--teal);
+				box-shadow: 0 0 0 3px rgba(141,199,193,0.15);
+			}
+
+			.clients-search svg {
+				position: absolute;
+				left: 12px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 15px; height: 15px;
+				stroke: var(--text-muted);
+				fill: none;
+				stroke-width: 2;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				pointer-events: none;
+			}
+
+			.badge-service {
+				display: inline-flex;
+				align-items: center;
+				padding: 2px 8px;
+				border-radius: 12px;
+				font-size: 0.67rem;
+				font-weight: 500;
+				background: var(--teal-pale);
+				color: var(--teal-dark);
+				margin: 1px 3px 1px 0;
+			}
+
+			.client-visits {
+				font-weight: 600;
+				color: var(--navy);
+			}
+
+			.client-row-clickable td {
+				cursor: pointer;
+			}
+
+			.client-row-clickable:hover {
+				background: var(--teal-pale) !important;
+			}
+
+			/* Client detail modal */
+			.client-detail-info {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 16px;
+				margin-bottom: 24px;
+			}
+
+			.client-detail-item label {
+				display: block;
+				font-size: 0.68rem;
+				font-weight: 600;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--text-muted);
+				margin-bottom: 4px;
+			}
+
+			.client-detail-item span {
+				font-size: 0.88rem;
+				color: var(--text-dark);
+			}
+
+			.client-detail-history h4 {
+				font-size: 0.75rem;
+				font-weight: 600;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--text-muted);
+				margin-bottom: 12px;
+			}
+
+			.empty-state {
+				text-align: center;
+				padding: 60px 24px;
+				color: var(--text-muted);
+				font-size: 0.9rem;
+			}
+
+			.empty-state svg {
+				width: 48px; height: 48px;
+				stroke: var(--border);
+				fill: none;
+				stroke-width: 1.5;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				margin-bottom: 16px;
+			}
+
+			.empty-state p {
+				margin-top: 8px;
+				font-size: 0.8rem;
+			}
+
+			.clients-header-right {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+
+			.client-notes-preview {
+				font-size: 0.76rem;
+				color: var(--text-muted);
+				max-width: 180px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.client-detail-notes {
+				margin-top: 24px;
+				padding-top: 20px;
+				border-top: 1px solid var(--border);
+			}
+
+			.client-detail-notes h4 {
+				font-size: 0.75rem;
+				font-weight: 600;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--text-muted);
+				margin-bottom: 10px;
+			}
+
+			.client-detail-notes p {
+				font-size: 0.86rem;
+				color: var(--text-dark);
+				line-height: 1.6;
+				white-space: pre-wrap;
+			}
+
+			.client-detail-notes .no-notes {
+				color: var(--text-muted);
+				font-style: italic;
+			}
+
+			/* ── ANALYTICS VIEW ── */
+			.analytics-stats {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
+				margin-bottom: 28px;
+			}
+
+			.analytics-big-stat {
+				background: var(--white);
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				padding: 24px;
+				text-align: center;
+			}
+
+			.analytics-big-stat .stat-value {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 2.4rem;
+				font-weight: 500;
+				color: var(--navy);
+				line-height: 1;
+				margin-bottom: 6px;
+			}
+
+			.analytics-big-stat .stat-label {
+				font-size: 0.74rem;
+				font-weight: 500;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--text-muted);
+			}
+
+			.analytics-two-col {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 24px;
+				margin-bottom: 24px;
+			}
+
+			.chart-card {
+				background: var(--white);
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				overflow: hidden;
+			}
+
+			.chart-card-header {
+				padding: 20px 24px;
+				border-bottom: 1px solid var(--border);
+			}
+
+			.chart-card-header h3 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.1rem;
+				font-weight: 500;
+				color: var(--navy);
+			}
+
+			.chart-card-header p {
+				font-size: 0.74rem;
+				color: var(--text-muted);
+				margin-top: 2px;
+			}
+
+			.chart-card-body {
+				padding: 24px;
+			}
+
+			/* Bar chart */
+			.bar-chart {
+				display: flex;
+				align-items: flex-end;
+				gap: 12px;
+				height: 180px;
+				padding-top: 10px;
+			}
+
+			.bar-col {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 8px;
+				height: 100%;
+				justify-content: flex-end;
+			}
+
+			.bar {
+				width: 100%;
+				max-width: 48px;
+				border-radius: 6px 6px 0 0;
+				background: linear-gradient(180deg, var(--teal) 0%, var(--teal-dark) 100%);
+				transition: height 0.4s ease;
+				min-height: 4px;
+			}
+
+			.bar-label {
+				font-size: 0.68rem;
+				color: var(--text-muted);
+				font-weight: 500;
+			}
+
+			.bar-value {
+				font-size: 0.72rem;
+				font-weight: 600;
+				color: var(--navy);
+			}
+
+			/* Horizontal breakdown list */
+			.breakdown-list {
+				display: flex;
+				flex-direction: column;
+				gap: 14px;
+			}
+
+			.breakdown-item {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+
+			.breakdown-bar-wrap {
+				flex: 1;
+				height: 10px;
+				background: var(--bg);
+				border-radius: 6px;
+				overflow: hidden;
+			}
+
+			.breakdown-bar-fill {
+				height: 100%;
+				border-radius: 6px;
+				transition: width 0.4s ease;
+			}
+
+			.breakdown-bar-fill.teal { background: var(--teal); }
+			.breakdown-bar-fill.orange { background: var(--warning); }
+			.breakdown-bar-fill.navy { background: var(--navy-light); }
+
+			.breakdown-label {
+				font-size: 0.82rem;
+				font-weight: 500;
+				color: var(--text-dark);
+				min-width: 150px;
+			}
+
+			.breakdown-count {
+				font-size: 0.8rem;
+				font-weight: 600;
+				color: var(--navy);
+				min-width: 30px;
+				text-align: right;
+			}
+
+			/* Status breakdown */
+			.status-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 16px;
+			}
+
+			.status-block {
+				text-align: center;
+				padding: 18px 12px;
+				border-radius: 10px;
+			}
+
+			.status-block.confirmed-bg { background: rgba(46,158,110,0.08); }
+			.status-block.pending-bg { background: rgba(212,134,42,0.08); }
+			.status-block.cancelled-bg { background: rgba(192,57,43,0.08); }
+
+			.status-block .status-num {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.8rem;
+				font-weight: 500;
+				line-height: 1;
+				margin-bottom: 4px;
+			}
+
+			.status-block.confirmed-bg .status-num { color: var(--success); }
+			.status-block.pending-bg .status-num { color: var(--warning); }
+			.status-block.cancelled-bg .status-num { color: var(--error); }
+
+			.status-block .status-text {
+				font-size: 0.72rem;
+				font-weight: 500;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				color: var(--text-muted);
+			}
+
+			@media (max-width: 1100px) {
+				.analytics-two-col { grid-template-columns: 1fr; }
+			}
+
+			@media (max-width: 768px) {
+				.analytics-stats { grid-template-columns: 1fr; }
+				.status-grid { grid-template-columns: 1fr; }
+			}
+
+			/* ── SERVICES VIEW ── */
+			.services-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+				gap: 20px;
+			}
+
+			.service-card {
+				background: var(--white);
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				padding: 24px;
+				transition: box-shadow 0.2s;
+			}
+
+			.service-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+
+			.service-card-header {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				margin-bottom: 14px;
+			}
+
+			.service-card-icon {
+				width: 42px; height: 42px;
+				border-radius: 11px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0;
+			}
+
+			.service-card-icon svg {
+				width: 20px; height: 20px;
+				stroke: currentColor;
+				fill: none;
+				stroke-width: 2;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
+
+			.service-card-icon.teal { background: var(--teal-pale); color: var(--teal-dark); }
+			.service-card-icon.orange { background: rgba(212,134,42,0.1); color: var(--warning); }
+			.service-card-icon.navy { background: rgba(32,64,104,0.1); color: var(--navy); }
+
+			.service-card-price {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.5rem;
+				font-weight: 500;
+				color: var(--navy);
+			}
+
+			.service-card h3 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.15rem;
+				font-weight: 500;
+				color: var(--navy);
+				margin-bottom: 6px;
+			}
+
+			.service-card p {
+				font-size: 0.82rem;
+				color: var(--text-muted);
+				line-height: 1.55;
+				margin-bottom: 16px;
+			}
+
+			.service-card-meta {
+				display: flex;
+				gap: 16px;
+				flex-wrap: wrap;
+			}
+
+			.service-card-meta span {
+				display: inline-flex;
+				align-items: center;
+				gap: 5px;
+				font-size: 0.74rem;
+				color: var(--text-muted);
+			}
+
+			.service-card-meta svg {
+				width: 13px; height: 13px;
+				stroke: currentColor;
+				fill: none;
+				stroke-width: 2;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
+
+			/* ── SETTINGS VIEW ── */
+			.settings-sections {
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+			}
+
+			.settings-card {
+				background: var(--white);
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				overflow: hidden;
+			}
+
+			.settings-card-header {
+				padding: 20px 24px;
+				border-bottom: 1px solid var(--border);
+			}
+
+			.settings-card-header h3 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.1rem;
+				font-weight: 500;
+				color: var(--navy);
+			}
+
+			.settings-card-header p {
+				font-size: 0.76rem;
+				color: var(--text-muted);
+				margin-top: 2px;
+			}
+
+			.settings-card-body {
+				padding: 24px;
+			}
+
+			.settings-row {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 14px 0;
+				border-bottom: 1px solid var(--border);
+			}
+
+			.settings-row:last-child { border-bottom: none; }
+
+			.settings-row-label h4 {
+				font-size: 0.88rem;
+				font-weight: 500;
+				color: var(--text-dark);
+				margin-bottom: 2px;
+			}
+
+			.settings-row-label p {
+				font-size: 0.76rem;
+				color: var(--text-muted);
+			}
+
+			.toggle {
+				position: relative;
+				width: 44px;
+				height: 24px;
+				flex-shrink: 0;
+			}
+
+			.toggle input {
+				opacity: 0;
+				width: 0;
+				height: 0;
+			}
+
+			.toggle-slider {
+				position: absolute;
+				cursor: pointer;
+				inset: 0;
+				background: var(--border);
+				border-radius: 24px;
+				transition: 0.25s;
+			}
+
+			.toggle-slider::before {
+				content: '';
+				position: absolute;
+				height: 18px;
+				width: 18px;
+				left: 3px;
+				bottom: 3px;
+				background: var(--white);
+				border-radius: 50%;
+				transition: 0.25s;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+			}
+
+			.toggle input:checked + .toggle-slider {
+				background: var(--teal);
+			}
+
+			.toggle input:checked + .toggle-slider::before {
+				transform: translateX(20px);
+			}
+
+			.settings-hours-grid {
+				display: grid;
+				grid-template-columns: 100px 1fr 1fr auto;
+				gap: 10px;
+				align-items: center;
+			}
+
+			.settings-hours-grid .day-label {
+				font-size: 0.84rem;
+				font-weight: 500;
+				color: var(--text-dark);
+			}
+
+			.settings-hours-grid input[type="time"] {
+				padding: 8px 10px;
+				border: 1px solid var(--border);
+				border-radius: 8px;
+				font-family: 'Jost', sans-serif;
+				font-size: 0.82rem;
+				color: var(--text-dark);
+				outline: none;
+			}
+
+			.settings-hours-grid input[type="time"]:focus {
+				border-color: var(--teal);
+				box-shadow: 0 0 0 3px rgba(141,199,193,0.15);
+			}
+
+			.closed-label {
+				font-size: 0.76rem;
+				color: var(--text-muted);
+				font-style: italic;
+			}
+
+			@media (max-width: 768px) {
+				.clients-search input { width: 100%; }
+				.clients-header { flex-direction: column; align-items: stretch; }
+				.clients-header-right { flex-direction: column; align-items: stretch; }
+				.client-detail-info { grid-template-columns: 1fr; }
+				.settings-row { flex-direction: column; align-items: flex-start; gap: 10px; }
+				.settings-hours-grid { grid-template-columns: 1fr; }
+			}
 		</style>
 	</head>
 	<body>
@@ -898,7 +1519,7 @@
 
 		<nav class="sidebar-nav">
 			<div class="nav-label">Main</div>
-			<a class="nav-item active" href="#">
+			<a class="nav-item active" href="#" data-view="dashboard" onclick="switchView('dashboard')">
 				<svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
 				Dashboard
 			</a>
@@ -907,22 +1528,22 @@
 				Appointments
 				<span class="nav-badge">8</span>
 			</a>
-			<a class="nav-item" href="#">
+			<a class="nav-item" href="#" data-view="clients" onclick="switchView('clients')">
 				<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
 				Clients
 			</a>
-			<a class="nav-item" href="#">
+			<a class="nav-item" href="#" data-view="analytics" onclick="switchView('analytics')">
 				<svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
 				Analytics
 			</a>
 
 			<div class="nav-label">Settings</div>
-			<a class="nav-item" href="#">
+			<a class="nav-item" href="#" data-view="services" onclick="switchView('services')">
 				<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M12 2v2M12 20v2M20 12h2M2 12h2M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41"/></svg>
 				Services
 			</a>
-			<a class="nav-item" href="#">
-				<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M12 2v2M12 20v2M20 12h2M2 12h2M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41"/></svg>
+			<a class="nav-item" href="#" data-view="settings" onclick="switchView('settings')">
+				<svg viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
 				Settings
 			</a>
 		</nav>
@@ -948,7 +1569,7 @@
 	<main class="main">
 		<div class="topbar">
 			<div class="topbar-left">
-				<h1>Booking Dashboard</h1>
+				<h1 id="topbarTitle">Booking Dashboard</h1>
 				<p id="todayDate"></p>
 			</div>
 			<div class="topbar-right">
@@ -963,6 +1584,9 @@
 		</div>
 
 		<div class="content">
+
+		<!-- ═══ DASHBOARD VIEW ═══ -->
+		<div id="view-dashboard">
 
 			<!-- Stats -->
 			<div class="stats-grid">
@@ -1092,6 +1716,318 @@
 					</div>
 				</div>
 			</div>
+		</div><!-- /view-dashboard -->
+
+		<!-- ═══ CLIENTS VIEW ═══ -->
+		<div id="view-clients" style="display:none">
+			<div class="clients-header">
+				<div class="clients-header-left">
+					<h2>Clients</h2>
+					<span class="clients-count" id="clientsCount"></span>
+				</div>
+				<div class="clients-header-right">
+					<div class="clients-search">
+						<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+						<input type="text" id="clientSearch" placeholder="Search clients…" oninput="searchClients(this.value)"/>
+					</div>
+					<button class="btn btn-primary" onclick="openNewClientModal()">
+						<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+						Add Client
+					</button>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="table-wrap">
+					<table>
+						<thead>
+						<tr>
+							<th>Client</th>
+							<th>Phone</th>
+							<th>Total Visits</th>
+							<th>Last Visit</th>
+							<th>Services</th>
+							<th>Notes</th>
+						</tr>
+						</thead>
+						<tbody id="clientsBody"></tbody>
+					</table>
+				</div>
+			</div>
+		</div><!-- /view-clients -->
+
+		<!-- ═══ SERVICES VIEW ═══ -->
+		<div id="view-services" style="display:none">
+			<div class="clients-header">
+				<div class="clients-header-left">
+					<h2>Services</h2>
+					<span class="clients-count">3 services</span>
+				</div>
+			</div>
+
+			<div class="services-grid">
+				<!-- Salt Cabin -->
+				<div class="service-card">
+					<div class="service-card-header">
+						<div class="service-card-icon teal">
+							<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+						</div>
+						<div class="service-card-price">$25 – $40</div>
+					</div>
+					<h3>Salt Cabin</h3>
+					<p>Himalayan salt therapy session in our private salt cabin. Helps with respiratory health, skin conditions, and relaxation.</p>
+					<div class="service-card-meta">
+						<span>
+							<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+							30 – 45 min
+						</span>
+						<span>
+							<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+							1 – 2 guests
+						</span>
+					</div>
+				</div>
+
+				<!-- Infrared Therapy -->
+				<div class="service-card">
+					<div class="service-card-header">
+						<div class="service-card-icon orange">
+							<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+						</div>
+						<div class="service-card-price">$40</div>
+					</div>
+					<h3>Infrared Therapy</h3>
+					<p>Full-spectrum infrared sauna session for deep detoxification, pain relief, improved circulation, and muscle recovery.</p>
+					<div class="service-card-meta">
+						<span>
+							<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+							45 min
+						</span>
+						<span>
+							<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+							1 guest
+						</span>
+					</div>
+				</div>
+
+				<!-- Combo -->
+				<div class="service-card">
+					<div class="service-card-header">
+						<div class="service-card-icon navy">
+							<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+						</div>
+						<div class="service-card-price">$55</div>
+					</div>
+					<h3>Salt + Infrared Combo</h3>
+					<p>The best of both worlds — a salt cabin session followed by infrared therapy for maximum wellness benefits.</p>
+					<div class="service-card-meta">
+						<span>
+							<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+							60 – 90 min
+						</span>
+						<span>
+							<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+							1 guest
+						</span>
+					</div>
+				</div>
+			</div>
+		</div><!-- /view-services -->
+
+		<!-- ═══ SETTINGS VIEW ═══ -->
+		<div id="view-settings" style="display:none">
+			<div class="clients-header">
+				<div class="clients-header-left">
+					<h2>Settings</h2>
+				</div>
+			</div>
+
+			<div class="settings-sections">
+				<!-- Business Info -->
+				<div class="settings-card">
+					<div class="settings-card-header">
+						<h3>Business Information</h3>
+						<p>Your business details displayed to clients</p>
+					</div>
+					<div class="settings-card-body">
+						<div class="form-row-2">
+							<div class="field">
+								<label>Business Name</label>
+								<input type="text" id="settingsBizName" value="Renegade Wellness Center"/>
+							</div>
+							<div class="field">
+								<label>Phone</label>
+								<input type="tel" id="settingsBizPhone" value="(555) 000-0000"/>
+							</div>
+						</div>
+						<div class="field">
+							<label>Email</label>
+							<input type="email" id="settingsBizEmail" value="info@renegadewellness.com"/>
+						</div>
+						<div class="field">
+							<label>Address</label>
+							<input type="text" id="settingsBizAddress" value=""/>
+						</div>
+						<button class="btn btn-primary" onclick="saveSettings()">
+							<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+							Save Changes
+						</button>
+					</div>
+				</div>
+
+				<!-- Business Hours -->
+				<div class="settings-card">
+					<div class="settings-card-header">
+						<h3>Business Hours</h3>
+						<p>Set your weekly availability for bookings</p>
+					</div>
+					<div class="settings-card-body">
+						<div class="settings-hours-grid" id="hoursGrid">
+							<!-- populated by JS -->
+						</div>
+						<div style="margin-top:18px;">
+							<button class="btn btn-primary" onclick="saveHours()">
+								<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+								Save Hours
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Notifications -->
+				<div class="settings-card">
+					<div class="settings-card-header">
+						<h3>Notifications</h3>
+						<p>Configure how you receive booking alerts</p>
+					</div>
+					<div class="settings-card-body">
+						<div class="settings-row">
+							<div class="settings-row-label">
+								<h4>Email notifications</h4>
+								<p>Receive an email for each new booking</p>
+							</div>
+							<label class="toggle">
+								<input type="checkbox" id="settingsEmailNotif" checked/>
+								<span class="toggle-slider"></span>
+							</label>
+						</div>
+						<div class="settings-row">
+							<div class="settings-row-label">
+								<h4>Booking confirmations</h4>
+								<p>Send confirmation emails to clients automatically</p>
+							</div>
+							<label class="toggle">
+								<input type="checkbox" id="settingsAutoConfirm" checked/>
+								<span class="toggle-slider"></span>
+							</label>
+						</div>
+						<div class="settings-row">
+							<div class="settings-row-label">
+								<h4>Reminder emails</h4>
+								<p>Send clients a reminder 24 hours before their appointment</p>
+							</div>
+							<label class="toggle">
+								<input type="checkbox" id="settingsReminder"/>
+								<span class="toggle-slider"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Data Management -->
+				<div class="settings-card">
+					<div class="settings-card-header">
+						<h3>Data Management</h3>
+						<p>Manage your booking data stored in this browser</p>
+					</div>
+					<div class="settings-card-body">
+						<div class="settings-row">
+							<div class="settings-row-label">
+								<h4>Export bookings</h4>
+								<p>Download all booking data as a JSON file</p>
+							</div>
+							<button class="btn btn-ghost" onclick="exportData()">
+								<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+								Export
+							</button>
+						</div>
+						<div class="settings-row">
+							<div class="settings-row-label">
+								<h4>Clear all data</h4>
+								<p>Remove all bookings and client data from this browser</p>
+							</div>
+							<button class="btn btn-ghost" style="border-color:rgba(192,57,43,0.3);color:var(--error);" onclick="clearAllData()">
+								<svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+								Clear Data
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /view-settings -->
+
+		<!-- ═══ ANALYTICS VIEW ═══ -->
+		<div id="view-analytics" style="display:none">
+			<div class="clients-header">
+				<div class="clients-header-left">
+					<h2>Analytics</h2>
+					<span class="clients-count" id="analyticsDateRange"></span>
+				</div>
+			</div>
+
+			<!-- Top-line stats -->
+			<div class="analytics-stats" id="analyticsTopStats">
+				<div class="analytics-big-stat">
+					<div class="stat-value" id="anTotalBookings">0</div>
+					<div class="stat-label">Total Bookings</div>
+				</div>
+				<div class="analytics-big-stat">
+					<div class="stat-value" id="anUniqueClients">0</div>
+					<div class="stat-label">Unique Clients</div>
+				</div>
+				<div class="analytics-big-stat">
+					<div class="stat-value" id="anEstRevenue">$0</div>
+					<div class="stat-label">Est. Revenue</div>
+				</div>
+			</div>
+
+			<!-- Charts row -->
+			<div class="analytics-two-col">
+				<!-- Bookings by day of week -->
+				<div class="chart-card">
+					<div class="chart-card-header">
+						<h3>Bookings by Day</h3>
+						<p>Which days are busiest</p>
+					</div>
+					<div class="chart-card-body">
+						<div class="bar-chart" id="anDayChart"></div>
+					</div>
+				</div>
+
+				<!-- Service breakdown -->
+				<div class="chart-card">
+					<div class="chart-card-header">
+						<h3>Service Breakdown</h3>
+						<p>Bookings per service type</p>
+					</div>
+					<div class="chart-card-body">
+						<div class="breakdown-list" id="anServiceBreakdown"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Status row -->
+			<div class="chart-card">
+				<div class="chart-card-header">
+					<h3>Booking Status</h3>
+					<p>Confirmation, pending, and cancellation breakdown</p>
+				</div>
+				<div class="chart-card-body">
+					<div class="status-grid" id="anStatusGrid"></div>
+				</div>
+			</div>
+		</div><!-- /view-analytics -->
+
 		</div>
 	</main>
 
@@ -1182,6 +2118,96 @@
 				<button class="btn btn-primary" onclick="saveAppointment()">
 					<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
 					Confirm Booking
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Client Detail Modal -->
+	<div class="modal-overlay" id="clientDetailOverlay">
+		<div class="modal">
+			<div class="modal-header">
+				<h3 id="clientDetailName">Client Details</h3>
+				<button class="modal-close" onclick="closeClientDetail()">
+					<svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="client-detail-info" id="clientDetailInfo"></div>
+				<div class="client-detail-notes">
+					<h4>Notes</h4>
+					<div id="clientDetailNotes"></div>
+				</div>
+				<div class="client-detail-history">
+					<h4>Booking History</h4>
+					<div class="table-wrap">
+						<table>
+							<thead>
+							<tr>
+								<th>Service</th>
+								<th>Date & Time</th>
+								<th>Status</th>
+							</tr>
+							</thead>
+							<tbody id="clientHistoryBody"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-ghost" onclick="closeClientDetail()">Close</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- New Client Modal -->
+	<div class="modal-overlay" id="newClientOverlay">
+		<div class="modal">
+			<div class="modal-header">
+				<h3>New Client</h3>
+				<button class="modal-close" onclick="closeNewClientModal()">
+					<svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-row-2">
+					<div class="field">
+						<label>First Name</label>
+						<input type="text" id="newClientFirst" placeholder="Jane"/>
+					</div>
+					<div class="field">
+						<label>Last Name</label>
+						<input type="text" id="newClientLast" placeholder="Smith"/>
+					</div>
+				</div>
+				<div class="form-row-2">
+					<div class="field">
+						<label>Email</label>
+						<input type="email" id="newClientEmail" placeholder="jane@email.com"/>
+					</div>
+					<div class="field">
+						<label>Phone</label>
+						<input type="tel" id="newClientPhone" placeholder="(555) 000-0000"/>
+					</div>
+				</div>
+				<div class="field">
+					<label>General Notes</label>
+					<textarea id="newClientNotes" placeholder="Health conditions, preferences, allergies, or anything to remember about this client…"></textarea>
+				</div>
+				<div class="field">
+					<label>Infrared Therapy Notes</label>
+					<textarea id="newClientInfraredNotes" placeholder="Infrared-specific notes — sensitivity, preferred temperature, session history, etc."></textarea>
+				</div>
+				<div class="field">
+					<label>Salt Cabin Notes</label>
+					<textarea id="newClientSaltNotes" placeholder="Salt cabin-specific notes — respiratory concerns, session preferences, etc."></textarea>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-ghost" onclick="closeNewClientModal()">Cancel</button>
+				<button class="btn btn-primary" onclick="saveNewClient()">
+					<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+					Save Client
 				</button>
 			</div>
 		</div>
@@ -1466,9 +2492,547 @@
 			document.getElementById('sidebarOverlay').classList.remove('show');
 		}
 
+		// ── CLIENTS VIEW ──
+		let clientList = [];
+		let currentView = 'dashboard';
+
+		// Manual clients stored separately from bookings
+		function loadManualClients() {
+			return JSON.parse(localStorage.getItem('rwc_clients') || '[]');
+		}
+
+		function saveManualClients(clients) {
+			localStorage.setItem('rwc_clients', JSON.stringify(clients));
+		}
+
+		function openNewClientModal() {
+			document.getElementById('newClientOverlay').classList.add('open');
+		}
+
+		function closeNewClientModal() {
+			document.getElementById('newClientOverlay').classList.remove('open');
+		}
+
+		function saveNewClient() {
+			const first = document.getElementById('newClientFirst').value.trim();
+			const last = document.getElementById('newClientLast').value.trim();
+			const email = document.getElementById('newClientEmail').value.trim();
+			const phone = document.getElementById('newClientPhone').value.trim();
+			const notes = document.getElementById('newClientNotes').value.trim();
+			const infraredNotes = document.getElementById('newClientInfraredNotes').value.trim();
+			const saltNotes = document.getElementById('newClientSaltNotes').value.trim();
+
+			if (!first) {
+				showToast('Please enter at least a first name.');
+				return;
+			}
+
+			const manual = loadManualClients();
+			manual.push({
+				id: Date.now(),
+				first: first,
+				last: last,
+				email: email,
+				phone: phone,
+				notes: notes,
+				infraredNotes: infraredNotes,
+				saltNotes: saltNotes,
+				createdAt: new Date().toISOString()
+			});
+			saveManualClients(manual);
+
+			// Clear form
+			document.getElementById('newClientFirst').value = '';
+			document.getElementById('newClientLast').value = '';
+			document.getElementById('newClientEmail').value = '';
+			document.getElementById('newClientPhone').value = '';
+			document.getElementById('newClientNotes').value = '';
+			document.getElementById('newClientInfraredNotes').value = '';
+			document.getElementById('newClientSaltNotes').value = '';
+
+			closeNewClientModal();
+			showToast('Client added successfully!');
+
+			// Refresh clients view
+			clientList = buildClientList();
+			renderClients(clientList);
+		}
+
+		function switchView(viewName) {
+			currentView = viewName;
+
+			// Toggle view containers
+			['dashboard', 'clients', 'services', 'settings', 'analytics'].forEach(v => {
+				document.getElementById('view-' + v).style.display = v === viewName ? '' : 'none';
+			});
+
+			// Update active nav
+			document.querySelectorAll('.nav-item[data-view]').forEach(item => {
+				item.classList.toggle('active', item.getAttribute('data-view') === viewName);
+			});
+
+			// Update topbar title
+			const titles = { dashboard: 'Booking Dashboard', clients: 'Clients', services: 'Services', settings: 'Settings', analytics: 'Analytics' };
+			document.getElementById('topbarTitle').textContent = titles[viewName] || 'Booking Dashboard';
+
+			// View-specific init
+			if (viewName === 'clients') {
+				clientList = buildClientList();
+				renderClients(clientList);
+			}
+			if (viewName === 'settings') {
+				loadSettings();
+				renderHoursGrid();
+			}
+			if (viewName === 'analytics') {
+				renderAnalytics();
+			}
+		}
+
+		function buildClientList() {
+			const map = {};
+
+			// First, seed from manual clients so notes are captured
+			const manual = loadManualClients();
+			manual.forEach(mc => {
+				const key = (mc.first + ' ' + (mc.last || '')).toLowerCase().trim() + '|' + (mc.email || '').toLowerCase();
+				if (!map[key]) {
+					map[key] = {
+						first: mc.first,
+						last: mc.last || '',
+						email: mc.email || '',
+						phone: mc.phone || '',
+						notes: mc.notes || '',
+						infraredNotes: mc.infraredNotes || '',
+						saltNotes: mc.saltNotes || '',
+						visits: 0,
+						services: new Set(),
+						lastVisit: '',
+						lastVisitDate: null,
+						bookings: [],
+						addedAt: mc.createdAt || null
+					};
+				} else {
+					// Merge notes from manual entry
+					if (mc.notes && !map[key].notes) map[key].notes = mc.notes;
+					if (mc.infraredNotes && !map[key].infraredNotes) map[key].infraredNotes = mc.infraredNotes;
+					if (mc.saltNotes && !map[key].saltNotes) map[key].saltNotes = mc.saltNotes;
+					if (mc.phone && !map[key].phone) map[key].phone = mc.phone;
+				}
+			});
+
+			// Then layer on booking data
+			appointments.forEach(a => {
+				const key = (a.first + ' ' + a.last).toLowerCase().trim() + '|' + (a.email || '').toLowerCase();
+				if (!map[key]) {
+					map[key] = {
+						first: a.first,
+						last: a.last,
+						email: a.email || '',
+						phone: a.phone || '',
+						notes: '',
+						infraredNotes: '',
+						saltNotes: '',
+						visits: 0,
+						services: new Set(),
+						lastVisit: '',
+						lastVisitDate: null,
+						bookings: [],
+						addedAt: null
+					};
+				}
+				const c = map[key];
+				c.visits++;
+				if (a.service) c.services.add(a.service);
+				if (!c.phone && a.phone) c.phone = a.phone;
+
+				// Track last visit (parse date string)
+				const dateStr = a.date || '';
+				const match = dateStr.match(/(\w+),?\s+(\w+)\s+(\d+),?\s+(\d{4})/);
+				let parsed = null;
+				if (match) {
+					const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+					const mIdx = months.indexOf(match[2]);
+					if (mIdx !== -1) parsed = new Date(parseInt(match[4]), mIdx, parseInt(match[3]));
+				}
+				if (parsed && (!c.lastVisitDate || parsed > c.lastVisitDate)) {
+					c.lastVisitDate = parsed;
+					c.lastVisit = a.date;
+				}
+
+				c.bookings.push(a);
+			});
+
+			return Object.values(map).sort((a, b) => {
+				if (b.lastVisitDate && a.lastVisitDate) return b.lastVisitDate - a.lastVisitDate;
+				if (b.lastVisitDate) return 1;
+				if (a.lastVisitDate) return -1;
+				return (b.addedAt || '') > (a.addedAt || '') ? 1 : -1;
+			});
+		}
+
+		function renderClients(clients) {
+			const tbody = document.getElementById('clientsBody');
+			const countEl = document.getElementById('clientsCount');
+			countEl.textContent = clients.length + ' total';
+
+			if (clients.length === 0) {
+				tbody.innerHTML = `<tr><td colspan="6">
+					<div class="empty-state">
+						<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+						<div>No clients found</div>
+						<p>Add a client or make a booking to get started.</p>
+					</div>
+				</td></tr>`;
+				return;
+			}
+
+			tbody.innerHTML = clients.map((c, i) => `
+				<tr class="client-row-clickable" onclick="showClientDetail(${i})">
+					<td>
+						<div class="client-cell">
+							<div class="avatar-sm">${initials(c.first, c.last)}</div>
+							<div>
+								<div class="client-name">${escapeHtml(c.first)} ${escapeHtml(c.last)}</div>
+								<div class="client-email">${escapeHtml(c.email)}</div>
+							</div>
+						</div>
+					</td>
+					<td>${escapeHtml(c.phone) || '<span style="color:var(--text-muted)">—</span>'}</td>
+					<td><span class="client-visits">${c.visits}</span></td>
+					<td>${c.lastVisit ? escapeHtml(c.lastVisit) : '—'}</td>
+					<td>${Array.from(c.services).map(s => '<span class="badge-service">' + escapeHtml(s) + '</span>').join(' ') || '<span style="color:var(--text-muted)">—</span>'}</td>
+					<td>${(c.notes || c.infraredNotes || c.saltNotes) ? '<div class="client-notes-preview">' + escapeHtml(c.notes || c.infraredNotes || c.saltNotes) + '</div>' : '<span style="color:var(--text-muted)">—</span>'}</td>
+				</tr>
+			`).join('');
+		}
+
+		function searchClients(query) {
+			const q = query.toLowerCase().trim();
+			if (!q) {
+				renderClients(clientList);
+				return;
+			}
+			const filtered = clientList.filter(c => {
+				const name = (c.first + ' ' + c.last).toLowerCase();
+				const email = c.email.toLowerCase();
+				const phone = c.phone.toLowerCase();
+				const services = Array.from(c.services).join(' ').toLowerCase();
+				const notes = ((c.notes || '') + ' ' + (c.infraredNotes || '') + ' ' + (c.saltNotes || '')).toLowerCase();
+				return name.includes(q) || email.includes(q) || phone.includes(q) || services.includes(q) || notes.includes(q);
+			});
+			renderClients(filtered);
+		}
+
+		function showClientDetail(index) {
+			// Use the currently rendered list (could be filtered)
+			const searchVal = document.getElementById('clientSearch').value.trim().toLowerCase();
+			let list = clientList;
+			if (searchVal) {
+				list = clientList.filter(c => {
+					const name = (c.first + ' ' + c.last).toLowerCase();
+					const email = c.email.toLowerCase();
+					const phone = c.phone.toLowerCase();
+					const services = Array.from(c.services).join(' ').toLowerCase();
+					const notes = (c.notes || '').toLowerCase();
+					return name.includes(searchVal) || email.includes(searchVal) || phone.includes(searchVal) || services.includes(searchVal) || notes.includes(searchVal);
+				});
+			}
+			const c = list[index];
+			if (!c) return;
+
+			document.getElementById('clientDetailName').textContent = c.first + ' ' + c.last;
+
+			// Find first visit
+			let firstVisit = '—';
+			if (c.bookings.length > 0) {
+				let earliest = null;
+				const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+				c.bookings.forEach(b => {
+					const match = (b.date || '').match(/(\w+),?\s+(\w+)\s+(\d+),?\s+(\d{4})/);
+					if (match) {
+						const mIdx = months.indexOf(match[2]);
+						if (mIdx !== -1) {
+							const d = new Date(parseInt(match[4]), mIdx, parseInt(match[3]));
+							if (!earliest || d < earliest.date) earliest = { date: d, str: b.date };
+						}
+					}
+				});
+				if (earliest) firstVisit = earliest.str;
+			}
+
+			document.getElementById('clientDetailInfo').innerHTML = `
+				<div class="client-detail-item">
+					<label>Email</label>
+					<span>${c.email ? escapeHtml(c.email) : '—'}</span>
+				</div>
+				<div class="client-detail-item">
+					<label>Phone</label>
+					<span>${c.phone ? escapeHtml(c.phone) : '—'}</span>
+				</div>
+				<div class="client-detail-item">
+					<label>Total Visits</label>
+					<span>${c.visits}</span>
+				</div>
+				<div class="client-detail-item">
+					<label>First Visit</label>
+					<span>${escapeHtml(firstVisit)}</span>
+				</div>
+			`;
+
+			// Notes section
+			const hasAnyNotes = c.notes || c.infraredNotes || c.saltNotes;
+			let notesHtml = '';
+			if (hasAnyNotes) {
+				if (c.notes) notesHtml += '<p><strong>General:</strong> ' + escapeHtml(c.notes) + '</p>';
+				if (c.infraredNotes) notesHtml += '<p><strong>Infrared Therapy:</strong> ' + escapeHtml(c.infraredNotes) + '</p>';
+				if (c.saltNotes) notesHtml += '<p><strong>Salt Cabin:</strong> ' + escapeHtml(c.saltNotes) + '</p>';
+			} else {
+				notesHtml = '<p class="no-notes">No notes for this client.</p>';
+			}
+			document.getElementById('clientDetailNotes').innerHTML = notesHtml;
+
+			// Booking history — sorted newest first
+			const historyBody = document.getElementById('clientHistoryBody');
+			if (c.bookings.length === 0) {
+				historyBody.innerHTML = '<tr><td colspan="3" style="text-align:center;padding:24px;color:var(--text-muted);font-size:0.84rem;">No bookings yet</td></tr>';
+			} else {
+				const sorted = [...c.bookings].sort((a, b) => {
+					const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+					function parseDate(str) {
+						const m = (str || '').match(/(\w+),?\s+(\w+)\s+(\d+),?\s+(\d{4})/);
+						if (m) { const mi = months.indexOf(m[2]); if (mi !== -1) return new Date(parseInt(m[4]), mi, parseInt(m[3])); }
+						return new Date(0);
+					}
+					return parseDate(b.date) - parseDate(a.date);
+				});
+
+				historyBody.innerHTML = sorted.map(b => `
+					<tr>
+						<td>${escapeHtml(b.service)}</td>
+						<td>${escapeHtml(b.date)}<br><span style="font-size:0.74rem;color:var(--text-muted)">${escapeHtml(b.time)}</span></td>
+						<td><span class="badge badge-${b.status}">${b.status.charAt(0).toUpperCase() + b.status.slice(1)}</span></td>
+					</tr>
+				`).join('');
+			}
+
+			document.getElementById('clientDetailOverlay').classList.add('open');
+		}
+
+		function closeClientDetail() {
+			document.getElementById('clientDetailOverlay').classList.remove('open');
+		}
+
+		// ── SETTINGS ──
+		const defaultHours = [
+			{ day: 'Monday',    open: '09:00', close: '17:00', closed: false },
+			{ day: 'Tuesday',   open: '09:00', close: '17:00', closed: false },
+			{ day: 'Wednesday', open: '09:00', close: '17:00', closed: false },
+			{ day: 'Thursday',  open: '09:00', close: '17:00', closed: false },
+			{ day: 'Friday',    open: '09:00', close: '17:00', closed: false },
+			{ day: 'Saturday',  open: '10:00', close: '15:00', closed: false },
+			{ day: 'Sunday',    open: '',      close: '',      closed: true  }
+		];
+
+		function loadSettings() {
+			const saved = JSON.parse(localStorage.getItem('rwc_settings') || '{}');
+			document.getElementById('settingsBizName').value = saved.bizName || 'Renegade Wellness Center';
+			document.getElementById('settingsBizPhone').value = saved.bizPhone || '';
+			document.getElementById('settingsBizEmail').value = saved.bizEmail || '';
+			document.getElementById('settingsBizAddress').value = saved.bizAddress || '';
+			document.getElementById('settingsEmailNotif').checked = saved.emailNotif !== false;
+			document.getElementById('settingsAutoConfirm').checked = saved.autoConfirm !== false;
+			document.getElementById('settingsReminder').checked = saved.reminder === true;
+		}
+
+		function saveSettings() {
+			const settings = JSON.parse(localStorage.getItem('rwc_settings') || '{}');
+			settings.bizName = document.getElementById('settingsBizName').value.trim();
+			settings.bizPhone = document.getElementById('settingsBizPhone').value.trim();
+			settings.bizEmail = document.getElementById('settingsBizEmail').value.trim();
+			settings.bizAddress = document.getElementById('settingsBizAddress').value.trim();
+			settings.emailNotif = document.getElementById('settingsEmailNotif').checked;
+			settings.autoConfirm = document.getElementById('settingsAutoConfirm').checked;
+			settings.reminder = document.getElementById('settingsReminder').checked;
+			localStorage.setItem('rwc_settings', JSON.stringify(settings));
+			showToast('Settings saved!');
+		}
+
+		function renderHoursGrid() {
+			const saved = JSON.parse(localStorage.getItem('rwc_hours') || 'null');
+			const hours = saved || defaultHours;
+			const grid = document.getElementById('hoursGrid');
+			grid.innerHTML = hours.map((h, i) => `
+				<span class="day-label">${h.day}</span>
+				${h.closed
+					? `<span class="closed-label" style="grid-column:span 2;">Closed</span>`
+					: `<input type="time" id="hourOpen${i}" value="${h.open}"/>
+					   <input type="time" id="hourClose${i}" value="${h.close}"/>`
+				}
+				<label class="toggle" style="justify-self:end;">
+					<input type="checkbox" ${h.closed ? '' : 'checked'} onchange="toggleDay(${i}, this.checked)"/>
+					<span class="toggle-slider"></span>
+				</label>
+			`).join('');
+		}
+
+		function toggleDay(index, isOpen) {
+			const saved = JSON.parse(localStorage.getItem('rwc_hours') || 'null') || [...defaultHours];
+			saved[index].closed = !isOpen;
+			localStorage.setItem('rwc_hours', JSON.stringify(saved));
+			renderHoursGrid();
+		}
+
+		function saveHours() {
+			const saved = JSON.parse(localStorage.getItem('rwc_hours') || 'null') || [...defaultHours];
+			saved.forEach((h, i) => {
+				if (!h.closed) {
+					const openInput = document.getElementById('hourOpen' + i);
+					const closeInput = document.getElementById('hourClose' + i);
+					if (openInput) h.open = openInput.value;
+					if (closeInput) h.close = closeInput.value;
+				}
+			});
+			localStorage.setItem('rwc_hours', JSON.stringify(saved));
+			showToast('Business hours saved!');
+		}
+
+		function exportData() {
+			const data = {
+				bookings: JSON.parse(localStorage.getItem('rwc_bookings') || '[]'),
+				clients: JSON.parse(localStorage.getItem('rwc_clients') || '[]'),
+				settings: JSON.parse(localStorage.getItem('rwc_settings') || '{}'),
+				hours: JSON.parse(localStorage.getItem('rwc_hours') || '[]'),
+				exportedAt: new Date().toISOString()
+			};
+			const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement('a');
+			a.href = url;
+			a.download = 'rwc-booking-data-' + new Date().toISOString().slice(0,10) + '.json';
+			a.click();
+			URL.revokeObjectURL(url);
+			showToast('Data exported!');
+		}
+
+		function clearAllData() {
+			if (!confirm('Are you sure you want to clear all booking and client data? This cannot be undone.')) return;
+			localStorage.removeItem('rwc_bookings');
+			localStorage.removeItem('rwc_clients');
+			appointments.length = 0;
+			renderTable(currentFilter);
+			updateStats();
+			buildCalendar();
+			showToast('All data cleared.');
+		}
+
+		// ── ANALYTICS ──
+		function renderAnalytics() {
+			const all = appointments;
+			const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+			const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+			// Parse a booking date string into a Date
+			function parseBookingDate(str) {
+				const m = (str || '').match(/(\w+),?\s+(\w+)\s+(\d+),?\s+(\d{4})/);
+				if (m) {
+					const mi = months.indexOf(m[2]);
+					if (mi !== -1) return new Date(parseInt(m[4]), mi, parseInt(m[3]));
+				}
+				return null;
+			}
+
+			// Service prices for revenue estimate
+			const prices = {
+				'Salt Cabin': 32.5,
+				'Infrared Therapy': 40,
+				'Salt + Infrared Combo': 55
+			};
+
+			// Top stats
+			const totalBookings = all.length;
+			const uniqueClients = new Set(all.map(a => (a.first + ' ' + a.last).toLowerCase().trim() + '|' + (a.email || '').toLowerCase())).size;
+			let estRevenue = 0;
+			all.forEach(a => { if (a.status !== 'cancelled') estRevenue += (prices[a.service] || 0); });
+
+			document.getElementById('anTotalBookings').textContent = totalBookings;
+			document.getElementById('anUniqueClients').textContent = uniqueClients;
+			document.getElementById('anEstRevenue').textContent = '$' + Math.round(estRevenue);
+			document.getElementById('analyticsDateRange').textContent = totalBookings > 0 ? 'Based on ' + totalBookings + ' booking' + (totalBookings !== 1 ? 's' : '') : 'No data yet';
+
+			// Bookings by day of week
+			const dayCounts = [0, 0, 0, 0, 0, 0, 0];
+			all.forEach(a => {
+				const d = parseBookingDate(a.date);
+				if (d) dayCounts[d.getDay()]++;
+			});
+			const maxDay = Math.max(...dayCounts, 1);
+
+			document.getElementById('anDayChart').innerHTML = dayNames.map((name, i) => {
+				const pct = (dayCounts[i] / maxDay) * 100;
+				return `<div class="bar-col">
+					<span class="bar-value">${dayCounts[i]}</span>
+					<div class="bar" style="height:${Math.max(pct, 3)}%"></div>
+					<span class="bar-label">${name}</span>
+				</div>`;
+			}).join('');
+
+			// Service breakdown
+			const serviceCounts = {};
+			all.forEach(a => {
+				if (a.service) serviceCounts[a.service] = (serviceCounts[a.service] || 0) + 1;
+			});
+			const serviceEntries = Object.entries(serviceCounts).sort((a, b) => b[1] - a[1]);
+			const maxService = serviceEntries.length > 0 ? serviceEntries[0][1] : 1;
+			const barColors = ['teal', 'orange', 'navy'];
+
+			if (serviceEntries.length === 0) {
+				document.getElementById('anServiceBreakdown').innerHTML = '<div class="empty-state" style="padding:30px;"><p>No booking data yet</p></div>';
+			} else {
+				document.getElementById('anServiceBreakdown').innerHTML = serviceEntries.map((entry, i) => {
+					const pct = (entry[1] / maxService) * 100;
+					return `<div class="breakdown-item">
+						<span class="breakdown-label">${escapeHtml(entry[0])}</span>
+						<div class="breakdown-bar-wrap">
+							<div class="breakdown-bar-fill ${barColors[i % barColors.length]}" style="width:${pct}%"></div>
+						</div>
+						<span class="breakdown-count">${entry[1]}</span>
+					</div>`;
+				}).join('');
+			}
+
+			// Status breakdown
+			const confirmed = all.filter(a => a.status === 'confirmed').length;
+			const pending = all.filter(a => a.status === 'pending').length;
+			const cancelled = all.filter(a => a.status === 'cancelled').length;
+
+			document.getElementById('anStatusGrid').innerHTML = `
+				<div class="status-block confirmed-bg">
+					<div class="status-num">${confirmed}</div>
+					<div class="status-text">Confirmed</div>
+				</div>
+				<div class="status-block pending-bg">
+					<div class="status-num">${pending}</div>
+					<div class="status-text">Pending</div>
+				</div>
+				<div class="status-block cancelled-bg">
+					<div class="status-num">${cancelled}</div>
+					<div class="status-text">Cancelled</div>
+				</div>
+			`;
+		}
+
 		// Modal close on overlay click
 		document.getElementById('modalOverlay').addEventListener('click', function(e) {
 			if (e.target === this) closeModal();
+		});
+
+		document.getElementById('clientDetailOverlay').addEventListener('click', function(e) {
+			if (e.target === this) closeClientDetail();
+		});
+
+		document.getElementById('newClientOverlay').addEventListener('click', function(e) {
+			if (e.target === this) closeNewClientModal();
 		});
 
 		// Today date
@@ -1485,6 +3049,10 @@
 				renderTable(currentFilter);
 				updateStats();
 				buildCalendar();
+				if (currentView === 'clients') {
+					clientList = buildClientList();
+					renderClients(clientList);
+				}
 				console.log('Bookings refreshed from localStorage:', appointments.length, 'total');
 			}
 		}
