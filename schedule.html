@@ -1534,16 +1534,20 @@
 			});
 
 			/* --- Time Slots --- */
-			function showTimeSlots() {
+			async function showTimeSlots() {
 				const wrap = document.getElementById('times-wrap');
 				const grid = document.getElementById('times-grid');
 				const heading = document.getElementById('times-heading');
 
 				wrap.style.display = 'block';
 				heading.textContent = 'Available Times for ' + months[state.date.getMonth()] + ' ' + state.date.getDate();
-				grid.innerHTML = '';
+				grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:#8a9e99;padding:20px;">Loading...</p>';
+
+				// Fresh sync from Supabase so cancelled/deleted slots show as available
+				await syncBookingsForAvailability();
 
 				const slots = generateTimeSlots(state.date, state.serviceName);
+				grid.innerHTML = '';
 
 				if (slots.length === 0) {
 					grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:#8a9e99;padding:20px;">No available times for this day</p>';
