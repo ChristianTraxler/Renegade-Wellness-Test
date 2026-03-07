@@ -177,6 +177,53 @@
 				font-size: 0.8rem;
 				color: var(--navy-dark);
 				flex-shrink: 0;
+				overflow: hidden;
+			}
+
+			.staff-avatar img {
+				width: 100%; height: 100%;
+				object-fit: cover;
+			}
+
+			/* ── PROFILE PICTURE ── */
+			.profile-pic-wrapper {
+				display: flex;
+				align-items: center;
+				gap: 24px;
+				flex-wrap: wrap;
+			}
+
+			.profile-pic-preview {
+				width: 80px; height: 80px;
+				border-radius: 50%;
+				background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 600;
+				font-size: 1.6rem;
+				color: var(--navy-dark);
+				flex-shrink: 0;
+				overflow: hidden;
+			}
+
+			.profile-pic-preview img {
+				width: 100%; height: 100%;
+				object-fit: cover;
+			}
+
+			.profile-pic-actions {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+			}
+
+			.profile-pic-actions input[type="file"] { display: none; }
+
+			.profile-pic-hint {
+				font-size: 0.72rem;
+				color: var(--text-muted);
+				margin-top: 2px;
 			}
 
 			.staff-name {
@@ -851,6 +898,14 @@
 				stroke-linejoin: round;
 			}
 
+			/* Responsive utility classes */
+			@media (max-width: 768px) {
+				.hide-mobile { display: none !important; }
+			}
+			@media (max-width: 480px) {
+				.hide-mobile-sm { display: none !important; }
+			}
+
 			/* Responsive */
 			@media (max-width: 1100px) {
 				.stats-grid { grid-template-columns: repeat(2, 1fr); }
@@ -862,14 +917,101 @@
 				.sidebar.open { transform: translateX(0); }
 				.main { margin-left: 0; }
 				.menu-toggle { display: flex; }
-				.topbar { padding: 0 20px; }
-				.content { padding: 20px; }
-				.stats-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+				.topbar { padding: 0 16px; gap: 8px; }
+				.topbar-left h1 { font-size: 1.15rem; }
+				.topbar-right { gap: 8px; }
+				.topbar-right .btn { padding: 8px 12px; font-size: 0.78rem; }
+				.topbar-right .btn svg { width: 14px; height: 14px; }
+				.content { padding: 16px; }
+				.stats-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+				.stat-card { padding: 16px 18px; }
+				.stat-value { font-size: 1.7rem; }
+				.stat-label { font-size: 0.68rem; }
+
+				/* Tables: hide less-important columns, reduce padding */
+				thead th { padding: 10px 14px; font-size: 0.64rem; }
+				tbody td { padding: 12px 14px; font-size: 0.8rem; }
+				.action-btns { gap: 4px; }
+
+				/* Cards */
+				.card-header { padding: 16px 18px; }
+				.card-title { font-size: 1rem; }
+				.tabs { padding: 0 14px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+				.tab { padding: 10px 12px; font-size: 0.76rem; white-space: nowrap; }
+
+				/* Mini calendar sidebar */
+				.mini-cal { padding: 16px 18px; }
+				.cal-day { width: 30px; height: 30px; font-size: 0.74rem; }
+				.quick-book { padding: 16px 18px; }
+
+				/* Modal */
+				.modal { max-width: 100%; border-radius: 14px; }
+				.modal-header { padding: 18px 20px 14px; }
+				.modal-header h3 { font-size: 1.1rem; }
+				.modal-body { padding: 18px 20px; }
+				.modal-footer { padding: 14px 20px 18px; }
+
+				/* Services grid */
+				.services-grid { grid-template-columns: 1fr; }
+				.service-card { padding: 20px; }
+
+				/* Settings */
+				.settings-card-header { padding: 16px 18px; }
+				.settings-card-body { padding: 18px; }
+				.settings-hours-grid {
+					grid-template-columns: 1fr 1fr;
+					gap: 8px;
+				}
+				.settings-hours-grid .day-label {
+					grid-column: 1 / -1;
+					padding-top: 8px;
+					border-top: 1px solid var(--border);
+				}
+				.settings-hours-grid .day-label:first-child { border-top: none; padding-top: 0; }
+
+				/* Scheduling config */
+				.scheduling-service-row {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 8px;
+				}
+
+				/* Toast repositioned */
+				.toast { left: 16px; right: 16px; bottom: 16px; }
+
+				/* Profile pic */
+				.profile-pic-wrapper { flex-direction: column; align-items: flex-start; gap: 16px; }
 			}
 
 			@media (max-width: 480px) {
 				.stats-grid { grid-template-columns: 1fr; }
 				.form-row-2 { grid-template-columns: 1fr; }
+				.topbar-left h1 { font-size: 1rem; }
+				.topbar-left p { display: none; }
+				.stat-card { padding: 14px 16px; }
+				.stat-value { font-size: 1.5rem; }
+				.content { padding: 12px; }
+
+				/* Appointment cards */
+				.appt-card-top { padding: 14px 16px; flex-wrap: wrap; gap: 10px; }
+				.appt-card-details { padding: 16px; gap: 12px 16px; }
+				.appt-card-notes { padding: 0 16px 16px; }
+				.appt-card-footer { padding: 12px 16px; }
+
+				/* Buttons full width on very small screens */
+				.appt-card-actions { width: 100%; }
+				.appt-card-actions .btn { flex: 1; justify-content: center; font-size: 0.74rem; padding: 7px 10px; }
+
+				/* Filter tabs scroll */
+				.appt-filter-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+				.appt-filter-tab { white-space: nowrap; padding: 6px 10px; font-size: 0.74rem; }
+
+				/* Modal on very small screens */
+				.modal-overlay { padding: 10px; }
+				.modal-header h3 { font-size: 1rem; }
+
+				/* Settings hours stacked */
+				.settings-hours-grid { grid-template-columns: 1fr; }
 			}
 
 			/* Overlay for mobile sidebar */
@@ -1495,13 +1637,293 @@
 				font-style: italic;
 			}
 
+			/* ── SCHEDULING CONFIG ── */
+			.scheduling-service-row {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 12px 0;
+				border-bottom: 1px solid var(--border);
+			}
+			.scheduling-service-row:last-child { border-bottom: none; }
+			.scheduling-service-row .service-name {
+				font-size: 0.88rem;
+				font-weight: 500;
+				color: var(--text-dark);
+			}
+			.scheduling-service-row .duration-input {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+			}
+			.scheduling-service-row .duration-input input {
+				width: 70px;
+				padding: 6px 10px;
+				border: 1px solid var(--border);
+				border-radius: 8px;
+				font-size: 0.85rem;
+				text-align: center;
+			}
+			.scheduling-service-row .duration-input span {
+				font-size: 0.76rem;
+				color: var(--text-muted);
+			}
+
+			/* ── SQUARE IMPORT ── */
+			.file-upload-zone {
+				border: 2px dashed var(--border);
+				border-radius: 12px;
+				padding: 24px;
+				text-align: center;
+				transition: all 0.2s;
+				cursor: pointer;
+			}
+			.file-upload-zone:hover,
+			.file-upload-zone.dragover {
+				border-color: var(--teal);
+				background: var(--teal-pale);
+			}
+			.file-upload-zone p {
+				font-size: 0.82rem;
+				color: var(--text-muted);
+				margin-top: 8px;
+			}
+			.file-upload-zone input[type="file"] { display: none; }
+			.file-upload-zone .upload-icon {
+				width: 40px;
+				height: 40px;
+				margin: 0 auto 8px;
+				color: var(--teal);
+			}
+			.file-upload-zone .upload-icon svg {
+				width: 100%; height: 100%;
+				stroke: currentColor;
+				fill: none;
+				stroke-width: 1.5;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
+			.file-upload-zone .file-name {
+				font-size: 0.82rem;
+				color: var(--teal-dark);
+				font-weight: 500;
+				margin-top: 8px;
+			}
+
+			/* ── APPOINTMENTS VIEW ── */
+			.appt-view-controls {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				margin-bottom: 20px;
+				flex-wrap: wrap;
+			}
+
+			.appt-filter-tabs {
+				display: flex;
+				gap: 4px;
+				background: var(--white);
+				border: 1px solid var(--border);
+				border-radius: 10px;
+				padding: 4px;
+			}
+
+			.appt-filter-tab {
+				padding: 7px 14px;
+				border-radius: 8px;
+				font-size: 0.78rem;
+				font-weight: 500;
+				cursor: pointer;
+				transition: all 0.15s;
+				color: var(--text-muted);
+				border: none;
+				background: none;
+			}
+
+			.appt-filter-tab:hover { color: var(--text-dark); background: var(--bg); }
+			.appt-filter-tab.active { background: var(--teal); color: var(--navy-dark); }
+
+			.appt-search-wrap {
+				position: relative;
+				flex: 1;
+				min-width: 200px;
+			}
+
+			.appt-search-wrap input {
+				width: 100%;
+				padding: 9px 14px 9px 36px;
+				border: 1px solid var(--border);
+				border-radius: 10px;
+				font-size: 0.85rem;
+				background: var(--white);
+			}
+
+			.appt-search-wrap svg {
+				position: absolute;
+				left: 12px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 15px; height: 15px;
+				stroke: var(--text-muted);
+				fill: none;
+				stroke-width: 2;
+			}
+
+			.appt-list {
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+			}
+
+			.appt-card {
+				background: var(--white);
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				overflow: hidden;
+				transition: box-shadow 0.2s;
+			}
+
+			.appt-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+
+			.appt-card-top {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 18px 24px;
+				border-bottom: 1px solid var(--border);
+			}
+
+			.appt-card-service {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+
+			.appt-card-service-icon {
+				width: 38px; height: 38px;
+				border-radius: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.appt-card-service-icon svg {
+				width: 18px; height: 18px;
+				stroke: currentColor;
+				fill: none;
+				stroke-width: 2;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
+
+			.appt-card-service-icon.svc-salt { background: var(--teal-pale); color: var(--teal-dark); }
+			.appt-card-service-icon.svc-infrared { background: rgba(212,134,42,0.1); color: var(--warning); }
+			.appt-card-service-icon.svc-combo { background: rgba(32,64,104,0.1); color: var(--navy); }
+
+			.appt-card-service-name {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.1rem;
+				font-weight: 500;
+				color: var(--navy);
+			}
+
+			.appt-card-details {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 16px 32px;
+				padding: 20px 24px;
+			}
+
+			.appt-detail {
+				display: flex;
+				align-items: flex-start;
+				gap: 10px;
+			}
+
+			.appt-detail-icon {
+				width: 16px; height: 16px;
+				flex-shrink: 0;
+				margin-top: 2px;
+				stroke: var(--text-muted);
+				fill: none;
+				stroke-width: 2;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
+
+			.appt-detail-label {
+				font-size: 0.7rem;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				color: var(--text-muted);
+				margin-bottom: 2px;
+			}
+
+			.appt-detail-value {
+				font-size: 0.88rem;
+				color: var(--text-dark);
+			}
+
+			.appt-card-notes {
+				padding: 0 24px 20px;
+				display: flex;
+				align-items: flex-start;
+				gap: 10px;
+			}
+
+			.appt-card-notes-text {
+				font-size: 0.82rem;
+				color: var(--text-muted);
+				font-style: italic;
+				line-height: 1.5;
+			}
+
+			.appt-card-footer {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 14px 24px;
+				border-top: 1px solid var(--border);
+				background: var(--bg);
+			}
+
+			.appt-card-booked {
+				font-size: 0.74rem;
+				color: var(--text-muted);
+			}
+
+			.appt-card-actions {
+				display: flex;
+				gap: 8px;
+			}
+
+			.appt-empty {
+				text-align: center;
+				padding: 60px 24px;
+				color: var(--text-muted);
+				font-size: 0.9rem;
+			}
+
 			@media (max-width: 768px) {
 				.clients-search input { width: 100%; }
 				.clients-header { flex-direction: column; align-items: stretch; }
 				.clients-header-right { flex-direction: column; align-items: stretch; }
 				.client-detail-info { grid-template-columns: 1fr; }
 				.settings-row { flex-direction: column; align-items: flex-start; gap: 10px; }
-				.settings-hours-grid { grid-template-columns: 1fr; }
+				.appt-card-details { grid-template-columns: 1fr; }
+				.appt-card-footer { flex-direction: column; gap: 12px; }
+				.appt-view-controls { flex-direction: column; }
+
+				/* Client table: hide less important columns on mobile */
+				.client-notes-preview { max-width: 120px; }
+			}
+
+			@media (max-width: 480px) {
+				/* Client detail history table */
+				.client-detail-history .table-wrap { font-size: 0.8rem; }
+				.client-detail-history th,
+				.client-detail-history td { padding: 10px 12px; }
 			}
 		</style>
 	</head>
@@ -1523,10 +1945,10 @@
 				<svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
 				Dashboard
 			</a>
-			<a class="nav-item" href="#" onclick="openModal()">
+			<a class="nav-item" href="#" data-view="appointments" onclick="switchView('appointments')">
 				<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
 				Appointments
-				<span class="nav-badge">8</span>
+				<span class="nav-badge" id="apptNavBadge">8</span>
 			</a>
 			<a class="nav-item" href="#" data-view="clients" onclick="switchView('clients')">
 				<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -1573,7 +1995,7 @@
 				<p id="todayDate"></p>
 			</div>
 			<div class="topbar-right">
-				<button class="btn btn-ghost" onclick="openModal()">
+				<button class="btn btn-ghost" id="topbarNewAppt" onclick="openModal()">
 					<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
 					New Appointment
 				</button>
@@ -1663,10 +2085,10 @@
 								<thead>
 								<tr>
 									<th>Client</th>
-									<th>Service</th>
+									<th class="hide-mobile-sm">Service</th>
 									<th>Date & Time</th>
 									<th>Status</th>
-									<th>Actions</th>
+									<th class="hide-mobile">Actions</th>
 								</tr>
 								</thead>
 								<tbody id="apptBody"></tbody>
@@ -1718,6 +2140,41 @@
 			</div>
 		</div><!-- /view-dashboard -->
 
+		<!-- ═══ APPOINTMENTS VIEW ═══ -->
+		<div id="view-appointments" style="display:none">
+			<div class="clients-header">
+				<div class="clients-header-left">
+					<h2>Appointments</h2>
+					<span class="clients-count" id="apptViewCount">0 appointments</span>
+				</div>
+				<div class="clients-header-right">
+					<button class="btn btn-primary" onclick="openModal()">
+						<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+						New Appointment
+					</button>
+				</div>
+			</div>
+
+			<div class="appt-view-controls">
+				<div class="appt-filter-tabs">
+					<button class="appt-filter-tab active" data-filter="all" onclick="filterAppointments('all')">All</button>
+					<button class="appt-filter-tab" data-filter="upcoming" onclick="filterAppointments('upcoming')">Upcoming</button>
+					<button class="appt-filter-tab" data-filter="today" onclick="filterAppointments('today')">Today</button>
+					<button class="appt-filter-tab" data-filter="confirmed" onclick="filterAppointments('confirmed')">Confirmed</button>
+					<button class="appt-filter-tab" data-filter="pending" onclick="filterAppointments('pending')">Pending</button>
+					<button class="appt-filter-tab" data-filter="cancelled" onclick="filterAppointments('cancelled')">Cancelled</button>
+				</div>
+				<div class="appt-search-wrap">
+					<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+					<input type="text" id="apptSearch" placeholder="Search by name, service, or date..." oninput="filterAppointments(currentApptFilter)"/>
+				</div>
+			</div>
+
+			<div class="appt-list" id="apptList">
+				<!-- populated by JS -->
+			</div>
+		</div><!-- /view-appointments -->
+
 		<!-- ═══ CLIENTS VIEW ═══ -->
 		<div id="view-clients" style="display:none">
 			<div class="clients-header">
@@ -1739,15 +2196,15 @@
 
 			<div class="card">
 				<div class="table-wrap">
-					<table>
+					<table id="clientsTable">
 						<thead>
 						<tr>
 							<th>Client</th>
-							<th>Phone</th>
-							<th>Total Visits</th>
-							<th>Last Visit</th>
-							<th>Services</th>
-							<th>Notes</th>
+							<th class="hide-mobile">Phone</th>
+							<th class="hide-mobile">Total Visits</th>
+							<th class="hide-mobile">Last Visit</th>
+							<th class="hide-mobile-sm">Services</th>
+							<th class="hide-mobile">Notes</th>
 						</tr>
 						</thead>
 						<tbody id="clientsBody"></tbody>
@@ -1832,6 +2289,36 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Scheduling Configuration -->
+			<div style="margin-top: 28px;">
+				<div class="settings-card">
+					<div class="settings-card-header">
+						<h3>Scheduling Configuration</h3>
+						<p>Control appointment durations, buffer time, and slot frequency</p>
+					</div>
+					<div class="settings-card-body">
+						<h4 style="font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;">Service Durations & Buffer</h4>
+						<p style="font-size:0.76rem;color:var(--text-muted);margin-bottom:16px;">Session duration (visible to client) + buffer (cleaning/break time, invisible)</p>
+						<div id="schedulingServiceRows">
+							<!-- populated by JS -->
+						</div>
+						<div style="margin-top:20px;">
+							<div class="field" style="max-width:220px;">
+								<label>Slot Interval (minutes)</label>
+								<input type="number" id="schedInterval" min="15" max="120" value="30"/>
+								<span style="font-size:0.72rem;color:var(--text-muted);margin-top:4px;display:block;">How often appointment start times appear</span>
+							</div>
+						</div>
+						<div style="margin-top:18px;">
+							<button class="btn btn-primary" onclick="saveSchedulingConfig()">
+								<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+								Save Scheduling
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div><!-- /view-services -->
 
 		<!-- ═══ SETTINGS VIEW ═══ -->
@@ -1843,6 +2330,53 @@
 			</div>
 
 			<div class="settings-sections">
+				<!-- Profile Picture -->
+				<div class="settings-card">
+					<div class="settings-card-header">
+						<h3>Profile Picture</h3>
+						<p>Upload a photo for your admin profile</p>
+					</div>
+					<div class="settings-card-body">
+						<div class="profile-pic-wrapper">
+							<div class="profile-pic-preview" id="profilePicPreview">AD</div>
+							<div class="profile-pic-actions">
+								<button class="btn btn-ghost" onclick="document.getElementById('profilePicInput').click()">
+									<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+									Upload Photo
+								</button>
+								<button class="btn btn-ghost" id="removeProfilePicBtn" onclick="removeProfilePic()" style="display:none;border-color:rgba(192,57,43,0.3);color:var(--error);">
+									<svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+									Remove
+								</button>
+								<input type="file" id="profilePicInput" accept="image/*" onchange="handleProfilePicUpload(this)"/>
+								<span class="profile-pic-hint">JPG or PNG, max 2 MB</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Display Name -->
+				<div class="settings-card">
+					<div class="settings-card-header">
+						<h3>Display Name</h3>
+						<p>Your name shown in the sidebar and profile</p>
+					</div>
+					<div class="settings-card-body">
+						<div class="form-row-2">
+							<div class="field">
+								<label>Username</label>
+								<input type="text" id="settingsUsername" placeholder="Admin"/>
+							</div>
+							<div class="field" style="display:flex;align-items:flex-end;">
+								<button class="btn btn-primary" onclick="saveUsername()">
+									<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+									Save
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<!-- Business Info -->
 				<div class="settings-card">
 					<div class="settings-card-header">
@@ -1964,6 +2498,31 @@
 					</div>
 				</div>
 			</div>
+
+				<!-- Square Import -->
+				<div class="settings-card">
+					<div class="settings-card-header">
+						<h3>Import from Square</h3>
+						<p>Import appointment data from a Square CSV export</p>
+					</div>
+					<div class="settings-card-body">
+						<div class="file-upload-zone" id="squareUploadZone" onclick="document.getElementById('squareFileInput').click()">
+							<div class="upload-icon">
+								<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+							</div>
+							<p>Click to select a Square CSV file</p>
+							<div class="file-name" id="squareFileName" style="display:none;"></div>
+							<input type="file" id="squareFileInput" accept=".csv"/>
+						</div>
+						<div style="margin-top:14px;">
+							<button class="btn btn-primary" id="squareImportBtn" onclick="handleSquareImport()" disabled>
+								<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+								Import
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div><!-- /view-settings -->
 
 		<!-- ═══ ANALYTICS VIEW ═══ -->
@@ -2065,8 +2624,18 @@
 					<label>Service</label>
 					<select id="modalService">
 						<option value="">Select a service…</option>
-						<option value="Salt Cabin">Salt Cabin</option>
+						<option value="Salt Cabin - 1 Person">Salt Cabin - 1 Person</option>
+						<option value="Salt Cabin - 2 People">Salt Cabin - 2 People</option>
+						<option value="Salt Cabin - 3 People">Salt Cabin - 3 People</option>
+						<option value="Salt Cabin - 4 People">Salt Cabin - 4 People</option>
+						<option value="Salt Cabin - Prepaid">Salt Cabin - Prepaid</option>
+						<option value="Salt Cabin - Shared">Salt Cabin - Shared</option>
+						<option value="Salt Cabin - Infrared Package Add On">Salt Cabin - Infrared Package Add On</option>
 						<option value="Infrared Therapy">Infrared Therapy</option>
+						<option value="Infrared Therapy - 2 People">Infrared Therapy - 2 People</option>
+						<option value="Infrared Therapy - Child">Infrared Therapy - Child</option>
+						<option value="Couples Salt">Couples Salt</option>
+						<option value="Couples Infrared/Salt Combo">Couples Infrared/Salt Combo</option>
 						<option value="Salt + Infrared Combo">Salt + Infrared Combo</option>
 					</select>
 				</div>
@@ -2078,15 +2647,7 @@
 					<div class="field">
 						<label>Time</label>
 						<select id="modalTime">
-							<option>9:00 AM</option>
-							<option>10:00 AM</option>
-							<option selected>11:00 AM</option>
-							<option>12:00 PM</option>
-							<option>1:00 PM</option>
-							<option>2:00 PM</option>
-							<option>3:00 PM</option>
-							<option>4:00 PM</option>
-							<option>5:00 PM</option>
+							<!-- populated dynamically based on business hours + slot interval -->
 						</select>
 					</div>
 				</div>
@@ -2094,8 +2655,10 @@
 					<div class="field">
 						<label>Duration</label>
 						<select id="modalDuration">
-							<option>30 minutes</option>
-							<option selected>45 minutes</option>
+							<option>20 minutes</option>
+							<option selected>30 minutes</option>
+							<option>45 minutes</option>
+							<option>50 minutes</option>
 							<option>60 minutes</option>
 							<option>90 minutes</option>
 						</select>
@@ -2133,10 +2696,38 @@
 				</button>
 			</div>
 			<div class="modal-body">
+				<div class="form-row-2">
+					<div class="field">
+						<label>First Name</label>
+						<input type="text" id="editClientFirst"/>
+					</div>
+					<div class="field">
+						<label>Last Name</label>
+						<input type="text" id="editClientLast"/>
+					</div>
+				</div>
+				<div class="form-row-2">
+					<div class="field">
+						<label>Email</label>
+						<input type="email" id="editClientEmail"/>
+					</div>
+					<div class="field">
+						<label>Phone</label>
+						<input type="tel" id="editClientPhone"/>
+					</div>
+				</div>
 				<div class="client-detail-info" id="clientDetailInfo"></div>
-				<div class="client-detail-notes">
-					<h4>Notes</h4>
-					<div id="clientDetailNotes"></div>
+				<div class="field">
+					<label>General Notes</label>
+					<textarea id="editClientNotes" placeholder="Health conditions, preferences, allergies, or anything to remember about this client..."></textarea>
+				</div>
+				<div class="field">
+					<label>Infrared Therapy Notes</label>
+					<textarea id="editClientInfraredNotes" placeholder="Infrared-specific notes — sensitivity, preferred temperature, session history, etc."></textarea>
+				</div>
+				<div class="field">
+					<label>Salt Cabin Notes</label>
+					<textarea id="editClientSaltNotes" placeholder="Salt cabin-specific notes — respiratory concerns, session preferences, etc."></textarea>
 				</div>
 				<div class="client-detail-history">
 					<h4>Booking History</h4>
@@ -2155,7 +2746,11 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button class="btn btn-ghost" onclick="closeClientDetail()">Close</button>
+				<button class="btn btn-ghost" onclick="closeClientDetail()">Cancel</button>
+				<button class="btn btn-primary" onclick="saveClientDetail()">
+					<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+					Save Changes
+				</button>
 			</div>
 		</div>
 	</div>
@@ -2222,7 +2817,182 @@
 	</div>
 
 	<script>
-		// Load bookings from localStorage (submitted from schedule.html)
+		// ── SUPABASE ──
+		const SUPABASE_URL = 'https://laanxujxiioesvsyccwb.supabase.co';
+		const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhYW54dWp4aWlvZXN2c3ljY3diIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA0MDk4NTYsImV4cCI6MjA4NTk4NTg1Nn0.e2Ymm9nGlgGd73buvCK7bPoWXPtzJvoGY3nIQtpjy7M';
+
+		async function supabaseRequest(table, method, body, queryParams) {
+			const url = SUPABASE_URL + '/rest/v1/' + table + (queryParams || '');
+			const headers = {
+				'apikey': SUPABASE_KEY,
+				'Authorization': 'Bearer ' + SUPABASE_KEY,
+				'Content-Type': 'application/json'
+			};
+			if (method === 'POST') headers['Prefer'] = 'return=representation';
+			if (method === 'PATCH') headers['Prefer'] = 'return=representation';
+			try {
+				const res = await fetch(url, {
+					method: method,
+					headers: headers,
+					body: body ? JSON.stringify(body) : undefined
+				});
+				if (!res.ok) {
+					console.error('Supabase error:', res.status, await res.text());
+					return null;
+				}
+				if (method === 'DELETE') return true;
+				const text = await res.text();
+				return text ? JSON.parse(text) : null;
+			} catch (e) {
+				console.error('Supabase request failed:', e);
+				return null;
+			}
+		}
+
+		function bookingToRow(b) {
+			return {
+				id: b.id,
+				first_name: b.first || '',
+				last_name: b.last || '',
+				email: b.email || '',
+				phone: b.phone || '',
+				service: b.service || '',
+				booking_date: b.date || '',
+				booking_time: b.time || '',
+				duration: b.duration || null,
+				price: b.price || null,
+				guests: b.guests || '',
+				notes: b.notes || '',
+				status: b.status || 'pending',
+				created_at: b.createdAt || new Date().toISOString()
+			};
+		}
+
+		function rowToBooking(r) {
+			return {
+				id: r.id,
+				first: r.first_name || '',
+				last: r.last_name || '',
+				email: r.email || '',
+				phone: r.phone || '',
+				service: r.service || '',
+				date: r.booking_date || '',
+				time: r.booking_time || '',
+				duration: r.duration,
+				price: r.price,
+				guests: r.guests || '',
+				notes: r.notes || '',
+				status: r.status || 'pending',
+				createdAt: r.created_at
+			};
+		}
+
+		function clientToRow(c) {
+			return {
+				first_name: c.firstName || '',
+				last_name: c.lastName || '',
+				email: c.email || '',
+				phone: c.phone || '',
+				notes: c.notes || '',
+				infrared_notes: c.infraredNotes || '',
+				salt_notes: c.saltNotes || ''
+			};
+		}
+
+		function rowToClient(r) {
+			return {
+				firstName: r.first_name || '',
+				lastName: r.last_name || '',
+				email: r.email || '',
+				phone: r.phone || '',
+				notes: r.notes || '',
+				infraredNotes: r.infrared_notes || '',
+				saltNotes: r.salt_notes || ''
+			};
+		}
+
+		// Sync bookings: pull from Supabase, push any local-only bookings up
+		async function syncBookingsFromSupabase() {
+			try {
+				const cloudRows = await supabaseRequest('bookings', 'GET', null, '?order=created_at.desc');
+				if (!cloudRows || !Array.isArray(cloudRows)) return;
+
+				const cloudBookings = cloudRows.map(rowToBooking);
+				const cloudIds = new Set(cloudBookings.map(b => b.id));
+
+				// Push local-only bookings to Supabase (migration of existing data)
+				const localBookings = JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
+				const toUpload = localBookings.filter(b => !cloudIds.has(b.id));
+				if (toUpload.length > 0) {
+					await supabaseRequest('bookings', 'POST', toUpload.map(bookingToRow));
+					console.log('Uploaded', toUpload.length, 'local bookings to Supabase');
+				}
+
+				const allBookings = [...cloudBookings, ...toUpload];
+				localStorage.setItem('rwc_bookings', JSON.stringify(allBookings));
+				appointments.length = 0;
+				allBookings.forEach(b => appointments.push(b));
+
+				renderTable(currentFilter);
+				updateStats();
+				buildCalendar();
+				if (currentView === 'appointments') renderAppointments();
+				console.log('Synced bookings:', allBookings.length, 'total');
+			} catch (e) {
+				console.error('Supabase sync failed, using localStorage:', e);
+			}
+		}
+
+		// Sync clients: pull from Supabase, push any local-only clients up
+		async function syncClientsFromSupabase() {
+			try {
+				const cloudRows = await supabaseRequest('clients', 'GET', null, '?order=created_at.desc');
+				if (!cloudRows || !Array.isArray(cloudRows)) return;
+
+				const cloudClients = cloudRows.map(rowToClient);
+				const cloudKeys = new Set(cloudClients.map(c => c.firstName + '|' + c.lastName + '|' + c.email));
+
+				const localClients = JSON.parse(localStorage.getItem('rwc_clients') || '[]');
+				const toUpload = localClients.filter(c => !cloudKeys.has(c.firstName + '|' + c.lastName + '|' + c.email));
+				if (toUpload.length > 0) {
+					await supabaseRequest('clients', 'POST', toUpload.map(clientToRow));
+					console.log('Uploaded', toUpload.length, 'local clients to Supabase');
+				}
+
+				const allClients = [...cloudClients, ...toUpload];
+				localStorage.setItem('rwc_clients', JSON.stringify(allClients));
+
+				if (currentView === 'clients') {
+					clientList = buildClientList();
+					renderClients(clientList);
+				}
+			} catch (e) {
+				console.error('Supabase clients sync failed:', e);
+			}
+		}
+
+		async function supabaseInsertBooking(booking) {
+			await supabaseRequest('bookings', 'POST', bookingToRow(booking));
+		}
+
+		async function supabaseUpdateBooking(id, fields) {
+			const row = {};
+			if (fields.status !== undefined) row.status = fields.status;
+			await supabaseRequest('bookings', 'PATCH', row, '?id=eq.' + id);
+		}
+
+		async function supabaseDeleteBooking(id) {
+			await supabaseRequest('bookings', 'DELETE', null, '?id=eq.' + id);
+		}
+
+		async function supabaseUpsertClient(client) {
+			const row = clientToRow(client);
+			// Try insert; on conflict update
+			const headers = { 'Prefer': 'resolution=merge-duplicates' };
+			await supabaseRequest('clients', 'POST', row, '?on_conflict=first_name,last_name,email');
+		}
+
+		// ── BOOKINGS (localStorage + Supabase) ──
 		function loadBookings() {
 			return JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
 		}
@@ -2231,7 +3001,7 @@
 			localStorage.setItem('rwc_bookings', JSON.stringify(appointments));
 		}
 
-		// Build appointments array from localStorage
+		// Build appointments array from localStorage (Supabase sync updates this async)
 		const appointments = loadBookings();
 
 		let currentFilter = 'all';
@@ -2268,10 +3038,10 @@
 						</div>
 					</div>
 				</td>
-				<td>${escapeHtml(a.service)}</td>
+				<td class="hide-mobile-sm">${escapeHtml(a.service)}</td>
 				<td>${escapeHtml(a.date)}<br><span style="font-size:0.74rem;color:var(--text-muted)">${escapeHtml(a.time)}</span></td>
 				<td><span class="badge badge-${a.status}">${a.status.charAt(0).toUpperCase()+a.status.slice(1)}</span></td>
-				<td>
+				<td class="hide-mobile">
 					<div class="action-btns">
 						${a.status === 'pending' ? `
 						<button class="icon-btn" title="Confirm" onclick="confirmRow(${a.id})" style="border-color:var(--success);color:var(--success);">
@@ -2321,6 +3091,7 @@
 			if (appt) {
 				appt.status = 'confirmed';
 				saveBookingsToStorage();
+				supabaseUpdateBooking(id, { status: 'confirmed' }).catch(e => console.error('Supabase confirm failed:', e));
 				renderTable(currentFilter);
 				updateStats();
 				showToast('Appointment confirmed!');
@@ -2331,9 +3102,193 @@
 			const idx = appointments.findIndex(a => a.id === id);
 			if (idx > -1) appointments.splice(idx, 1);
 			saveBookingsToStorage();
+			supabaseDeleteBooking(id).catch(e => console.error('Supabase delete failed:', e));
 			renderTable(currentFilter);
 			updateStats();
 			showToast('Appointment removed.');
+		}
+
+		// ── APPOINTMENTS VIEW ──
+		let currentApptFilter = 'all';
+
+		function getServiceMeta(service) {
+			if (service && (service.toLowerCase().includes('combo') || service.includes('+'))) {
+				return { cls: 'svc-combo', icon: '<rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/>' };
+			}
+			if (service && service.toLowerCase().includes('infrared')) {
+				return { cls: 'svc-infrared', icon: '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>' };
+			}
+			return { cls: 'svc-salt', icon: '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/>' };
+		}
+
+		function parseBookingDateSafe(str) {
+			const mnths = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+			const m = (str || '').match(/(\w+),?\s+(\w+)\s+(\d+),?\s+(\d{4})/);
+			if (m) {
+				const mi = mnths.indexOf(m[2]);
+				return new Date(parseInt(m[4]), mi, parseInt(m[3]));
+			}
+			return new Date(0);
+		}
+
+		function renderAppointments() {
+			const container = document.getElementById('apptList');
+			const countEl = document.getElementById('apptViewCount');
+			const search = (document.getElementById('apptSearch').value || '').toLowerCase();
+
+			const today = new Date();
+			today.setHours(0, 0, 0, 0);
+			const tomorrow = new Date(today);
+			tomorrow.setDate(tomorrow.getDate() + 1);
+
+			let data = [...appointments];
+
+			// Filter by status or date
+			if (currentApptFilter === 'confirmed') data = data.filter(a => a.status === 'confirmed');
+			else if (currentApptFilter === 'pending') data = data.filter(a => a.status === 'pending');
+			else if (currentApptFilter === 'cancelled') data = data.filter(a => a.status === 'cancelled');
+			else if (currentApptFilter === 'today') {
+				data = data.filter(a => {
+					const d = parseBookingDateSafe(a.date);
+					return d >= today && d < tomorrow;
+				});
+			} else if (currentApptFilter === 'upcoming') {
+				data = data.filter(a => parseBookingDateSafe(a.date) >= today);
+			}
+
+			// Search filter
+			if (search) {
+				data = data.filter(a =>
+					(a.first + ' ' + a.last).toLowerCase().includes(search) ||
+					(a.service || '').toLowerCase().includes(search) ||
+					(a.date || '').toLowerCase().includes(search) ||
+					(a.email || '').toLowerCase().includes(search) ||
+					(a.phone || '').toLowerCase().includes(search) ||
+					(a.notes || '').toLowerCase().includes(search)
+				);
+			}
+
+			// Sort newest first
+			data.sort((a, b) => parseBookingDateSafe(b.date) - parseBookingDateSafe(a.date));
+
+			countEl.textContent = data.length + ' appointment' + (data.length !== 1 ? 's' : '');
+
+			// Update nav badge
+			const badge = document.getElementById('apptNavBadge');
+			if (badge) badge.textContent = appointments.length;
+
+			if (data.length === 0) {
+				container.innerHTML = '<div class="appt-empty">No appointments found.</div>';
+				return;
+			}
+
+			container.innerHTML = data.map(a => {
+				const svc = getServiceMeta(a.service);
+				const createdDate = a.createdAt ? new Date(a.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '\u2014';
+
+				const notesHtml = a.notes ? `
+					<div class="appt-card-notes">
+						<svg class="appt-detail-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+						<span class="appt-card-notes-text">"${escapeHtml(a.notes)}"</span>
+					</div>` : '';
+
+				const confirmBtn = a.status === 'pending' ? `
+					<button class="btn btn-ghost" style="border-color:var(--success);color:var(--success);" onclick="apptAction('confirm',${a.id})">
+						<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+						Confirm
+					</button>` : '';
+
+				const cancelBtn = a.status !== 'cancelled' ? `
+					<button class="btn btn-ghost" onclick="apptAction('cancel',${a.id})">
+						<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+						Cancel
+					</button>` : '';
+
+				return `
+				<div class="appt-card">
+					<div class="appt-card-top">
+						<div class="appt-card-service">
+							<div class="appt-card-service-icon ${svc.cls}">
+								<svg viewBox="0 0 24 24">${svc.icon}</svg>
+							</div>
+							<span class="appt-card-service-name">${escapeHtml(a.service)}</span>
+						</div>
+						<span class="badge badge-${a.status}">${a.status.charAt(0).toUpperCase() + a.status.slice(1)}</span>
+					</div>
+					<div class="appt-card-details">
+						<div class="appt-detail">
+							<svg class="appt-detail-icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+							<div>
+								<div class="appt-detail-label">Client</div>
+								<div class="appt-detail-value">${escapeHtml(a.first)} ${escapeHtml(a.last)}</div>
+							</div>
+						</div>
+						<div class="appt-detail">
+							<svg class="appt-detail-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+							<div>
+								<div class="appt-detail-label">Date & Time</div>
+								<div class="appt-detail-value">${escapeHtml(a.date)}<br>${escapeHtml(a.time)}${a.duration ? ' \u00b7 ' + a.duration + ' min' : ''}</div>
+							</div>
+						</div>
+						<div class="appt-detail">
+							<svg class="appt-detail-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+							<div>
+								<div class="appt-detail-label">Email</div>
+								<div class="appt-detail-value">${a.email ? escapeHtml(a.email) : '\u2014'}</div>
+							</div>
+						</div>
+						<div class="appt-detail">
+							<svg class="appt-detail-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+							<div>
+								<div class="appt-detail-label">Phone</div>
+								<div class="appt-detail-value">${a.phone ? escapeHtml(a.phone) : '\u2014'}</div>
+							</div>
+						</div>
+					</div>
+					${notesHtml}
+					<div class="appt-card-footer">
+						<span class="appt-card-booked">Booked ${createdDate}</span>
+						<div class="appt-card-actions">
+							${confirmBtn}
+							${cancelBtn}
+							<button class="btn btn-ghost" style="border-color:rgba(192,57,43,0.3);color:var(--error);" onclick="apptAction('delete',${a.id})">
+								<svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+								Delete
+							</button>
+						</div>
+					</div>
+				</div>`;
+			}).join('');
+		}
+
+		function filterAppointments(filter) {
+			currentApptFilter = filter;
+			document.querySelectorAll('.appt-filter-tab').forEach(t => {
+				t.classList.toggle('active', t.dataset.filter === filter);
+			});
+			renderAppointments();
+		}
+
+		function apptAction(action, id) {
+			if (action === 'confirm') {
+				const appt = appointments.find(a => a.id === id);
+				if (appt) appt.status = 'confirmed';
+				supabaseUpdateBooking(id, { status: 'confirmed' }).catch(e => console.error('Supabase confirm failed:', e));
+			} else if (action === 'cancel') {
+				const appt = appointments.find(a => a.id === id);
+				if (appt) appt.status = 'cancelled';
+				supabaseUpdateBooking(id, { status: 'cancelled' }).catch(e => console.error('Supabase cancel failed:', e));
+			} else if (action === 'delete') {
+				const idx = appointments.findIndex(a => a.id === id);
+				if (idx > -1) appointments.splice(idx, 1);
+				supabaseDeleteBooking(id).catch(e => console.error('Supabase delete failed:', e));
+			}
+			saveBookingsToStorage();
+			renderAppointments();
+			renderTable(currentFilter);
+			updateStats();
+			buildCalendar();
+			showToast(action === 'confirm' ? 'Appointment confirmed!' : action === 'cancel' ? 'Appointment cancelled.' : 'Appointment removed.');
 		}
 
 		// Calendar
@@ -2407,6 +3362,8 @@
 			document.getElementById('modalOverlay').classList.add('open');
 			const today = new Date().toISOString().split('T')[0];
 			document.querySelector('#modalDate').value = today;
+			populateModalTimeOptions();
+			autoSetDuration();
 		}
 
 		function closeModal() {
@@ -2435,6 +3392,12 @@
 			const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 			const formattedDate = days[dateObj.getDay()] + ', ' + months[dateObj.getMonth()] + ' ' + dateObj.getDate() + ', ' + dateObj.getFullYear();
 
+			const config = getSchedulingConfig();
+			const svcConfig = config.services[service] || { duration: 20, buffer: 10 };
+			const svcDuration = svcConfig.duration;
+			const buffer = svcConfig.buffer !== undefined ? svcConfig.buffer : (config.bufferMinutes || 10);
+			const duration = (parseInt(document.getElementById('modalDuration').value) || svcDuration) + buffer;
+
 			const booking = {
 				id: Date.now(),
 				first: first,
@@ -2444,6 +3407,7 @@
 				service: service,
 				date: formattedDate,
 				time: time,
+				duration: duration,
 				status: status,
 				notes: notes,
 				createdAt: new Date().toISOString()
@@ -2451,9 +3415,11 @@
 
 			appointments.push(booking);
 			saveBookingsToStorage();
+			supabaseInsertBooking(booking).catch(e => console.error('Supabase insert failed:', e));
 			renderTable(currentFilter);
 			updateStats();
 			buildCalendar();
+			if (currentView === 'appointments') renderAppointments();
 			closeModal();
 			showToast('Appointment booked successfully!');
 
@@ -2561,8 +3527,11 @@
 		function switchView(viewName) {
 			currentView = viewName;
 
+			// Close sidebar on mobile
+			closeSidebar();
+
 			// Toggle view containers
-			['dashboard', 'clients', 'services', 'settings', 'analytics'].forEach(v => {
+			['dashboard', 'appointments', 'clients', 'services', 'settings', 'analytics'].forEach(v => {
 				document.getElementById('view-' + v).style.display = v === viewName ? '' : 'none';
 			});
 
@@ -2572,17 +3541,28 @@
 			});
 
 			// Update topbar title
-			const titles = { dashboard: 'Booking Dashboard', clients: 'Clients', services: 'Services', settings: 'Settings', analytics: 'Analytics' };
+			const titles = { dashboard: 'Booking Dashboard', appointments: 'Appointments', clients: 'Clients', services: 'Services', settings: 'Settings', analytics: 'Analytics' };
 			document.getElementById('topbarTitle').textContent = titles[viewName] || 'Booking Dashboard';
+
+			// Hide topbar "New Appointment" button on the appointments view (it has its own)
+			document.getElementById('topbarNewAppt').style.display = viewName === 'appointments' ? 'none' : '';
 
 			// View-specific init
 			if (viewName === 'clients') {
 				clientList = buildClientList();
 				renderClients(clientList);
 			}
+			if (viewName === 'appointments') {
+				renderAppointments();
+			}
+			if (viewName === 'services') {
+				loadSchedulingConfig();
+			}
 			if (viewName === 'settings') {
 				loadSettings();
+				loadUsername();
 				renderHoursGrid();
+				loadProfilePic();
 			}
 			if (viewName === 'analytics') {
 				renderAnalytics();
@@ -2698,11 +3678,11 @@
 							</div>
 						</div>
 					</td>
-					<td>${escapeHtml(c.phone) || '<span style="color:var(--text-muted)">—</span>'}</td>
-					<td><span class="client-visits">${c.visits}</span></td>
-					<td>${c.lastVisit ? escapeHtml(c.lastVisit) : '—'}</td>
-					<td>${Array.from(c.services).map(s => '<span class="badge-service">' + escapeHtml(s) + '</span>').join(' ') || '<span style="color:var(--text-muted)">—</span>'}</td>
-					<td>${(c.notes || c.infraredNotes || c.saltNotes) ? '<div class="client-notes-preview">' + escapeHtml(c.notes || c.infraredNotes || c.saltNotes) + '</div>' : '<span style="color:var(--text-muted)">—</span>'}</td>
+					<td class="hide-mobile">${escapeHtml(c.phone) || '<span style="color:var(--text-muted)">—</span>'}</td>
+					<td class="hide-mobile"><span class="client-visits">${c.visits}</span></td>
+					<td class="hide-mobile">${c.lastVisit ? escapeHtml(c.lastVisit) : '—'}</td>
+					<td class="hide-mobile-sm">${Array.from(c.services).map(s => '<span class="badge-service">' + escapeHtml(s) + '</span>').join(' ') || '<span style="color:var(--text-muted)">—</span>'}</td>
+					<td class="hide-mobile">${(c.notes || c.infraredNotes || c.saltNotes) ? '<div class="client-notes-preview">' + escapeHtml(c.notes || c.infraredNotes || c.saltNotes) + '</div>' : '<span style="color:var(--text-muted)">—</span>'}</td>
 				</tr>
 			`).join('');
 		}
@@ -2724,6 +3704,8 @@
 			renderClients(filtered);
 		}
 
+		let editingClientKey = null; // tracks which client is being edited
+
 		function showClientDetail(index) {
 			// Use the currently rendered list (could be filtered)
 			const searchVal = document.getElementById('clientSearch').value.trim().toLowerCase();
@@ -2734,16 +3716,28 @@
 					const email = c.email.toLowerCase();
 					const phone = c.phone.toLowerCase();
 					const services = Array.from(c.services).join(' ').toLowerCase();
-					const notes = (c.notes || '').toLowerCase();
+					const notes = ((c.notes || '') + ' ' + (c.infraredNotes || '') + ' ' + (c.saltNotes || '')).toLowerCase();
 					return name.includes(searchVal) || email.includes(searchVal) || phone.includes(searchVal) || services.includes(searchVal) || notes.includes(searchVal);
 				});
 			}
 			const c = list[index];
 			if (!c) return;
 
-			document.getElementById('clientDetailName').textContent = c.first + ' ' + c.last;
+			// Store key for saving later
+			editingClientKey = { first: c.first, last: c.last, email: c.email };
 
-			// Find first visit
+			document.getElementById('clientDetailName').textContent = 'Edit Client';
+
+			// Populate editable fields
+			document.getElementById('editClientFirst').value = c.first || '';
+			document.getElementById('editClientLast').value = c.last || '';
+			document.getElementById('editClientEmail').value = c.email || '';
+			document.getElementById('editClientPhone').value = c.phone || '';
+			document.getElementById('editClientNotes').value = c.notes || '';
+			document.getElementById('editClientInfraredNotes').value = c.infraredNotes || '';
+			document.getElementById('editClientSaltNotes').value = c.saltNotes || '';
+
+			// Stats (read-only info)
 			let firstVisit = '—';
 			if (c.bookings.length > 0) {
 				let earliest = null;
@@ -2763,14 +3757,6 @@
 
 			document.getElementById('clientDetailInfo').innerHTML = `
 				<div class="client-detail-item">
-					<label>Email</label>
-					<span>${c.email ? escapeHtml(c.email) : '—'}</span>
-				</div>
-				<div class="client-detail-item">
-					<label>Phone</label>
-					<span>${c.phone ? escapeHtml(c.phone) : '—'}</span>
-				</div>
-				<div class="client-detail-item">
 					<label>Total Visits</label>
 					<span>${c.visits}</span>
 				</div>
@@ -2779,18 +3765,6 @@
 					<span>${escapeHtml(firstVisit)}</span>
 				</div>
 			`;
-
-			// Notes section
-			const hasAnyNotes = c.notes || c.infraredNotes || c.saltNotes;
-			let notesHtml = '';
-			if (hasAnyNotes) {
-				if (c.notes) notesHtml += '<p><strong>General:</strong> ' + escapeHtml(c.notes) + '</p>';
-				if (c.infraredNotes) notesHtml += '<p><strong>Infrared Therapy:</strong> ' + escapeHtml(c.infraredNotes) + '</p>';
-				if (c.saltNotes) notesHtml += '<p><strong>Salt Cabin:</strong> ' + escapeHtml(c.saltNotes) + '</p>';
-			} else {
-				notesHtml = '<p class="no-notes">No notes for this client.</p>';
-			}
-			document.getElementById('clientDetailNotes').innerHTML = notesHtml;
 
 			// Booking history — sorted newest first
 			const historyBody = document.getElementById('clientHistoryBody');
@@ -2819,6 +3793,78 @@
 			document.getElementById('clientDetailOverlay').classList.add('open');
 		}
 
+		function saveClientDetail() {
+			const newFirst = document.getElementById('editClientFirst').value.trim();
+			const newLast = document.getElementById('editClientLast').value.trim();
+			const newEmail = document.getElementById('editClientEmail').value.trim();
+			const newPhone = document.getElementById('editClientPhone').value.trim();
+			const newNotes = document.getElementById('editClientNotes').value.trim();
+			const newInfraredNotes = document.getElementById('editClientInfraredNotes').value.trim();
+			const newSaltNotes = document.getElementById('editClientSaltNotes').value.trim();
+
+			if (!newFirst || !newLast) {
+				showToast('First and last name are required.', 'error');
+				return;
+			}
+
+			// Update rwc_clients
+			let clients = JSON.parse(localStorage.getItem('rwc_clients') || '[]');
+			const oldKey = editingClientKey;
+			let found = false;
+
+			for (let i = 0; i < clients.length; i++) {
+				const cl = clients[i];
+				if (cl.firstName === oldKey.first && cl.lastName === oldKey.last && cl.email === oldKey.email) {
+					clients[i].firstName = newFirst;
+					clients[i].lastName = newLast;
+					clients[i].email = newEmail;
+					clients[i].phone = newPhone;
+					clients[i].notes = newNotes;
+					clients[i].infraredNotes = newInfraredNotes;
+					clients[i].saltNotes = newSaltNotes;
+					found = true;
+					break;
+				}
+			}
+
+			// If client wasn't in rwc_clients (booking-only client), add them
+			if (!found) {
+				clients.push({
+					firstName: newFirst,
+					lastName: newLast,
+					email: newEmail,
+					phone: newPhone,
+					notes: newNotes,
+					infraredNotes: newInfraredNotes,
+					saltNotes: newSaltNotes
+				});
+			}
+			localStorage.setItem('rwc_clients', JSON.stringify(clients));
+
+			// Sync client to Supabase
+			const savedClient = found ? clients.find(c => c.firstName === newFirst && c.lastName === newLast && c.email === newEmail) : clients[clients.length - 1];
+			if (savedClient) supabaseUpsertClient(savedClient).catch(e => console.error('Supabase client upsert failed:', e));
+
+			// Update matching bookings if name/email changed
+			if (oldKey.first !== newFirst || oldKey.last !== newLast || oldKey.email !== newEmail) {
+				let bookings = JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
+				bookings.forEach(b => {
+					if (b.firstName === oldKey.first && b.lastName === oldKey.last && b.email === oldKey.email) {
+						b.firstName = newFirst;
+						b.lastName = newLast;
+						b.email = newEmail;
+						if (newPhone) b.phone = newPhone;
+					}
+				});
+				localStorage.setItem('rwc_bookings', JSON.stringify(bookings));
+			}
+
+			closeClientDetail();
+			buildClientList();
+			renderClients(clientList);
+			showToast('Client updated successfully!');
+		}
+
 		function closeClientDetail() {
 			document.getElementById('clientDetailOverlay').classList.remove('open');
 		}
@@ -2833,6 +3879,61 @@
 			{ day: 'Saturday',  open: '10:00', close: '15:00', closed: false },
 			{ day: 'Sunday',    open: '',      close: '',      closed: true  }
 		];
+
+		// ── PROFILE PICTURE ──
+		function handleProfilePicUpload(input) {
+			const file = input.files[0];
+			if (!file) return;
+
+			if (file.size > 2 * 1024 * 1024) {
+				showToast('Image must be under 2 MB.');
+				input.value = '';
+				return;
+			}
+
+			if (!file.type.startsWith('image/')) {
+				showToast('Please select an image file.');
+				input.value = '';
+				return;
+			}
+
+			const reader = new FileReader();
+			reader.onload = function(e) {
+				const dataUrl = e.target.result;
+				localStorage.setItem('rwc_profile_pic', dataUrl);
+				applyProfilePic(dataUrl);
+				showToast('Profile picture updated!');
+			};
+			reader.readAsDataURL(file);
+		}
+
+		function removeProfilePic() {
+			localStorage.removeItem('rwc_profile_pic');
+			applyProfilePic(null);
+			document.getElementById('profilePicInput').value = '';
+			showToast('Profile picture removed.');
+		}
+
+		function applyProfilePic(dataUrl) {
+			const preview = document.getElementById('profilePicPreview');
+			const sidebar = document.querySelector('.staff-avatar');
+			const removeBtn = document.getElementById('removeProfilePicBtn');
+
+			if (dataUrl) {
+				preview.innerHTML = '<img src="' + dataUrl + '" alt="Profile"/>';
+				sidebar.innerHTML = '<img src="' + dataUrl + '" alt="Profile"/>';
+				removeBtn.style.display = '';
+			} else {
+				preview.textContent = 'AD';
+				sidebar.textContent = 'AD';
+				removeBtn.style.display = 'none';
+			}
+		}
+
+		function loadProfilePic() {
+			const saved = localStorage.getItem('rwc_profile_pic');
+			if (saved) applyProfilePic(saved);
+		}
 
 		function loadSettings() {
 			const saved = JSON.parse(localStorage.getItem('rwc_settings') || '{}');
@@ -2856,6 +3957,36 @@
 			settings.reminder = document.getElementById('settingsReminder').checked;
 			localStorage.setItem('rwc_settings', JSON.stringify(settings));
 			showToast('Settings saved!');
+		}
+
+		function loadUsername() {
+			const saved = JSON.parse(localStorage.getItem('rwc_settings') || '{}');
+			document.getElementById('settingsUsername').value = saved.username || '';
+			applyUsername();
+		}
+
+		function saveUsername() {
+			const settings = JSON.parse(localStorage.getItem('rwc_settings') || '{}');
+			settings.username = document.getElementById('settingsUsername').value.trim();
+			localStorage.setItem('rwc_settings', JSON.stringify(settings));
+			applyUsername();
+			showToast('Display name saved!');
+		}
+
+		function applyUsername() {
+			const saved = JSON.parse(localStorage.getItem('rwc_settings') || '{}');
+			const name = saved.username || 'Admin';
+			document.querySelector('.staff-name').textContent = name;
+			// Update avatar initials if no profile picture
+			const picPreview = document.getElementById('profilePicPreview');
+			if (picPreview && !picPreview.querySelector('img')) {
+				const parts = name.trim().split(/\s+/);
+				const initials = parts.length >= 2
+					? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+					: name.substring(0, 2).toUpperCase();
+				picPreview.textContent = initials;
+				document.querySelector('.staff-avatar').textContent = initials;
+			}
 		}
 
 		function renderHoursGrid() {
@@ -2895,6 +4026,288 @@
 			});
 			localStorage.setItem('rwc_hours', JSON.stringify(saved));
 			showToast('Business hours saved!');
+		}
+
+		// ── SCHEDULING CONFIG ──
+		const defaultScheduling = {
+			services: {
+				'Couples Infrared/Salt Combo': { duration: 75, buffer: 15, price: 100 },
+				'Couples Salt':               { duration: 20, buffer: 10, price: 0 },
+				'Infrared Therapy':           { duration: 45, buffer: 15, price: 40 },
+				'Infrared Therapy - 2 People': { duration: 105, buffer: 15, price: 80 },
+				'Infrared Therapy - Child':   { duration: 20, buffer: 10, price: 0 },
+				'Salt Cabin - 1 Person':      { duration: 20, buffer: 10, price: 25 },
+				'Salt Cabin - 2 People':      { duration: 20, buffer: 10, price: 40 },
+				'Salt Cabin - 3 People':      { duration: 45, buffer: 15, price: 60 },
+				'Salt Cabin - 4 People':      { duration: 45, buffer: 15, price: 70 },
+				'Salt Cabin - Infrared Package Add On': { duration: 20, buffer: 10, price: 20 },
+				'Salt Cabin - Prepaid':       { duration: 20, buffer: 10, price: 0 },
+				'Salt Cabin - Shared':        { duration: 20, buffer: 10, price: 20 },
+				'Salt Cabin':                 { duration: 20, buffer: 10, price: 25 },
+				'Salt + Infrared Combo':      { duration: 75, buffer: 15, price: 55 }
+			},
+			bufferMinutes: 10,
+			slotInterval: 30
+		};
+
+		function getSchedulingConfig() {
+			return JSON.parse(localStorage.getItem('rwc_scheduling') || 'null') || JSON.parse(JSON.stringify(defaultScheduling));
+		}
+
+		function loadSchedulingConfig() {
+			const config = getSchedulingConfig();
+			const container = document.getElementById('schedulingServiceRows');
+			if (!container) return;
+			container.innerHTML = Object.entries(config.services).map(([name, s]) => `
+				<div class="scheduling-service-row">
+					<span class="service-name">${name}</span>
+					<div class="duration-input">
+						<input type="number" min="5" max="240" value="${s.duration}" data-service="${name}" data-field="duration"/>
+						<span>min</span>
+						<span style="margin-left:8px;color:var(--text-muted);font-size:0.74rem;">+</span>
+						<input type="number" min="0" max="60" value="${s.buffer !== undefined ? s.buffer : config.bufferMinutes}" data-service="${name}" data-field="buffer" style="width:50px;"/>
+						<span>buf</span>
+						<span style="margin-left:10px;color:var(--text-muted);font-size:0.82rem;">$</span>
+						<input type="number" min="0" max="9999" step="0.01" value="${s.price !== undefined ? s.price : 0}" data-service="${name}" data-field="price" style="width:70px;"/>
+					</div>
+				</div>
+			`).join('');
+			document.getElementById('schedInterval').value = config.slotInterval;
+		}
+
+		function saveSchedulingConfig() {
+			const config = getSchedulingConfig();
+			document.querySelectorAll('#schedulingServiceRows input[data-field="duration"]').forEach(input => {
+				const name = input.dataset.service;
+				if (config.services[name]) {
+					config.services[name].duration = parseInt(input.value) || 20;
+				}
+			});
+			document.querySelectorAll('#schedulingServiceRows input[data-field="buffer"]').forEach(input => {
+				const name = input.dataset.service;
+				if (config.services[name]) {
+					config.services[name].buffer = parseInt(input.value) || 10;
+				}
+			});
+			document.querySelectorAll('#schedulingServiceRows input[data-field="price"]').forEach(input => {
+				const name = input.dataset.service;
+				if (config.services[name]) {
+					config.services[name].price = parseFloat(input.value) || 0;
+				}
+			});
+			config.slotInterval = parseInt(document.getElementById('schedInterval').value) || 30;
+			localStorage.setItem('rwc_scheduling', JSON.stringify(config));
+			showToast('Scheduling config saved!');
+		}
+
+		// ── DYNAMIC TIME OPTIONS ──
+		function timeToMinutes(t) {
+			const [h, m] = t.split(':').map(Number);
+			return h * 60 + m;
+		}
+
+		function minutesToTime12(mins) {
+			let h = Math.floor(mins / 60);
+			const m = mins % 60;
+			const ampm = h >= 12 ? 'PM' : 'AM';
+			if (h === 0) h = 12;
+			else if (h > 12) h -= 12;
+			return h + ':' + String(m).padStart(2, '0') + ' ' + ampm;
+		}
+
+		function populateModalTimeOptions() {
+			const dateVal = document.getElementById('modalDate').value;
+			const select = document.getElementById('modalTime');
+			const prevValue = select.value;
+			select.innerHTML = '';
+
+			if (!dateVal) {
+				select.innerHTML = '<option>Select a date first</option>';
+				return;
+			}
+
+			const hours = JSON.parse(localStorage.getItem('rwc_hours') || 'null') || defaultHours;
+			const config = getSchedulingConfig();
+			const dateObj = new Date(dateVal + 'T12:00:00');
+			const dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+			const dayName = dayNames[dateObj.getDay()];
+			const dayHours = hours.find(h => h.day === dayName);
+
+			if (!dayHours || dayHours.closed) {
+				select.innerHTML = '<option>Closed this day</option>';
+				return;
+			}
+
+			const openMins = timeToMinutes(dayHours.open);
+			const closeMins = timeToMinutes(dayHours.close);
+			const interval = config.slotInterval || 30;
+
+			for (let t = openMins; t < closeMins; t += interval) {
+				const label = minutesToTime12(t);
+				const opt = document.createElement('option');
+				opt.value = label;
+				opt.textContent = label;
+				if (label === prevValue) opt.selected = true;
+				select.appendChild(opt);
+			}
+
+			if (select.options.length === 0) {
+				select.innerHTML = '<option>No slots available</option>';
+			}
+		}
+
+		function autoSetDuration() {
+			const service = document.getElementById('modalService').value;
+			if (!service) return;
+			const config = getSchedulingConfig();
+			const svc = config.services[service];
+			if (!svc) return;
+			const sel = document.getElementById('modalDuration');
+			const target = svc.duration + ' minutes';
+			let found = false;
+			for (let i = 0; i < sel.options.length; i++) {
+				if (sel.options[i].value === target || sel.options[i].textContent === target) {
+					sel.selectedIndex = i;
+					found = true;
+					break;
+				}
+			}
+			if (!found) {
+				const opt = document.createElement('option');
+				opt.value = svc.duration + ' minutes';
+				opt.textContent = svc.duration + ' minutes';
+				opt.selected = true;
+				sel.appendChild(opt);
+			}
+		}
+
+		// ── SQUARE CSV IMPORT ──
+		document.getElementById('squareFileInput').addEventListener('change', function() {
+			const file = this.files[0];
+			const nameEl = document.getElementById('squareFileName');
+			const btn = document.getElementById('squareImportBtn');
+			if (file) {
+				nameEl.textContent = file.name;
+				nameEl.style.display = 'block';
+				btn.disabled = false;
+			} else {
+				nameEl.style.display = 'none';
+				btn.disabled = true;
+			}
+		});
+
+		function handleSquareImport() {
+			const fileInput = document.getElementById('squareFileInput');
+			const file = fileInput.files[0];
+			if (!file) { showToast('Please select a CSV file.'); return; }
+
+			const reader = new FileReader();
+			reader.onload = function(e) {
+				const text = e.target.result;
+				const lines = text.split('\n').map(l => l.trim()).filter(l => l);
+				if (lines.length < 2) { showToast('CSV file is empty.'); return; }
+
+				const headers = parseCSVLine(lines[0]).map(h => h.trim().toLowerCase());
+				const bookings = JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
+				let imported = 0;
+				let skipped = 0;
+
+				for (let i = 1; i < lines.length; i++) {
+					const cols = parseCSVLine(lines[i]);
+					const row = {};
+					headers.forEach((h, idx) => { row[h] = (cols[idx] || '').trim(); });
+
+					const fullName = row['customer name'] || row['client name'] || row['name'] || '';
+					const nameParts = fullName.split(' ');
+					const first = nameParts[0] || 'Guest';
+					const last = nameParts.slice(1).join(' ') || '';
+					const rawDate = row['date'] || '';
+					const rawTime = row['time'] || row['start time'] || '';
+					const service = row['service'] || row['service name'] || 'Salt Cabin';
+
+					if (!rawDate) continue;
+
+					const dateObj = new Date(rawDate + 'T12:00:00');
+					if (isNaN(dateObj.getTime())) continue;
+
+					const dayArr = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+					const monArr = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+					const formattedDate = dayArr[dateObj.getDay()] + ', ' + monArr[dateObj.getMonth()] + ' ' + dateObj.getDate() + ', ' + dateObj.getFullYear();
+
+					const isDupe = bookings.some(b =>
+						b.first === first && b.last === last && b.date === formattedDate && b.time === rawTime
+					);
+					if (isDupe) { skipped++; continue; }
+
+					const cfg = getSchedulingConfig();
+					const svcConfig = cfg.services[service];
+					const duration = svcConfig ? svcConfig.duration : 45;
+
+					bookings.push({
+						id: Date.now() + i,
+						first: first,
+						last: last,
+						email: row['customer email'] || row['email'] || '',
+						phone: row['customer phone'] || row['phone'] || '',
+						service: service,
+						date: formattedDate,
+						time: rawTime,
+						duration: duration,
+						status: (row['status'] || 'confirmed').toLowerCase(),
+						notes: row['notes'] || '',
+						createdAt: new Date().toISOString()
+					});
+					imported++;
+				}
+
+				localStorage.setItem('rwc_bookings', JSON.stringify(bookings));
+				appointments.length = 0;
+				bookings.forEach(b => appointments.push(b));
+				renderTable(currentFilter);
+				updateStats();
+				buildCalendar();
+
+				let msg = imported + ' appointment' + (imported !== 1 ? 's' : '') + ' imported';
+				if (skipped > 0) msg += ' (' + skipped + ' duplicate' + (skipped !== 1 ? 's' : '') + ' skipped)';
+				showToast(msg);
+
+				fileInput.value = '';
+				document.getElementById('squareFileName').style.display = 'none';
+				document.getElementById('squareImportBtn').disabled = true;
+			};
+			reader.readAsText(file);
+		}
+
+		function parseCSVLine(line) {
+			const result = [];
+			let current = '';
+			let inQuotes = false;
+			for (let i = 0; i < line.length; i++) {
+				const ch = line[i];
+				if (inQuotes) {
+					if (ch === '"') {
+						if (i + 1 < line.length && line[i + 1] === '"') {
+							current += '"';
+							i++;
+						} else {
+							inQuotes = false;
+						}
+					} else {
+						current += ch;
+					}
+				} else {
+					if (ch === '"') {
+						inQuotes = true;
+					} else if (ch === ',') {
+						result.push(current);
+						current = '';
+					} else {
+						current += ch;
+					}
+				}
+			}
+			result.push(current);
+			return result;
 		}
 
 		function exportData() {
@@ -3053,6 +4466,9 @@
 					clientList = buildClientList();
 					renderClients(clientList);
 				}
+				if (currentView === 'appointments') {
+					renderAppointments();
+				}
 				console.log('Bookings refreshed from localStorage:', appointments.length, 'total');
 			}
 		}
@@ -3069,10 +4485,18 @@
 		});
 
 		// Init
+		document.getElementById('modalDate').addEventListener('change', populateModalTimeOptions);
+		document.getElementById('modalService').addEventListener('change', autoSetDuration);
 
+		loadProfilePic();
+		applyUsername();
 		renderTable('all');
 		updateStats();
 		buildCalendar();
+
+		// Sync with Supabase (runs async, updates UI when done)
+		syncBookingsFromSupabase();
+		syncClientsFromSupabase();
 
 	</script>
 	</body>

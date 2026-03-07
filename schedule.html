@@ -1138,6 +1138,89 @@
 				localStorage.setItem('darkMode', themeCheckbox.checked);
 			});
 
+			/* ============ SUPABASE ============ */
+			const SUPABASE_URL = 'https://laanxujxiioesvsyccwb.supabase.co';
+			const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhYW54dWp4aWlvZXN2c3ljY3diIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA0MDk4NTYsImV4cCI6MjA4NTk4NTg1Nn0.e2Ymm9nGlgGd73buvCK7bPoWXPtzJvoGY3nIQtpjy7M';
+
+			async function supabaseRequest(table, method, body, queryParams) {
+				const url = SUPABASE_URL + '/rest/v1/' + table + (queryParams || '');
+				const opts = {
+					method: method,
+					headers: {
+						'apikey': SUPABASE_KEY,
+						'Authorization': 'Bearer ' + SUPABASE_KEY,
+						'Content-Type': 'application/json',
+						'Prefer': method === 'POST' ? 'return=representation' : ''
+					}
+				};
+				if (body) opts.body = JSON.stringify(body);
+				const res = await fetch(url, opts);
+				if (!res.ok) throw new Error(res.status + ' ' + (await res.text()));
+				const text = await res.text();
+				return text ? JSON.parse(text) : null;
+			}
+
+			function bookingToRow(b) {
+				return {
+					id: b.id,
+					first_name: b.first || '',
+					last_name: b.last || '',
+					email: b.email || '',
+					phone: b.phone || '',
+					service: b.service || '',
+					booking_date: b.date || '',
+					booking_time: b.time || '',
+					duration: b.duration || null,
+					price: b.price || null,
+					guests: b.guests || '',
+					notes: b.notes || '',
+					status: b.status || 'pending',
+					created_at: b.createdAt || new Date().toISOString()
+				};
+			}
+
+			function rowToBooking(r) {
+				return {
+					id: r.id,
+					first: r.first_name || '',
+					last: r.last_name || '',
+					email: r.email || '',
+					phone: r.phone || '',
+					service: r.service || '',
+					date: r.booking_date || '',
+					time: r.booking_time || '',
+					duration: r.duration,
+					price: r.price,
+					guests: r.guests || '',
+					notes: r.notes || '',
+					status: r.status || 'pending',
+					createdAt: r.created_at
+				};
+			}
+
+			// Fetch bookings from Supabase into localStorage so availability is accurate
+			async function syncBookingsForAvailability() {
+				try {
+					const cloudRows = await supabaseRequest('bookings', 'GET', null, '?order=created_at.desc');
+					if (!cloudRows || !Array.isArray(cloudRows)) return;
+					const cloudBookings = cloudRows.map(rowToBooking);
+					const cloudIds = new Set(cloudBookings.map(b => b.id));
+
+					// Keep any local-only bookings (not yet synced)
+					const localBookings = JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
+					const localOnly = localBookings.filter(b => !cloudIds.has(b.id));
+
+					const merged = [...cloudBookings, ...localOnly];
+					localStorage.setItem('rwc_bookings', JSON.stringify(merged));
+					console.log('Schedule: synced', merged.length, 'bookings for availability');
+				} catch (e) {
+					console.error('Schedule: Supabase sync failed, using localStorage:', e);
+				}
+			}
+
+			// Sync on page load
+			syncBookingsForAvailability();
+
 			/* ============ SCHEDULING LOGIC ============ */
 			const state = {
 				service: null,
@@ -1156,11 +1239,131 @@
 				combo: 'Salt + Infrared Combo'
 			};
 
-			const timeSlots = [
-				'9:00 AM', '9:45 AM', '10:30 AM', '11:15 AM',
-				'12:00 PM', '1:00 PM', '1:45 PM', '2:30 PM',
-				'3:15 PM', '4:00 PM', '4:45 PM', '5:30 PM'
-			];
+			/* --- Time Slot Helpers --- */
+			function timeToMinutes(t) {
+				const [h, m] = t.split(':').map(Number);
+				return h * 60 + m;
+			}
+
+			function time12ToMinutes(t) {
+				const match = t.match(/(\d+):(\d+)\s*(AM|PM)/i);
+				if (!match) return 0;
+				let h = parseInt(match[1]);
+				const m = parseInt(match[2]);
+				const ampm = match[3].toUpperCase();
+				if (ampm === 'PM' && h !== 12) h += 12;
+				if (ampm === 'AM' && h === 12) h = 0;
+				return h * 60 + m;
+			}
+
+			function minutesToTime12(mins) {
+				let h = Math.floor(mins / 60);
+				const m = mins % 60;
+				const ampm = h >= 12 ? 'PM' : 'AM';
+				if (h === 0) h = 12;
+				else if (h > 12) h -= 12;
+				return h + ':' + String(m).padStart(2, '0') + ' ' + ampm;
+			}
+
+			function getSchedulingConfig() {
+				return JSON.parse(localStorage.getItem('rwc_scheduling') || 'null') || {
+					services: {
+						'Couples Infrared/Salt Combo': { duration: 75, buffer: 15, price: 100 },
+						'Couples Salt':               { duration: 20, buffer: 10, price: 0 },
+						'Infrared Therapy':           { duration: 45, buffer: 15, price: 40 },
+						'Infrared Therapy - 2 People': { duration: 105, buffer: 15, price: 80 },
+						'Infrared Therapy - Child':   { duration: 20, buffer: 10, price: 0 },
+						'Salt Cabin - 1 Person':      { duration: 20, buffer: 10, price: 25 },
+						'Salt Cabin - 2 People':      { duration: 20, buffer: 10, price: 40 },
+						'Salt Cabin - 3 People':      { duration: 45, buffer: 15, price: 60 },
+						'Salt Cabin - 4 People':      { duration: 45, buffer: 15, price: 70 },
+						'Salt Cabin - Infrared Package Add On': { duration: 20, buffer: 10, price: 20 },
+						'Salt Cabin - Prepaid':       { duration: 20, buffer: 10, price: 0 },
+						'Salt Cabin - Shared':        { duration: 20, buffer: 10, price: 20 },
+						'Salt Cabin':                 { duration: 20, buffer: 10, price: 25 },
+						'Salt + Infrared Combo':      { duration: 75, buffer: 15, price: 55 }
+					},
+					bufferMinutes: 10,
+					slotInterval: 30
+				};
+			}
+
+			function generateTimeSlots(date, serviceName) {
+				const defaultHrs = [
+					{ day: 'Monday', open: '09:00', close: '17:00', closed: false },
+					{ day: 'Tuesday', open: '09:00', close: '17:00', closed: false },
+					{ day: 'Wednesday', open: '09:00', close: '17:00', closed: false },
+					{ day: 'Thursday', open: '09:00', close: '17:00', closed: false },
+					{ day: 'Friday', open: '09:00', close: '17:00', closed: false },
+					{ day: 'Saturday', open: '10:00', close: '15:00', closed: false },
+					{ day: 'Sunday', open: '', close: '', closed: true }
+				];
+				const hours = JSON.parse(localStorage.getItem('rwc_hours') || 'null') || defaultHrs;
+				const config = getSchedulingConfig();
+				const dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+				const dayName = dayNames[date.getDay()];
+				const dayHours = hours.find(h => h.day === dayName);
+
+				if (!dayHours || dayHours.closed) return [];
+
+				const openMins = timeToMinutes(dayHours.open);
+				const closeMins = timeToMinutes(dayHours.close);
+				const interval = config.slotInterval || 30;
+				const svcConfig = config.services[serviceName] || { duration: 20, buffer: 10 };
+				const duration = svcConfig.duration;
+				const buffer = svcConfig.buffer !== undefined ? svcConfig.buffer : (config.bufferMinutes || 10);
+				const totalBlock = duration + buffer;
+
+				const slots = [];
+				for (let t = openMins; t + totalBlock <= closeMins; t += interval) {
+					slots.push(minutesToTime12(t));
+				}
+				return slots;
+			}
+
+			// Returns which resources a service uses: 'salt-cabin', 'infrared', or both
+			function getServiceResources(name) {
+				const n = (name || '').toLowerCase();
+				const hasSalt = n.includes('salt') || n.includes('cabin');
+				const hasInfrared = n.includes('infrared');
+				const isCombo = n.includes('combo') || n.includes('package') || (hasSalt && hasInfrared);
+				if (isCombo) return ['salt-cabin', 'infrared'];
+				if (hasInfrared) return ['infrared'];
+				return ['salt-cabin'];
+			}
+
+			function isSlotUnavailable(date, slotTime, serviceName) {
+				const config = getSchedulingConfig();
+				const svcConfig = config.services[serviceName] || { duration: 20, buffer: 10 };
+				const slotDuration = svcConfig.duration;
+				const buffer = svcConfig.buffer !== undefined ? svcConfig.buffer : (config.bufferMinutes || 10);
+
+				const slotStart = time12ToMinutes(slotTime);
+				const slotEnd = slotStart + slotDuration + buffer;
+
+				const slotResources = getServiceResources(serviceName);
+
+				const bookings = JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
+				const dateStr = formatDate(date);
+
+				return bookings.some(b => {
+					if (b.date !== dateStr) return false;
+					if (b.status === 'cancelled') return false;
+
+					// Check if this booking uses any of the same resources
+					const bResources = getServiceResources(b.service);
+					const sharesResource = slotResources.some(r => bResources.includes(r));
+					if (!sharesResource) return false;
+
+					const bStart = time12ToMinutes(b.time);
+					const bDuration = b.duration || 30;
+					const bSvcConfig = config.services[b.service] || { buffer: 10 };
+					const bBuffer = bSvcConfig.buffer !== undefined ? bSvcConfig.buffer : (config.bufferMinutes || 10);
+					const bEnd = bStart + bDuration;
+					// Use the booking's own buffer for its blocked range
+					return slotStart < (bEnd + bBuffer) && bStart < slotEnd;
+				});
+			}
 
 			/* --- Step Navigation --- */
 			function goToStep(n) {
@@ -1211,6 +1414,10 @@
 			/* --- Save Booking to localStorage --- */
 			function saveBookingToStorage() {
 				try {
+					const schedConfig = getSchedulingConfig();
+					const svcCfg = schedConfig.services[state.serviceName] || { duration: 20, buffer: 10 };
+					const buffer = svcCfg.buffer !== undefined ? svcCfg.buffer : (schedConfig.bufferMinutes || 10);
+
 					const booking = {
 						id: Date.now(),
 						first: document.getElementById('fname').value.trim() || 'Guest',
@@ -1220,6 +1427,7 @@
 						service: state.serviceName,
 						date: formatDate(state.date),
 						time: state.time,
+						duration: svcCfg.duration + buffer,
 						price: state.price,
 						guests: document.getElementById('guests').value,
 						notes: document.getElementById('notes').value.trim(),
@@ -1230,6 +1438,11 @@
 					const bookings = JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
 					bookings.push(booking);
 					localStorage.setItem('rwc_bookings', JSON.stringify(bookings));
+
+					// Push to Supabase
+					supabaseRequest('bookings', 'POST', bookingToRow(booking))
+						.then(() => console.log('Booking saved to Supabase'))
+						.catch(e => console.error('Supabase insert failed:', e));
 
 				} catch (e) {
 					console.error('Failed to save booking:', e);
@@ -1264,6 +1477,15 @@
 					grid.appendChild(empty);
 				}
 
+				const defaultHrs = [
+					{ day: 'Monday', closed: false }, { day: 'Tuesday', closed: false },
+					{ day: 'Wednesday', closed: false }, { day: 'Thursday', closed: false },
+					{ day: 'Friday', closed: false }, { day: 'Saturday', closed: false },
+					{ day: 'Sunday', closed: true }
+				];
+				const bizHours = JSON.parse(localStorage.getItem('rwc_hours') || 'null') || defaultHrs;
+				const calDayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
 				for (let d = 1; d <= daysInMonth; d++) {
 					const btn = document.createElement('button');
 					btn.className = 'sched-cal-day';
@@ -1273,10 +1495,11 @@
 					const dayOfWeek = thisDate.getDay();
 
 					const isPast = thisDate < new Date(today.getFullYear(), today.getMonth(), today.getDate());
-					const isSunday = dayOfWeek === 0;
-					const isSaturday = dayOfWeek === 6;
+					const dayName = calDayNames[dayOfWeek];
+					const dayHrs = bizHours.find(h => h.day === dayName);
+					const isClosed = dayHrs ? dayHrs.closed : false;
 
-					if (isPast || isSunday || isSaturday) {
+					if (isPast || isClosed) {
 						btn.classList.add('disabled');
 					} else {
 						btn.addEventListener('click', () => selectDate(d, btn));
@@ -1323,16 +1546,19 @@
 				heading.textContent = 'Available Times for ' + months[state.date.getMonth()] + ' ' + state.date.getDate();
 				grid.innerHTML = '';
 
-				const seed = state.date.getDate() * 7 + state.calMonth * 3;
+				const slots = generateTimeSlots(state.date, state.serviceName);
 
-				timeSlots.forEach((slot, i) => {
+				if (slots.length === 0) {
+					grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:#8a9e99;padding:20px;">No available times for this day</p>';
+					return;
+				}
+
+				slots.forEach(slot => {
 					const btn = document.createElement('button');
 					btn.className = 'sched-time';
 					btn.textContent = slot;
 
-					const isUnavailable = (seed + i) % 5 === 0;
-
-					if (isUnavailable) {
+					if (isSlotUnavailable(state.date, slot, state.serviceName)) {
 						btn.classList.add('unavailable');
 					} else {
 						btn.addEventListener('click', () => selectTime(slot, btn));
