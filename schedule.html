@@ -1356,12 +1356,9 @@
 					if (!sharesResource) return false;
 
 					const bStart = time12ToMinutes(b.time);
-					const bDuration = b.duration || 30;
-					const bSvcConfig = config.services[b.service] || { buffer: 10 };
-					const bBuffer = bSvcConfig.buffer !== undefined ? bSvcConfig.buffer : (config.bufferMinutes || 10);
-					const bEnd = bStart + bDuration;
-					// Use the booking's own buffer for its blocked range
-					return slotStart < (bEnd + bBuffer) && bStart < slotEnd;
+					// b.duration already includes buffer time (duration + buffer was stored)
+					const bEnd = bStart + (b.duration || 30);
+					return slotStart < bEnd && bStart < slotEnd;
 				});
 			}
 
