@@ -91,6 +91,8 @@ p, h1, h2, h3, h4, h5, h6 {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 ul {
