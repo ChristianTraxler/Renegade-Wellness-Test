@@ -1215,13 +1215,30 @@
 			// Sync on page load
 			syncBookingsForAvailability();
 
-			// Auto-refresh every 10 seconds so cancelled/deleted slots open up in near real-time
+			// Auto-refresh every 10 seconds — only update slots that changed (no flicker)
 			setInterval(async () => {
 				await syncBookingsForAvailability();
-				// If the client is currently viewing time slots, re-render them
 				if (state.date && state.step === 2) {
-					const wrap = document.getElementById('times-wrap');
-					if (wrap && wrap.style.display === 'block') showTimeSlots();
+					const grid = document.getElementById('times-grid');
+					if (!grid || grid.style.display === 'none') return;
+					const buttons = grid.querySelectorAll('.sched-time');
+					buttons.forEach(btn => {
+						const slot = btn.textContent;
+						const wasUnavailable = btn.classList.contains('unavailable');
+						const isNowUnavailable = isSlotUnavailable(state.date, slot, state.serviceName);
+
+						if (wasUnavailable && !isNowUnavailable) {
+							// Slot opened up — smoothly transition it to available
+							btn.classList.remove('unavailable');
+							btn.style.textDecoration = 'none';
+							btn.style.cursor = 'pointer';
+							btn.onclick = () => selectTime(slot, btn);
+						} else if (!wasUnavailable && isNowUnavailable && !btn.classList.contains('selected')) {
+							// Slot just got booked — mark unavailable
+							btn.classList.add('unavailable');
+							btn.onclick = null;
+						}
+					});
 				}
 			}, 10000);
 
