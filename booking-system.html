@@ -858,6 +858,13 @@
 			}
 
 			/* Toast */
+			@keyframes newRowSlideIn {
+				from { opacity: 0; transform: translateY(-10px); background: rgba(105,181,173,0.12); }
+				to { opacity: 1; transform: translateY(0); background: transparent; }
+			}
+			tr.new-row { animation: newRowSlideIn 0.5s ease forwards; }
+			.appt-card.new-card { animation: newRowSlideIn 0.5s ease forwards; }
+
 			.toast {
 				position: fixed;
 				bottom: 28px;
@@ -2912,7 +2919,7 @@
 		}
 
 		// Sync bookings: pull from Supabase, push any local-only bookings up
-		async function syncBookingsFromSupabase() {
+		async function syncBookingsFromSupabase(isPolling) {
 			try {
 				const cloudRows = await supabaseRequest('bookings', 'GET', null, '?order=created_at.desc');
 				if (!cloudRows || !Array.isArray(cloudRows)) return;
@@ -2929,14 +2936,68 @@
 				}
 
 				const allBookings = [...cloudBookings, ...toUpload];
-				localStorage.setItem('rwc_bookings', JSON.stringify(allBookings));
-				appointments.length = 0;
-				allBookings.forEach(b => appointments.push(b));
 
-				renderTable(currentFilter);
-				updateStats();
-				buildCalendar();
-				if (currentView === 'appointments') renderAppointments();
+				if (isPolling) {
+					// Detect what changed instead of full re-render
+					const oldIds = new Set(appointments.map(b => b.id));
+					const newBookings = allBookings.filter(b => !oldIds.has(b.id));
+					const removedIds = [...oldIds].filter(id => !cloudIds.has(id));
+					const statusChanges = allBookings.filter(b => {
+						const old = appointments.find(a => a.id === b.id);
+						return old && old.status !== b.status;
+					});
+
+					if (newBookings.length === 0 && removedIds.length === 0 && statusChanges.length === 0) return; // nothing changed
+
+					// Update the data
+					localStorage.setItem('rwc_bookings', JSON.stringify(allBookings));
+					appointments.length = 0;
+					allBookings.forEach(b => appointments.push(b));
+
+					// Re-render then highlight new rows
+					renderTable(currentFilter);
+					updateStats();
+					buildCalendar();
+					if (currentView === 'appointments') renderAppointments();
+
+					// Animate new bookings in the dashboard table
+					newBookings.forEach(b => {
+						const tbody = document.getElementById('apptBody');
+						if (tbody) {
+							const rows = tbody.querySelectorAll('tr');
+							rows.forEach(row => {
+								if (row.innerHTML.includes(escapeHtml(b.first)) && row.innerHTML.includes(escapeHtml(b.time))) {
+									row.classList.add('new-row');
+									setTimeout(() => row.classList.remove('new-row'), 600);
+								}
+							});
+						}
+						// Animate in appointments view
+						const apptList = document.getElementById('apptList');
+						if (apptList) {
+							const cards = apptList.querySelectorAll('.appt-card');
+							cards.forEach(card => {
+								if (card.innerHTML.includes(escapeHtml(b.first)) && card.innerHTML.includes(escapeHtml(b.time))) {
+									card.classList.add('new-card');
+									setTimeout(() => card.classList.remove('new-card'), 600);
+								}
+							});
+						}
+					});
+
+					if (newBookings.length > 0) showToast(newBookings.length + ' new booking' + (newBookings.length > 1 ? 's' : '') + ' received!');
+				} else {
+					// Initial load — full render
+					localStorage.setItem('rwc_bookings', JSON.stringify(allBookings));
+					appointments.length = 0;
+					allBookings.forEach(b => appointments.push(b));
+
+					renderTable(currentFilter);
+					updateStats();
+					buildCalendar();
+					if (currentView === 'appointments') renderAppointments();
+				}
+
 				console.log('Synced bookings:', allBookings.length, 'total');
 			} catch (e) {
 				console.error('Supabase sync failed, using localStorage:', e);
@@ -4495,8 +4556,11 @@
 		buildCalendar();
 
 		// Sync with Supabase (runs async, updates UI when done)
-		syncBookingsFromSupabase();
+		syncBookingsFromSupabase(false);
 		syncClientsFromSupabase();
+
+		// Poll for new bookings every 10 seconds — smooth updates, no full reload
+		setInterval(() => syncBookingsFromSupabase(true), 10000);
 
 	</script>
 	</body>
