@@ -1199,20 +1199,14 @@
 			}
 
 			// Fetch bookings from Supabase into localStorage so availability is accurate
+			// Supabase is the source of truth — deleted/cancelled bookings won't persist locally
 			async function syncBookingsForAvailability() {
 				try {
 					const cloudRows = await supabaseRequest('bookings', 'GET', null, '?order=created_at.desc');
 					if (!cloudRows || !Array.isArray(cloudRows)) return;
 					const cloudBookings = cloudRows.map(rowToBooking);
-					const cloudIds = new Set(cloudBookings.map(b => b.id));
-
-					// Keep any local-only bookings (not yet synced)
-					const localBookings = JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
-					const localOnly = localBookings.filter(b => !cloudIds.has(b.id));
-
-					const merged = [...cloudBookings, ...localOnly];
-					localStorage.setItem('rwc_bookings', JSON.stringify(merged));
-					console.log('Schedule: synced', merged.length, 'bookings for availability');
+					localStorage.setItem('rwc_bookings', JSON.stringify(cloudBookings));
+					console.log('Schedule: synced', cloudBookings.length, 'bookings from Supabase');
 				} catch (e) {
 					console.error('Schedule: Supabase sync failed, using localStorage:', e);
 				}
@@ -1220,6 +1214,16 @@
 
 			// Sync on page load
 			syncBookingsForAvailability();
+
+			// Auto-refresh every 10 seconds so cancelled/deleted slots open up in near real-time
+			setInterval(async () => {
+				await syncBookingsForAvailability();
+				// If the client is currently viewing time slots, re-render them
+				if (state.date && state.step === 2) {
+					const wrap = document.getElementById('times-wrap');
+					if (wrap && wrap.style.display === 'block') showTimeSlots();
+				}
+			}, 10000);
 
 			/* ============ SCHEDULING LOGIC ============ */
 			const state = {
