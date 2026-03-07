@@ -1354,14 +1354,7 @@
 			}
 
 			function isSlotUnavailable(date, slotTime, serviceName) {
-				const config = getSchedulingConfig();
-				const svcConfig = config.services[serviceName] || { duration: 20, buffer: 10 };
-				const slotDuration = svcConfig.duration;
-				const buffer = svcConfig.buffer !== undefined ? svcConfig.buffer : (config.bufferMinutes || 10);
-
 				const slotStart = time12ToMinutes(slotTime);
-				const slotEnd = slotStart + slotDuration + buffer;
-
 				const slotResources = getServiceResources(serviceName);
 
 				const bookings = JSON.parse(localStorage.getItem('rwc_bookings') || '[]');
@@ -1376,10 +1369,11 @@
 					const sharesResource = slotResources.some(r => bResources.includes(r));
 					if (!sharesResource) return false;
 
+					// b.duration already includes buffer (duration + buffer was stored)
 					const bStart = time12ToMinutes(b.time);
-					// b.duration already includes buffer time (duration + buffer was stored)
 					const bEnd = bStart + (b.duration || 30);
-					return slotStart < bEnd && bStart < slotEnd;
+					// Block if this slot's start time falls within the booked range
+					return slotStart >= bStart && slotStart < bEnd;
 				});
 			}
 
